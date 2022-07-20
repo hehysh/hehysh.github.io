@@ -122,7 +122,6 @@ menu:
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
   #sec-site: /sec-site/ || fa fa-link
-  book: /categories/%E7%AE%80%E6%98%93python%E6%95%99%E7%A8%8B/ || fa fa-book
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
