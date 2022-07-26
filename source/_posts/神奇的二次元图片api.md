@@ -39,3 +39,9 @@ ok，我现在把他输入浏览器试试
 Never Gonna Give You Up~~
 [```https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4```](https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4)
 *tips:上面链接可以直接点*
+
+---
+2022/7/25日更新
+之前的二次元图片api已挂，可点如下链接获取新的
+https://dev.iw233.cn/API/index.php
+请支持原作者

@@ -22,11 +22,11 @@ minify: false
 # Define custom file paths.
 # Create your custom files in site directory `source/_data` and uncomment needed files below.
 custom_file_path:
-  #head: source/_data/head.swig
+  head: source/_data/head.swig
   #header: source/_data/header.swig
   #sidebar: source/_data/sidebar.swig
   #postMeta: source/_data/post-meta.swig
-  #postBodyEnd: source/_data/post-body-end.swig
+  postBodyEnd: source/_data/post-body-end.swig
   footer: source/_data/footer.swig
   #bodyEnd: source/_data/body-end.swig
   variable: source/_data/variables.styl
@@ -121,7 +121,7 @@ menu:
   tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
   archives: /archives/ || fa fa-archive
-  sec-site: /sec-site/ || fa fa-link
+  links: /links/ || fa fa-link
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
@@ -991,6 +991,7 @@ images: images
 
 waline:
   enable: true #是否开启
+  dark: 'body.darkmode--activated'
   serverURL: waline-server-blush.vercel.app # Waline #服务端地址，我们这里就是上面部署的 Vercel 地址
   locale:
     placeholder: 疑义相与析，畅所欲言，留下你的足迹吧！不登录，不填邮箱也没关系哒 # #评论框的默认文字
