@@ -3,7 +3,7 @@ title: 神奇的二次元图片api
 abbrlink: 55523
 date: 2022-05-10 17:23:27
 tags:
-categories:
+categories: 技术
 ---
  又是美好的一天，正在刷着卷子，突然叮咚一声来了条微信消息。
 <!-- more -->

@@ -1,7 +1,7 @@
 ---
 title: waline评论系统测试贴(持续更新)
 date: 2022-07-20 09:12:15
-tags:
+tags: hexo博客魔改
 categories: 持续更新
 abbrlink: 55554
 ---

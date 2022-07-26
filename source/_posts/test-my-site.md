@@ -1,7 +1,7 @@
 ---
 title: 此博客第一篇文章-纪念
-tags: hexo博客搭建
-categories: 纪念
+tags: hexo博客魔改
+categories: 技术
 abbrlink: 2949
 date: 2022-04-05 12:56:05
 ---

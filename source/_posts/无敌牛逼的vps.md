@@ -3,7 +3,7 @@ title: 无敌牛逼的vps
 abbrlink: 49631
 date: 2022-07-22 08:37:14
 tags:
-categories:
+categories: 技术
 ---
 无敌牛逼的vps
 # 无敌牛逼的vps

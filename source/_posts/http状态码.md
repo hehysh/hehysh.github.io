@@ -1,6 +1,7 @@
 ---
 title: http状态码
-tags: http/https
+tags: 网络
+categories: 技术
 abbrlink: 4372
 date: 2022-04-07 15:10:25
 ---

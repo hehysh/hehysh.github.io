@@ -1,6 +1,7 @@
 ---
 title: 对于http一些浅薄的认识
-tags: http/https
+tags: 网络
+categories: 技术
 abbrlink: 36210
 date: 2022-04-07 10:21:07
 ---

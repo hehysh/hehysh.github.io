@@ -1,6 +1,6 @@
 ---
 title: 对于next主题归档错误的解决
-tags: hexo博客搭建
+tags: hexo博客魔改
 categories: 技术
 abbrlink: 36000
 date: 2022-04-05 20:35:03

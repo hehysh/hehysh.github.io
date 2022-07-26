@@ -1,6 +1,7 @@
 ---
 title: cloudflare免费制作镜像站
 tags: cloudflare
+categories: 技术
 abbrlink: 4057
 date: 2022-04-17 19:02:54
 ---

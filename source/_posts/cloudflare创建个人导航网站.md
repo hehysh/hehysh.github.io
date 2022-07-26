@@ -1,6 +1,7 @@
 ---
 title: cloudflare创建个人导航网站
 tags: cloudflare
+categories: 技术
 abbrlink: 38060
 date: 2022-04-19 09:33:22
 ---
