@@ -3,6 +3,7 @@ title: 关于我
 date: 2022-04-06 14:11:04
 type: "about"
 ---
+![快乐滴狗狗](https://pic.rmb.bdstatic.com/bjh/7cbae92e2cbd9a2bfe22c2510b0b01ff.gif)
 ~本人擅长 Ai、Fw、Fl、Br、Ae、Pr、Ps 等软件的安装与卸载，精通 CSS、JavaScript、PHP、C、C＋＋、C#、Java、Ruby、Lisp、Python、Pascal 等单词的拼写，熟悉 Windows、Linux、Mac、Android、IOS 等系统的开关机。（纯属扯淡）~
 我本人还在上初中，所以本博客里出现技术性错误请不要见怪，恕我才疏学浅。
 现实里成绩不是最好，长相也一般，其实我还挺胖的🤣
