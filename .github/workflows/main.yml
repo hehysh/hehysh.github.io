@@ -73,20 +73,3 @@ jobs:
         git config --global user.email "hehysh1@hotmail.com"      
         hexo clean
         hexo g -d
-    
-    - name: Bak source
-      run: |
-        cd ..
-        mkdir source
-        pwd
-        cd source
-        git init
-        git clone https://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@github.com/hehysh1/blog-source.git
-        git pull
-        rm -rf !.git
-        cp -r /home/runner/work/blog-source/blog-cactus /home/runner/work/blog-source/source
-        git add .
-        git commit -m "new post"
-        git branch -M main
-        git remote add origin https://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@github.com/hehysh1/blog-source.git
-        git push -u origin main
