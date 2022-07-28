@@ -29,19 +29,8 @@ jobs:
         mkdir post
         cd post
         pwd
-    - name: Get post part
-      run: | # 复制post
         cd ..
-        cp -r /home/runner/work/blog-source/blog-source/source/_posts /home/runner/work/blog-source/post
-        
-    - name: Clone Git(cac)
-      run: | # 克隆仙人掌仓库以及文章
-        cd ..
-        git clone https://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@github.com/hehysh1/blog-source.git blog-cactus
-        rm -rf /home/runner/work/blog-source/blog-cactus/source/_posts
-        cp -r /home/runner/work/blog-source/post /home/runner/work/blog-source/blog-cactus/source/_posts
-        cd blog-cactus
-     
+  
     - name: Setup Node # 安装 Node.js
       uses: actions/setup-node@v1
       with:
@@ -51,8 +40,14 @@ jobs:
       run: |
         cd ..
         npm install hexo-cli -g
-        cd blog-cactus
-    
+        
+    - name: Clone repo and cp posts
+      run: |
+        git clone https://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@github.com/hehysh1/blog-source.git cactus-source
+        rm -rf /home/runner/work/blog-source/cactus-source/source/_posts
+        mkdir /home/runner/work/blog-source/cactus-source/source/_posts
+        cp -r /home/runner/work/blog-source/post /home/runner/work/blog-source/cactus-source/source/_posts
+        
     - name: Cache Modules # 缓存 Node 插件
       uses: actions/cache@v1
       id: cache-modules
@@ -64,29 +59,18 @@ jobs:
       if: steps.cache-modules.outputs.cache-hit != 'true'
       run: | # npm ci老出错，不用了，直接用npm install,去你大爷的（暴躁）
         npm install
-    
-    - name: Gererate&deploy
-      run: |
+          
+    - name: Before Deploy #准备工作
+      run: | 
         cd ..
         pwd
         git config --global user.name "hehysh1"
         git config --global user.email "hehysh1@hotmail.com"      
-        hexo clean
-        hexo g -d
-    
-    - name: Bak source
+        
+    - name: Generate & Deploy #部署
       run: |
-        cd ..
-        mkdir source
-        pwd
-        cd source
-        git init
-        git clone https://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@github.com/hehysh1/blog-source.git
-        git pull
-        rm -rf !.git
-        cp -r /home/runner/work/blog-source/blog-cactus /home/runner/work/blog-source/source
-        git add .
-        git commit -m "new post"
-        git branch -M main
-        git remote add origin https://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@github.com/hehysh1/blog-source.git
-        git push -u origin main
+        npm install -g hexo
+        hexo clean
+        hexo g 
+        hexo d
+     
