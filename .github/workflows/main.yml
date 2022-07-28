@@ -42,6 +42,14 @@ jobs:
       run: | # npm ci老出错，不用了，直接用npm install
         npm install
     
+    - name: check path
+      run: | # 验证各部分的实际路径
+        pwd
+        cd ..
+        pwd
+        mkdir post
+        cd post
+        pwd
     - name: Get post part
       run: |
         cd ..
