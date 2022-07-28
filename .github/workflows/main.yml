@@ -43,7 +43,7 @@ jobs:
         npm install
     
     - name: check path
-      run: | # 验证各部分的实际路径
+      run: | # 验证各部分的实际路径，以进行后续操作
         pwd
         cd ..
         pwd
@@ -51,12 +51,9 @@ jobs:
         cd post
         pwd
     - name: Get post part
-      run: |
+      run: | # 复制post
         cd ..
-        mkdir post
-        cd post
-        cd ..
-        cp blog-source/source/posts post
+        cp /home/runner/work/blog-source/blog-source/source/posts /home/runner/work/blog-source/post
     
     - name: Git init
       run: |
