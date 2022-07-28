@@ -1,10 +1,9 @@
 ---
-title: 关于我
+title: 关于
 date: 2022-04-06 14:11:04
 type: "about"
 ---
-![快乐滴狗狗](https://pic.rmb.bdstatic.com/bjh/7cbae92e2cbd9a2bfe22c2510b0b01ff.gif)
-
+<script type="text/javascript" src="//rf.revolvermaps.com/0/0/8.js?i=56eofeh93pf&amp;m=0c&amp;c=9d8b63&amp;cr1=000000&amp;f=tahoma&amp;l=33&amp;rs=100&amp;cw=007eff&amp;cb=54ff00" async="async"></script>
 ---
 <script type="text/javascript" src="//rf.revolvermaps.com/0/0/0.js?i=5tin2vjjrzd&amp;d=3&amp;p=1&amp;b=1&amp;w=293&amp;g=1&amp;f=arial&amp;fs=12&amp;r=0&amp;c0=000000&amp;c1=000000&amp;c2=000000&amp;ic0=0&amp;ic1=0" async="async"></script>
 ---
@@ -17,3 +16,5 @@ type: "about"
 也希望这个博客能见证我的成长🥳
 就算没加入十年之约，我也要撑个十年
 千里之行始于足下，冲冲冲！！
+![快乐滴狗狗](https://pic.rmb.bdstatic.com/bjh/7cbae92e2cbd9a2bfe22c2510b0b01ff.gif)
+![访问总人数](https://visitor-badge.laobi.icu/badge?page_id=hehysh.vercel.app.id)
