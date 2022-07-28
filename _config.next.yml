@@ -126,6 +126,7 @@ menu:
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
+  sec-site: /sec-site/ || fa fa-earth
   #traveling: https://travellings.link || fa fa-subway
 
 # Enable / Disable menu icons / item badges.
@@ -180,8 +181,8 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  GitHub: https://github.com/hehysh || fab fa-github
-  E-Mail: mailto:admin@hehysh.eu.org || fa fa-envelope
+  GitHub: https://github.com/ShierOfficial || fab fa-github
+  E-Mail: mailto:hehysh@hotmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
   #Twitter: https://twitter.com/yourname || fab fa-twitter
