@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>十贰的小窝</title>
+  
+  
+  <link href="https://hehysh.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://hehysh.github.io/"/>
+  <updated>2022-07-28T01:57:32.000Z</updated>
+  <id>https://hehysh.github.io/</id>
+  
+  <author>
+    <name>十贰</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>next主题去模块化指北</title>
+    <link href="https://hehysh.github.io/posts/49075.html"/>
+    <id>https://hehysh.github.io/posts/49075.html</id>
+    <published>2022-07-28T01:43:57.000Z</published>
+    <updated>2022-07-28T01:57:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;del&gt;水&lt;/del&gt;写一篇博文&lt;br&gt;本篇文章实际上是在为下篇文章做准备，下篇文章我将总结我在掉了无数坑后，取网络上教程中很少见但很牛逼的方法，去掉一些网络教程里过时的，不好用的办法，同时加入自己实际操作过程中的经验，最后总结出来的hexo博客最稳定搭建办法&lt;br&gt;&lt;del&gt;很花里胡哨是不是？&lt;/del&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>反诈中心：很快就到你家门口</title>
+    <link href="https://hehysh.github.io/posts/43801.html"/>
+    <id>https://hehysh.github.io/posts/43801.html</id>
+    <published>2022-07-28T00:54:49.000Z</published>
+    <updated>2022-07-28T01:43:05.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;昨天不是试了一下韩国新选手Groom的服务器嘛&lt;br&gt;直接搭建一个宝塔面板，昨天注册了一个账号，在我的小服务器上登录了&lt;br&gt;后续搭建wp博客的计划不了了之，就没去管了&lt;br&gt;结果昨天半夜反诈骗中心直接打到我爸手机上了，说我注册了诈骗网站&lt;br&gt;昨天我就只注册了宝塔一个号，不会错的&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://hehysh.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>【琐事集】换GitHub账号啦</title>
+    <link href="https://hehysh.github.io/posts/10965.html"/>
+    <id>https://hehysh.github.io/posts/10965.html</id>
+    <published>2022-07-27T20:53:33.000Z</published>
+    <updated>2022-07-28T01:09:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本文是一篇&lt;strong&gt;琐事集&lt;/strong&gt;，主要起备忘作用&lt;br&gt;本文会对以下事件作出详细说明：&lt;strong&gt;换GitHub账号&lt;/strong&gt;；对博客的一些后续计划；Okteto家的vps后续；Groom家的新vps；之前答应介绍的Minecraft服务器后续；短篇小说预告&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="琐事集" scheme="https://hehysh.github.io/categories/%E7%90%90%E4%BA%8B%E9%9B%86/"/>
+    
+    
+    <category term="GitHub" scheme="https://hehysh.github.io/tags/GitHub/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>电脑员又在炸电脑了</title>
+    <link href="https://hehysh.github.io/posts/15331.html"/>
+    <id>https://hehysh.github.io/posts/15331.html</id>
+    <published>2022-07-26T10:56:08.000Z</published>
+    <updated>2022-07-28T01:09:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;问题来了，如何搞坏一台班级电脑呢&lt;br&gt;本篇文章所讲的是换到411教室后的电脑，预备年级时的那台老电脑已经忘记了…&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="生活" scheme="https://hehysh.github.io/categories/%E7%94%9F%E6%B4%BB/"/>
+    
+    
+    <category term="初中学习生活" scheme="https://hehysh.github.io/tags/%E5%88%9D%E4%B8%AD%E5%AD%A6%E4%B9%A0%E7%94%9F%E6%B4%BB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>彩蛋</title>
+    <link href="https://hehysh.github.io/posts/66666.html"/>
+    <id>https://hehysh.github.io/posts/66666.html</id>
+    <published>2022-07-25T09:15:56.000Z</published>
+    <updated>2022-07-28T01:09:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;恭喜你找到了彩蛋的位置！！！&lt;br&gt;请点击进入原文来找到最后的彩蛋&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="hide" scheme="https://hehysh.github.io/tags/hide/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>无敌牛逼的vps</title>
+    <link href="https://hehysh.github.io/posts/49631.html"/>
+    <id>https://hehysh.github.io/posts/49631.html</id>
+    <published>2022-07-22T08:37:14.000Z</published>
+    <updated>2022-07-28T01:09:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;无敌牛逼的vps&lt;/p&gt;
+&lt;h1 id=&quot;无敌牛逼的vps&quot;&gt;&lt;a href=&quot;#无敌牛逼的vps&quot; class=&quot;headerlink&quot; title=&quot;无敌牛逼的vps&quot;&gt;&lt;/a&gt;无敌牛逼的vps&lt;/h1&gt;&lt;p&gt;前几个月一直在想vps的问题，在想有了一台vps之后我可以在上面干点什么，有趣的是结果当我真有了vps后却不知道怎么办了&lt;br&gt;那么今天就在这里水一篇博文，主要是这台vps真的很良心，首先要说明的是&lt;strong&gt;完全免费&lt;/strong&gt;，真的太香了！！&lt;br&gt;&lt;strong&gt;有root访问权限，Debian系统，x86架构要比ibm的更实用些，4核32G而且部署还简单，无需信用卡！！&lt;/strong&gt;&lt;br&gt;梦中情机属于是😂&lt;br&gt;&lt;em&gt;&lt;strong&gt;但是！注意！免费的午餐是没有的！！请不要搭建完就跑，一定要看服务条款，文章最后我会截取最重要的那部分给大家，一定要看服务条款！一定要看服务条款！一定要看服务条款！&lt;/strong&gt;&lt;/em&gt;&lt;br&gt;那么就开始申请吧！&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://hehysh.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>博客更新日志(持续更新)</title>
+    <link href="https://hehysh.github.io/posts/4884.html"/>
+    <id>https://hehysh.github.io/posts/4884.html</id>
+    <published>2022-07-20T09:32:52.000Z</published>
+    <updated>2022-07-28T02:06:43.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;本篇文章会持续更新，主要是写本博客的更新日志，也算是一个备忘&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="持续更新" scheme="https://hehysh.github.io/categories/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/"/>
+    
+    
+    <category term="hexo博客魔改" scheme="https://hehysh.github.io/tags/hexo%E5%8D%9A%E5%AE%A2%E9%AD%94%E6%94%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>waline评论系统测试贴(持续更新)</title>
+    <link href="https://hehysh.github.io/posts/55554.html"/>
+    <id>https://hehysh.github.io/posts/55554.html</id>
+    <published>2022-07-20T09:12:15.000Z</published>
+    <updated>2022-07-28T03:08:04.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;昨天上线了Waline评论系统，刚上线时觉得挺轻量的，不错&lt;br&gt;于是找来同学&amp;amp;朋友们一起来测试，也让博客热闹了一会，&lt;code&gt;55554.html&lt;/code&gt;的评论数也一度飙升至30个&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="持续更新" scheme="https://hehysh.github.io/categories/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/"/>
+    
+    
+    <category term="hexo博客魔改" scheme="https://hehysh.github.io/tags/hexo%E5%8D%9A%E5%AE%A2%E9%AD%94%E6%94%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>添加&quot;开往-友链接力&quot;在你的博客</title>
+    <link href="https://hehysh.github.io/posts/19235.html"/>
+    <id>https://hehysh.github.io/posts/19235.html</id>
+    <published>2022-06-19T09:37:41.000Z</published>
+    <updated>2022-07-28T01:09:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;一群狼走得远……&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;————引自开往（Traveling）官方github repo&lt;br&gt;今天来水一篇《添加“开往-友链接力”在你的博客》&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://hehysh.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>神奇的二次元图片api</title>
+    <link href="https://hehysh.github.io/posts/55523.html"/>
+    <id>https://hehysh.github.io/posts/55523.html</id>
+    <published>2022-05-10T17:23:27.000Z</published>
+    <updated>2022-07-28T01:09:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt; 又是美好的一天，正在刷着卷子，突然叮咚一声来了条微信消息。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://hehysh.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>cloudflare创建个人导航网站</title>
+    <link href="https://hehysh.github.io/posts/38060.html"/>
+    <id>https://hehysh.github.io/posts/38060.html</id>
+    <published>2022-04-19T09:33:22.000Z</published>
+    <updated>2022-07-28T01:09:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;blockquote&gt;
+&lt;p&gt;CF-Worker-Dir是一款适用于Cloudflare Worker平台上的云函数程序，可以使用它在一分钟内搭建属于自己的导航页面。CF-Worker-Dir提供丰富的自定义配置，同时它还可以预留了接口帮助你售出自己域名。&lt;br&gt;接下来，我们会用cloudflare worker来&lt;strong&gt;免费&lt;/strong&gt;创建这个小玩意。&lt;/p&gt;
+&lt;/blockquote&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://hehysh.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="cloudflare" scheme="https://hehysh.github.io/tags/cloudflare/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>cloudflare免费制作镜像站</title>
+    <link href="https://hehysh.github.io/posts/4057.html"/>
+    <id>https://hehysh.github.io/posts/4057.html</id>
+    <published>2022-04-17T19:02:54.000Z</published>
+    <updated>2022-07-28T01:09:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;我发现了一个超级大宝贝儿————cloudflare&lt;br&gt;它慷慨的为我们提供了许多免费的服务，其中就有制作镜像站这一个。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://hehysh.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="cloudflare" scheme="https://hehysh.github.io/tags/cloudflare/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客创建一个星期来加入的有趣功能汇总</title>
+    <link href="https://hehysh.github.io/posts/41921.html"/>
+    <id>https://hehysh.github.io/posts/41921.html</id>
+    <published>2022-04-14T13:24:58.000Z</published>
+    <updated>2022-07-28T01:09:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;我现在的这个博客”十贰的小窝”是2022年4月5日搭建的，到今天4月14日已经一个星期多了，也许没有人会注意这个博客其实在一个星期内发生了翻天覆地的变化，这其中也有许多辛酸的故事😂。&lt;br&gt;接下来，我来大致按照时间线来讲一讲博客的改变，把他们汇总起来几乎可以变成一篇完整的博客美化教程喽🤩&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://hehysh.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="hexo博客魔改" scheme="https://hehysh.github.io/tags/hexo%E5%8D%9A%E5%AE%A2%E9%AD%94%E6%94%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>http状态码</title>
+    <link href="https://hehysh.github.io/posts/4372.html"/>
+    <id>https://hehysh.github.io/posts/4372.html</id>
+    <published>2022-04-07T15:10:25.000Z</published>
+    <updated>2022-07-28T01:09:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;http协议里，有&lt;strong&gt;五大类HTTP&lt;/strong&gt;状态码&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://hehysh.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="网络" scheme="https://hehysh.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对于http一些浅薄的认识</title>
+    <link href="https://hehysh.github.io/posts/36210.html"/>
+    <id>https://hehysh.github.io/posts/36210.html</id>
+    <published>2022-04-07T10:21:07.000Z</published>
+    <updated>2022-07-28T01:09:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;之前刚刚看了一本书，看完之后对于一些以前一知半解的事都了解了一些&lt;br&gt;我们都知道，一般的浏览器里网页前面都会有把小锁，这个小锁是什么玩意？&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://hehysh.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="网络" scheme="https://hehysh.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>更改博客字体</title>
+    <link href="https://hehysh.github.io/posts/2505.html"/>
+    <id>https://hehysh.github.io/posts/2505.html</id>
+    <published>2022-04-06T09:30:47.000Z</published>
+    <updated>2022-07-28T01:09:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;br&gt;也许有细心的朋友会发现，我的博客原本是微软雅黑的字体&lt;br&gt;&lt;br&gt;但是现在已经变成了思源宋体辣！&lt;br&gt;&lt;br&gt;其实改字体的过程有些&lt;strong&gt;一波三折&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://hehysh.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="hexo博客魔改" scheme="https://hehysh.github.io/tags/hexo%E5%8D%9A%E5%AE%A2%E9%AD%94%E6%94%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>给博客添加动态背景</title>
+    <link href="https://hehysh.github.io/posts/52415.html"/>
+    <id>https://hehysh.github.io/posts/52415.html</id>
+    <published>2022-04-06T08:14:06.000Z</published>
+    <updated>2022-07-28T01:09:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;br&gt;也许next主题的背景是白色的，有点单调&lt;br&gt;&lt;br&gt;但next主题也是自带动态背景的&lt;br&gt;&lt;br&gt;给博客一加，逼格顿时就&lt;strong&gt;高了许多&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://hehysh.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="hexo博客魔改" scheme="https://hehysh.github.io/tags/hexo%E5%8D%9A%E5%AE%A2%E9%AD%94%E6%94%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对于next主题归档错误的解决</title>
+    <link href="https://hehysh.github.io/posts/36000.html"/>
+    <id>https://hehysh.github.io/posts/36000.html</id>
+    <published>2022-04-05T20:35:03.000Z</published>
+    <updated>2022-07-28T01:09:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;我们都知道next主题有个东西叫做categories，就是主页上显示的那个「分类」&lt;br&gt;但是在当前版本的next（也许最新的没有），有一个致命的bug，会导致他显示错误&lt;br&gt;&lt;strong&gt;同时，这个bug也适用于除了&lt;code&gt;home主页&lt;/code&gt;的其他所有在侧边栏显示的页面&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://hehysh.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="hexo博客魔改" scheme="https://hehysh.github.io/tags/hexo%E5%8D%9A%E5%AE%A2%E9%AD%94%E6%94%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>对于hexo博客的空格之重要性</title>
+    <link href="https://hehysh.github.io/posts/20795.html"/>
+    <id>https://hehysh.github.io/posts/20795.html</id>
+    <published>2022-04-05T15:55:06.000Z</published>
+    <updated>2022-07-28T01:09:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;br&gt;耗时一天，我十贰终于搭建出了基于hexo的博客&lt;br&gt;&lt;br&gt;哈哈哈哈实在是太开心辣哈哈哈哈&lt;br&gt;&lt;br&gt;但是部署第一篇正经的文章却出现了一些问题&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://hehysh.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="hexo博客魔改" scheme="https://hehysh.github.io/tags/hexo%E5%8D%9A%E5%AE%A2%E9%AD%94%E6%94%B9/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>此博客第一篇文章-纪念</title>
+    <link href="https://hehysh.github.io/posts/2949.html"/>
+    <id>https://hehysh.github.io/posts/2949.html</id>
+    <published>2022-04-05T12:56:05.000Z</published>
+    <updated>2022-07-28T01:09:32.000Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;哈哈，其实这篇文章是测试的&lt;br&gt;代码之神保佑-d成功&lt;br&gt;求你了试了一个上午了&lt;br&gt;点开👇看我的&lt;strong&gt;艰辛故事&lt;/strong&gt;🤣&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="技术" scheme="https://hehysh.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+    <category term="hexo博客魔改" scheme="https://hehysh.github.io/tags/hexo%E5%8D%9A%E5%AE%A2%E9%AD%94%E6%94%B9/"/>
+    
+  </entry>
+  
+</feed>
