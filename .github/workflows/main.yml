@@ -53,7 +53,7 @@ jobs:
     - name: Get post part
       run: | # 复制post
         cd ..
-        cp /home/runner/work/blog-source/blog-source/source/_posts /home/runner/work/blog-source/post
+        cp -r /home/runner/work/blog-source/blog-source/source/_posts /home/runner/work/blog-source/post
     
     - name: Git init
       run: |
