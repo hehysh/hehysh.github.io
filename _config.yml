@@ -103,7 +103,7 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
  type: git
- repo: https://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@github.com/hehysh/blog-source.git
+ repo: https://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@github.com/hehysh/hehysh.github.io.git
  branch: master
 
 # hexo-symbols-count-time

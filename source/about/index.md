@@ -17,4 +17,3 @@ type: "about"
 就算没加入十年之约，我也要撑个十年
 千里之行始于足下，冲冲冲！！
 ![快乐滴狗狗](https://pic.rmb.bdstatic.com/bjh/7cbae92e2cbd9a2bfe22c2510b0b01ff.gif)
-![访问总人数](https://visitor-badge.laobi.icu/badge?page_id=hehysh.vercel.app.id)
