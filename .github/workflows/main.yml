@@ -59,7 +59,8 @@ jobs:
       run: |
         git config --global user.name "hehysh"
         git config --global user.email "hehysh@163.com"
-        cd post
+        pwd
+        cd /home/runner/work/blog-source/post
         git init
         git add .
         git commit -m "new post"
