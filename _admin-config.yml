@@ -1,0 +1,5 @@
+# hexo-admin authentification
+admin:
+  username: hehysh
+  password_hash: $2a$10$m1/8QVDaFy75kINlJNwU7eBRLsC33DahCmKXFxdFJbxsxe.kCay8S
+  secret: delicious cookie
