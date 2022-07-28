@@ -38,8 +38,11 @@ jobs:
       run: |
         git config --global user.name "hehysh"
         git config --global user.email "hehysh@163.com"
+        mkdir git-clone-posts
+        cd git-clone-posts
         pwd
-        cd /home/runner/work/blog-source/post
+        git clone https://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@github.com/hehysh/post.git
+        rm -rf .git
         git init
         git add .
         git commit -m "new post"
