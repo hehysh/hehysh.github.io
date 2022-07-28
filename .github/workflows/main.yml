@@ -54,7 +54,7 @@ jobs:
       run: | # 复制post
         cd ..
         cp -r /home/runner/work/blog-source/blog-source/source/_posts /home/runner/work/blog-source/post
-    
+      
     - name: Git init
       run: |
         git config --global user.name "hehysh"
@@ -64,5 +64,5 @@ jobs:
         git add .
         git commit -m "new post"
         git branch -M main
-        git remote add origin https://github.com/hehysh/post.git
+        git remote add origin https://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@github.com/hehysh/post.git
         git push -u origin main
