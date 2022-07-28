@@ -39,8 +39,8 @@ jobs:
  
     - name: Install Dependencies # 如果没有缓存或 插件有更新，则安装插件
       if: steps.cache-modules.outputs.cache-hit != 'true'
-      run: | # **如果仓库里没有 package-lock.json，上传一下，npm ci 必须要有 package-lock.json**
-        npm ci
+      run: | # npm ci老出错，不用了，直接用npm install
+        npm install
     
     - name: Get post part
       run: |
