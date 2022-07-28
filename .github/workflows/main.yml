@@ -45,6 +45,7 @@ jobs:
       run: |
         git clone https://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@github.com/hehysh1/blog-source.git cactus-source
         rm -rf /home/runner/work/blog-source/cactus-source/source/_posts
+        mkdir /home/runner/work/blog-source/cactus-source/source/_posts
         cp -r /home/runner/work/blog-source/post /home/runner/work/blog-source/cactus-source/source/_posts
         
     - name: Cache Modules # 缓存 Node 插件
