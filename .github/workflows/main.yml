@@ -29,6 +29,7 @@ jobs:
         mkdir post
         cd post
         pwd
+        cd ..
   
     - name: Setup Node # 安装 Node.js
       uses: actions/setup-node@v1
@@ -39,20 +40,17 @@ jobs:
       run: |
         cd ..
         npm install hexo-cli -g
-        cd blog-cactus
     
     - name: Get post part
       run: | # 复制post
-        cd ..
         cp -r /home/runner/work/blog-source/blog-source/source/_posts /home/runner/work/blog-source/post
         
     - name: Clone Git(cac)
       run: | # 克隆仙人掌仓库以及文章
-        cd ..
         git clone https://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@github.com/hehysh1/blog-source.git blog-cactus
         rm -rf /home/runner/work/blog-source/blog-cactus/source/_posts
         cp -r /home/runner/work/blog-source/post /home/runner/work/blog-source/blog-cactus/source/_posts
-        rm -rf /home/runner/work/blog-source/blog-cactus/source/
+        rm -rf /home/runner/work/blog-source/blog-source
         cd blog-cactus
            
     - name: Cache Modules # 缓存 Node 插件
