@@ -20,29 +20,8 @@ jobs:
       uses: actions/checkout@v2
       with:
         ref: main
- 
-    - name: Setup Node # 安装 Node.js
-      uses: actions/setup-node@v1
-      with:
-        node-version: "12.x"
- 
-    - name: Install Hexo # 安装 Hexo
-      run: |
-        npm install hexo-cli -g
     
-    - name: Cache Modules # 缓存 Node 插件
-      uses: actions/cache@v1
-      id: cache-modules
-      with:
-        path: node_modules
-        key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
- 
-    - name: Install Dependencies # 如果没有缓存或 插件有更新，则安装插件
-      if: steps.cache-modules.outputs.cache-hit != 'true'
-      run: | # npm ci老出错，不用了，直接用npm install
-        npm install
-    
-    - name: check path
+    - name: Check path
       run: | # 验证各部分的实际路径，以进行后续操作
         pwd
         cd ..
@@ -55,7 +34,7 @@ jobs:
         cd ..
         cp -r /home/runner/work/blog-source/blog-source/source/_posts /home/runner/work/blog-source/post
       
-    - name: Git init
+    - name: Git init&Git push posts
       run: |
         git config --global user.name "hehysh"
         git config --global user.email "hehysh@163.com"
@@ -67,3 +46,39 @@ jobs:
         git branch -M main
         git remote add origin https://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@github.com/hehysh/post.git
         git push -u origin main
+        
+    - name: Clone Git(cac)
+      run: | # 克隆仙人掌仓库以及文章
+        cd ..
+        git clone https://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@github.com/hehysh1/blog-source.git blog-cactus
+        rm -rf /home/runner/work/blog-source/blog-cactus/source/_posts
+        cp -r /home/runner/work/blog-source/post /home/runner/work/blog-source/blog-cactus/source/_posts
+        cd blog-cactus
+     
+    - name: Setup Node # 安装 Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: "12.x"
+ 
+    - name: Install Hexo # 安装 Hexo
+      run: |
+        cd ..
+        npm install hexo-cli -g
+        cd blog-cactus
+    
+    - name: Cache Modules # 缓存 Node 插件
+      uses: actions/cache@v1
+      id: cache-modules
+      with:
+        path: node_modules
+        key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+ 
+    - name: Install Dependencies # 如果没有缓存或 插件有更新，则安装插件
+      if: steps.cache-modules.outputs.cache-hit != 'true'
+      run: | # npm ci老出错，不用了，直接用npm install
+        npm install
+        
+    - name: Gererate&deploy
+      run: |
+        hexo clean
+        hexo g -d
