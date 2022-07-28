@@ -1,4 +1,4 @@
-name: Deploy # 部署
+name: Posts & Deploy Auto  # 部署
  
 on: # 触发条件
   push:
