@@ -33,22 +33,6 @@ jobs:
       run: | # 复制post
         cd ..
         cp -r /home/runner/work/blog-source/blog-source/source/_posts /home/runner/work/blog-source/post
-      
-    - name: Git init&Git push posts
-      run: |
-        git config --global user.name "hehysh"
-        git config --global user.email "hehysh@163.com"
-        mkdir git-clone-posts
-        cd git-clone-posts
-        pwd
-        git clone https://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@github.com/hehysh/post.git
-        rm -rf .git
-        git init
-        git add .
-        git commit -m "new post"
-        git branch -M main
-        git remote add origin https://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@github.com/hehysh/post.git
-        git push -u origin main
         
     - name: Clone Git(cac)
       run: | # 克隆仙人掌仓库以及文章
@@ -85,3 +69,19 @@ jobs:
       run: |
         hexo clean
         hexo g -d
+    - name: Bak source
+      run: |
+        cd ..
+        mkdir source
+        pwd
+        cd source
+        git init
+        git clone https://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@github.com/hehysh1/blog-source.git
+        git pull
+        rm -rf !.git
+        cp -r /home/runner/work/blog-source/blog-cactus /home/runner/work/blog-source/source
+        git add .
+        git commit -m "new post"
+        git branch -M main
+        git remote add origin https://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@github.com/hehysh1/blog-source.git
+        git push -u origin main
