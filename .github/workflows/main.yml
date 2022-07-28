@@ -51,7 +51,7 @@ jobs:
         cd blog-cactus
         rm -rf source/_posts
         cd source
-        mkdir _posts
+        mkdir /home/runner/work/blog-source/blog-cactus/source/_posts
         cd _posts
         pwd
         cd /home/runner/work/blog-source/
