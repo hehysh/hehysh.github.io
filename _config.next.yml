@@ -127,7 +127,7 @@ menu:
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
   sec-site: /sec-site/ || fa fa-earth
-  #traveling: https://travellings.link || fa fa-subway
+  traveling: https://travellings.link || fa fa-subway
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
