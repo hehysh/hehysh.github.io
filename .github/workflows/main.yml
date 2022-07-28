@@ -62,15 +62,23 @@ jobs:
  
     - name: Install Dependencies # 如果没有缓存或 插件有更新，则安装插件
       if: steps.cache-modules.outputs.cache-hit != 'true'
-      run: | # npm ci老出错，不用了，直接用npm install
+      run: | # npm ci老出错，不用了，直接用npm install,去你大爷的（暴躁）
         npm install
-        
+    
+    - name: FK U Spawn failed
+      run: |
+        cd .deploy_git
+        git config --global core.autocrlf false
+    
     - name: Gererate&deploy
       run: |
+        cd ..
+        pwd
         git config --global user.name "hehysh1"
         git config --global user.email "hehysh1@hotmail.com"      
         hexo clean
         hexo g -d
+    
     - name: Bak source
       run: |
         cd ..
