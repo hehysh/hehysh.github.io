@@ -1,0 +1,63 @@
+name: Deploy # 部署
+ 
+on: # 触发条件
+  push:
+    branches:
+      - main # 推送到 main 分支（这里的分支名很重要，不要弄错了）
+ 
+  release:
+    types:
+      - published # 推送新版本号
+ 
+  workflow_dispatch: # 手动触发
+ 
+jobs:
+  build:
+    runs-on: ubuntu-latest
+ 
+    steps:
+    - name: Checkout # Checkout 仓库
+      uses: actions/checkout@v2
+      with:
+        ref: main
+ 
+    - name: Setup Node # 安装 Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: "12.x"
+ 
+    - name: Install Hexo # 安装 Hexo
+      run: |
+        npm install hexo-cli -g
+    
+    - name: Cache Modules # 缓存 Node 插件
+      uses: actions/cache@v1
+      id: cache-modules
+      with:
+        path: node_modules
+        key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+ 
+    - name: Install Dependencies # 如果没有缓存或 插件有更新，则安装插件
+      if: steps.cache-modules.outputs.cache-hit != 'true'
+      run: | # **如果仓库里没有 package-lock.json，上传一下，npm ci 必须要有 package-lock.json**
+        npm ci
+    
+    - name: Get post part
+      run: |
+        cd ..
+        mkdir post
+        cd post
+        cd ..
+        cp blog-source/source/posts post
+    
+    - name: Git init
+      run: |
+        git config --global user.name "hehysh"
+        git config --global user.email "hehysh@163.com"
+        cd post
+        git init
+        git add .
+        git commit -m "new post"
+        git branch -M main
+        git remote add origin https://github.com/hehysh/post.git
+        git push -u origin main
