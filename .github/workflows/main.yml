@@ -67,8 +67,8 @@ jobs:
         
     - name: Gererate&deploy
       run: |
-        git config --global user.name "hehysh"
-        git config --global user.email "hehysh@163.com"      
+        git config --global user.name "hehysh1"
+        git config --global user.email "hehysh1@hotmail.com"      
         hexo clean
         hexo g -d
     - name: Bak source
