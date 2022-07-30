@@ -8,4 +8,4 @@
         }
     })();
 </script>
-<script async defer data-website-id="f96a0dc1-fec2-4e40-b224-4d4d6bd472fe" src="https://umami-gray.vercel.app/$TRACKER_SCRIPT_NAME.js"></script>
+<script async defer data-website-id="77f05f81-e104-43c7-8856-9b5277b33330" src="https://umami-good.vercel.app/umami.js"></script>
