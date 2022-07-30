@@ -183,20 +183,6 @@
       </tags>
   </entry>
   <entry>
-    <title>彩蛋</title>
-    <url>/posts/66666.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>恭喜你找到了彩蛋的位置！！！<br>请点击进入原文来找到最后的彩蛋</p>
-<span id="more"></span>
-<p>恭喜你找到了彩蛋！！<br>以下是涩图：</p>
-<blockquote>
-<p><a href="https://hehysh-my.sharepoint.com/:i:/g/personal/hehysh_hehysh_onmicrosoft_com/Ed5FXc_GFHtMvE7xjqUIFJsBtXUA7HNC7w2ZQID4UA_j3g?e=pvWH9V">https://hehysh-my.sharepoint.com/:i:/g/personal/hehysh_hehysh_onmicrosoft_com/Ed5FXc_GFHtMvE7xjqUIFJsBtXUA7HNC7w2ZQID4UA_j3g?e=pvWH9V</a><br>密码：114514<br>哈哈哈，妙啊！</p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>hide</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>无敌牛逼的vps</title>
     <url>/posts/49631.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>无敌牛逼的vps</p>
@@ -489,5 +475,28 @@
       <tags>
         <tag>hexo博客魔改</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>对无敌牛逼的vps教程中出现严重失误的道歉</title>
+    <url>/posts/12449.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>如题</p>
+<span id="more"></span>
+<hr>
+<h1 id="xssh仓库的秘密"><a href="#xssh仓库的秘密" class="headerlink" title="xssh仓库的秘密"></a>xssh仓库的秘密</h1><p>前几天发了个嫖vps的教程，本意是为了补足原教程的不足，自己开了个补完教程<br><strong>结果我第一个教程就翻车了</strong><br>昨天用Railway的时候，就发现我的账号被标记为不安全，理由是我的账号“太新（刚注册的那种）或有不合法的仓库”，太新是不可能的，我的老GitHub账号开了大概一年了<br>那就只有不合法的仓库了，我检查了半天也没发现哪个仓库不合法<br>思来想去也许是Railway不想让我嫖了，于是找个理由把我号封了<br>后来才发现属实是以小人之心度君子之腹了<br>因为我在今天早上接到了GitHub发过来的信件</p>
+<hr>
+<blockquote>
+<p>Access to the ***（我的老GitHub号）&#x2F;xssh repository has been disabled by GitHub staff due to a terms of service violation. You may contact us for more information or to request a review of this decision:<br><a href="https://support.github.com/contact?subject=TOS+Review:+Hehysh1/xssh&amp;tags=tos-vru">https://support.github.com/contact?subject=TOS+Review%3A+Hehysh1%2Fxssh&amp;tags=tos-vru</a><br>You may review our terms of service here:<br><a href="https://docs.github.com/articles/github-terms-of-service">https://docs.github.com/articles/github-terms-of-service</a></p>
+</blockquote>
+<hr>
+<p>原来如此，原来是xssh仓库有问题，怪不得Railway报错<br>这个所谓的xxsh仓库就是之前嫖Okteto服务器时需要clone的仓库<br>结合之前我开了一个新号嫖Okteto，什么都没干却直接被封了<br>情况渐渐就明朗了起来<br>看一下之前Okteto给我的信件</p>
+<hr>
+<blockquote>
+<p>Hey there,<br>Your account has been permanently banned because you deployed <a href="https://github.com/Hehysh1/xssh">https://github.com/Hehysh1/xssh</a>.<br>This goes against our terms of service, as described on <a href="https://www.okteto.com/legal">https://www.okteto.com/legal</a> - please see Prohibited Actions - #15 “Use our Services to operate an “open proxy” or any other form of Internet proxy service that is capable of forwarding requests to any End User or third party-supplied Internet host.”<br>Thanks,<br>The Okteto Support Team</p>
+</blockquote>
+<hr>
+<p>其中提到了我违反了第十五条：不能搭建代理<br>当时我以为这个代理是VPN，现在想来应该是那个xssh仓库有问题<br>以下是我的猜测：<br>Okteto本身是不提供ssh服务的，我认为Okteto本身类似于GitHub Actions，你把GitHub Repo交给Okteto，他提供服务器来帮你运转Repo，的确和GitHub Actions很像但是xssh仓库提供了一种方式直接打通了Okteto服务器的ssh服务，结合教程中需要Ngrok服务，应该是搭建了一种代理，或者是内网穿透的隧道，以达到连接Okteto服务器的效果<br>看来Okteto和GitHub Actions遭受的经历也极其相像，GitHub Actions遭到有人使用ssh脚本白嫖大量服务器，还被黑客拿来挖矿。Okteto也是一样的，我估计也有人用它来挖矿了，毕竟有root权限<br>这次教程原地翻车给我留下了很大的震撼，看来以后学别人的教程还是要检查一下<br>这次只是封仓库，万一下次封号了呢？<br>这里也给遭到我教程影响的朋友们道个歉</p>
+<hr>
+<h1 id="船新的教程"><a href="#船新的教程" class="headerlink" title="船新的教程"></a>船新的教程</h1><p>溜了溜了，准备鼓捣下一个教程，搭建无敌美观还实用Umami来分析你网站的流量<br>这两天都在鼓捣Umami<br>希望这次不会翻车，接到这次的教程后我特意检查了很多遍，而且Umami官方也在官方文档里面留下了一件部署办法，经过了各大托管商的审查，应该是没什么问题的<br>另外我的博客的Umami界面已经搭建好了，真的无敌美观<br>放一下连接🔗：<br><a href="https://umami-shier.up.railway.app/share/n6l7iIbn/Blog">https://umami-shier.up.railway.app/share/n6l7iIbn/Blog</a></p>
+]]></content>
   </entry>
 </search>
