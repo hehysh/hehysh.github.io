@@ -1,10 +1,1 @@
-<script> 
- (function(){
-        if('{{ page.password }}'){
-            if (prompt('请输入文章密码') !== '{{ page.password }}'){
-                alert('密码错误！');
-                history.back();
-            }
-        }
-    })();
-</script>
+<script async defer data-website-id="bd86da8d-e48c-49a6-bb3a-2ebc06ad598b" src="https://umami-shier.up.railway.app/umami.js"></script>
