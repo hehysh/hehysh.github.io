@@ -19,6 +19,7 @@ Onedrive云盘映射： [十贰云盘](onedrive.hehysh.eu.org)
 | hehysh.eu.org | 主站 | 十贰的 |
 | www.hehysh.eu.org | 主站 | 个人博客 |
 | montior.hehysh.eu.org | 网站监控站 | Kuma网站监控 |
+| umami.hehysh.eu.org | 网站监测站 | Umami网站流量检测 |
 | onedrive.hehysh.eu.org | 云盘映射站 | onedrive-vercel云盘映射 |
 | netlify.hehysh.eu.org | 镜像站 | Netlify镜像个人博客 |
 | nbplus.tk | 图一乐域名 | freenom倾情奉献 |
