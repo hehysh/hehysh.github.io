@@ -2,19 +2,44 @@
 title: 分站
 date: 2022-07-28 02:19:24
 ---
-# 分站
-欢迎来到本站
-首先，本站**十贰的小窝**拥有不同线路**4**个分站
-拥有不同主题**1**个分站
-如果您是中国大陆的访客，那么建议您使用Vercel分站，香港节点，对大陆来说更友好
-[GitHub分站](https://nbplus.gq)（十分的牛逼，你一看它的域名就知道那真是牛逼plus++
-[Netlify分站](https://hehysh.netlify.app)
-**[Vercel大陆主站](https://hehysh.vercel.app)**
-**[Cloudflare国际主站](https://www.nbplus.tk)（十分的牛逼，你一看它的域名就知道那真是牛逼plus++**
-***tips:速度快只是相对来说，请视个人网络情况而定***
-同时如果您喜欢简洁舒适的仙人掌主题，可以去往仙人掌主题分站
-[仙人掌主题分站](https://hehysh1.github.io)
-~仙人掌主题分站文章没同步过去多少，至于什么时候同步，咕咕咕咕咕咕咕~
+2022-8-1 更新
+完成域名集成
 ---
-# 周边的卫星站
-[十贰云盘☁️](https://onedrive-vercel-hehysh.vercel.app/zh-CN/)
+# 各种卫星站
+**主站：[十贰的博客](www.hehysh.eu.org)**
+监控站：[十贰网站监控中心](montior.hehysh.eu.org)
+Umami流量监测站： [博客流量监测](https://umami.hehysh.eu.org/share/n6l7iIbn/Blog)
+Netlify博客镜像站： [Netlify博客镜像](netlify.hehysh.eu.org)
+梦开始的地方： [Github Pages](hehysh.github.io)
+Onedrive云盘映射： [十贰云盘](onedrive.hehysh.eu.org)
+---
+# 域名列表
+| 网址 | 介绍 | 作用 |
+| ---- | ---- | ---- |
+| hehysh.eu.org | 主站 | 十贰的 |
+| www.hehysh.eu.org | 主站 | 个人博客 |
+| montior.hehysh.eu.org | 网站监控站 | Kuma网站监控 |
+| onedrive.hehysh.eu.org | 云盘映射站 | onedrive-vercel云盘映射 |
+| netlify.hehysh.eu.org | 镜像站 | Netlify镜像个人博客 |
+| nbplus.tk | 图一乐域名 | freenom倾情奉献 |
+| www.nbplus.tk | 镜像站 | cloudflare pages镜像个人博客 |
+| hole.nbplus.tk | 没什么用的小动画 | 网上抄的代码，可能会用做跳转页 |
+| nbplus.gq | 图一乐域名 | freenom倾情奉献 |
+| hehysh.cf | 图一乐域名 | freenom倾情奉献 |
+| sh-edu.ga | 图一乐域名 | freenom倾情奉献，本来准备假冒学校官网Rick全校的，后来发现学校官网挂了，计划流产 |
+| sh-edu.ml | 图一乐域名 | freenom倾情奉献，本来准备假冒学校官网Rick全校的，后来发现学校官网挂了，计划流产 |
+---
+# 鸣谢
+**我一定要感谢我自己！没有我这么闲，互联网上哪里会出现属于我的一片天地！**
+| 名称 | 说明 |
+| ---- | ---- |
+| Github | 感谢GitHub给我最初的代码启蒙（现在还在启蒙）以及给我博客最初的支持 |
+| Cloudflare | 感谢cloudflare提供了大量的白嫖服务使我更为便捷 |
+| Vercel | 感谢Vercel为我提供了高速的静态网站托管 |
+| eu.org | 感谢eu.org提供了免费的，稳定的，优质的，完全公益的eu.org一级域名 |
+| Railway | 感谢Railway提供免费而优质的数据库与服务器 |
+| Goorm | 感谢Goorm提供免费而且配置不错（免费vps中）的韩国vps |
+| Netlify | 感谢Netlify为我提供了静态网站托管 |
+| Freenom | 感谢Freenom提供了大量且免费的图一乐域名，让我有了各种好玩的域名 |
+
+*以上按帮助程度排名，仅组织，不含个人*
