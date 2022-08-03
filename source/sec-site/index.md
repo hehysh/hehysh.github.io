@@ -6,19 +6,19 @@ date: 2022-07-28 02:19:24
 完成域名集成
 ---
 # 各种卫星站
-**主站：[十贰的博客](www.hehysh.eu.org)**
-监控站：[十贰网站监控中心](montior.hehysh.eu.org)
+**主站：[十贰的博客](https://www.hehysh.eu.org)**
+监控站：[十贰网站监控中心](https://status.hehysh.eu.org)
 Umami流量监测站： [博客流量监测](https://umami.hehysh.eu.org/share/n6l7iIbn/Blog)
-Netlify博客镜像站： [Netlify博客镜像](netlify.hehysh.eu.org)
-梦开始的地方： [Github Pages](hehysh.github.io)
-Onedrive云盘映射： [十贰云盘](onedrive.hehysh.eu.org)
+Netlify博客镜像站： [Netlify博客镜像](https://netlify.hehysh.eu.org)
+梦开始的地方： [Github Pages](https://hehysh.github.io)
+Onedrive云盘映射： [十贰云盘](https://onedrive.hehysh.eu.org)
 ---
 # 域名列表
 | 网址 | 介绍 | 作用 |
 | ---- | ---- | ---- |
 | hehysh.eu.org | 主站 | 十贰的 |
 | www.hehysh.eu.org | 主站 | 个人博客 |
-| montior.hehysh.eu.org | 网站监控站 | Kuma网站监控 |
+| status.hehysh.eu.org | 网站监控站 | Kuma网站监控 |
 | umami.hehysh.eu.org | 网站监测站 | Umami网站流量检测 |
 | onedrive.hehysh.eu.org | 云盘映射站 | onedrive-vercel云盘映射 |
 | netlify.hehysh.eu.org | 镜像站 | Netlify镜像个人博客 |
