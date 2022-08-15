@@ -12,6 +12,7 @@ Umami流量监测站： [博客流量监测](https://umami.hehysh.eu.org/share/n
 Netlify博客镜像站： [Netlify博客镜像](https://netlify.hehysh.eu.org)
 梦开始的地方： [Github Pages](https://hehysh.github.io)
 Onedrive云盘映射： [十贰云盘](https://onedrive.hehysh.eu.org)
+论坛:  [十贰茶馆](https://club.hehysh.eu.org/)
 ---
 # 域名列表
 | 网址 | 介绍 | 作用 |
@@ -22,6 +23,7 @@ Onedrive云盘映射： [十贰云盘](https://onedrive.hehysh.eu.org)
 | umami.hehysh.eu.org | 网站监测站 | Umami网站流量检测 |
 | onedrive.hehysh.eu.org | 云盘映射站 | onedrive-vercel云盘映射 |
 | netlify.hehysh.eu.org | 镜像站 | Netlify镜像个人博客 |
+| club.hehysh.eu.org | 论坛 | Discuz超古老级论坛 |
 | nbplus.tk | 图一乐域名 | freenom倾情奉献 |
 | www.nbplus.tk | 镜像站 | cloudflare pages镜像个人博客 |
 | hole.nbplus.tk | 没什么用的小动画 | 网上抄的代码，可能会用做跳转页 |
