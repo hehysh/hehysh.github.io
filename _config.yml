@@ -14,7 +14,7 @@ timezone: ''
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 #
-url: https://hehysh.github.io
+url: https://www.hehysh.eu.org
 permalink: posts/:abbrlink.html  # 此处可以自己设置，也可以直接使用 :/abbrlink
 abbrlink:
     alg: crc16   #算法： crc16(default) and crc32
@@ -162,7 +162,7 @@ feed:
 # Darkmode JS
 # For more information: https://github.com/rqh656418510/hexo-next-darkmode, https://github.com/sandoche/Darkmode.js
 darkmode_js:
-  enable: true
+  enable: false
   bottom: '64px' # default: '32px'
   right: 'unset' # default: '32px'
   left: '32px' # default: 'unset'
