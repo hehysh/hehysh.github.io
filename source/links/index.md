@@ -13,6 +13,8 @@ date: 2022-04-24 16:40:51
 | 十贰的小窝 | https://hehysh.vercel.app | 十贰的博客：技术，人生，思考 |
 | LYXの小破站 | https://yisous.xyz/ | 人有悲欢离合 月有阴晴圆缺 |
 | 咕咕云梦泽 | https://blog.pai233.top/ | Write Down My Life. |
+| 张洪Heo | https://blog.zhheo.com/ | 分享设计与科技生活 |
+| 梦落の小屋 | https://blog.dreamfall.cn | 因为不可能，所以才值得相信 |
 
 ## GitHub博客收集repo
 本博客还被以下的博客列表收录：
