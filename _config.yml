@@ -103,7 +103,7 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
  type: git
- repo: git@3.36.62.103:blog/repo/hexo.git
+ repo: https://github.com/hehysh/hehysh.github.io.git
 
 # hexo-symbols-count-time
 symbols_count_time:
