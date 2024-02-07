@@ -1229,6 +1229,13 @@
 <p>去bing上搜，结果让人摸不着头脑，说是什么vue的跨域问题，看了一下解决办法，跟我的问题不是很相关。大脑一片空白，我完全没有想法。</p>
 <p>又试着<code>hexo s</code>，报一样的错误。又因为我之前是可以正常使用<code>hexo s</code>的，所以应该是我之后干了什么事导致玄学问题出现。于是把写好的文章复制了一遍，保存本地，然后回滚git版本到刚刚clone下来的状态。重新一套搞好，再次<code>hexo g</code>，搞定。</p>
 <p>由此发现回滚确实是解决问题的终极大法</p>
+<hr>
+<p>这就结束了？还有劲爆尾杀！</p>
+<figure class="highlight plaintext"><figcaption><span>d```时出现以下错误：</span></figcaption><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<p>fatal: in unpopulated submodule ‘.deploy_git’</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">真是醉了，于是使用</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>rm -rf .deploy_git<br>hexo g<br>hexo d</p>
+<p>&#96;&#96;&#96;<br>搞定</p>
 ]]></content>
   </entry>
 </search>

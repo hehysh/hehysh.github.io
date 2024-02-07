@@ -30,7 +30,7 @@
 <meta property="og:description" content="寒假开始的时候获得了一台mac，我妈退役下来的超级老机子，查了一下机子什么配置 1234MacBook Air (13-inch, Early 2015)处理器1.6 GHz 双核Intel Core i5内存4 GB 1600 MHz DDR3图形卡Intel HD Graphics 6000 1536 MB  绝了，我觉得这玩意还能动真是个奇迹 结果实际运行结果让我大吃一惊，它居然还能下载lu">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-02-07T07:52:42.000Z">
-<meta property="article:modified_time" content="2024-02-07T09:01:14.375Z">
+<meta property="article:modified_time" content="2024-02-07T09:09:02.993Z">
 <meta property="article:author" content="晴雀">
 <meta property="article:tag" content="晴雀">
 <meta name="twitter:card" content="summary">
@@ -286,7 +286,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>2.4k</span>
+      <span>2.5k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -365,6 +365,13 @@
 <p>去bing上搜，结果让人摸不着头脑，说是什么vue的跨域问题，看了一下解决办法，跟我的问题不是很相关。大脑一片空白，我完全没有想法。</p>
 <p>又试着<code>hexo s</code>，报一样的错误。又因为我之前是可以正常使用<code>hexo s</code>的，所以应该是我之后干了什么事导致玄学问题出现。于是把写好的文章复制了一遍，保存本地，然后回滚git版本到刚刚clone下来的状态。重新一套搞好，再次<code>hexo g</code>，搞定。</p>
 <p>由此发现回滚确实是解决问题的终极大法</p>
+<hr>
+<p>这就结束了？还有劲爆尾杀！</p>
+<figure class="highlight plaintext"><figcaption><span>d```时出现以下错误：</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+<p>fatal: in unpopulated submodule ‘.deploy_git’</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">真是醉了，于是使用</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>rm -rf .deploy_git<br>hexo g<br>hexo d</p>
+<p>&#96;&#96;&#96;<br>搞定</p>
 
     </div>
 
