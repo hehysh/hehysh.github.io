@@ -1302,6 +1302,12 @@
 <h1 id="Casio-991-cnx及82es计算器非正常使用教程"><a href="#Casio-991-cnx及82es计算器非正常使用教程" class="headerlink" title="Casio 991-cnx及82es计算器非正常使用教程"></a>Casio 991-cnx及82es计算器非正常使用教程</h1><h2 id="991-cnx"><a href="#991-cnx" class="headerlink" title="991-cnx"></a>991-cnx</h2><p>咱们循序渐进，先从简单的玩起。</p>
 <p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8yNjExNTY2ODg=">人人都能看懂的卡西欧fx991cnx玩机指南，手把手教你如何利用计算器的漏洞爆机<i class="fa fa-external-link-alt"></i></span></p>
 <p>这篇文章里面演示的漏洞都不会损伤计算器。</p>
+<p>另：本人找了好久字符转换器的原理，最终找到一个比较正式的解释：</p>
+<div class="note info"><p>给大家简单讲一下字符转换器的原理：</p>
+<p>卡西欧中所有字符都是以一个或两个字节储存的，比如单字节的31对应数字1，77对应sin，7D对应log，23对应冒号，等等；常数和单位转换都是双字节的，其中常数（在卡西欧内部，Ran#也被视为常数）的第一个字节都是FD，单位转换的第一个字节都是FE，赋值操作的第一个字节都是FB。卡西欧的算式是由大量字节构成的，计算器会从左到右读取字节，如果遇到FD，FE或FB这些特殊字节，就会和下一个字节拼成一个字符。</p>
+<p>而bug在于：lbf&#x2F;in2→kpa对应的存储值为FE23，而23正好是冒号。用卡西欧比较多的人应该都知道，如果一个算式中有冒号，我们查看历史记录时，冒号及冒号右边的部分是不显示的。于是，23字节被删除，本来不可能单独出现的FE字节就出现在了算式的最右侧。此时在FE字节的后面添加东西就可以弄出一些非法字符，比如在FE的后面加上一个Ran#（对应FD18），计算器就会把FE和FD拼在一起构成那个t开头E结尾的乱码，剩下的单字节18构成非法字符@。</p>
+</div>
+
 <p>然后试着升级991.</p>
 <p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC80NjQwMTI4OTI=">利用FX991CNX的漏洞来升级计算器的教程<i class="fa fa-external-link-alt"></i></span></p>
 <p>这篇能通过卡bug调用出部分jp9000的功能，超脱原有991cnx的范畴。在上海高考中使用部分jp9000的功能似乎没有问题，毕竟是991cnx自带的隐藏功能。</p>
