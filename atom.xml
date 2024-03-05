@@ -6,7 +6,7 @@
   <link href="https://blog.nbplus.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.nbplus.eu.org/"/>
-  <updated>2024-02-08T02:18:25.009Z</updated>
+  <updated>2024-03-05T12:04:03.250Z</updated>
   <id>https://blog.nbplus.eu.org/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>casio计算器完全使用指南</title>
+    <link href="https://blog.nbplus.eu.org/posts/50032.html"/>
+    <id>https://blog.nbplus.eu.org/posts/50032.html</id>
+    <published>2024-03-05T11:33:58.000Z</published>
+    <updated>2024-03-05T12:04:03.250Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近换新了计算器，换到了Casio 991-cnx。&lt;/p&gt;
+&lt;p&gt;众所周知，上海高考可以使用计算器，目前允许带进的最高规格，功能最多的计算器就是Casio-991 cnx。&lt;/p&gt;
+&lt;p&gt;因此我在网上搜索各种关于Casio 991的内容，其中有正常使用的，也有非正常使用的。&lt;/p&gt;
+&lt;p&gt;无论你是想知道如何在高考考场中高效运用计算器，还是想要卡casio的bug，都可以在本文找到答案。&lt;/p&gt;
+&lt;p&gt;本文主要是搜集各方资料，进行汇编而成。&lt;/p&gt;
+&lt;p&gt;包括以下内容：&lt;br&gt;Casio 991-cnx计算器在上海高考中的高效运用教程&lt;br&gt;Casio 991-cnx计算器正常使用教程&lt;br&gt;Casio 991-cnx计算器非正常使用教程&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>聊聊粥铺</title>
@@ -344,23 +364,6 @@
     <summary type="html">&lt;p&gt;又到了一周了———&lt;br&gt;以后文章基本会在周五更新&lt;br&gt;之前搞了一个url隐形转发嘛&lt;br&gt;然后在评论区lyx提醒url隐形转发有许多问题，并且指出可以用cf-workers进行反代&lt;br&gt;半年前博客刚刚搞好没多久的时候我写过一篇用cf-workers镜像网站的文章，其实都是一样的&lt;br&gt;然后我想起来这茬，把代码复制一看，哦豁，代码没用了，于是我匆匆忙忙去找新代码，最终如下———&lt;/p&gt;</summary>
     
     
-    
-    
-  </entry>
-  
-  <entry>
-    <title>【已更新】成功搞出隐形url转发</title>
-    <link href="https://blog.nbplus.eu.org/posts/4945.html"/>
-    <id>https://blog.nbplus.eu.org/posts/4945.html</id>
-    <published>2022-09-02T07:29:10.000Z</published>
-    <updated>2023-01-04T05:02:18.156Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;经过多天在一模卷，化学课以及回家作业中的夹缝中的艰难研究（大悲）&lt;br&gt;终于实现了使用github（理论上vercel,netlify或者其他也是可以的）进行隐性url转发&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="技术" scheme="https://blog.nbplus.eu.org/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
   </entry>
