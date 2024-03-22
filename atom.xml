@@ -6,7 +6,7 @@
   <link href="https://blog.nbplus.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.nbplus.eu.org/"/>
-  <updated>2024-03-05T12:41:29.318Z</updated>
+  <updated>2024-03-22T13:29:39.076Z</updated>
   <id>https://blog.nbplus.eu.org/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记东方绿舟的一周</title>
+    <link href="https://blog.nbplus.eu.org/posts/18578.html"/>
+    <id>https://blog.nbplus.eu.org/posts/18578.html</id>
+    <published>2024-03-22T11:06:00.000Z</published>
+    <updated>2024-03-22T13:29:39.076Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;上海市的学校有一个神奇的传统，那就是去东方绿舟进行国防教育一周，吃住全在那边。&lt;/p&gt;
+&lt;p&gt;除了上海中学和上海中学东校以外，其他所有的高中（包括职高）的高一学生都必须得去一趟东方绿舟。&lt;/p&gt;
+&lt;p&gt;说是国防教育，其实就是超级军训，不再是站军姿，而是教练枪，拆枪，投手榴弹，单兵战术之类的真东西。&lt;/p&gt;
+&lt;p&gt;当然，和军备大省的军训肯定比不了，不过对于我们这种已经被军训的站军姿以及队列训练折磨的要疯了的可怜人来说，这简直就是度假！！&lt;/p&gt;
+&lt;p&gt;于是，在2024.3.18，终于轮到了我们粥铺参加国防教育，因此特此记录这奇妙的一周。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>casio计算器完全使用指南</title>
@@ -347,21 +366,6 @@
     
     <summary type="html">&lt;p&gt;原文：&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9jaGVhcHNrYXRlc2d1aWRlLm9yZy9hcnRpY2xlcy9wZXJzb25hbC13ZWJzaXRlLWh1bnRpbmcuaHRtbA==&quot;&gt;https://cheapskatesguide.org/articles/personal-website-hunting.html&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;翻译、注释：晴雀&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>cf-workers反代最新版</title>
-    <link href="https://blog.nbplus.eu.org/posts/28454.html"/>
-    <id>https://blog.nbplus.eu.org/posts/28454.html</id>
-    <published>2022-09-09T10:42:50.000Z</published>
-    <updated>2023-01-04T05:02:18.152Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;又到了一周了———&lt;br&gt;以后文章基本会在周五更新&lt;br&gt;之前搞了一个url隐形转发嘛&lt;br&gt;然后在评论区lyx提醒url隐形转发有许多问题，并且指出可以用cf-workers进行反代&lt;br&gt;半年前博客刚刚搞好没多久的时候我写过一篇用cf-workers镜像网站的文章，其实都是一样的&lt;br&gt;然后我想起来这茬，把代码复制一看，哦豁，代码没用了，于是我匆匆忙忙去找新代码，最终如下———&lt;/p&gt;</summary>
     
     
     
