@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>晴雀堂</title>
+  
+  <subtitle>晴雀的个人博客</subtitle>
+  <link href="https://blog.nbplus.eu.org/atom.xml" rel="self"/>
+  
+  <link href="https://blog.nbplus.eu.org/"/>
+  <updated>2024-05-03T08:51:16.850Z</updated>
+  <id>https://blog.nbplus.eu.org/</id>
+  
+  <author>
+    <name>晴雀</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客成立两年啦</title>
+    <link href="https://blog.nbplus.eu.org/posts/3178.html"/>
+    <id>https://blog.nbplus.eu.org/posts/3178.html</id>
+    <published>2024-04-05T08:08:57.000Z</published>
+    <updated>2024-05-03T08:51:16.850Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>next主题使用Gemini进行ai文章总结</title>
+    <link href="https://blog.nbplus.eu.org/posts/15304.html"/>
+    <id>https://blog.nbplus.eu.org/posts/15304.html</id>
+    <published>2024-04-04T13:44:35.000Z</published>
+    <updated>2024-05-03T08:51:16.845Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今天是清明节假期，昨晚22:50上床，一觉睡到上午10:30左右（学生党是这样的）&lt;/p&gt;
+&lt;p&gt;上午给老mac换了硅脂，清了灰，然后决定休息会。&lt;/p&gt;
+&lt;p&gt;吃完饭翻了翻immmmm.com，翻到了一篇文章：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9pbW1tbW0uY29tL2dlbWluaS1wcm8tYWkv&quot;&gt;利用 Gemini Pro 为文章添加摘要&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;再一看，发现Google的Gemini Pro的api调用居然是免费的！For free！！！&lt;/p&gt;
+&lt;p&gt;我很少很少能见到这么高质量的LLM的api免费，于是顿时起了兴趣，火速开始折腾。&lt;br&gt;（踩了巨他妈多！！！！的！！！！坑！！！！！！！！）&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>记东方绿舟的一周</title>
+    <link href="https://blog.nbplus.eu.org/posts/18578.html"/>
+    <id>https://blog.nbplus.eu.org/posts/18578.html</id>
+    <published>2024-03-22T11:06:00.000Z</published>
+    <updated>2024-05-03T08:51:16.856Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;上海市的学校有一个神奇的传统，那就是去东方绿舟进行国防教育一周，吃住全在那边。&lt;/p&gt;
+&lt;p&gt;除了上海中学和上海中学东校以外，其他所有的高中（包括职高）的高一学生都必须得去一趟东方绿舟。&lt;/p&gt;
+&lt;p&gt;说是国防教育，其实就是超级军训，不再是站军姿，而是教练枪，拆枪，投手榴弹，单兵战术之类的真东西。&lt;/p&gt;
+&lt;p&gt;当然，和军备大省的军训肯定比不了，不过对于我们这种已经被军训的站军姿以及队列训练折磨的要疯了的可怜人来说，这简直就是度假！！&lt;/p&gt;
+&lt;p&gt;于是，在2024.3.18，终于轮到了我们粥铺参加国防教育，因此特此记录这奇妙的一周。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>casio计算器完全使用指南</title>
+    <link href="https://blog.nbplus.eu.org/posts/50032.html"/>
+    <id>https://blog.nbplus.eu.org/posts/50032.html</id>
+    <published>2024-03-05T11:33:58.000Z</published>
+    <updated>2024-05-03T08:51:16.844Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近换新了计算器，换到了Casio 991-cnx。&lt;/p&gt;
+&lt;p&gt;众所周知，上海高考可以使用计算器，目前允许带进的最高规格，功能最多的计算器就是Casio-991 cnx。&lt;/p&gt;
+&lt;p&gt;因此我在网上搜索各种关于Casio 991的内容，其中有正常使用的，也有非正常使用的。&lt;/p&gt;
+&lt;p&gt;无论你是想知道如何在高考考场中高效运用计算器，还是想要卡casio的bug，都可以在本文找到答案。&lt;/p&gt;
+&lt;p&gt;本文主要是搜集各方资料，进行汇编而成。&lt;/p&gt;
+&lt;p&gt;包括以下内容：&lt;br&gt;Casio 991-cnx计算器在上海高考中的高效运用教程&lt;br&gt;Casio 991-cnx计算器正常使用教程&lt;br&gt;Casio 991-cnx计算器非正常使用教程&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>聊聊粥铺</title>
+    <link href="https://blog.nbplus.eu.org/posts/404.html"/>
+    <id>https://blog.nbplus.eu.org/posts/404.html</id>
+    <published>2024-02-07T09:35:57.000Z</published>
+    <updated>2024-05-03T08:51:16.856Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;哇塞，转眼居然已经快过年了。时隔这么久没更并不代表我放弃了这个博客，主要是住宿生根本摸不到电脑。&lt;/p&gt;
+&lt;p&gt;好在终于熬过了一个学期，又到了&lt;del&gt;美好的&lt;/del&gt;寒假。&lt;em&gt;说实话，寒假得一天隔着一天去补课机构，一直到除夕之前，我还不如继续上课……&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;已经在粥铺（本人对上海市周浦中学的习惯性称呼）度过了一个学期。上一篇文章评论区所有朋友们的鼓励我都认真看了，衷心感谢你们的鼓励，我也做好了准备，在高中三年继续努力，再拼一把！&lt;/p&gt;
+&lt;p&gt;既然已经来到了这里，那么再后悔当初也没有用了，既来之，则安之。那就聊聊在粥铺度过了一个学期的感受吧。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>迁移hexo博客至mac避坑指北</title>
+    <link href="https://blog.nbplus.eu.org/posts/34459.html"/>
+    <id>https://blog.nbplus.eu.org/posts/34459.html</id>
+    <published>2024-02-07T07:52:42.000Z</published>
+    <updated>2024-05-03T08:51:16.857Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;寒假开始的时候获得了一台mac，我妈退役下来的超级老机子，查了一下机子什么配置&lt;/p&gt;
+&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;MacBook&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;Air&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;(13-inch,&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;Early&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;处理器1.6&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;GHz&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;双核Intel&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;Core&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;i5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;内存4&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;GB&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1600 &lt;/span&gt;&lt;span class=&quot;string&quot;&gt;MHz&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;DDR3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;图形卡Intel&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;HD&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;Graphics&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;6000 &lt;/span&gt;&lt;span class=&quot;number&quot;&gt;1536 &lt;/span&gt;&lt;span class=&quot;string&quot;&gt;MB&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;绝了，我觉得这玩意还能动真是个奇迹&lt;/p&gt;
+&lt;p&gt;结果实际运行结果让我大吃一惊，它居然还能下载lunar client玩mc，而且1.20.2最高到120fps，稳定80fps！！！&lt;/p&gt;
+&lt;p&gt;真是牛逼，顽强的生命呐（赞叹&lt;/p&gt;
+&lt;p&gt;然后今天突然想起自己的博客，发现上一次更新居然在23年8月份，这下我立刻开始着手迁移博客源码到mac上，结果遇到了一堆匪夷所思的问题，气得我七窍生烟，必须记下来&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>中考惨败之后的一些感想</title>
+    <link href="https://blog.nbplus.eu.org/posts/18817.html"/>
+    <id>https://blog.nbplus.eu.org/posts/18817.html</id>
+    <published>2023-08-07T01:58:29.000Z</published>
+    <updated>2024-05-03T08:51:16.847Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;这篇是很久很久沉寂以后的新文章&lt;/p&gt;
+&lt;p&gt;主要先讲讲近况吧，之后再发一些新的东西&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>博客建站一周年</title>
+    <link href="https://blog.nbplus.eu.org/posts/21063.html"/>
+    <id>https://blog.nbplus.eu.org/posts/21063.html</id>
+    <published>2023-04-20T10:15:12.000Z</published>
+    <updated>2024-05-03T08:51:16.850Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>小改博客</title>
+    <link href="https://blog.nbplus.eu.org/posts/1237.html"/>
+    <id>https://blog.nbplus.eu.org/posts/1237.html</id>
+    <published>2023-04-16T12:31:17.000Z</published>
+    <updated>2024-05-03T08:51:16.852Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>中考理化实验操作考经验贴</title>
+    <link href="https://blog.nbplus.eu.org/posts/2093.html"/>
+    <id>https://blog.nbplus.eu.org/posts/2093.html</id>
+    <published>2023-04-15T13:55:41.000Z</published>
+    <updated>2024-05-03T08:51:16.847Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今天4月15日，要去搞所谓的理化实验操作考（模拟考）&lt;/p&gt;
+&lt;p&gt;考完总结：还好是模拟考，本人把所有能错的点基本都错了一遍&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>中考体检经验贴</title>
+    <link href="https://blog.nbplus.eu.org/posts/58724.html"/>
+    <id>https://blog.nbplus.eu.org/posts/58724.html</id>
+    <published>2023-04-07T09:34:12.000Z</published>
+    <updated>2024-05-03T08:51:16.847Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;del&gt;（我是绝对不会告你本篇文章只是为了证明我还活着的（其实不是很水啦））&lt;/del&gt;&lt;br&gt;最近消失了很久，不仅是毕业班的原因，还在于s*的cloudstudio ide挂了&lt;br&gt;之前已经确认过不是我的原因而是疼逊的原因，于是只好等腾讯修。现在他终于修好了，原来是在更新…&lt;br&gt;总之最近临近中考了，我们开始忙的要死，这个中考体检就是开始，接下来还有实验操作考模拟考，实验操作考，听说测试考，&lt;del&gt;体育中考（被取消了直接给我们满分30分哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈）&lt;/del&gt;还有一堆乱七八糟的东西&lt;br&gt;总之写个经验贴记录一下&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>体验传说中的Novel-AI作画</title>
+    <link href="https://blog.nbplus.eu.org/posts/14729.html"/>
+    <id>https://blog.nbplus.eu.org/posts/14729.html</id>
+    <published>2023-02-14T08:57:40.000Z</published>
+    <updated>2024-05-03T08:51:16.847Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;这件事的起因是我在b站上看到了AI作画的视频&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMVA4NDExZTdGYQ==&quot;&gt;https://www.bilibili.com/video/BV1P8411e7Fa&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;看到的时候就一个反应，这居然是AI作画？和2022年中旬的水平完全不一样！！是脱胎换骨级别的！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;多图预警！！&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>博客名字终于定下来力</title>
+    <link href="https://blog.nbplus.eu.org/posts/41040.html"/>
+    <id>https://blog.nbplus.eu.org/posts/41040.html</id>
+    <published>2023-01-30T07:50:28.000Z</published>
+    <updated>2024-05-03T08:51:16.849Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;em&gt;我是绝对不会告诉你发这篇文章&lt;del&gt;的原因之一&lt;/del&gt;只是为了证明我还活着哒！&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;对了，如果各位友链的好兄弟们，看到这篇文章，可以更新一下友链信息，新的友链信息我已经放在友链页了，各位自取。如果不想更新也没关系，网址对就行。谢谢了！&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;同时在这里给各位拜一个迟到的年啦，新年好！&lt;/strong&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>2022流水账</title>
+    <link href="https://blog.nbplus.eu.org/posts/15084.html"/>
+    <id>https://blog.nbplus.eu.org/posts/15084.html</id>
+    <published>2023-01-04T07:53:44.000Z</published>
+    <updated>2024-05-03T08:51:16.843Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;2022总结…？&lt;br&gt;发现最近挺多博主在做2022年终总结。&lt;br&gt;我原本从12月开头就打算做这事的来着…但是…12月31号我在睡觉，1月1号那天我在睡觉，然后…就忘了……&lt;br&gt;我现在已经阳过了，目前没有症状了，但是抗原他他他他还有非常非常非常细的第二条杠&lt;br&gt;服啦！！&lt;br&gt;2022…一言难尽呐 &lt;del&gt;既然一言难尽那就两言&lt;/del&gt;&lt;br&gt;不知从何开始&lt;br&gt;复盘？总结？展望？&lt;br&gt;写不出来，不符合我的风格，统统不要！那就…以流水账的形式回忆回忆吧！！&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>奇怪的情况</title>
+    <link href="https://blog.nbplus.eu.org/posts/58651.html"/>
+    <id>https://blog.nbplus.eu.org/posts/58651.html</id>
+    <published>2022-12-08T09:07:17.000Z</published>
+    <updated>2024-05-03T08:51:16.851Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>网课时代卷土重来</title>
+    <link href="https://blog.nbplus.eu.org/posts/48340.html"/>
+    <id>https://blog.nbplus.eu.org/posts/48340.html</id>
+    <published>2022-12-08T07:09:58.000Z</published>
+    <updated>2024-05-03T08:51:16.856Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;他来了，他又来了，网课！！！&lt;br&gt;我真的百思不得其解，明明乌鲁木齐路集会之后，上海防疫政策大转向，怎么又封了！！&lt;br&gt;学校封了，我也疯了&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>终于再次成功使用思源宋体</title>
+    <link href="https://blog.nbplus.eu.org/posts/33102.html"/>
+    <id>https://blog.nbplus.eu.org/posts/33102.html</id>
+    <published>2022-11-19T12:40:40.000Z</published>
+    <updated>2024-05-03T08:51:16.855Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>一道有趣的英语阅读题</title>
+    <link href="https://blog.nbplus.eu.org/posts/30864.html"/>
+    <id>https://blog.nbplus.eu.org/posts/30864.html</id>
+    <published>2022-11-19T11:50:33.000Z</published>
+    <updated>2024-05-03T08:51:16.846Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;做到的一篇英语阅读，真的很有趣。&lt;br&gt;这篇文章中包含了五个小故事，分别编号为ABCDE，每个小故事都正好有50个单词，不多不少&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>换网址啦</title>
+    <link href="https://blog.nbplus.eu.org/posts/62518.html"/>
+    <id>https://blog.nbplus.eu.org/posts/62518.html</id>
+    <published>2022-10-21T09:59:39.000Z</published>
+    <updated>2024-05-03T08:51:16.853Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>一些html小van具</title>
+    <link href="https://blog.nbplus.eu.org/posts/54106.html"/>
+    <id>https://blog.nbplus.eu.org/posts/54106.html</id>
+    <published>2022-10-21T09:39:23.000Z</published>
+    <updated>2024-05-03T08:51:16.846Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;emmm,最近因为毕业班，所以已经很久没有发过文章了&lt;br&gt;next主题的字体又不知道怎么回事失效了&lt;br&gt;友链朋友圈也没搞好&lt;br&gt;所以说实在是焦头烂额&lt;br&gt;但是我的信念是决不能让这个博客荒废&lt;br&gt;所以我这次的文章就是发一些之前收集到的html小玩意，我的博客也已经装载上了&lt;br&gt;enjoy:)&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>
