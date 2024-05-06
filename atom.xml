@@ -3,11 +3,11 @@
   <title>晴雀堂</title>
   
   <subtitle>晴雀的个人博客</subtitle>
-  <link href="https://blog.nbplus.eu.org/atom.xml" rel="self"/>
+  <link href="https://blog.verynb.me/atom.xml" rel="self"/>
   
-  <link href="https://blog.nbplus.eu.org/"/>
+  <link href="https://blog.verynb.me/"/>
   <updated>2024-05-06T13:24:05.642Z</updated>
-  <id>https://blog.nbplus.eu.org/</id>
+  <id>https://blog.verynb.me/</id>
   
   <author>
     <name>晴雀</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>简评《饿殍：明末千里行》</title>
-    <link href="https://blog.nbplus.eu.org/posts/52223.html"/>
-    <id>https://blog.nbplus.eu.org/posts/52223.html</id>
+    <link href="https://blog.verynb.me/posts/52223.html"/>
+    <id>https://blog.verynb.me/posts/52223.html</id>
     <published>2024-05-06T12:55:24.000Z</published>
     <updated>2024-05-06T13:24:05.642Z</updated>
     
@@ -36,8 +36,8 @@
   
   <entry>
     <title>博客成立两年啦</title>
-    <link href="https://blog.nbplus.eu.org/posts/3178.html"/>
-    <id>https://blog.nbplus.eu.org/posts/3178.html</id>
+    <link href="https://blog.verynb.me/posts/3178.html"/>
+    <id>https://blog.verynb.me/posts/3178.html</id>
     <published>2024-04-05T08:08:57.000Z</published>
     <updated>2024-05-03T08:51:16.850Z</updated>
     
@@ -57,8 +57,8 @@
   
   <entry>
     <title>next主题使用Gemini进行ai文章总结</title>
-    <link href="https://blog.nbplus.eu.org/posts/15304.html"/>
-    <id>https://blog.nbplus.eu.org/posts/15304.html</id>
+    <link href="https://blog.verynb.me/posts/15304.html"/>
+    <id>https://blog.verynb.me/posts/15304.html</id>
     <published>2024-04-04T13:44:35.000Z</published>
     <updated>2024-05-03T08:51:16.845Z</updated>
     
@@ -77,8 +77,8 @@
   
   <entry>
     <title>记东方绿舟的一周</title>
-    <link href="https://blog.nbplus.eu.org/posts/18578.html"/>
-    <id>https://blog.nbplus.eu.org/posts/18578.html</id>
+    <link href="https://blog.verynb.me/posts/18578.html"/>
+    <id>https://blog.verynb.me/posts/18578.html</id>
     <published>2024-03-22T11:06:00.000Z</published>
     <updated>2024-05-03T08:51:16.856Z</updated>
     
@@ -96,8 +96,8 @@
   
   <entry>
     <title>casio计算器完全使用指南</title>
-    <link href="https://blog.nbplus.eu.org/posts/50032.html"/>
-    <id>https://blog.nbplus.eu.org/posts/50032.html</id>
+    <link href="https://blog.verynb.me/posts/50032.html"/>
+    <id>https://blog.verynb.me/posts/50032.html</id>
     <published>2024-03-05T11:33:58.000Z</published>
     <updated>2024-05-03T08:51:16.844Z</updated>
     
@@ -116,8 +116,8 @@
   
   <entry>
     <title>聊聊粥铺</title>
-    <link href="https://blog.nbplus.eu.org/posts/404.html"/>
-    <id>https://blog.nbplus.eu.org/posts/404.html</id>
+    <link href="https://blog.verynb.me/posts/404.html"/>
+    <id>https://blog.verynb.me/posts/404.html</id>
     <published>2024-02-07T09:35:57.000Z</published>
     <updated>2024-05-03T08:51:16.856Z</updated>
     
@@ -134,8 +134,8 @@
   
   <entry>
     <title>迁移hexo博客至mac避坑指北</title>
-    <link href="https://blog.nbplus.eu.org/posts/34459.html"/>
-    <id>https://blog.nbplus.eu.org/posts/34459.html</id>
+    <link href="https://blog.verynb.me/posts/34459.html"/>
+    <id>https://blog.verynb.me/posts/34459.html</id>
     <published>2024-02-07T07:52:42.000Z</published>
     <updated>2024-05-03T08:51:16.857Z</updated>
     
@@ -155,8 +155,8 @@
   
   <entry>
     <title>中考惨败之后的一些感想</title>
-    <link href="https://blog.nbplus.eu.org/posts/18817.html"/>
-    <id>https://blog.nbplus.eu.org/posts/18817.html</id>
+    <link href="https://blog.verynb.me/posts/18817.html"/>
+    <id>https://blog.verynb.me/posts/18817.html</id>
     <published>2023-08-07T01:58:29.000Z</published>
     <updated>2024-05-03T08:51:16.847Z</updated>
     
@@ -171,8 +171,8 @@
   
   <entry>
     <title>博客建站一周年</title>
-    <link href="https://blog.nbplus.eu.org/posts/21063.html"/>
-    <id>https://blog.nbplus.eu.org/posts/21063.html</id>
+    <link href="https://blog.verynb.me/posts/21063.html"/>
+    <id>https://blog.verynb.me/posts/21063.html</id>
     <published>2023-04-20T10:15:12.000Z</published>
     <updated>2024-05-03T08:51:16.850Z</updated>
     
@@ -192,8 +192,8 @@
   
   <entry>
     <title>小改博客</title>
-    <link href="https://blog.nbplus.eu.org/posts/1237.html"/>
-    <id>https://blog.nbplus.eu.org/posts/1237.html</id>
+    <link href="https://blog.verynb.me/posts/1237.html"/>
+    <id>https://blog.verynb.me/posts/1237.html</id>
     <published>2023-04-16T12:31:17.000Z</published>
     <updated>2024-05-03T08:51:16.852Z</updated>
     
@@ -213,8 +213,8 @@
   
   <entry>
     <title>中考理化实验操作考经验贴</title>
-    <link href="https://blog.nbplus.eu.org/posts/2093.html"/>
-    <id>https://blog.nbplus.eu.org/posts/2093.html</id>
+    <link href="https://blog.verynb.me/posts/2093.html"/>
+    <id>https://blog.verynb.me/posts/2093.html</id>
     <published>2023-04-15T13:55:41.000Z</published>
     <updated>2024-05-03T08:51:16.847Z</updated>
     
@@ -229,8 +229,8 @@
   
   <entry>
     <title>中考体检经验贴</title>
-    <link href="https://blog.nbplus.eu.org/posts/58724.html"/>
-    <id>https://blog.nbplus.eu.org/posts/58724.html</id>
+    <link href="https://blog.verynb.me/posts/58724.html"/>
+    <id>https://blog.verynb.me/posts/58724.html</id>
     <published>2023-04-07T09:34:12.000Z</published>
     <updated>2024-05-03T08:51:16.847Z</updated>
     
@@ -244,8 +244,8 @@
   
   <entry>
     <title>体验传说中的Novel-AI作画</title>
-    <link href="https://blog.nbplus.eu.org/posts/14729.html"/>
-    <id>https://blog.nbplus.eu.org/posts/14729.html</id>
+    <link href="https://blog.verynb.me/posts/14729.html"/>
+    <id>https://blog.verynb.me/posts/14729.html</id>
     <published>2023-02-14T08:57:40.000Z</published>
     <updated>2024-05-03T08:51:16.847Z</updated>
     
@@ -262,8 +262,8 @@
   
   <entry>
     <title>博客名字终于定下来力</title>
-    <link href="https://blog.nbplus.eu.org/posts/41040.html"/>
-    <id>https://blog.nbplus.eu.org/posts/41040.html</id>
+    <link href="https://blog.verynb.me/posts/41040.html"/>
+    <id>https://blog.verynb.me/posts/41040.html</id>
     <published>2023-01-30T07:50:28.000Z</published>
     <updated>2024-05-03T08:51:16.849Z</updated>
     
@@ -279,8 +279,8 @@
   
   <entry>
     <title>2022流水账</title>
-    <link href="https://blog.nbplus.eu.org/posts/15084.html"/>
-    <id>https://blog.nbplus.eu.org/posts/15084.html</id>
+    <link href="https://blog.verynb.me/posts/15084.html"/>
+    <id>https://blog.verynb.me/posts/15084.html</id>
     <published>2023-01-04T07:53:44.000Z</published>
     <updated>2024-05-03T08:51:16.843Z</updated>
     
@@ -294,8 +294,8 @@
   
   <entry>
     <title>奇怪的情况</title>
-    <link href="https://blog.nbplus.eu.org/posts/58651.html"/>
-    <id>https://blog.nbplus.eu.org/posts/58651.html</id>
+    <link href="https://blog.verynb.me/posts/58651.html"/>
+    <id>https://blog.verynb.me/posts/58651.html</id>
     <published>2022-12-08T09:07:17.000Z</published>
     <updated>2024-05-03T08:51:16.851Z</updated>
     
@@ -315,8 +315,8 @@
   
   <entry>
     <title>网课时代卷土重来</title>
-    <link href="https://blog.nbplus.eu.org/posts/48340.html"/>
-    <id>https://blog.nbplus.eu.org/posts/48340.html</id>
+    <link href="https://blog.verynb.me/posts/48340.html"/>
+    <id>https://blog.verynb.me/posts/48340.html</id>
     <published>2022-12-08T07:09:58.000Z</published>
     <updated>2024-05-03T08:51:16.856Z</updated>
     
@@ -330,8 +330,8 @@
   
   <entry>
     <title>终于再次成功使用思源宋体</title>
-    <link href="https://blog.nbplus.eu.org/posts/33102.html"/>
-    <id>https://blog.nbplus.eu.org/posts/33102.html</id>
+    <link href="https://blog.verynb.me/posts/33102.html"/>
+    <id>https://blog.verynb.me/posts/33102.html</id>
     <published>2022-11-19T12:40:40.000Z</published>
     <updated>2024-05-03T08:51:16.855Z</updated>
     
@@ -351,8 +351,8 @@
   
   <entry>
     <title>一道有趣的英语阅读题</title>
-    <link href="https://blog.nbplus.eu.org/posts/30864.html"/>
-    <id>https://blog.nbplus.eu.org/posts/30864.html</id>
+    <link href="https://blog.verynb.me/posts/30864.html"/>
+    <id>https://blog.verynb.me/posts/30864.html</id>
     <published>2022-11-19T11:50:33.000Z</published>
     <updated>2024-05-03T08:51:16.846Z</updated>
     
@@ -366,8 +366,8 @@
   
   <entry>
     <title>换网址啦</title>
-    <link href="https://blog.nbplus.eu.org/posts/62518.html"/>
-    <id>https://blog.nbplus.eu.org/posts/62518.html</id>
+    <link href="https://blog.verynb.me/posts/62518.html"/>
+    <id>https://blog.verynb.me/posts/62518.html</id>
     <published>2022-10-21T09:59:39.000Z</published>
     <updated>2024-05-03T08:51:16.853Z</updated>
     
