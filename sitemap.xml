@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.verynb.me/posts/59380.html</loc>
+    <loc>https://blog.verynb.me/links/index.html</loc>
     
     <lastmod>2024-05-12</lastmod>
     
@@ -11,9 +11,9 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/links/index.html</loc>
+    <loc>https://blog.verynb.me/posts/59380.html</loc>
     
-    <lastmod>2024-05-06</lastmod>
+    <lastmod>2024-05-12</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
