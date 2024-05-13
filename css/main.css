@@ -2823,7 +2823,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #75cbff;
+  background: #5cfeff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -3371,6 +3371,9 @@ span#inline-toc {
   color: #ff7a7a;
   font-weight: bold;
   text-decoration: underline;
+}
+.post-footer a {
+  border-bottom: none;
 }
 @-moz-keyframes drawing {
   100% {
