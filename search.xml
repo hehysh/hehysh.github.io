@@ -1592,4 +1592,46 @@
 <p><em>17小时玩完就受不了了，蓝p上居然没有满穗的图，倒是C站有满穗的lora，只好把lora装上stable diffusion自己生产了，科技改变生活，赞美！</em></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>无视免费帐户限制！白嫖各家显卡爽玩SD webui</title>
+    <url>/posts/63905.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>众所周知啊，我之前发过一篇玩novelai的文章。</p>
+<p>那个时候用的是百度的aistudio的算力去跑的stable diffusion。</p>
+<p>你说百度他抠门吧，他让你用A100显卡，你说他抠门吧，他只让你用paddle架构，不能运行原版webui，这就很难受啊！</p>
+<p>最近学业压力小了点，又决定开始鼓捣，遂发现根本不用再赤百度的石了，有三家都可以爽玩原版webui，而且可以跟本地电脑一样添加各种插件lora。</p>
+<span id="more"></span>
+
+<h1 id="Google-Colab"><a href="#Google-Colab" class="headerlink" title="Google Colab"></a>Google Colab</h1><p>大名鼎鼎。google colab提供两张T4显卡，相当于两张RTX 2080 S显卡。最大最大的问题就是把免费用户封了。</p>
+<p>不过GitHub上还是有人顶风作案用加密算法硬是开了起来。这里放出链接，但是弊端很大，只能运行stable diffusionXL trubo模型，不能加插件lora。不推荐。最大的好处就是部署贼快，适合尝鲜。</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NhbWVuZHVydS9zZHhsLXR1cmJvLWNvbGFi">https://github.com/camenduru/sdxl-turbo-colab<i class="fa fa-external-link-alt"></i></span></p>
+<p>另外，你可以试试comfyUI，因为colab只封禁了webui，而comfyUI没有被封禁，一样爽玩。</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NhbWVuZHVydS9zZHhsLWNvbGFi">https://github.com/camenduru/sdxl-colab<i class="fa fa-external-link-alt"></i></span></p>
+<h1 id="Kaggle"><a href="#Kaggle" class="headerlink" title="Kaggle"></a>Kaggle</h1><p>据说Kaggle把webui封了，但是依然有人顶风作案。<strong>强烈推荐！！！</strong></p>
+<p>一样两张T4，或者可以选择P100显卡，性能差不多。两张T4不能交火，但是可以双开webui和朋友一起玩。</p>
+<p>可以装插件，装lora！启动速度贼快，kaggle服务器下载速度高达300~400mb&#x2F;s，加载一大堆大模型丝毫不惧。纯原版webUI！！</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FnZ2xlLmNvbS9jb2RlL3FxMjU3NTA0NDcwNC9zdGFibGUtZGlmZnVzaW9uLXdlYnVpLW5vdmVsYWktZWRpdGVkLXZlcnNpb24tMg==">https://www.kaggle.com/code/qq2575044704/stable-diffusion-webui-novelai-edited-version-2<i class="fa fa-external-link-alt"></i></span></p>
+<p>推荐的是Nyan9大佬制作的版本，稳定，安全，不封号。你需要一个手机号码以连接显卡。</p>
+<p>你还需要大量的ngrok账号，或者说大量的key。因为ngrok现在有一个月1gb流量限制，这个自己解决。我推荐用cloudflare的邮箱别名，不用注册大量无意义邮箱。一个邮箱同时注册一堆ngrok账号。</p>
+<p>或者可以曲线救国直接使用cloudflare tunnel打洞内网穿透，cloudflare出品懂得都懂，速度快的一批，无限流量，无限tunnel，只需要一个在cloudlfare上托管的域名。</p>
+<h1 id="启智云"><a href="#启智云" class="headerlink" title="启智云"></a>启智云</h1><p>一样是Nyan9大佬的版本。</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9vcGVuaS5wY2wuYWMuY24vMjU3NTA0NDcwNC9zdGFibGUtZGlmZnVzaW9uLXdlYnVpLXYxLjYuMQ==">https://openi.pcl.ac.cn/2575044704/stable-diffusion-webui-v1.6.1<i class="fa fa-external-link-alt"></i></span></p>
+<p>优点：A100显卡，40G显存，原版webui上跑图速度甚至超越4090，毕竟是计算卡。</p>
+<p>缺点：启智云的服务器下载速度贼慢，2~3mb&#x2F;s。可以说一个大模型至少要下载一个小时。但是人家关机不删东西啊。</p>
+<p>所以这玩意就是前期准备时间很长，要调试很久。你还要自己解决内网穿透问题，还是推荐cloudflare tunnel。后期就是神一般的存在。</p>
+<p>这个玩意部署没有教程，原作者也没写。又因为一些恶心设计，终端的路径与jupyter notebook的路径不一致，很搞心态。所以简要的写一下：</p>
+<p>复制项目，点击云脑，新建一个调试任务。镜像选择Ubuntu那个。进入界面后打开终端，输入：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> /tmp/code</span><br></pre></td></tr></table></figure>
+
+<p>就能进jupyter显示的根目录。（jupyter根目录实际上是&#x2F;tmp&#x2F;code）</p>
+<figure class="highlight crmsh"><table><tr><td class="code"><pre><span class="line">unzip <span class="literal">master</span>.zip</span><br></pre></td></tr></table></figure>
+
+<p>这样就出现一个sd-webui文件夹。</p>
+<figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line"><span class="keyword">bash </span>webui.<span class="keyword">sh</span></span><br></pre></td></tr></table></figure>
+
+<p>这样就启动webui。可能会出现说没有root权限，即使su了之后还是报错，那就直接。</p>
+<figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line"><span class="keyword">bash </span>webui.<span class="keyword">sh </span>-f</span><br></pre></td></tr></table></figure>
+
+<p>搞定。第一次启动时间很长，要装一大堆东西。之后就很轻松。</p>
+]]></content>
+  </entry>
 </search>

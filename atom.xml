@@ -6,7 +6,7 @@
   <link href="https://blog.verynb.me/atom.xml" rel="self"/>
   
   <link href="https://blog.verynb.me/"/>
-  <updated>2024-05-12T08:25:25.284Z</updated>
+  <updated>2024-05-18T13:26:11.029Z</updated>
   <id>https://blog.verynb.me/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>无视免费帐户限制！白嫖各家显卡爽玩SD webui</title>
+    <link href="https://blog.verynb.me/posts/63905.html"/>
+    <id>https://blog.verynb.me/posts/63905.html</id>
+    <published>2024-05-18T12:57:41.000Z</published>
+    <updated>2024-05-18T13:26:11.029Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;众所周知啊，我之前发过一篇玩novelai的文章。&lt;/p&gt;
+&lt;p&gt;那个时候用的是百度的aistudio的算力去跑的stable diffusion。&lt;/p&gt;
+&lt;p&gt;你说百度他抠门吧，他让你用A100显卡，你说他抠门吧，他只让你用paddle架构，不能运行原版webui，这就很难受啊！&lt;/p&gt;
+&lt;p&gt;最近学业压力小了点，又决定开始鼓捣，遂发现根本不用再赤百度的石了，有三家都可以爽玩原版webui，而且可以跟本地电脑一样添加各种插件lora。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>终于有独立域名啦</title>
@@ -365,21 +383,6 @@
     <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
         
       
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>一道有趣的英语阅读题</title>
-    <link href="https://blog.verynb.me/posts/30864.html"/>
-    <id>https://blog.verynb.me/posts/30864.html</id>
-    <published>2022-11-19T11:50:33.000Z</published>
-    <updated>2024-05-03T08:51:16.846Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;做到的一篇英语阅读，真的很有趣。&lt;br&gt;这篇文章中包含了五个小故事，分别编号为ABCDE，每个小故事都正好有50个单词，不多不少&lt;/p&gt;</summary>
     
     
     
