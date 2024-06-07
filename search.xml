@@ -1684,6 +1684,7 @@
 </ul>
 <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>发现好友在玩vpet虚拟桌宠，你可以在steam上找到它，免费的。遂果断下载。当时就在思考能不能接入LLM，后发现有个创意工坊，已经有人开发了chatgpt相关模组。</p>
 <p>找到一个模组，功能可以自定义base url和api-key以及使用Model的名字。</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9zdGVhbWNvbW11bml0eS5jb20vc2hhcmVkZmlsZXMvZmlsZWRldGFpbHMvP2lkPTMwMzA4MzE2ODImc2VhcmNodGV4dD0=">https://steamcommunity.com/sharedfiles/filedetails/?id=3030831682&amp;searchtext=<i class="fa fa-external-link-alt"></i></span></p>
 <p>于是思考并实践后产生本套方案。</p>
 <h1 id="探索"><a href="#探索" class="headerlink" title="探索"></a>探索</h1><p>目前需求：有一个可以调用模型（最好是好一点的gpt4系列）的base url并接入mod。</p>
 <p>于是第一时间想到了cloudflare的AI worker。作为老牌cdn服务商的cloudflare前段时间推出AI worker，我当时就注意到，发现它可以方便快捷通过调用开源大模型，例如llama和SDXL，算力由cloudflare提供，而且完全免费。</p>
