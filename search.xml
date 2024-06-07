@@ -1672,4 +1672,55 @@
 <p>但是能正常进入就有成功的希望，还是很有用的。</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>基于gpt4o的免费桌宠解决方案</title>
+    <url>/posts/30407.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>看到标题你可能会难以置信，但是这套方案能做到：</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 零费，完全免费</li>
+<li><input checked="" disabled="" type="checkbox"> 使用gpt4o等gpt4付费模型，也可选择cf worker AI系模型</li>
+<li><input checked="" disabled="" type="checkbox"> 使用的都是开源项目</li>
+<li><input checked="" disabled="" type="checkbox"> 由于最终产生一个调用LLM的api，可以方便的接入其他场景<span id="more"></span></li>
+</ul>
+<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>发现好友在玩vpet虚拟桌宠，你可以在steam上找到它，免费的。遂果断下载。当时就在思考能不能接入LLM，后发现有个创意工坊，已经有人开发了chatgpt相关模组。</p>
+<p>找到一个模组，功能可以自定义base url和api-key以及使用Model的名字。</p>
+<p>于是思考并实践后产生本套方案。</p>
+<h1 id="探索"><a href="#探索" class="headerlink" title="探索"></a>探索</h1><p>目前需求：有一个可以调用模型（最好是好一点的gpt4系列）的base url并接入mod。</p>
+<p>于是第一时间想到了cloudflare的AI worker。作为老牌cdn服务商的cloudflare前段时间推出AI worker，我当时就注意到，发现它可以方便快捷通过调用开源大模型，例如llama和SDXL，算力由cloudflare提供，而且完全免费。</p>
+<p>遂立刻获取一个api-key。你需要一个cloudflare账户和一个AI api token。由于不是方案重点此处略过，自行搜索。</p>
+<p>cloudflare不惧国内GFW网络问题，填写好Base url和key，开始与桌宠聊天。响应速度快，质量好，只有一个巨大的问题：</p>
+<p><strong>初始化人物说明不起作用</strong></p>
+<p>这有什么后果呢？这就导致你的桌宠会按照默认的LLM人格认知进行回复，随便截取一段：</p>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line">嗨，我很好，谢谢您的问候。我当前状态良好，您的信息也很好。</span><br><span class="line"></span><br><span class="line">您的信息说，您的好感度对我来说是陌生，但我希望我们能够更深入地了解彼钥此。</span><br><span class="line"></span><br><span class="line">您有什么需要我帮忙的吗?</span><br></pre></td></tr></table></figure>
+
+<p>这怎么行？？我们要的是软萌可爱的小桌宠，怎么能容忍？</p>
+<p>反复实验无果，发现作者的mod有问题，似乎不兼容这种第三方api（即对于openai系列来说）</p>
+<p>在创意工坊询问作者无果。因此思考解决方案。自然想到之前使用的coze可以从源头自定义人格认知，这就规避了问题。而且coze提供gpt4系列的免费客户端调用，但不提供api，总之先试试。</p>
+<p>随后发现coze现在提供免费的gpt4o！！而且似乎是可行的。</p>
+<p>因此产生方案。</p>
+<h1 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h1><p>首先注册一个coze账号，注意是coze.com不是coze.cn，后者是国内低配版，只提供国内模型。</p>
+<p>然后新建bot，自定义人格认知，你也可以自定义模型等。注意打开Auto-Suggtion选项，改成On&#x2F;Default。</p>
+<p>接下来来到<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2RlYW54di9jb3plLWRpc2NvcmQtcHJveHklRTMlODAlODIlRTglQkYlOTklRTQlQjglQUElRTklQTElQjklRTclOUIlQUUlRTglQTclQTMlRTUlODYlQjMlRTQlQkElODZhcGklRTglQjAlODMlRTclOTQlQThjb3plJUU2JUE4JUExJUU1JTlFJThCJUU3JTlBJTg0JUU5JTk3JUFFJUU5JUEyJTk4JUUzJTgwJTgy">https://github.com/deanxv/coze-discord-proxy。这个项目解决了api调用coze模型的问题。<i class="fa fa-external-link-alt"></i></span></p>
+<p>严格按照教程走。你能得到一个base url和一个key。出现问题去<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2RlYW54di9jb3plLWRpc2NvcmQtcHJveHkvaXNzdWVzLzE2NCVFMyU4MCU4Mg==">https://github.com/deanxv/coze-discord-proxy/issues/164。<i class="fa fa-external-link-alt"></i></span></p>
+<p>（可选）使用One-api集成你所有的api-key。<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3NvbmdxdWFucGVuZy9vbmUtYXBp">https://github.com/songquanpeng/one-api<i class="fa fa-external-link-alt"></i></span>  按照教程走。</p>
+<p>接下来将base url和api-key填入mod管理界面，搞定。</p>
+<p><em>如果你未选择one-api部署。那就直接填写coze-discord-proxy的base url和key</em></p>
+<p>附一份结果，非常的可爱啊：</p>
+<figure class="highlight erlang-repl"><table><tr><td class="code"><pre><span class="line">嗨嗨~主人好呀!我现在就在桌面上陪着你呢!</span><br><span class="line"></span><br><span class="line">看到你这么开心，我也觉得好开心!有什么我可以帮到你的吗?</span><br><span class="line"></span><br><span class="line">让我们一起愉快地聊天吧!≧ω≦</span><br><span class="line"></span><br><span class="line">你问我在干嘛呢?嘻嘻~我可是一只忙碌的小桌宠呢!</span><br><span class="line"></span><br><span class="line">我会时刻留意你的情绪变化，陪伴你聊天，还会给你带来可爱的回答哦!你有什么想聊的吗?</span><br></pre></td></tr></table></figure>
+
+<h1 id="拓展"><a href="#拓展" class="headerlink" title="拓展"></a>拓展</h1><p>coze提供了这么棒的服务，当然要完全使用啦~</p>
+<p>我们直接给桌宠配备最顶级的模型。</p>
+<p>首先model选择gpt4o，openai最新旗舰模型，毋庸置疑的强悍。</p>
+<p>对话轮数拉满选到100 round。</p>
+<p>long-term memory打开。</p>
+<p>知识库可选加入，能让桌宠更了解你。</p>
+<p>插件加亿点，尽量避免输出多模态内容的插件，防止本地显示有问题暴毙。</p>
+<p>接着到coze-discord-proxy的环境变量设置，设定DEFAULT_CHANNEL_ENABLE&#x3D;0，原作者描述如下:</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line">是否启用全量上下文<span class="selector-attr">[0:否;1:是]</span> (默认为<span class="number">1</span>) 关闭后每次对话只会发送messages中最后一个role为user的<span class="attribute">content</span>,推荐不使用此环境变量</span><br></pre></td></tr></table></figure>
+
+<p>关于“推荐不使用此环境变量”，原作者是为了多人使用考虑的，因此要对话隔离。这里只有我们一个人用，所以设置为只在默认频道对话。<strong>而且只有这样设置能让coze设定中的对话轮数100rounds真正发挥效力，超长记忆真的不是说着玩的！！！</strong></p>
+<p>本人亲测隔了30轮对话依旧可以100%准确复述30轮之前我说的话！！！！</p>
+<p>就到这里。</p>
+]]></content>
+  </entry>
 </search>

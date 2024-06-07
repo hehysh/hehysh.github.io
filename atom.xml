@@ -6,7 +6,7 @@
   <link href="https://blog.verynb.me/atom.xml" rel="self"/>
   
   <link href="https://blog.verynb.me/"/>
-  <updated>2024-06-07T13:16:08.780Z</updated>
+  <updated>2024-06-07T14:12:18.458Z</updated>
   <id>https://blog.verynb.me/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>基于gpt4o的免费桌宠解决方案</title>
+    <link href="https://blog.verynb.me/posts/30407.html"/>
+    <id>https://blog.verynb.me/posts/30407.html</id>
+    <published>2024-06-07T13:32:25.000Z</published>
+    <updated>2024-06-07T14:12:18.458Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;看到标题你可能会难以置信，但是这套方案能做到：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; 零费，完全免费&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; 使用gpt4o等gpt4付费模型，也可选择cf worker AI系模型&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; 使用的都是开源项目&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; 由于最终产生一个调用LLM的api，可以方便的接入其他场景</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>如何在lunar端中安装模组</title>
@@ -365,21 +385,6 @@
     <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</summary>
         
       
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>网课时代卷土重来</title>
-    <link href="https://blog.verynb.me/posts/48340.html"/>
-    <id>https://blog.verynb.me/posts/48340.html</id>
-    <published>2022-12-08T07:09:58.000Z</published>
-    <updated>2024-05-03T08:51:16.856Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;他来了，他又来了，网课！！！&lt;br&gt;我真的百思不得其解，明明乌鲁木齐路集会之后，上海防疫政策大转向，怎么又封了！！&lt;br&gt;学校封了，我也疯了&lt;/p&gt;</summary>
     
     
     
