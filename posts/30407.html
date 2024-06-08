@@ -30,7 +30,7 @@
 <meta property="og:description" content="看到标题你可能会难以置信，但是这套方案能做到：   零费，完全免费  使用gpt4o等gpt4付费模型，也可选择cf worker AI系模型  使用的都是开源项目  由于最终产生一个调用LLM的api，可以方便的接入其他场景">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2024-06-07T13:32:25.000Z">
-<meta property="article:modified_time" content="2024-06-07T14:38:15.579Z">
+<meta property="article:modified_time" content="2024-06-08T14:26:22.844Z">
 <meta property="article:author" content="晴雀">
 <meta property="article:tag" content="晴雀">
 <meta name="twitter:card" content="summary">
@@ -397,7 +397,7 @@ async function geminiAI() {
 <p>知识库可选加入，能让桌宠更了解你。</p>
 <p>插件加亿点，尽量避免输出多模态内容的插件，防止本地显示有问题暴毙。</p>
 <p>接着到coze-discord-proxy的环境变量设置，设定DEFAULT_CHANNEL_ENABLE&#x3D;0，原作者描述如下:</p>
-<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">是否启用全量上下文<span class="selector-attr">[0:否;1:是]</span> (默认为<span class="number">1</span>) 关闭后每次对话只会发送messages中最后一个role为user的<span class="attribute">content</span>,推荐不使用此环境变量</span><br></pre></td></tr></table></figure>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-attr">[可选]</span>是否启用默认频道<span class="selector-attr">[0:否;1:是]</span> (默认为<span class="number">0</span>) 启用后每次对话都会在默认频道中,会话隔离会失效,推荐不使用此环境变量</span><br></pre></td></tr></table></figure>
 
 <p>关于“推荐不使用此环境变量”，原作者是为了多人使用考虑的，因此要对话隔离。这里只有我们一个人用，所以设置为只在默认频道对话。<strong>而且只有这样设置能让coze设定中的对话轮数100rounds真正发挥效力，超长记忆真的不是说着玩的！！！</strong></p>
 <p>本人亲测隔了30轮对话依旧可以100%准确复述30轮之前我说的话！！！！</p>
