@@ -2823,7 +2823,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #0a01f2;
+  background: #c9f6ff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -3374,10 +3374,6 @@ span#inline-toc {
 }
 .post-footer a {
   border-bottom: none;
-}
-body {
-/* 屏幕优化版 */
-  font-family: "LXGW WenKai Screen", sans-serif;
 }
 @-moz-keyframes drawing {
   100% {
