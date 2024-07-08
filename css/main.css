@@ -2823,7 +2823,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #c9f6ff;
+  background: #aaa2d7;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -3228,10 +3228,9 @@ span#inline-toc {
   animation-delay: -6s;
 }
 /* 字体 */
-@font-face {
-  font-family: 'SWFont';
-  src: url("./SWFont.woff2") format('woff2');
-  font-weight: 400;
+body {
+/* 屏幕优化版 */
+  font-family: "LXGW WenKai Screen", sans-serif;
 }
 /*字体结束*/
 /* 自定义底部  start */
