@@ -92,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/schedule/index.html</loc>
+    <loc>https://blog.verynb.me/sec-site/index.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -101,7 +101,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/sec-site/index.html</loc>
+    <loc>https://blog.verynb.me/schedule/index.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -227,7 +227,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/posts/19235.html</loc>
+    <loc>https://blog.verynb.me/posts/42637.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -236,7 +236,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/posts/42637.html</loc>
+    <loc>https://blog.verynb.me/posts/19235.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -263,15 +263,6 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/posts/30665.html</loc>
-    
-    <lastmod>2024-05-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.verynb.me/posts/62518.html</loc>
     
     <lastmod>2024-05-03</lastmod>
@@ -281,7 +272,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/posts/49631.html</loc>
+    <loc>https://blog.verynb.me/posts/30665.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -290,7 +281,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/posts/2505.html</loc>
+    <loc>https://blog.verynb.me/posts/49631.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -317,25 +308,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/posts/33255.html</loc>
-    
-    <lastmod>2024-05-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.verynb.me/posts/32472.html</loc>
-    
-    <lastmod>2024-05-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.verynb.me/posts/1237.html</loc>
+    <loc>https://blog.verynb.me/posts/2505.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -353,7 +326,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/posts/9563.html</loc>
+    <loc>https://blog.verynb.me/posts/33255.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -371,7 +344,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/posts/43801.html</loc>
+    <loc>https://blog.verynb.me/posts/1237.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -380,7 +353,25 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/posts/35637.html</loc>
+    <loc>https://blog.verynb.me/posts/32472.html</loc>
+    
+    <lastmod>2024-05-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.verynb.me/posts/9563.html</loc>
+    
+    <lastmod>2024-05-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.verynb.me/posts/43801.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -398,7 +389,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/posts/12449.html</loc>
+    <loc>https://blog.verynb.me/posts/35637.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -407,7 +398,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/posts/36000.html</loc>
+    <loc>https://blog.verynb.me/posts/12449.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -425,7 +416,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/posts/21063.html</loc>
+    <loc>https://blog.verynb.me/posts/36000.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -452,6 +443,15 @@
   </url>
   
   <url>
+    <loc>https://blog.verynb.me/posts/21063.html</loc>
+    
+    <lastmod>2024-05-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.verynb.me/posts/41040.html</loc>
     
     <lastmod>2024-05-03</lastmod>
@@ -470,24 +470,6 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/posts/18817.html</loc>
-    
-    <lastmod>2024-05-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.verynb.me/posts/2093.html</loc>
-    
-    <lastmod>2024-05-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.verynb.me/posts/58724.html</loc>
     
     <lastmod>2024-05-03</lastmod>
@@ -497,7 +479,25 @@
   </url>
   
   <url>
+    <loc>https://blog.verynb.me/posts/18817.html</loc>
+    
+    <lastmod>2024-05-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.verynb.me/posts/18293.html</loc>
+    
+    <lastmod>2024-05-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.verynb.me/posts/2093.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -524,6 +524,15 @@
   </url>
   
   <url>
+    <loc>https://blog.verynb.me/posts/4057.html</loc>
+    
+    <lastmod>2024-05-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.verynb.me/posts/55554.html</loc>
     
     <lastmod>2024-05-03</lastmod>
@@ -534,15 +543,6 @@
   
   <url>
     <loc>https://blog.verynb.me/posts/54106.html</loc>
-    
-    <lastmod>2024-05-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.verynb.me/posts/4057.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -614,7 +614,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/posts/48222.html</loc>
+    <loc>https://blog.verynb.me/posts/36990.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -623,7 +623,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/posts/36990.html</loc>
+    <loc>https://blog.verynb.me/posts/48222.html</loc>
     
     <lastmod>2024-05-03</lastmod>
     
@@ -707,13 +707,6 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.me/tags/Goorm/</loc>
-    <lastmod>2024-07-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.verynb.me/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/</loc>
     <lastmod>2024-07-08</lastmod>
     <changefreq>weekly</changefreq>
@@ -721,7 +714,21 @@
   </url>
   
   <url>
+    <loc>https://blog.verynb.me/tags/Goorm/</loc>
+    <lastmod>2024-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.verynb.me/tags/%E7%BD%91%E7%BB%9C%E6%9A%B4%E5%8A%9B/</loc>
+    <lastmod>2024-07-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.verynb.me/tags/%E7%94%BB%E6%A2%A6/</loc>
     <lastmod>2024-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -736,13 +743,6 @@
   
   <url>
     <loc>https://blog.verynb.me/tags/%E5%88%9D%E4%B8%AD%E5%AD%A6%E4%B9%A0%E7%94%9F%E6%B4%BB/</loc>
-    <lastmod>2024-07-08</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.verynb.me/tags/%E7%94%BB%E6%A2%A6/</loc>
     <lastmod>2024-07-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
