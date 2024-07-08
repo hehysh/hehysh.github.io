@@ -2823,7 +2823,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #c2c99f;
+  background: #ff6bf6;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2876,7 +2876,7 @@ a.category-list-link:before {
   font-weight: bold;
 }
 body {
-  font-family: "LXGW WenKai Screen", sans-serif !important;
+  font-family: "Noto Sans SC", "Noto Serif SC", "LXGW WenKai Screen", sans-serif;
 }
 body {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==");
