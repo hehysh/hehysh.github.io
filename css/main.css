@@ -2823,7 +2823,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #8f7eff;
+  background: #c2c99f;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2876,7 +2876,6 @@ a.category-list-link:before {
   font-weight: bold;
 }
 body {
-/* Screen version */
   font-family: "LXGW WenKai Screen", sans-serif !important;
 }
 body {
