@@ -2823,7 +2823,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #9dfa7c;
+  background: #8f7eff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2877,18 +2877,7 @@ a.category-list-link:before {
 }
 body {
 /* Screen version */
-  font-family: "LXGW WenKai Screen", sans-serif;
-}
-.site-title {
-  font-family: "LXGW WenKai Screen", sans-serif;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "LXGW WenKai Screen", sans-serif;
+  font-family: "LXGW WenKai Screen", sans-serif !important;
 }
 body {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==");
