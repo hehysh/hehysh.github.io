@@ -184,7 +184,7 @@ body {
   background: var(--body-bg-color);
   box-sizing: border-box;
   color: var(--text-color);
-  font-family: LXGW WenKai Screen, "LXGW WenKai Screen", sans-serif;
+  font-family: LXGW WenKai, "LXGW WenKai Screen", sans-serif;
   font-size: 1em;
   line-height: 2;
   min-height: 100%;
@@ -197,7 +197,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: LXGW WenKai Screen, "LXGW WenKai Screen", sans-serif;
+  font-family: LXGW WenKai, "LXGW WenKai Screen", sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 30px 0 15px;
@@ -1244,7 +1244,7 @@ header.header {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: LXGW WenKai Screen, "LXGW WenKai Screen", sans-serif;
+  font-family: LXGW WenKai, "LXGW WenKai Screen", sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   line-height: 1.5;
@@ -1939,7 +1939,7 @@ header.header {
   width: 4px;
 }
 .post-body {
-  font-family: LXGW WenKai Screen, "LXGW WenKai Screen", sans-serif;
+  font-family: LXGW WenKai, "LXGW WenKai Screen", sans-serif;
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
@@ -2126,7 +2126,7 @@ header.header {
 }
 .posts-expand .post-meta-container {
   color: #999;
-  font-family: LXGW WenKai Screen, "LXGW WenKai Screen", sans-serif;
+  font-family: LXGW WenKai, "LXGW WenKai Screen", sans-serif;
   font-size: 0.75em;
   margin-top: 3px;
 }
@@ -2823,7 +2823,7 @@ mark.search-keyword {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ff6bf6;
+  background: #ff033e;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2869,14 +2869,6 @@ a.category-list-link:before {
 }
 .site-title {
   font-size: 2em;
-}
-@font-face {
-  font-family: 'LXGWenKai';
-  src: url("$LXGWenKai") format("truetype");
-  font-weight: bold;
-}
-body {
-  font-family: "Noto Sans SC", "Noto Serif SC", "LXGW WenKai Screen", sans-serif;
 }
 body {
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==");
@@ -3226,12 +3218,6 @@ span#inline-toc {
   stroke: #800080;
   animation-delay: -6s;
 }
-/* 字体 */
-body {
-/* 屏幕优化版 */
-  font-family: "LXGW WenKai Screen", sans-serif;
-}
-/*字体结束*/
 /* 自定义底部  start */
 #ft {
   max-width: 1200px;
