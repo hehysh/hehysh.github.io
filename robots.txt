@@ -6,8 +6,8 @@ Allow: /categories/
 Allow: /tags/ 
 Allow: /links/
 Allow: /schedule/
-Allow: /sec-site/
 
+Disallow: /sec-site/
 Disallow: /js/
 Disallow: /css/
 Disallow: /lib/
