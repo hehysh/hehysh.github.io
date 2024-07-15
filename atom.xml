@@ -6,7 +6,7 @@
   <link href="https://blog.verynb.me/atom.xml" rel="self"/>
   
   <link href="https://blog.verynb.me/"/>
-  <updated>2024-07-12T03:56:41.998Z</updated>
+  <updated>2024-07-15T03:43:55.802Z</updated>
   <id>https://blog.verynb.me/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>通过雨云白嫖我的世界面板服</title>
+    <link href="https://blog.verynb.me/posts/33906.html"/>
+    <id>https://blog.verynb.me/posts/33906.html</id>
+    <published>2024-07-15T03:13:22.000Z</published>
+    <updated>2024-07-15T03:43:55.802Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近刷b站，发现了一个新服务器商：&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly93d3cucmFpbnl1bi5jb20v&quot;&gt;雨云&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;了解了一下，发现雨云可以通过积分兑换我的世界面板服，并且使用积分续期。&lt;/p&gt;
+&lt;p&gt;又发现雨云通过调用api可以实现自动签到+自动续期，实现无限免费获得面板服，于是产生本篇文章。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>再次小改博客</title>
@@ -373,24 +390,6 @@
     
     
     <summary type="html">&lt;p&gt;&lt;del&gt;（我是绝对不会告你本篇文章只是为了证明我还活着的（其实不是很水啦））&lt;/del&gt;&lt;br&gt;最近消失了很久，不仅是毕业班的原因，还在于s*的cloudstudio ide挂了&lt;br&gt;之前已经确认过不是我的原因而是疼逊的原因，于是只好等腾讯修。现在他终于修好了，原来是在更新…&lt;br&gt;总之最近临近中考了，我们开始忙的要死，这个中考体检就是开始，接下来还有实验操作考模拟考，实验操作考，听说测试考，&lt;del&gt;体育中考（被取消了直接给我们满分30分哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈）&lt;/del&gt;还有一堆乱七八糟的东西&lt;br&gt;总之写个经验贴记录一下&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>体验传说中的Novel-AI作画</title>
-    <link href="https://blog.verynb.me/posts/14729.html"/>
-    <id>https://blog.verynb.me/posts/14729.html</id>
-    <published>2023-02-14T08:57:40.000Z</published>
-    <updated>2024-05-03T08:51:16.847Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;这件事的起因是我在b站上看到了AI作画的视频&lt;/p&gt;
-&lt;p&gt;&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMVA4NDExZTdGYQ==&quot;&gt;https://www.bilibili.com/video/BV1P8411e7Fa&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p&gt;看到的时候就一个反应，这居然是AI作画？和2022年中旬的水平完全不一样！！是脱胎换骨级别的！&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;多图预警！！&lt;/strong&gt;&lt;/p&gt;</summary>
     
     
     
