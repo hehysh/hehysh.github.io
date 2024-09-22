@@ -1989,4 +1989,74 @@
 <h1 id="论系统的能量学问题"><a href="#论系统的能量学问题" class="headerlink" title="论系统的能量学问题"></a>论系统的能量学问题</h1><p>对于任意一个表观上的物体，在微观上可以被看作大量粒子及粒子之间混沌态物质组成的物质系统，在宏观上可以被看作连续统一物质系统的一个子系统。<br>从微观定义出发，任意物体可以看作由大量分子组成，物体内部所有分子热运动的分子动能和分子势能的总和，叫做物体的内能。内能表示物体系统内各种能量的总和。从某种意义上，一切物质体都可以被看作能量体。<br>从宏观定义出发，任意物体作为子系统，定义与系统相关的其他部分为环境，只有处于一定状态下，系统内能才是确定的；如果温度、压强、物质的聚集状态、物质的量等因素发生改变，内能也随之改变—系统与环境发生能量交换。其中，功和热是能量在系统与环境之间实现转化或传递的根本途径。在做功过程中，其他形式的能（如机械能）转化为内能；在热传递过程中，物体间或物体各部分间的内能相互转移。<br>当系统与外界仅有热传递时，热量是系统内能变化的量度。当某系统从内能为U1 的初状态通过热传递到达内能为U2 的末状态，系统内能的变化量∆U就等于外界向系统传递的热量Q。而在系统与外界同时发生做功和热传递的过程中，系统内能的变化量∆U等于外界对系统所做的功W与系统从外界吸收的热量Q的代数和，用公式表示为 ∆U &#x3D; W + Q。<br>在一个封闭的系统内，能量的转化遵循能量守恒定律—能量既不会凭空产生，也不会凭空消失，它只能从一种形式转化为其他形式，或者从一个物体转移到其 他物体，从物体的一部分转移到其他部分，在转化或转移的过程中，能量的总量保持不变。<br>物体（物质子系统）运动的背后，也是能量的变化。物体由于运动而具有的能量称为动能。在一定的运动条件下，物体受到的合力所做的功等于物体动能的变化量，即动能定理W合 &#x3D; ΔEk。在特定物理场内，物体除了动能之外，还同时具有势能—如在重力场内，物体具有重力势能；在静电场内，带点物体具有电势能。而一切化学反应，不仅有物质的变化，同样都伴随能量的变化。<br>生命体作为特殊的物质系统，同样遵循物质系统的能量学规律。能量是一切生命活动的基础，是维持生命体存活的核心条件。多数碳基植物作为自养生物，通过叶绿体中的光合作用，将光能先转换为ATP和NADPH中活跃的化学能，再转换为糖分子中稳定的化学能，通过这些糖继续转变为各种生物有机分子，将能量储存并利用。多数碳基动物作为异养生物，则通过食物摄入，分解食物中有机分子，转化为直接能源物质—ATP；通过线粒体中ATP和ADP之间的相互转换，源源不断为各种生命活动提供能源。能量同时也是免疫学的关键。当人体摄入充足的营养物质后，能够为体内的各个组织器官提供足够的能量支持，并且还能够促进体内细胞的新陈代谢，在一定程度上还可以增强自身的免疫功能。保持积极向上正能量的生活状态，同样也对免疫力提升有重大作用。</p>
 ]]></content>
   </entry>
+  <entry>
+    <title>无树莓派安装klipper固件</title>
+    <url>/posts/28979.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近翻出了我的一台3d打印机，是21年买的。</p>
+<p>记得那个时候我刚代表小学参加一个上海市的3d打印比赛，在4个月内学会了3d建模并且与小组的其他3个人共同建模了母校（现在忘光了）。</p>
+<p>当时只拿了第二名，不过第一名是也是我们学校的。</p>
+<p>反正回来之后对于3d打印很感兴趣，干脆自己买了一台放在家里玩。于是购入一台创想三维的Ender-3 v1。</p>
+<p>现在翻出来，首先随便打印了个东西，发现打印速度、精度都好像有点过时。这三年来3d打印，尤其是小型的打印机发展速度太快了。</p>
+<p>于是上网进行搜索，发现换一个固件可以快速有效的解决问题，把打印机的性能大幅提升，于是开始折腾。</p>
+<span id="more"></span>
+<p>首先确定一个目标。经过搜索发现现在最热门的插件是<span class="exturl" data-url="aHR0cHM6Ly93d3cua2xpcHBlcjNkLm9yZy96aC8=">Klipper固件<i class="fa fa-external-link-alt"></i></span>，这个固件能够大幅增加打印速度和精度，并且可以更方便的操控打印机。</p>
+<p>随后发现这个固件将原本由打印机内的单片机承担的任务拆分为了上位机和下位机分别承担。上位机一般是树莓派或者香橙派一类的，下位机就是打印机。这样小单片机的压力大大减少，速度精度也就上去了。</p>
+<p>但是我没有派…想了想发现上位机其实好像可以是虚拟机。搜索发现windows自带的wsl完全可以胜任。那么明确了目标，就找到了一个<span class="exturl" data-url="aHR0cHM6Ly8zZHBhbmRtZS5jb20vMjAyMi8wOC8yNS90dXRvcmlhbC1ydW5uaW5nLWtsaXBwZXItb24tYS13aW5kb3dzLXBjLXVzaW5nLXdzbC8=">前人撰写的教程<i class="fa fa-external-link-alt"></i></span>，真是完美解决了我的问题。</p>
+<p>这样我就可以通过windows wsl运行的ubuntu虚拟机作为上位机，用一跟usb线连接打印机和电脑就可以与正常方法一样了。</p>
+<p>后面想了想发现这人还真是聪明，wsl作为windows子系统占用非常小，至少比vm或者hyper-v重新部署一个ubuntu系统小太多了。功能也是一样的，在资源管理器里也可以方便的查看wsl文件，后期还可以拓展。</p>
+<p>接下来就要按照教程开始了。wsl我以前部署过，也是方便了很多。这里还是给出<span class="exturl" data-url="aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL3poLWNuL3dpbmRvd3Mvd3NsL2luc3RhbGw=">Microsoft的教程<i class="fa fa-external-link-alt"></i></span>。</p>
+<p>打住，看了前人的教程，我突然发现没有在打印机上安装klipper固件的部分。我又找到了<span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1NYVVVOHN0c1pQbyZ0PTIxMnM=">一个YouTube视频<i class="fa fa-external-link-alt"></i></span>进行补全，你也可以配合着观看。</p>
+<p>看了视频，于是我先按照创想三维的<span class="exturl" data-url="aHR0cHM6Ly93d3cuY3JlYWxpdHljbG91ZC5jbi9wb3N0LWRldGFpbC80MDcx">Ender-3 v2刷固件教程<i class="fa fa-external-link-alt"></i></span>进行操作，把主板拆开来查看主板型号，发现我的是v4.2.2。一定要搞清楚主板型号，不然就刷不上固件了！！</p>
+<p>另外提一嘴，不要按照创想三维的<span class="exturl" data-url="aHR0cHM6Ly93d3cuY3JlYWxpdHljbG91ZC5jbi9wb3N0LWRldGFpbC80NDg4">Ender-3 v1<i class="fa fa-external-link-alt"></i></span>刷固件教程，费老大劲把机器拆开了刷机。实测Ender-3 v2也可以用在Ender-3 v1上。</p>
+<p>知道了主板型号，就可以按部就班的开始了。我跳过了教程中准备windows这一部分（因为我根本就没刷固件），按照前人的教程下载好kiauh，安装完了klipper以及依赖，接着就开始准备刷固件了。</p>
+<p>在ubuntu中进入klipper文件夹，随后：</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">make menuconfig</span></span><br></pre></td></tr></table></figure>
+
+<p>我找到了<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0tsaXBwZXIzZC9rbGlwcGVyL2Jsb2IvbWFzdGVyL2NvbmZpZy9wcmludGVyLWNyZWFsaXR5LWVuZGVyMy12Mi0yMDIwLmNmZw==">klipper推荐的config文件<i class="fa fa-external-link-alt"></i></span>，同样的，上面虽然写着Ender-3 v2适用，但是v1也能完全适配。</p>
+<p>其中写道：</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="comment"># This file contains pin mappings for the stock 2020 Creality Ender 3</span></span><br><span class="line"><span class="comment"># V2. To use this config, during &quot;make menuconfig&quot; select the</span></span><br><span class="line"><span class="comment"># STM32F103 with a &quot;28KiB bootloader&quot; and serial (on USART1 PA10/PA9)</span></span><br><span class="line"><span class="comment"># communication.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># If you prefer a direct serial connection, in &quot;make menuconfig&quot;</span></span><br><span class="line"><span class="comment"># select &quot;Enable extra low-level configuration options&quot; and select</span></span><br><span class="line"><span class="comment"># serial (on USART3 PB11/PB10), which is broken out on the 10 pin IDC</span></span><br><span class="line"><span class="comment"># cable used for the LCD module as follows:</span></span><br><span class="line"><span class="comment"># 3: Tx, 4: Rx, 9: GND, 10: VCC</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Flash this firmware by copying &quot;out/klipper.bin&quot; to a SD card and</span></span><br><span class="line"><span class="comment"># turning on the printer with the card inserted. The firmware</span></span><br><span class="line"><span class="comment"># filename must end in &quot;.bin&quot; and must not match the last filename</span></span><br><span class="line"><span class="comment"># that was flashed.</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># See docs/Config_Reference.md for a description of parameters.</span></span><br></pre></td></tr></table></figure>
+
+<p>按照注释在menuconfig中选择合适的选项，随后按ESC，再按Y退出，输入：</p>
+<figure class="highlight gauss"><table><tr><td class="code"><pre><span class="line"><span class="built_in">make</span> clean</span><br><span class="line"><span class="built_in">make</span></span><br></pre></td></tr></table></figure>
+
+<p>开始构建klipper.bin，这就是我们需要的文件。</p>
+<p>同时按照<span class="exturl" data-url="aHR0cHM6Ly93d3cuY3JlYWxpdHljbG91ZC5jbi9wb3N0LWRldGFpbC80MDcx">创想三维的教程<i class="fa fa-external-link-alt"></i></span>把SD卡格式化。</p>
+<p>构建完成后，在kliiper&#x2F;out文件夹中找到Klipper.bin文件，随后复制到SD卡内，改名为1234，123，什么都行，我也不知道为什么要改，创想三维的教程里说最好改一下。</p>
+<p>另外提一嘴，我的3D打印机附赠了一张1GB的SD卡，前人的教程中说需要至少4GB，不过我1GB的卡正常流畅运行klipper。</p>
+<p>把SD卡插入3d打印机，发现打印机屏幕亮起但啥也不显示，等了好几分钟也这样。最后发现这是正常的，要连上上位机才开始显示。</p>
+<p>等个一分钟让打印机烧录一下固件。随后找一根usb线，连接打印机和电脑。这个时候发现前人的教程出现问题了，建议按照我接下来的。</p>
+<p>首先按照前人的指示，找到了3d打印机的COM端口，我的是COM5.如果你不清楚就多插拔几次usb，看看哪个设备一直出现消失就行了。</p>
+<p>然后在cmd里（不是ubuntu！！！）运行</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">usbipd list</span></span><br></pre></td></tr></table></figure>
+
+<p>接下来前人的教程就出现问题了，因为usbipd更新了</p>
+<p>首先在cmd中</p>
+<figure class="highlight ada"><table><tr><td class="code"><pre><span class="line">wsl <span class="comment">--list</span></span><br><span class="line">wsl <span class="comment">--setdefault Ubuntu</span></span><br><span class="line">wsl <span class="comment">--list</span></span><br></pre></td></tr></table></figure>
+
+<p>然后ubuntu中</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">sudo apt install linux-tools-virtual hwdata</span><br><span class="line">sudo update-alternatives --install /usr/local/bin/usbip usbip `<span class="built_in">ls</span> /usr/lib/linux-tools/*/usbip | <span class="built_in">tail</span> -n1` 20</span><br></pre></td></tr></table></figure>
+
+<p>接着不一样了，首先在ubuntu中输入</p>
+<figure class="highlight ebnf"><table><tr><td class="code"><pre><span class="line"><span class="attribute">lsusb</span></span><br></pre></td></tr></table></figure>
+
+<p>记住此时有几个输出，比如我有两个输出，是</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">Bus</span> <span class="number">002</span> Device <span class="number">001</span>: ID <span class="number">1</span>d6b:<span class="number">0003</span> Linux Foundation <span class="number">3</span>.<span class="number">0</span> root hub</span><br><span class="line"><span class="attribute">Bus</span> <span class="number">001</span> Device <span class="number">001</span>: ID <span class="number">1</span>d6b:<span class="number">0002</span> Linux Foundation <span class="number">2</span>.<span class="number">0</span> root hub</span><br></pre></td></tr></table></figure>
+<p>然后在cmd中输入</p>
+<figure class="highlight mipsasm"><table><tr><td class="code"><pre><span class="line">usbipd <span class="keyword">bind </span>--<span class="keyword">busid </span>&lt;<span class="keyword">busid&gt; </span>--force</span><br></pre></td></tr></table></figure>
+
+<p>上面命令输完应该会输出一个空行</p>
+<p>然后再</p>
+<figure class="highlight brainfuck"><table><tr><td class="code"><pre><span class="line"><span class="comment">usbipd attach</span> <span class="literal">--</span><span class="comment">wsl</span> <span class="literal">--</span><span class="comment">busid</span> &lt;<span class="comment">busid</span>&gt;</span><br></pre></td></tr></table></figure>
+
+<p>输出应该是类似于：</p>
+<figure class="highlight pgsql"><table><tr><td class="code"><pre><span class="line">usbipd: <span class="keyword">info</span>: <span class="keyword">Using</span> WSL distribution <span class="string">&#x27;Ubuntu&#x27;</span> <span class="keyword">to</span> attach; the device will be available <span class="keyword">in</span> <span class="keyword">all</span> WSL <span class="number">2</span> distributions.</span><br><span class="line">usbipd: <span class="keyword">info</span>: <span class="keyword">Using</span> IP address <span class="number">127.0</span><span class="number">.0</span><span class="number">.1</span> <span class="keyword">to</span> reach the host.</span><br></pre></td></tr></table></figure>
+
+<p>这样就完成了，再次到ubuntu中输入<code>lsusb</code></p>
+<p>应该会发现多出一个usb设备，我的是：</p>
+<figure class="highlight apache"><table><tr><td class="code"><pre><span class="line"><span class="attribute">Bus</span> <span class="number">002</span> Device <span class="number">001</span>: ID <span class="number">1</span>d6b:<span class="number">0003</span> Linux Foundation <span class="number">3</span>.<span class="number">0</span> root hub</span><br><span class="line"><span class="attribute">Bus</span> <span class="number">001</span> Device <span class="number">004</span>: ID <span class="number">1</span>a86:<span class="number">7523</span> QinHeng Electronics CH340 serial converter</span><br><span class="line"><span class="attribute">Bus</span> <span class="number">001</span> Device <span class="number">001</span>: ID <span class="number">1</span>d6b:<span class="number">0002</span> Linux Foundation <span class="number">2</span>.<span class="number">0</span> root hub</span><br></pre></td></tr></table></figure>
+
+<p>这样打印机就接入wsl了，接下来按照上面给出的<span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1NYVVVOHN0c1pQbyZ0PTIxMnM=">youtube视频<i class="fa fa-external-link-alt"></i></span>继续操作就可以了，我直接复制了ender3 v2的cfg文件，发现也能用。</p>
+<p>一切就绪，klipper中应该就会显示打印机的相关信息，打印机的屏幕上也会显示数据了。现在可以开始打印了，真是可喜可贺，可口可乐🎉🎉🎉</p>
+]]></content>
+  </entry>
 </search>
