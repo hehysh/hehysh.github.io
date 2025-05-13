@@ -894,17 +894,6 @@
       </categories>
   </entry>
   <entry>
-    <title>复活的晴雀茶馆以及终极白嫖指南</title>
-    <url>/posts/35637.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>晴雀茶馆复活版以及终极白嫖指南<br>很久之前（半个月前），我在Goorm上搭建了Flarum论坛系统<br>论坛很漂亮，拓展功能也很强<br>可惜由于是用的Cloudflared Tunnel穿透到club.hehysh.eu.org<br>顺便说一句，最近可能要换域名了，我已经申请了shier.eu.org，原来的域名太拗口了</p>
-<span id="more"></span>
-<h1 id="晴雀茶馆"><a href="#晴雀茶馆" class="headerlink" title="晴雀茶馆"></a>晴雀茶馆</h1><p>最新的晴雀茶馆搭载在了freeflarum上，这家可谓是良心，我在实际使用中没有受到任何限制，只有在页脚有一个广告<br>首先，一个邮箱即可开始使用，我很震惊因为刚注册好邮箱我的论坛立刻准备好了，无需任何操作，论坛就已经出现在域名上，当然也是可以自定义域名的，没有收费<br>其次，当我进入论坛后台后，我震惊到了，论坛已经预装好接近一百种不同的插件与语言包，这些东西都没有拖慢论坛的速度，反而节省了我大量的时间<br>第三，freeflarum已经预先装好了SMTP邮箱提示服务，完全不用我来设置，发送邮件没有限制，邮件上也没有广告<br>第四，这些所有免费的服务，唯一的限制就是论坛注册人数不得超过250人，但这对我来说毫无问图（我的论坛超过20人就谢天谢地了）<br>所以我必须得推荐FreeFlarum，实在是牛逼！！<br>同时也欢迎大家访问<span class="exturl" data-url="aHR0cHM6Ly9jbHViLmhlaHlzaC5ldS5vcmcv">晴雀茶馆<i class="fa fa-external-link-alt"></i></span></p>
-<h1 id="终极白嫖指南"><a href="#终极白嫖指南" class="headerlink" title="终极白嫖指南"></a>终极白嫖指南</h1><p>我是从哪里知道freeflarum的呢？<br>这就不得不说一下这份无数白嫖党总结出来的最终完全白嫖指南<br>他就是free-for.dev<br>里面集合繁多的为开发者准备的免费服务，基本都只需要邮箱，我就是在其中知道freeflarum的，当你点进free-for.dev，你将看到囊括了开发的各个步骤的免费服务，绝对是爽歪歪<br>当然，其他白嫖服务聚合也有很多，各位可以自己去搜搜看～</p>
-<hr>
-<h1 id="广告：晴雀茶馆诚邀您的加入～"><a href="#广告：晴雀茶馆诚邀您的加入～" class="headerlink" title="广告：晴雀茶馆诚邀您的加入～"></a>广告：晴雀茶馆诚邀您的加入～</h1><p>晴雀茶馆是一个论坛，内含各种板块：生活，闲聊，技术，等一干其他小板块<br>功能齐全，为丰富论坛，我们有成就系统，仿B站的硬币系统以及看起来好看却没啥用的大会员系统（其实是因为大会员一点特权都没有只是带一个粉色的大会员标志）。论坛虽然有类似b站的硬币系统，但整个论坛不会涉及到任何现实的货币（没有万恶的充值系统）。夜间模式，舒适简洁的UI，流畅的加载速度以及移动端的适配都可以带来更好的体验（移动端适配真的蛮舒适）<br>论坛有管理员积极维护（我没事就去康康论坛），论坛内气氛友好（这是真的），目前论坛刚刚建立（复活），注册会员尚少（个位数）（悲）<br>于此，诚邀您的加入<br>论坛网址club.hehysh.eu.org</p>
-]]></content>
-  </entry>
-  <entry>
     <title>基于gpt4o的免费桌宠解决方案</title>
     <url>/posts/30407.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>看到标题你可能会难以置信，但是这套方案能做到：</p>
@@ -956,6 +945,17 @@
 <p>本人亲测隔了30轮对话依旧可以100%准确复述30轮之前我说的话！！！！</p>
 <p>就到这里。</p>
 <h1 id="最新消息"><a href="#最新消息" class="headerlink" title="最新消息"></a>最新消息</h1><p>Coze羊毛已经被薅秃了，近日开始收费，gpt4o每天五条。痛心。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>复活的晴雀茶馆以及终极白嫖指南</title>
+    <url>/posts/35637.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>晴雀茶馆复活版以及终极白嫖指南<br>很久之前（半个月前），我在Goorm上搭建了Flarum论坛系统<br>论坛很漂亮，拓展功能也很强<br>可惜由于是用的Cloudflared Tunnel穿透到club.hehysh.eu.org<br>顺便说一句，最近可能要换域名了，我已经申请了shier.eu.org，原来的域名太拗口了</p>
+<span id="more"></span>
+<h1 id="晴雀茶馆"><a href="#晴雀茶馆" class="headerlink" title="晴雀茶馆"></a>晴雀茶馆</h1><p>最新的晴雀茶馆搭载在了freeflarum上，这家可谓是良心，我在实际使用中没有受到任何限制，只有在页脚有一个广告<br>首先，一个邮箱即可开始使用，我很震惊因为刚注册好邮箱我的论坛立刻准备好了，无需任何操作，论坛就已经出现在域名上，当然也是可以自定义域名的，没有收费<br>其次，当我进入论坛后台后，我震惊到了，论坛已经预装好接近一百种不同的插件与语言包，这些东西都没有拖慢论坛的速度，反而节省了我大量的时间<br>第三，freeflarum已经预先装好了SMTP邮箱提示服务，完全不用我来设置，发送邮件没有限制，邮件上也没有广告<br>第四，这些所有免费的服务，唯一的限制就是论坛注册人数不得超过250人，但这对我来说毫无问图（我的论坛超过20人就谢天谢地了）<br>所以我必须得推荐FreeFlarum，实在是牛逼！！<br>同时也欢迎大家访问<span class="exturl" data-url="aHR0cHM6Ly9jbHViLmhlaHlzaC5ldS5vcmcv">晴雀茶馆<i class="fa fa-external-link-alt"></i></span></p>
+<h1 id="终极白嫖指南"><a href="#终极白嫖指南" class="headerlink" title="终极白嫖指南"></a>终极白嫖指南</h1><p>我是从哪里知道freeflarum的呢？<br>这就不得不说一下这份无数白嫖党总结出来的最终完全白嫖指南<br>他就是free-for.dev<br>里面集合繁多的为开发者准备的免费服务，基本都只需要邮箱，我就是在其中知道freeflarum的，当你点进free-for.dev，你将看到囊括了开发的各个步骤的免费服务，绝对是爽歪歪<br>当然，其他白嫖服务聚合也有很多，各位可以自己去搜搜看～</p>
+<hr>
+<h1 id="广告：晴雀茶馆诚邀您的加入～"><a href="#广告：晴雀茶馆诚邀您的加入～" class="headerlink" title="广告：晴雀茶馆诚邀您的加入～"></a>广告：晴雀茶馆诚邀您的加入～</h1><p>晴雀茶馆是一个论坛，内含各种板块：生活，闲聊，技术，等一干其他小板块<br>功能齐全，为丰富论坛，我们有成就系统，仿B站的硬币系统以及看起来好看却没啥用的大会员系统（其实是因为大会员一点特权都没有只是带一个粉色的大会员标志）。论坛虽然有类似b站的硬币系统，但整个论坛不会涉及到任何现实的货币（没有万恶的充值系统）。夜间模式，舒适简洁的UI，流畅的加载速度以及移动端的适配都可以带来更好的体验（移动端适配真的蛮舒适）<br>论坛有管理员积极维护（我没事就去康康论坛），论坛内气氛友好（这是真的），目前论坛刚刚建立（复活），注册会员尚少（个位数）（悲）<br>于此，诚邀您的加入<br>论坛网址club.hehysh.eu.org</p>
 ]]></content>
   </entry>
   <entry>
@@ -1051,15 +1051,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>小改博客</title>
-    <url>/posts/1237.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近挤出一点点时间，略微改下博客</p>
-<p>从林木木博客那里看到了霞鹜文楷这个字体，感觉蛮不错的。很符合我审美，还支持国人开源字体，于是火速换上。</p>
-<p>但是不知道为什么换上之后排版就乱了</p>
-<p>有空修吧（</p>
-]]></content>
-  </entry>
-  <entry>
     <title>寻找几乎看不见的个人网站</title>
     <url>/posts/33255.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>原文：<span class="exturl" data-url="aHR0cHM6Ly9jaGVhcHNrYXRlc2d1aWRlLm9yZy9hcnRpY2xlcy9wZXJzb25hbC13ZWJzaXRlLWh1bnRpbmcuaHRtbA==">https://cheapskatesguide.org/articles/personal-website-hunting.html<i class="fa fa-external-link-alt"></i></span></p>
@@ -1068,6 +1059,15 @@
 
 <p>个人网站是一种有点神秘的动物，它大多生活在互联网的丛林中，几乎无人问津。一些完全生活在 Facebook 和 Google 的象牙塔 ^{1} 中的没有经验的互联网用户可能甚至不知道该物种的存在。其他没有经验的用户可能会认为个人网站要么已经灭绝，如雷龙，要么是神话，如 大脚怪或可恶的雪人。事实是，野外存在着许多标本，但为了成功地猎杀个人网站，猎人必须非常了解这个物种的习性。<br>请允许我作为您的向导，带领您穿越阴暗且充满捕食者的互联网丛林，我将带您到个人网站物种的一些代表性标本，并教您可能将您引向其他人的狩猎方法。<br>正如传说中的那样，在互联网丛林出现后不久和 1990 年代中期之前的一个更加和平的时期，个人网站是主要的物种。但国王伯纳斯-李 ^{2}的妻子索菲亚女王在女儿潘多拉的恳求下，默许为潘多拉的宠物提供繁殖地。随着时间的推移，越来越多的宠物被允许在丛林中自由漫步，其中包括不少掠食者。最终，这些宠物成为互联网丛林中的主要物种，个人网站在潘多拉宠物引发的所有咆哮和骚动中几乎是隐形的。这种近乎隐形的状态使得个人网站很难被搜索到。<br>在详细讨论个人网站之前，我首先要提一下互联网丛林中常见的两种掠食者。“公司”掠夺者^{3} 通过伪装成无害的驯养动物（很像马或牛）来诱使互联网用户自愿接近他。请注意，并非所有公司网站都是掠食者，尽管其中很多确实与奶牛有某些相似之处，笨重通常是其中之一。但是，许多企业网站并不像看起来那样被驯化。如果您对此表示怀疑，请阅读他们的服务条款协议的详细信息。与许多人和他们的猫一样，事实是，在任何特定情况下，决定企业网站或其互联网用户是否是主导物种可能是一项艰巨的任务。<br>一个不太为人所知的动物是黑客。黑客是一个包含许多物种的属。有些是掠夺性的，有些是对互联网丛林生态无害甚至有益的。到目前为止，数量最多的掠夺性黑客是“脚本小子”^{4} 。脚本小子往往是盲目的，他们在互联网丛林中从 IP 地址到 IP 地址摸索。他们的目标似乎是找到那些摄入了公司网站代码的网站，这些代码使他们容易受到感染。当脚本小子发现这样的网站时，它经常会注入恶意软件，有时它会使用这些恶意软件来帮助它查找和攻击其他网站。<br>脚本小子行为的原因仍然是一个谜，因为它通常提供的营养很少。一些脚本小子观察者推测，脚本小子从事上述行为只是为了给他们物种的其他人留下深刻印象。虽然其他动物必须给潜在配偶留下深刻印象才能改善后代的基因，但脚本小子的大多数潜在配偶似乎对它们的行为不以为然。也存在一种可能性，即脚本小子的行为主要用作确定啄食顺序的一种手段，主要是在该物种的雄性中。然而，倾向于支持交配理论的一项观察是，大多数成功交配的脚本小子不再从事他们的典型行为。<br>甚至许多经验丰富的猎人也害怕个人网站，因为他们被引导相信个人网站经常携带疾病——特别是病毒，或者通常称为“恶意软件”的寄生虫。虽然这两种都是可能的，但它们并不常见。事实是，个人网站的习惯通常不亚于其他互联网丛林物种。但是，一些不那么谨慎的个人网站确实会通过摄入公司网站不健康的代码（包括来自异常胀气和消化不良的 Microshaft 的代码）而容易感染病毒和恶意软件。然而，猎人对个人网站的恐惧在很大程度上被夸大了。 装备精良的 猎人几乎不用担心。<br>与大多数其他必须不断逃避捕食者才能生存的动物不同，个人网站几乎没有已知的敌人。然而，个人网站容易受到 DMCA 寄生虫^{5} 的影响，它能够将其起诉至死。幸运的是，这种情况很少见，可能主要是由于个人网站几乎不可见。出于这个原因，并且由于个人网站几乎总是很小，以至于它们几乎没有肉（也称为帖子或文章），因此它们很少受到掠夺者的威胁。个人网站也往往对较大的公司掠夺者不利，因为它们很少做广告或产生大量收入。然而，很少，一个营养丰富的个人网站可能会发展到足够大的规模，从而成功地与企业网站竞争用户提供的食物。当这种情况发生时，一些观察者担心这个胖乎乎的个人网站可能有被杀死的危险（见 here , here , here , and here )，但很少有企业掠夺者摄取最胖的个人网站，也许是因为他们根本不知道如何处理这些网站。然而，在极少数情况下，企业掠夺者会同时捕获个人和非创收企业网站，并让他们多活几年，同时因 饥饿而缓慢死亡。<br>与主要在交配时看到或听到的其他动物不同，个人网站不会以这种方式显示它们的存在，因为它们不会交配。相反，它们无性繁殖。有些通过发芽产生后代，这是植物的特征。许多，如果不是大多数，也表现出另一种植物特征。他们将他们的 spoor（技术上称为超链接）撒在互联网丛林的地板上，希望有一天被互联网用户偶然发现并摄入。尽管很少发生摄取，但当它发生时，通过当今科学尚不完全理解的某些过程，互联网用户偶尔会被诱导创建自己的个人网站。然后，该网站在主机互联网用户的仔细关注和照顾下自由萌芽，该用户现在已转变为有时称为“开发者”的实体，尽管开发者并不是一个特别明确的指示符。在适当的时候，新网站自然会开始产生自己的孢子，并重复其生命周期。<br>有时，孢子和代码片段直接与其他个人网站交换，其方式类似于细菌结合，其中称为质粒的遗传物质在细菌之间交换。这种类型的 spoor 被称为“友链”。有时，网站会收集友链并将它们放在称为 blogrolls 的组中^{6} 。</p>
 <p>[1]这里指Google，Facebook营造的环境。如果换成CSDN，简书就不难理解了。<br>[2]Tim Berners-Lee 互联网之父<br>[3]某些吸血的互联网公司。举个例子：百度。<br>[4]以黑客自居并沾沾自喜的初学者。脚本小子不像真正的黑客那样发现系统漏洞，通常使用别人开发的程序来恶意破坏他人系统。举个例子：一位没有专科经验的少年，破坏无辜网站企图使得他的朋友感到惊讶。因而称之为脚本小子。<br>[5] Digital Millennium Copyright Act （美国）数字千年版权法案，果然可以将个人网站起诉到死。<br>[6]可以理解为许许多多的友链集合。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>小改博客</title>
+    <url>/posts/1237.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近挤出一点点时间，略微改下博客</p>
+<p>从林木木博客那里看到了霞鹜文楷这个字体，感觉蛮不错的。很符合我审美，还支持国人开源字体，于是火速换上。</p>
+<p>但是不知道为什么换上之后排版就乱了</p>
+<p>有空修吧（</p>
 ]]></content>
   </entry>
   <entry>
@@ -1202,6 +1202,30 @@
 ]]></content>
   </entry>
   <entry>
+    <title>【已翻车】无敌牛逼的vps</title>
+    <url>/posts/49631.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>无敌牛逼的vps</p>
+<h1 id="无敌牛逼的vps"><a href="#无敌牛逼的vps" class="headerlink" title="无敌牛逼的vps"></a>无敌牛逼的vps</h1><p>前几个月一直在想vps的问题，在想有了一台vps之后我可以在上面干点什么，有趣的是结果当我真有了vps后却不知道怎么办了<br>那么今天就在这里水一篇博文，主要是这台vps真的很良心，首先要说明的是<strong>完全免费</strong>，真的太香了！！<br><strong>有root访问权限，Debian系统，x86架构要比ibm的更实用些，4核32G而且部署还简单，无需信用卡！！</strong><br>梦中情机属于是😂<br><em><strong>但是！注意！免费的午餐是没有的！！请不要搭建完就跑，一定要看服务条款，文章最后我会截取最重要的那部分给大家，一定要看服务条款！一定要看服务条款！一定要看服务条款！</strong></em><br>那么就开始申请吧！</p>
+<span id="more"></span>
+<h1 id="劝退二连"><a href="#劝退二连" class="headerlink" title="劝退二连"></a>劝退二连</h1><p>首先有个注册超30天的GitHub账号，其次这个帐号绑定的邮箱不能是qq&#x2F;163以及国内主流邮箱，建议gamil或在中国能方便注册的hotmail，我就是用hotmail成功的。</p>
+<h1 id="注册流程"><a href="#注册流程" class="headerlink" title="注册流程"></a>注册流程</h1><p>一、打开页面：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL01ldGFWUFMveHNzaA==">https://github.com/MetaVPS/xssh<i class="fa fa-external-link-alt"></i></span> 直接登录，Fork这个仓库，库名称一定要保持xssh；</p>
+<p>二、打开页面：<span class="exturl" data-url="aHR0cHM6Ly9kYXNoYm9hcmQubmdyb2suY29tL2xvZ2lu">https://dashboard.ngrok.com/login<i class="fa fa-external-link-alt"></i></span> 直接使用GitHub账号登录，然后在入门-授权令牌&#x2F;Getting Started-Your AuthToken 里找到<code>Copy</code>，直接复制</p>
+<p>三、在你自己仓库中修改config.sh,内容为 NGROK_TOKEN&#x3D;”你的令牌”，然后返回仓库，拷贝仓库地址，格式例如：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLyVFNCVCRCVBMCVFNyU5QSU4NCVFNSU5MCU4RCVFNSVBRCU5Ny94c3No">https://github.com/你的名字/xssh<i class="fa fa-external-link-alt"></i></span></p>
+<p>四、打开页面：<span class="exturl" data-url="aHR0cHM6Ly9jbG91ZC5va3RldG8uY29tLyMvbG9naW4=">https://cloud.okteto.com/#/login<i class="fa fa-external-link-alt"></i></span> 同样用GitHub登录。<strong>注意：这一步如果用国内邮箱会显示该GitHub账号的邮箱不符合规范</strong>然后在左上角点击：新建开发环境-GitUrl。填写上一个步骤中你的仓库的地址（<em><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLyVFNCVCRCVBMCVFNyU5QSU4NCVFNSU5MCU4RCVFNSVBRCU5Ny94c3No">https://github.com/你的名字/xssh<i class="fa fa-external-link-alt"></i></span></em>)，分支填写 main，然后启动。稍等1-3分钟，直到网络部署显示Running！</p>
+<p>五、我们回到ngrok，在左侧栏里找到Tunnels- Agent，然后点击里面的栏目，会弹出来类似tcp:&#x2F;&#x2F;6.tcp.ngrok.io:12795 这样的一个地址。</p>
+<p>这样就可以了，接下来我们进行ssh连接，你的用户名和密码和我保持一致，地址和端口要看你自己的后台哦：<br>地址：6.tcp.ngrok.io端口：12795用户名：root密码：majalaya</p>
+<p><em><strong>很重要的是，一定一定要看他的服务条款，接下来我截取一些重要的，我因为搭建MInecraft服务器而被封了一个号，同时搭建代理也是不允许的！！！</strong></em></p>
+<h1 id="服务条款"><a href="#服务条款" class="headerlink" title="服务条款"></a>服务条款</h1><blockquote>
+<h2 id="禁止的内容"><a href="#禁止的内容" class="headerlink" title="禁止的内容"></a>禁止的内容</h2><p>通过您的应用程序或使用我们服务的其他网站显示和&#x2F;或处理的内容不包含以下任何类型的内容：<br>1.根据适用法律侵犯第三方权利（例如版权）的内容。<br>2.过于亵渎的内容。<br>3.与仇恨相关或暴力内容。<br>4.旨在倡导或推进计算机黑客攻击或破解的内容。<br>5.赌博。<br>6.非法活动，包括但不限于非法出口受管制物质或非法软件。<br><em><strong>7.网络钓鱼。</strong></em><br><em><strong>8.恶意内容。</strong></em><br>9.违反或鼓励违反任何刑法、任何其他适用法律或任何第三方权利的行为的其他材料、产品或服务。</p>
+<h2 id="禁止的行为"><a href="#禁止的行为" class="headerlink" title="禁止的行为"></a>禁止的行为</h2><p>此外，您不得也不得允许任何第三方，包括您的最终用户：<br>1.生成、分发、发布或便利未经请求的群发电子邮件、促销、广告或其他招标（“垃圾邮件”）。<br>2.故意分发病毒、蠕虫、缺陷、特洛伊木马、损坏的文件、恶作剧或任何其他破坏性或欺骗性的物品。<br>3.冒充他人（通过使用电子邮件地址或其他方式）或以其他方式歪曲自己或任何电子邮件的来源。<br>4.无需Okteto事先书面批准，即可创建自动化帐户或批量注册帐户。<br>5.使用我们的服务侵犯他人的合法权利（如隐私权和公开权）。<br>6.促进或鼓励非法活动。<br>7.干扰其他用户对我们服务的享受。<br><em><strong>8.执行负载测试。</strong></em><br>9.出售、交易或转售对我们服务的访问权限。<br>10.修改、改编、翻译或逆向工程我们服务的任何部分。<br>11.使用我们的服务进行点对点文件共享。<br><em><strong>12.使用我们的服务“开采”加密货币或比特币。</strong></em><br><em><strong>13.使用我们的服务运行“Minecraft”或类似的服务器。</strong></em><br><em><strong>14.使用我们的服务运行Telegram和WhatsApp机器人或类似服务。</strong></em><br><em><strong>15.使用自动化服务来规避我们服务中的限制和配额，例如帐户共享、批量帐户创建或自动请求调度。</strong></em><br><em><strong>16.使用我们的服务操作“开放代理”或任何其他形式的互联网代理服务，能够将请求转发给任何最终用户或第三方提供的互联网主机。</strong></em>(就是搭建梯子！！！)<br>17.使用我们的服务或与我们的服务提供的任何接口，以违反使用此类Okteto产品或服务的条款或其他条款和条件的方式访问任何Okteto产品或服务。</p>
+</blockquote>
+<h1 id="最后的话"><a href="#最后的话" class="headerlink" title="最后的话"></a>最后的话</h1><p>说实话，免费的午餐果然没有，这个服务器限制还是稍微有些多的，这也是为什么我拿到vps之后迷茫了，不知道干什么，原本计划好的事全部都被禁止了，但是这个服务器应该还可以用来建站。下篇文章我会写一个专门用于搭建MInecraft服务器的免费vps，配置还不错，就这样。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+  </entry>
+  <entry>
     <title>无树莓派安装klipper固件</title>
     <url>/posts/28979.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近翻出了我的一台3d打印机，是21年买的。</p>
@@ -1270,30 +1294,6 @@
 <p>这样打印机就接入wsl了，接下来按照上面给出的<span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1NYVVVOHN0c1pQbyZ0PTIxMnM=">youtube视频<i class="fa fa-external-link-alt"></i></span>继续操作就可以了，我直接复制了ender3 v2的cfg文件，发现也能用。</p>
 <p>一切就绪，klipper中应该就会显示打印机的相关信息，打印机的屏幕上也会显示数据了。现在可以开始打印了，真是可喜可贺，可口可乐🎉🎉🎉</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>【已翻车】无敌牛逼的vps</title>
-    <url>/posts/49631.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>无敌牛逼的vps</p>
-<h1 id="无敌牛逼的vps"><a href="#无敌牛逼的vps" class="headerlink" title="无敌牛逼的vps"></a>无敌牛逼的vps</h1><p>前几个月一直在想vps的问题，在想有了一台vps之后我可以在上面干点什么，有趣的是结果当我真有了vps后却不知道怎么办了<br>那么今天就在这里水一篇博文，主要是这台vps真的很良心，首先要说明的是<strong>完全免费</strong>，真的太香了！！<br><strong>有root访问权限，Debian系统，x86架构要比ibm的更实用些，4核32G而且部署还简单，无需信用卡！！</strong><br>梦中情机属于是😂<br><em><strong>但是！注意！免费的午餐是没有的！！请不要搭建完就跑，一定要看服务条款，文章最后我会截取最重要的那部分给大家，一定要看服务条款！一定要看服务条款！一定要看服务条款！</strong></em><br>那么就开始申请吧！</p>
-<span id="more"></span>
-<h1 id="劝退二连"><a href="#劝退二连" class="headerlink" title="劝退二连"></a>劝退二连</h1><p>首先有个注册超30天的GitHub账号，其次这个帐号绑定的邮箱不能是qq&#x2F;163以及国内主流邮箱，建议gamil或在中国能方便注册的hotmail，我就是用hotmail成功的。</p>
-<h1 id="注册流程"><a href="#注册流程" class="headerlink" title="注册流程"></a>注册流程</h1><p>一、打开页面：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL01ldGFWUFMveHNzaA==">https://github.com/MetaVPS/xssh<i class="fa fa-external-link-alt"></i></span> 直接登录，Fork这个仓库，库名称一定要保持xssh；</p>
-<p>二、打开页面：<span class="exturl" data-url="aHR0cHM6Ly9kYXNoYm9hcmQubmdyb2suY29tL2xvZ2lu">https://dashboard.ngrok.com/login<i class="fa fa-external-link-alt"></i></span> 直接使用GitHub账号登录，然后在入门-授权令牌&#x2F;Getting Started-Your AuthToken 里找到<code>Copy</code>，直接复制</p>
-<p>三、在你自己仓库中修改config.sh,内容为 NGROK_TOKEN&#x3D;”你的令牌”，然后返回仓库，拷贝仓库地址，格式例如：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLyVFNCVCRCVBMCVFNyU5QSU4NCVFNSU5MCU4RCVFNSVBRCU5Ny94c3No">https://github.com/你的名字/xssh<i class="fa fa-external-link-alt"></i></span></p>
-<p>四、打开页面：<span class="exturl" data-url="aHR0cHM6Ly9jbG91ZC5va3RldG8uY29tLyMvbG9naW4=">https://cloud.okteto.com/#/login<i class="fa fa-external-link-alt"></i></span> 同样用GitHub登录。<strong>注意：这一步如果用国内邮箱会显示该GitHub账号的邮箱不符合规范</strong>然后在左上角点击：新建开发环境-GitUrl。填写上一个步骤中你的仓库的地址（<em><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLyVFNCVCRCVBMCVFNyU5QSU4NCVFNSU5MCU4RCVFNSVBRCU5Ny94c3No">https://github.com/你的名字/xssh<i class="fa fa-external-link-alt"></i></span></em>)，分支填写 main，然后启动。稍等1-3分钟，直到网络部署显示Running！</p>
-<p>五、我们回到ngrok，在左侧栏里找到Tunnels- Agent，然后点击里面的栏目，会弹出来类似tcp:&#x2F;&#x2F;6.tcp.ngrok.io:12795 这样的一个地址。</p>
-<p>这样就可以了，接下来我们进行ssh连接，你的用户名和密码和我保持一致，地址和端口要看你自己的后台哦：<br>地址：6.tcp.ngrok.io端口：12795用户名：root密码：majalaya</p>
-<p><em><strong>很重要的是，一定一定要看他的服务条款，接下来我截取一些重要的，我因为搭建MInecraft服务器而被封了一个号，同时搭建代理也是不允许的！！！</strong></em></p>
-<h1 id="服务条款"><a href="#服务条款" class="headerlink" title="服务条款"></a>服务条款</h1><blockquote>
-<h2 id="禁止的内容"><a href="#禁止的内容" class="headerlink" title="禁止的内容"></a>禁止的内容</h2><p>通过您的应用程序或使用我们服务的其他网站显示和&#x2F;或处理的内容不包含以下任何类型的内容：<br>1.根据适用法律侵犯第三方权利（例如版权）的内容。<br>2.过于亵渎的内容。<br>3.与仇恨相关或暴力内容。<br>4.旨在倡导或推进计算机黑客攻击或破解的内容。<br>5.赌博。<br>6.非法活动，包括但不限于非法出口受管制物质或非法软件。<br><em><strong>7.网络钓鱼。</strong></em><br><em><strong>8.恶意内容。</strong></em><br>9.违反或鼓励违反任何刑法、任何其他适用法律或任何第三方权利的行为的其他材料、产品或服务。</p>
-<h2 id="禁止的行为"><a href="#禁止的行为" class="headerlink" title="禁止的行为"></a>禁止的行为</h2><p>此外，您不得也不得允许任何第三方，包括您的最终用户：<br>1.生成、分发、发布或便利未经请求的群发电子邮件、促销、广告或其他招标（“垃圾邮件”）。<br>2.故意分发病毒、蠕虫、缺陷、特洛伊木马、损坏的文件、恶作剧或任何其他破坏性或欺骗性的物品。<br>3.冒充他人（通过使用电子邮件地址或其他方式）或以其他方式歪曲自己或任何电子邮件的来源。<br>4.无需Okteto事先书面批准，即可创建自动化帐户或批量注册帐户。<br>5.使用我们的服务侵犯他人的合法权利（如隐私权和公开权）。<br>6.促进或鼓励非法活动。<br>7.干扰其他用户对我们服务的享受。<br><em><strong>8.执行负载测试。</strong></em><br>9.出售、交易或转售对我们服务的访问权限。<br>10.修改、改编、翻译或逆向工程我们服务的任何部分。<br>11.使用我们的服务进行点对点文件共享。<br><em><strong>12.使用我们的服务“开采”加密货币或比特币。</strong></em><br><em><strong>13.使用我们的服务运行“Minecraft”或类似的服务器。</strong></em><br><em><strong>14.使用我们的服务运行Telegram和WhatsApp机器人或类似服务。</strong></em><br><em><strong>15.使用自动化服务来规避我们服务中的限制和配额，例如帐户共享、批量帐户创建或自动请求调度。</strong></em><br><em><strong>16.使用我们的服务操作“开放代理”或任何其他形式的互联网代理服务，能够将请求转发给任何最终用户或第三方提供的互联网主机。</strong></em>(就是搭建梯子！！！)<br>17.使用我们的服务或与我们的服务提供的任何接口，以违反使用此类Okteto产品或服务的条款或其他条款和条件的方式访问任何Okteto产品或服务。</p>
-</blockquote>
-<h1 id="最后的话"><a href="#最后的话" class="headerlink" title="最后的话"></a>最后的话</h1><p>说实话，免费的午餐果然没有，这个服务器限制还是稍微有些多的，这也是为什么我拿到vps之后迷茫了，不知道干什么，原本计划好的事全部都被禁止了，但是这个服务器应该还可以用来建站。下篇文章我会写一个专门用于搭建MInecraft服务器的免费vps，配置还不错，就这样。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
   </entry>
   <entry>
     <title>无视免费帐户限制！白嫖各家显卡爽玩SD webui</title>
@@ -1760,6 +1760,15 @@
 ]]></content>
   </entry>
   <entry>
+    <title>网课时代卷土重来</title>
+    <url>/posts/48340.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>他来了，他又来了，网课！！！<br>我真的百思不得其解，明明乌鲁木齐路集会之后，上海防疫政策大转向，怎么又封了！！<br>学校封了，我也疯了</p>
+<span id="more"></span>
+<p>今天早上照例慢悠悠的在6：50起床<br>照例摸20分钟，7：10左右，准备出门<br>我妈突然叫住我，“等一下！！”<br>我以为我有东西落下了，于是折回来<br>“封了！！你今天上不了学了唉！”<br>一声霹雳打在我脑袋上————<br>我很清楚，网课不仅意味着摸鱼，自由。还意味着你的成绩会大幅下 （除非你很有自制力）<br>于是我把书包放下，准备开始上网课</p>
+<h1 id="似曾相识燕归来"><a href="#似曾相识燕归来" class="headerlink" title="似曾相识燕归来"></a>似曾相识燕归来</h1><p>晏殊的《浣溪沙》是十分有名的，前段时间我们刚刚复习到。这首词也是在上一次网课时代学的。不如现在我就发挥我的起名天赋吧！在本文中，2022年4月~8月的网课时代称为“前网课时代”，今天开始，至少持续一个星期而且还会延长的网课时代称为“后网课时代”<br>好，我们复习了《浣溪沙》。其中最有名的一句是“无可奈何花落去，似曾相识燕归来”。这句话不仅仅是感叹时光的流逝，也有在“时光消逝时必然有美好事物的重现，只不过美好事物不再是原来那个，只是相似罢了“的哲理<br>我不认为网课时代是所谓的”美好事物“。网课意味着什么？网课意味着干涩的眼睛，暴跳如雷的爸妈，陡然下滑的学习成绩。我很讨厌网课，游戏是玩不到的，我爸对于电子设备熟悉度（各方面的）比我高多了，我根本不能在他的眼皮子下玩<br>表明完了网课的态度，我该言归正传了。<br>话说我发现上网课了，于是照例拿出我的小破iPad。这时”似曾相识燕归来”了：前网课时代时，我妹妹不需要上网课，我一个人霸占电子设备。后网课时代，我的妹妹上小学一年级了，于是开始上网课。我正在寻思我该怎么办时，我爸说：“用我电脑吧，电脑上也有腾讯会议。”<br>WOW，不得不说，我爸的电脑真的看上去很GEEK。三个屏幕环绕式，超级长的工作桌，至少设备上很行！我平时都用来打游戏的，没想到现在居然拿他来学习了。<br>打开电脑，登录腾讯会议。进入教室，老师还没来，顿觉索然无味。于是想看看有什么好玩的。就在这时，我发现桌面上一个熟悉的图标。<br>Tor Browser…<br>在心里给我爸竖个大拇指，真的牛逼。Tor Browser干啥事的想必都懂，之前我看到了关于上暗网的教程，但一直没时间，还想着整一个.onion域名。没想到啊，真的没想到。虽然但是，尽管Tor已经准备好了，但我还是没有勇气上。<br>（我爸是个很细心的人，他应该会很谨慎，我就不一定了。还是不作死了…）<br>网课时代的传统当然是摸鱼。上完第一节课，打开edge，先去看看我的小破站。<br>熟悉的界面出现在眼前，我热泪盈眶。已经很久很久很久没有关心过我的博客了，乘此机会，好好修缮一下。<br>Two Hours Later…<br>博客焕然一新！<br>然后到了化学课，快下课时，我居然听到了：下课铃？<br>化学老师在学校？<br>不，老师可能都在学校。<br>我准备去学校看看（走路三分钟），但我妈不让我去。行吧。<br>吃过午饭，坐在阳台的躺椅上晒太阳，看我的仓鼠在跑步跑得飞快。我感觉索然无味。<br>网课的快乐，就是这么的，朴实无华而又，索然无味。<br>我不能再摸下去了，我要，卷死你们！！！<br>打开一模卷，我的斗志在昂扬，在激荡！！！！！！！！！！！！<br>然后我提笔…打开了b站<br>喜闻乐见。</p>
+]]></content>
+  </entry>
+  <entry>
     <title>给博客添加动态背景</title>
     <url>/posts/52415.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><br>也许next主题的背景是白色的，有点单调<br><br>但next主题也是自带动态背景的<br><br>给博客一加，逼格顿时就<strong>高了许多</strong></p>
@@ -1775,15 +1784,6 @@
       <tags>
         <tag>hexo博客魔改</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>网课时代卷土重来</title>
-    <url>/posts/48340.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>他来了，他又来了，网课！！！<br>我真的百思不得其解，明明乌鲁木齐路集会之后，上海防疫政策大转向，怎么又封了！！<br>学校封了，我也疯了</p>
-<span id="more"></span>
-<p>今天早上照例慢悠悠的在6：50起床<br>照例摸20分钟，7：10左右，准备出门<br>我妈突然叫住我，“等一下！！”<br>我以为我有东西落下了，于是折回来<br>“封了！！你今天上不了学了唉！”<br>一声霹雳打在我脑袋上————<br>我很清楚，网课不仅意味着摸鱼，自由。还意味着你的成绩会大幅下 （除非你很有自制力）<br>于是我把书包放下，准备开始上网课</p>
-<h1 id="似曾相识燕归来"><a href="#似曾相识燕归来" class="headerlink" title="似曾相识燕归来"></a>似曾相识燕归来</h1><p>晏殊的《浣溪沙》是十分有名的，前段时间我们刚刚复习到。这首词也是在上一次网课时代学的。不如现在我就发挥我的起名天赋吧！在本文中，2022年4月~8月的网课时代称为“前网课时代”，今天开始，至少持续一个星期而且还会延长的网课时代称为“后网课时代”<br>好，我们复习了《浣溪沙》。其中最有名的一句是“无可奈何花落去，似曾相识燕归来”。这句话不仅仅是感叹时光的流逝，也有在“时光消逝时必然有美好事物的重现，只不过美好事物不再是原来那个，只是相似罢了“的哲理<br>我不认为网课时代是所谓的”美好事物“。网课意味着什么？网课意味着干涩的眼睛，暴跳如雷的爸妈，陡然下滑的学习成绩。我很讨厌网课，游戏是玩不到的，我爸对于电子设备熟悉度（各方面的）比我高多了，我根本不能在他的眼皮子下玩<br>表明完了网课的态度，我该言归正传了。<br>话说我发现上网课了，于是照例拿出我的小破iPad。这时”似曾相识燕归来”了：前网课时代时，我妹妹不需要上网课，我一个人霸占电子设备。后网课时代，我的妹妹上小学一年级了，于是开始上网课。我正在寻思我该怎么办时，我爸说：“用我电脑吧，电脑上也有腾讯会议。”<br>WOW，不得不说，我爸的电脑真的看上去很GEEK。三个屏幕环绕式，超级长的工作桌，至少设备上很行！我平时都用来打游戏的，没想到现在居然拿他来学习了。<br>打开电脑，登录腾讯会议。进入教室，老师还没来，顿觉索然无味。于是想看看有什么好玩的。就在这时，我发现桌面上一个熟悉的图标。<br>Tor Browser…<br>在心里给我爸竖个大拇指，真的牛逼。Tor Browser干啥事的想必都懂，之前我看到了关于上暗网的教程，但一直没时间，还想着整一个.onion域名。没想到啊，真的没想到。虽然但是，尽管Tor已经准备好了，但我还是没有勇气上。<br>（我爸是个很细心的人，他应该会很谨慎，我就不一定了。还是不作死了…）<br>网课时代的传统当然是摸鱼。上完第一节课，打开edge，先去看看我的小破站。<br>熟悉的界面出现在眼前，我热泪盈眶。已经很久很久很久没有关心过我的博客了，乘此机会，好好修缮一下。<br>Two Hours Later…<br>博客焕然一新！<br>然后到了化学课，快下课时，我居然听到了：下课铃？<br>化学老师在学校？<br>不，老师可能都在学校。<br>我准备去学校看看（走路三分钟），但我妈不让我去。行吧。<br>吃过午饭，坐在阳台的躺椅上晒太阳，看我的仓鼠在跑步跑得飞快。我感觉索然无味。<br>网课的快乐，就是这么的，朴实无华而又，索然无味。<br>我不能再摸下去了，我要，卷死你们！！！<br>打开一模卷，我的斗志在昂扬，在激荡！！！！！！！！！！！！<br>然后我提笔…打开了b站<br>喜闻乐见。</p>
-]]></content>
   </entry>
   <entry>
     <title>聊聊粥铺</title>

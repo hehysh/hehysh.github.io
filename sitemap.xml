@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.nbplus.eu.org/vercel.json</loc>
+    
+    <lastmod>2025-05-13</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.nbplus.eu.org/bb/index.html</loc>
     
     <lastmod>2025-05-11</lastmod>
@@ -155,7 +164,7 @@
   </url>
   
   <url>
-    <loc>https://blog.nbplus.eu.org/about/index.html</loc>
+    <loc>https://blog.nbplus.eu.org/categories/index.html</loc>
     
     <lastmod>2025-05-11</lastmod>
     
@@ -164,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://blog.nbplus.eu.org/categories/index.html</loc>
+    <loc>https://blog.nbplus.eu.org/about/index.html</loc>
     
     <lastmod>2025-05-11</lastmod>
     
@@ -236,7 +245,7 @@
   </url>
   
   <url>
-    <loc>https://blog.nbplus.eu.org/posts/52415.html</loc>
+    <loc>https://blog.nbplus.eu.org/posts/48340.html</loc>
     
     <lastmod>2025-05-11</lastmod>
     
@@ -245,7 +254,7 @@
   </url>
   
   <url>
-    <loc>https://blog.nbplus.eu.org/posts/48340.html</loc>
+    <loc>https://blog.nbplus.eu.org/posts/52415.html</loc>
     
     <lastmod>2025-05-11</lastmod>
     
@@ -407,7 +416,7 @@
   </url>
   
   <url>
-    <loc>https://blog.nbplus.eu.org/posts/1237.html</loc>
+    <loc>https://blog.nbplus.eu.org/posts/33255.html</loc>
     
     <lastmod>2025-05-11</lastmod>
     
@@ -416,7 +425,7 @@
   </url>
   
   <url>
-    <loc>https://blog.nbplus.eu.org/posts/33255.html</loc>
+    <loc>https://blog.nbplus.eu.org/posts/1237.html</loc>
     
     <lastmod>2025-05-11</lastmod>
     
@@ -461,7 +470,7 @@
   </url>
   
   <url>
-    <loc>https://blog.nbplus.eu.org/posts/35637.html</loc>
+    <loc>https://blog.nbplus.eu.org/posts/30407.html</loc>
     
     <lastmod>2025-05-11</lastmod>
     
@@ -470,7 +479,7 @@
   </url>
   
   <url>
-    <loc>https://blog.nbplus.eu.org/posts/30407.html</loc>
+    <loc>https://blog.nbplus.eu.org/posts/35637.html</loc>
     
     <lastmod>2025-05-11</lastmod>
     
