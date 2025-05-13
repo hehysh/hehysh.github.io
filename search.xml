@@ -1202,6 +1202,30 @@
 ]]></content>
   </entry>
   <entry>
+    <title>【已翻车】无敌牛逼的vps</title>
+    <url>/posts/49631.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>无敌牛逼的vps</p>
+<h1 id="无敌牛逼的vps"><a href="#无敌牛逼的vps" class="headerlink" title="无敌牛逼的vps"></a>无敌牛逼的vps</h1><p>前几个月一直在想vps的问题，在想有了一台vps之后我可以在上面干点什么，有趣的是结果当我真有了vps后却不知道怎么办了<br>那么今天就在这里水一篇博文，主要是这台vps真的很良心，首先要说明的是<strong>完全免费</strong>，真的太香了！！<br><strong>有root访问权限，Debian系统，x86架构要比ibm的更实用些，4核32G而且部署还简单，无需信用卡！！</strong><br>梦中情机属于是😂<br><em><strong>但是！注意！免费的午餐是没有的！！请不要搭建完就跑，一定要看服务条款，文章最后我会截取最重要的那部分给大家，一定要看服务条款！一定要看服务条款！一定要看服务条款！</strong></em><br>那么就开始申请吧！</p>
+<span id="more"></span>
+<h1 id="劝退二连"><a href="#劝退二连" class="headerlink" title="劝退二连"></a>劝退二连</h1><p>首先有个注册超30天的GitHub账号，其次这个帐号绑定的邮箱不能是qq&#x2F;163以及国内主流邮箱，建议gamil或在中国能方便注册的hotmail，我就是用hotmail成功的。</p>
+<h1 id="注册流程"><a href="#注册流程" class="headerlink" title="注册流程"></a>注册流程</h1><p>一、打开页面：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL01ldGFWUFMveHNzaA==">https://github.com/MetaVPS/xssh<i class="fa fa-external-link-alt"></i></span> 直接登录，Fork这个仓库，库名称一定要保持xssh；</p>
+<p>二、打开页面：<span class="exturl" data-url="aHR0cHM6Ly9kYXNoYm9hcmQubmdyb2suY29tL2xvZ2lu">https://dashboard.ngrok.com/login<i class="fa fa-external-link-alt"></i></span> 直接使用GitHub账号登录，然后在入门-授权令牌&#x2F;Getting Started-Your AuthToken 里找到<code>Copy</code>，直接复制</p>
+<p>三、在你自己仓库中修改config.sh,内容为 NGROK_TOKEN&#x3D;”你的令牌”，然后返回仓库，拷贝仓库地址，格式例如：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLyVFNCVCRCVBMCVFNyU5QSU4NCVFNSU5MCU4RCVFNSVBRCU5Ny94c3No">https://github.com/你的名字/xssh<i class="fa fa-external-link-alt"></i></span></p>
+<p>四、打开页面：<span class="exturl" data-url="aHR0cHM6Ly9jbG91ZC5va3RldG8uY29tLyMvbG9naW4=">https://cloud.okteto.com/#/login<i class="fa fa-external-link-alt"></i></span> 同样用GitHub登录。<strong>注意：这一步如果用国内邮箱会显示该GitHub账号的邮箱不符合规范</strong>然后在左上角点击：新建开发环境-GitUrl。填写上一个步骤中你的仓库的地址（<em><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLyVFNCVCRCVBMCVFNyU5QSU4NCVFNSU5MCU4RCVFNSVBRCU5Ny94c3No">https://github.com/你的名字/xssh<i class="fa fa-external-link-alt"></i></span></em>)，分支填写 main，然后启动。稍等1-3分钟，直到网络部署显示Running！</p>
+<p>五、我们回到ngrok，在左侧栏里找到Tunnels- Agent，然后点击里面的栏目，会弹出来类似tcp:&#x2F;&#x2F;6.tcp.ngrok.io:12795 这样的一个地址。</p>
+<p>这样就可以了，接下来我们进行ssh连接，你的用户名和密码和我保持一致，地址和端口要看你自己的后台哦：<br>地址：6.tcp.ngrok.io端口：12795用户名：root密码：majalaya</p>
+<p><em><strong>很重要的是，一定一定要看他的服务条款，接下来我截取一些重要的，我因为搭建MInecraft服务器而被封了一个号，同时搭建代理也是不允许的！！！</strong></em></p>
+<h1 id="服务条款"><a href="#服务条款" class="headerlink" title="服务条款"></a>服务条款</h1><blockquote>
+<h2 id="禁止的内容"><a href="#禁止的内容" class="headerlink" title="禁止的内容"></a>禁止的内容</h2><p>通过您的应用程序或使用我们服务的其他网站显示和&#x2F;或处理的内容不包含以下任何类型的内容：<br>1.根据适用法律侵犯第三方权利（例如版权）的内容。<br>2.过于亵渎的内容。<br>3.与仇恨相关或暴力内容。<br>4.旨在倡导或推进计算机黑客攻击或破解的内容。<br>5.赌博。<br>6.非法活动，包括但不限于非法出口受管制物质或非法软件。<br><em><strong>7.网络钓鱼。</strong></em><br><em><strong>8.恶意内容。</strong></em><br>9.违反或鼓励违反任何刑法、任何其他适用法律或任何第三方权利的行为的其他材料、产品或服务。</p>
+<h2 id="禁止的行为"><a href="#禁止的行为" class="headerlink" title="禁止的行为"></a>禁止的行为</h2><p>此外，您不得也不得允许任何第三方，包括您的最终用户：<br>1.生成、分发、发布或便利未经请求的群发电子邮件、促销、广告或其他招标（“垃圾邮件”）。<br>2.故意分发病毒、蠕虫、缺陷、特洛伊木马、损坏的文件、恶作剧或任何其他破坏性或欺骗性的物品。<br>3.冒充他人（通过使用电子邮件地址或其他方式）或以其他方式歪曲自己或任何电子邮件的来源。<br>4.无需Okteto事先书面批准，即可创建自动化帐户或批量注册帐户。<br>5.使用我们的服务侵犯他人的合法权利（如隐私权和公开权）。<br>6.促进或鼓励非法活动。<br>7.干扰其他用户对我们服务的享受。<br><em><strong>8.执行负载测试。</strong></em><br>9.出售、交易或转售对我们服务的访问权限。<br>10.修改、改编、翻译或逆向工程我们服务的任何部分。<br>11.使用我们的服务进行点对点文件共享。<br><em><strong>12.使用我们的服务“开采”加密货币或比特币。</strong></em><br><em><strong>13.使用我们的服务运行“Minecraft”或类似的服务器。</strong></em><br><em><strong>14.使用我们的服务运行Telegram和WhatsApp机器人或类似服务。</strong></em><br><em><strong>15.使用自动化服务来规避我们服务中的限制和配额，例如帐户共享、批量帐户创建或自动请求调度。</strong></em><br><em><strong>16.使用我们的服务操作“开放代理”或任何其他形式的互联网代理服务，能够将请求转发给任何最终用户或第三方提供的互联网主机。</strong></em>(就是搭建梯子！！！)<br>17.使用我们的服务或与我们的服务提供的任何接口，以违反使用此类Okteto产品或服务的条款或其他条款和条件的方式访问任何Okteto产品或服务。</p>
+</blockquote>
+<h1 id="最后的话"><a href="#最后的话" class="headerlink" title="最后的话"></a>最后的话</h1><p>说实话，免费的午餐果然没有，这个服务器限制还是稍微有些多的，这也是为什么我拿到vps之后迷茫了，不知道干什么，原本计划好的事全部都被禁止了，但是这个服务器应该还可以用来建站。下篇文章我会写一个专门用于搭建MInecraft服务器的免费vps，配置还不错，就这样。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+  </entry>
+  <entry>
     <title>无树莓派安装klipper固件</title>
     <url>/posts/28979.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近翻出了我的一台3d打印机，是21年买的。</p>
@@ -1270,30 +1294,6 @@
 <p>这样打印机就接入wsl了，接下来按照上面给出的<span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1NYVVVOHN0c1pQbyZ0PTIxMnM=">youtube视频<i class="fa fa-external-link-alt"></i></span>继续操作就可以了，我直接复制了ender3 v2的cfg文件，发现也能用。</p>
 <p>一切就绪，klipper中应该就会显示打印机的相关信息，打印机的屏幕上也会显示数据了。现在可以开始打印了，真是可喜可贺，可口可乐🎉🎉🎉</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>【已翻车】无敌牛逼的vps</title>
-    <url>/posts/49631.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>无敌牛逼的vps</p>
-<h1 id="无敌牛逼的vps"><a href="#无敌牛逼的vps" class="headerlink" title="无敌牛逼的vps"></a>无敌牛逼的vps</h1><p>前几个月一直在想vps的问题，在想有了一台vps之后我可以在上面干点什么，有趣的是结果当我真有了vps后却不知道怎么办了<br>那么今天就在这里水一篇博文，主要是这台vps真的很良心，首先要说明的是<strong>完全免费</strong>，真的太香了！！<br><strong>有root访问权限，Debian系统，x86架构要比ibm的更实用些，4核32G而且部署还简单，无需信用卡！！</strong><br>梦中情机属于是😂<br><em><strong>但是！注意！免费的午餐是没有的！！请不要搭建完就跑，一定要看服务条款，文章最后我会截取最重要的那部分给大家，一定要看服务条款！一定要看服务条款！一定要看服务条款！</strong></em><br>那么就开始申请吧！</p>
-<span id="more"></span>
-<h1 id="劝退二连"><a href="#劝退二连" class="headerlink" title="劝退二连"></a>劝退二连</h1><p>首先有个注册超30天的GitHub账号，其次这个帐号绑定的邮箱不能是qq&#x2F;163以及国内主流邮箱，建议gamil或在中国能方便注册的hotmail，我就是用hotmail成功的。</p>
-<h1 id="注册流程"><a href="#注册流程" class="headerlink" title="注册流程"></a>注册流程</h1><p>一、打开页面：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL01ldGFWUFMveHNzaA==">https://github.com/MetaVPS/xssh<i class="fa fa-external-link-alt"></i></span> 直接登录，Fork这个仓库，库名称一定要保持xssh；</p>
-<p>二、打开页面：<span class="exturl" data-url="aHR0cHM6Ly9kYXNoYm9hcmQubmdyb2suY29tL2xvZ2lu">https://dashboard.ngrok.com/login<i class="fa fa-external-link-alt"></i></span> 直接使用GitHub账号登录，然后在入门-授权令牌&#x2F;Getting Started-Your AuthToken 里找到<code>Copy</code>，直接复制</p>
-<p>三、在你自己仓库中修改config.sh,内容为 NGROK_TOKEN&#x3D;”你的令牌”，然后返回仓库，拷贝仓库地址，格式例如：<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLyVFNCVCRCVBMCVFNyU5QSU4NCVFNSU5MCU4RCVFNSVBRCU5Ny94c3No">https://github.com/你的名字/xssh<i class="fa fa-external-link-alt"></i></span></p>
-<p>四、打开页面：<span class="exturl" data-url="aHR0cHM6Ly9jbG91ZC5va3RldG8uY29tLyMvbG9naW4=">https://cloud.okteto.com/#/login<i class="fa fa-external-link-alt"></i></span> 同样用GitHub登录。<strong>注意：这一步如果用国内邮箱会显示该GitHub账号的邮箱不符合规范</strong>然后在左上角点击：新建开发环境-GitUrl。填写上一个步骤中你的仓库的地址（<em><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tLyVFNCVCRCVBMCVFNyU5QSU4NCVFNSU5MCU4RCVFNSVBRCU5Ny94c3No">https://github.com/你的名字/xssh<i class="fa fa-external-link-alt"></i></span></em>)，分支填写 main，然后启动。稍等1-3分钟，直到网络部署显示Running！</p>
-<p>五、我们回到ngrok，在左侧栏里找到Tunnels- Agent，然后点击里面的栏目，会弹出来类似tcp:&#x2F;&#x2F;6.tcp.ngrok.io:12795 这样的一个地址。</p>
-<p>这样就可以了，接下来我们进行ssh连接，你的用户名和密码和我保持一致，地址和端口要看你自己的后台哦：<br>地址：6.tcp.ngrok.io端口：12795用户名：root密码：majalaya</p>
-<p><em><strong>很重要的是，一定一定要看他的服务条款，接下来我截取一些重要的，我因为搭建MInecraft服务器而被封了一个号，同时搭建代理也是不允许的！！！</strong></em></p>
-<h1 id="服务条款"><a href="#服务条款" class="headerlink" title="服务条款"></a>服务条款</h1><blockquote>
-<h2 id="禁止的内容"><a href="#禁止的内容" class="headerlink" title="禁止的内容"></a>禁止的内容</h2><p>通过您的应用程序或使用我们服务的其他网站显示和&#x2F;或处理的内容不包含以下任何类型的内容：<br>1.根据适用法律侵犯第三方权利（例如版权）的内容。<br>2.过于亵渎的内容。<br>3.与仇恨相关或暴力内容。<br>4.旨在倡导或推进计算机黑客攻击或破解的内容。<br>5.赌博。<br>6.非法活动，包括但不限于非法出口受管制物质或非法软件。<br><em><strong>7.网络钓鱼。</strong></em><br><em><strong>8.恶意内容。</strong></em><br>9.违反或鼓励违反任何刑法、任何其他适用法律或任何第三方权利的行为的其他材料、产品或服务。</p>
-<h2 id="禁止的行为"><a href="#禁止的行为" class="headerlink" title="禁止的行为"></a>禁止的行为</h2><p>此外，您不得也不得允许任何第三方，包括您的最终用户：<br>1.生成、分发、发布或便利未经请求的群发电子邮件、促销、广告或其他招标（“垃圾邮件”）。<br>2.故意分发病毒、蠕虫、缺陷、特洛伊木马、损坏的文件、恶作剧或任何其他破坏性或欺骗性的物品。<br>3.冒充他人（通过使用电子邮件地址或其他方式）或以其他方式歪曲自己或任何电子邮件的来源。<br>4.无需Okteto事先书面批准，即可创建自动化帐户或批量注册帐户。<br>5.使用我们的服务侵犯他人的合法权利（如隐私权和公开权）。<br>6.促进或鼓励非法活动。<br>7.干扰其他用户对我们服务的享受。<br><em><strong>8.执行负载测试。</strong></em><br>9.出售、交易或转售对我们服务的访问权限。<br>10.修改、改编、翻译或逆向工程我们服务的任何部分。<br>11.使用我们的服务进行点对点文件共享。<br><em><strong>12.使用我们的服务“开采”加密货币或比特币。</strong></em><br><em><strong>13.使用我们的服务运行“Minecraft”或类似的服务器。</strong></em><br><em><strong>14.使用我们的服务运行Telegram和WhatsApp机器人或类似服务。</strong></em><br><em><strong>15.使用自动化服务来规避我们服务中的限制和配额，例如帐户共享、批量帐户创建或自动请求调度。</strong></em><br><em><strong>16.使用我们的服务操作“开放代理”或任何其他形式的互联网代理服务，能够将请求转发给任何最终用户或第三方提供的互联网主机。</strong></em>(就是搭建梯子！！！)<br>17.使用我们的服务或与我们的服务提供的任何接口，以违反使用此类Okteto产品或服务的条款或其他条款和条件的方式访问任何Okteto产品或服务。</p>
-</blockquote>
-<h1 id="最后的话"><a href="#最后的话" class="headerlink" title="最后的话"></a>最后的话</h1><p>说实话，免费的午餐果然没有，这个服务器限制还是稍微有些多的，这也是为什么我拿到vps之后迷茫了，不知道干什么，原本计划好的事全部都被禁止了，但是这个服务器应该还可以用来建站。下篇文章我会写一个专门用于搭建MInecraft服务器的免费vps，配置还不错，就这样。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
   </entry>
   <entry>
     <title>无视免费帐户限制！白嫖各家显卡爽玩SD webui</title>
