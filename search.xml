@@ -671,7 +671,8 @@
 <p>我建议直接在vercel里的storage里进行创建，可以直接关联waline的vercel项目，十分方便，都不用自己填写了环境变量了</p>
 <p>可以参考 <span class="exturl" data-url="aHR0cHM6Ly9maW5pc2t5LmdpdGh1Yi5pby9oZXhvcm1sZWFuY2xvdWQv">这篇教程<i class="fa fa-external-link-alt"></i></span></p>
 <p>和<span class="exturl" data-url="aHR0cHM6Ly93YWxpbmUuanMub3JnL2d1aWRlL2RhdGFiYXNlLmh0bWw=">waline官方的指南<i class="fa fa-external-link-alt"></i></span></p>
-<p>更换之后我给waline也套了CDN，现在评论也秒开了，针不戳</p>
+<p><del>更换之后我给waline也套了CDN，现在评论也秒开了，针不戳</del></p>
+<p>!!! note “警告”<br>给waline套CDN会让所有人的ip全部显示混乱，不要套！verel香港节点反而更快</p>
 ]]></content>
   </entry>
   <entry>
