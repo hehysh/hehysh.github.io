@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>404 Not Found</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css" />
+    <style>
+        body {
+          font-family: "LXGW WenKai", sans-serif;
+        }
+        /* 基础样式 */
+        body, html {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          transition: background-color 0.3s, color 0.3s;
+        }
+        .error {
+          font-size: 20vw;
+        }
+        .home-link {
+          display: inline-block;
+          margin-top: 20px;
+          padding: 10px 20px;
+          border-radius: 5px;
+          font-weight: bold;
+          text-decoration: none;
+          transition: background-color 0.3s, color 0.3s;
+        }
+        /* 模式切换按钮 */
+        .theme-switcher {
+          position: fixed;
+          top: 20px;
+          right: 20px;
+          font-size: 24px;
+          cursor: pointer;
+        }
+        /* 白天模式样式 */
+        [data-theme="light"] {
+          background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAACFJREFUeNpiZGBg4GegAsBlCD8TqSYNQg2Mo6FEBAAIMACdPABtrSW/IQAAAABJRU5ErkJggg==');
+          background-repeat: repeat;
+        /*  color: #000; */
+          --link-text-color: #000;
+          --link-background-color: #f0f0f0;
+        }
+        /* 夜晚模式样式 */
+        [data-theme="dark"] {
+          background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAUDBAQEAwUEBAQFBQUGBwwIBwcHBw8LCwkMEQ8SEhEPERETFhwXExQaFRERGCEYGh0dHx8fExciJCIeJBweHx7/2wBDAQUFBQcGBw4ICA4eFBEUHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh7/wAARCAAMAAwDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAABAj/xAAmEAABAwEFCQAAAAAAAAAAAAABAAMSAgQFEXLBEyEjMTIzQlFh/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AI6oL0a8XfHdxB7H1JsU9kZ1SMucsUFvocy6hMu7sHNoEH//2Q==');
+          background-repeat: repeat;
+          color: #fff;
+          --link-text-color: #fff;
+          --link-background-color: #333;
+        }
+    </style>
+</head>
+<body data-theme="light">
+    <div class="error">404</div>
+    <a href="https://blog.nbplus.eu.org" class="home-link" style="color: var(--link-text-color); background-color: var(--link-background-color);">回到首页</a>
+    <div class="theme-switcher" onclick="toggleTheme()">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon" style="display:none;"></i>
+    </div>
+    <script>
+        function toggleTheme() {
+            const theme = document.documentElement.getAttribute("data-theme");
+            if (theme === "dark") {
+                document.documentElement.setAttribute("data-theme", "light");
+                document.querySelector('.fa-sun').style.display = 'inline';
+                document.querySelector('.fa-moon').style.display = 'none';
+            } else {
+                document.documentElement.setAttribute("data-theme", "dark");
+                document.querySelector('.fa-sun').style.display = 'none';
+                document.querySelector('.fa-moon').style.display = 'inline';
+            }
+        }
+    </script>
+</body>
+</html>
