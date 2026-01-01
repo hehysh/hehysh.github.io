@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>晴雀堂</title>
+  
+  <subtitle>晴雀的个人博客</subtitle>
+  <link href="https://blog.nbplus.eu.org/atom.xml" rel="self"/>
+  
+  <link href="https://blog.nbplus.eu.org/"/>
+  <updated>2026-01-01T03:22:53.872Z</updated>
+  <id>https://blog.nbplus.eu.org/</id>
+  
+  <author>
+    <name>晴雀</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2026新年快乐！</title>
+    <link href="https://blog.nbplus.eu.org/posts/59748.html"/>
+    <id>https://blog.nbplus.eu.org/posts/59748.html</id>
+    <published>2026-01-01T03:21:26.000Z</published>
+    <updated>2026-01-01T03:22:53.872Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>博客小修</title>
+    <link href="https://blog.nbplus.eu.org/posts/60168.html"/>
+    <id>https://blog.nbplus.eu.org/posts/60168.html</id>
+    <published>2025-08-22T09:55:07.000Z</published>
+    <updated>2026-01-01T03:18:21.213Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;时隔几个月又再度更新啦，时过境迁，很多博客刚建立之初还能用的服务到三年之后已经无法使用了&lt;/p&gt;
+&lt;p&gt;正好今天在套edge one的CDN，因此顺便修缮了一下博客，让博客处于最佳状态&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>博客踩坑与重生：解决无提示错误ERR_INVALID_URL</title>
+    <link href="https://blog.nbplus.eu.org/posts/undefined.html"/>
+    <id>https://blog.nbplus.eu.org/posts/undefined.html</id>
+    <published>2025-05-11T14:55:06.000Z</published>
+    <updated>2026-01-01T03:18:21.214Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;上一篇文章发出来太艰难了，hexo更新后对url的要求变得极其严格。导致hexo g时出现了ERR_INVALID_URL。&lt;/p&gt;
+&lt;p&gt;而且！！有时候它会不告诉你报错内容在哪里！！极其恶心，今天花了两个小时解决这个问题，全程和gemini讨论，最终解决。实在应该记录一下，要不然之后又忘了怎么解决了。本人经过两个小时的摧残，已经几近爆炸，因此下文全篇由和我对话，帮我解决此问题的的Gemini记录。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>switch大气层虚拟系统急救指南</title>
+    <link href="https://blog.nbplus.eu.org/posts/18424.html"/>
+    <id>https://blog.nbplus.eu.org/posts/18424.html</id>
+    <published>2025-05-11T10:36:35.000Z</published>
+    <updated>2026-01-01T03:18:21.212Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;上一次更新博客是在2024-9-22，已经半年没更新了。&lt;/p&gt;
+&lt;p&gt;十一月份我骑公路车把手摔断了，后来忙于学业，久而久之就断更了。以前我刚建立博客的时候几乎一天一更，后来发现热情消退了连一月一更都很难坚持。希望我能继续坚持下去吧。&lt;/p&gt;
+&lt;p&gt;写这篇文章的契机主要是最近折腾switch结果把大气层虚拟系统给搞炸了，于是记录一下这次的救机过程，方便自己以后再查阅吧。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>无树莓派安装klipper固件</title>
+    <link href="https://blog.nbplus.eu.org/posts/28979.html"/>
+    <id>https://blog.nbplus.eu.org/posts/28979.html</id>
+    <published>2024-09-22T20:07:43.000Z</published>
+    <updated>2026-01-01T03:18:21.216Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近翻出了我的一台3d打印机，是21年买的。&lt;/p&gt;
+&lt;p&gt;记得那个时候我刚代表小学参加一个上海市的3d打印比赛，在4个月内学会了3d建模并且与小组的其他3个人共同建模了母校（现在忘光了）。&lt;/p&gt;
+&lt;p&gt;当时只拿了第二名，不过第一名是也是我们学校的。&lt;/p&gt;
+&lt;p&gt;反正回来之后对于3d打印很感兴趣，干脆自己买了一台放在家里玩。于是购入一台创想三维的Ender-3 v1。&lt;/p&gt;
+&lt;p&gt;现在翻出来，首先随便打印了个东西，发现打印速度、精度都好像有点过时。这三年来3d打印，尤其是小型的打印机发展速度太快了。&lt;/p&gt;
+&lt;p&gt;于是上网进行搜索，发现换一个固件可以快速有效的解决问题，把打印机的性能大幅提升，于是开始折腾。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>再次小改博客</title>
+    <link href="https://blog.nbplus.eu.org/posts/34205.html"/>
+    <id>https://blog.nbplus.eu.org/posts/34205.html</id>
+    <published>2024-07-09T14:32:08.000Z</published>
+    <updated>2026-01-01T03:18:21.213Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>两轮承载灵魂</title>
+    <link href="https://blog.nbplus.eu.org/posts/10286.html"/>
+    <id>https://blog.nbplus.eu.org/posts/10286.html</id>
+    <published>2024-07-08T10:12:21.000Z</published>
+    <updated>2026-01-01T03:18:21.213Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;有这么一句话：四轮承载肉体，两轮承载灵魂。&lt;/p&gt;
+&lt;p&gt;这说的是骑行，自行车作为交通工具，极大的方便了较短途又不方便走路的通勤路程。&lt;/p&gt;
+&lt;p&gt;以前自行车作为三大件，是稀罕物。现在只要几百块就能买一辆结实耐用的自行车，更有共享单车方便的供你选择。&lt;/p&gt;
+&lt;p&gt;不过，随着时代的发展，自行车也越来越从交通工具迈向运动器材，甚至是生活方式。&lt;/p&gt;
+&lt;p&gt;最近也实在禁不住诱惑，跟从内心的想法，生日礼物选了一辆喜德盛的一款AD350公路车。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>旧文钞-明斯克卷</title>
+    <link href="https://blog.nbplus.eu.org/posts/4186.html"/>
+    <id>https://blog.nbplus.eu.org/posts/4186.html</id>
+    <published>2024-06-17T19:51:45.000Z</published>
+    <updated>2026-01-01T03:18:21.216Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近期末也已考完，成绩还算满意，不料学校竟还需上两个星期的课。&lt;/p&gt;
+&lt;p&gt;于是为自己安排好休息，去图书馆借阅大量小说。今天是期末考完正常上课第一天，同学早已没有兴致听期末考卷讲评。&lt;/p&gt;
+&lt;p&gt;我三小科选择物理、化学、生物，而政治、历史、地理又比选这三科的人还要来得好，因此自是大胆不听政史地试卷讲评，便拿来鲁迅的《呐喊》、《彷徨》来读。&lt;/p&gt;
+&lt;p&gt;这学期语文书选入《祝福》，又想起那中学未读完的鲁迅，如《药》，《伤逝》之类，便起了兴致。即读完，有了些感伤，文风也拙劣的像起鲁迅来了。&lt;/p&gt;
+&lt;p&gt;然而又从鲁迅引出一篇新题目来，那便是明斯克数学家等初中好友的旧文章，何不也整理成集，也是一件快事，便为本集，暂定《旧文钞》。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>基于gpt4o的免费桌宠解决方案</title>
+    <link href="https://blog.nbplus.eu.org/posts/30407.html"/>
+    <id>https://blog.nbplus.eu.org/posts/30407.html</id>
+    <published>2024-06-07T21:32:25.000Z</published>
+    <updated>2026-01-01T03:18:21.214Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;看到标题你可能会难以置信，但是这套方案能做到：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; 零费，完全免费&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; 使用gpt4o等gpt4付费模型，也可选择cf worker AI系模型&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; 使用的都是开源项目&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; 由于最终产生一个调用LLM的api，可以方便的接入其他场景</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何在lunar端中安装模组</title>
+    <link href="https://blog.nbplus.eu.org/posts/18818.html"/>
+    <id>https://blog.nbplus.eu.org/posts/18818.html</id>
+    <published>2024-06-02T16:19:09.000Z</published>
+    <updated>2026-01-01T03:18:21.215Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近每周玩玩生存，工作本的显卡Intel iRIS Xe Graphics虽然很烂，但是能把光影带到70fps，也不错了&lt;/p&gt;
+&lt;p&gt;虽然lunar端内置一大堆mod，但是现在的需求是要额外装个world map，移动光源和环境音增强&lt;/p&gt;
+&lt;p&gt;在bing上搜索不难发现现在lunar端已经支持装mod了，但是找了一圈没有详细教程&lt;/p&gt;
+&lt;p&gt;————因此！！本教程诞生！！&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>无视免费帐户限制！白嫖各家显卡爽玩SD webui</title>
+    <link href="https://blog.nbplus.eu.org/posts/63905.html"/>
+    <id>https://blog.nbplus.eu.org/posts/63905.html</id>
+    <published>2024-05-18T20:57:41.000Z</published>
+    <updated>2026-01-01T03:18:21.216Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;众所周知啊，我之前发过一篇玩novelai的文章。&lt;/p&gt;
+&lt;p&gt;那个时候用的是百度的aistudio的算力去跑的stable diffusion。&lt;/p&gt;
+&lt;p&gt;你说百度他抠门吧，他让你用A100显卡，你说他抠门吧，他只让你用paddle架构，不能运行原版webui，这就很难受啊！&lt;/p&gt;
+&lt;p&gt;最近学业压力小了点，又决定开始鼓捣，遂发现根本不用再赤百度的石了，有三家都可以爽玩原版webui，而且可以跟本地电脑一样添加各种插件lora。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>终于有独立域名啦</title>
+    <link href="https://blog.nbplus.eu.org/posts/59380.html"/>
+    <id>https://blog.nbplus.eu.org/posts/59380.html</id>
+    <published>2024-05-12T15:40:14.000Z</published>
+    <updated>2026-01-01T03:18:21.217Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>简评《饿殍：明末千里行》</title>
+    <link href="https://blog.nbplus.eu.org/posts/52223.html"/>
+    <id>https://blog.nbplus.eu.org/posts/52223.html</id>
+    <published>2024-05-06T20:55:24.000Z</published>
+    <updated>2026-01-01T03:18:21.216Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;又到了五一节，是时候休息一下了。4月30号晚上我们就连夜赶往江苏度过五一假期。&lt;/p&gt;
+&lt;p&gt;5月1号下午，我正在刷着小黑盒，发现steam上一个国产新GalGame《饿殍：明末千里行》（后简称饿殍）。也看到了游戏封面，也就是女主角满穗在木桶里泡澡里那张图（我敢肯定很多人都是被这张图骗入坑的，然后发现根本不是黄油，可恶！），发觉满穗居然长在我的xp上，思来想去半小时，抵抗诱惑无果，于是rmb23（watt toolkit优惠力度比小黑盒大，更比steam官渠大）果断入手。&lt;/p&gt;
+&lt;p&gt;当天晚上立刻下载并且开始爽玩。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（有严重剧透！！）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://img-verynb.s3.bitiful.net/b823b9017648d96e7762bd1813b3e077.png&quot; alt=&quot;万穗爷&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>博客成立两年啦</title>
+    <link href="https://blog.nbplus.eu.org/posts/3178.html"/>
+    <id>https://blog.nbplus.eu.org/posts/3178.html</id>
+    <published>2024-04-05T16:08:57.000Z</published>
+    <updated>2026-01-01T03:18:21.214Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>next主题使用Gemini进行ai文章总结</title>
+    <link href="https://blog.nbplus.eu.org/posts/15304.html"/>
+    <id>https://blog.nbplus.eu.org/posts/15304.html</id>
+    <published>2024-04-04T21:44:35.000Z</published>
+    <updated>2026-01-01T03:18:21.212Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今天是清明节假期，昨晚22:50上床，一觉睡到上午10:30左右（学生党是这样的）&lt;/p&gt;
+&lt;p&gt;上午给老mac换了硅脂，清了灰，然后决定休息会。&lt;/p&gt;
+&lt;p&gt;吃完饭翻了翻immmmm.com，翻到了一篇文章：&lt;/p&gt;
+&lt;p&gt;&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9pbW1tbW0uY29tL2dlbWluaS1wcm8tYWkv&quot;&gt;利用 Gemini Pro 为文章添加摘要&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;再一看，发现Google的Gemini Pro的api调用居然是免费的！For free！！！&lt;/p&gt;
+&lt;p&gt;我很少很少能见到这么高质量的LLM的api免费，于是顿时起了兴趣，火速开始折腾。&lt;br&gt;（踩了巨他妈多！！！！的！！！！坑！！！！！！！！）&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>记东方绿舟的一周</title>
+    <link href="https://blog.nbplus.eu.org/posts/18578.html"/>
+    <id>https://blog.nbplus.eu.org/posts/18578.html</id>
+    <published>2024-03-22T19:06:00.000Z</published>
+    <updated>2026-01-01T03:18:21.217Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;上海市的学校有一个神奇的传统，那就是去东方绿舟进行国防教育一周，吃住全在那边。&lt;/p&gt;
+&lt;p&gt;除了上海中学和上海中学东校以外，其他所有的高中（包括职高）的高一学生都必须得去一趟东方绿舟。&lt;/p&gt;
+&lt;p&gt;说是国防教育，其实就是超级军训，不再是站军姿，而是教练枪，拆枪，投手榴弹，单兵战术之类的真东西。&lt;/p&gt;
+&lt;p&gt;当然，和军备大省的军训肯定比不了，不过对于我们这种已经被军训的站军姿以及队列训练折磨的要疯了的可怜人来说，这简直就是度假！！&lt;/p&gt;
+&lt;p&gt;于是，在2024.3.18，终于轮到了我们粥铺参加国防教育，因此特此记录这奇妙的一周。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>casio计算器完全使用指南</title>
+    <link href="https://blog.nbplus.eu.org/posts/50032.html"/>
+    <id>https://blog.nbplus.eu.org/posts/50032.html</id>
+    <published>2024-03-05T19:33:58.000Z</published>
+    <updated>2026-01-01T03:18:21.212Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近换新了计算器，换到了Casio 991-cnx。&lt;/p&gt;
+&lt;p&gt;众所周知，上海高考可以使用计算器，目前允许带进的最高规格，功能最多的计算器就是Casio-991 cnx。&lt;/p&gt;
+&lt;p&gt;因此我在网上搜索各种关于Casio 991的内容，其中有正常使用的，也有非正常使用的。&lt;/p&gt;
+&lt;p&gt;无论你是想知道如何在高考考场中高效运用计算器，还是想要卡casio的bug，都可以在本文找到答案。&lt;/p&gt;
+&lt;p&gt;本文主要是搜集各方资料，进行汇编而成。&lt;/p&gt;
+&lt;p&gt;包括以下内容：&lt;br&gt;Casio 991-cnx计算器在上海高考中的高效运用教程&lt;br&gt;Casio 991-cnx计算器正常使用教程&lt;br&gt;Casio 991-cnx计算器非正常使用教程&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>聊聊粥铺</title>
+    <link href="https://blog.nbplus.eu.org/posts/404.html"/>
+    <id>https://blog.nbplus.eu.org/posts/404.html</id>
+    <published>2024-02-07T17:35:57.000Z</published>
+    <updated>2026-01-01T03:18:21.217Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;哇塞，转眼居然已经快过年了。时隔这么久没更并不代表我放弃了这个博客，主要是住宿生根本摸不到电脑。&lt;/p&gt;
+&lt;p&gt;好在终于熬过了一个学期，又到了&lt;del&gt;美好的&lt;/del&gt;寒假。&lt;em&gt;说实话，寒假得一天隔着一天去补课机构，一直到除夕之前，我还不如继续上课……&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;已经在粥铺（本人对上海市周浦中学的习惯性称呼）度过了一个学期。上一篇文章评论区所有朋友们的鼓励我都认真看了，衷心感谢你们的鼓励，我也做好了准备，在高中三年继续努力，再拼一把！&lt;/p&gt;
+&lt;p&gt;既然已经来到了这里，那么再后悔当初也没有用了，既来之，则安之。那就聊聊在粥铺度过了一个学期的感受吧。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>迁移hexo博客至mac避坑指北</title>
+    <link href="https://blog.nbplus.eu.org/posts/34459.html"/>
+    <id>https://blog.nbplus.eu.org/posts/34459.html</id>
+    <published>2024-02-07T15:52:42.000Z</published>
+    <updated>2026-01-01T03:18:21.217Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;寒假开始的时候获得了一台mac，我妈退役下来的超级老机子，查了一下机子什么配置&lt;/p&gt;
+&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;MacBook&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;Air&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;(13-inch,&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;Early&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;处理器1.6&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;GHz&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;双核Intel&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;Core&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;i5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;内存4&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;GB&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1600 &lt;/span&gt;&lt;span class=&quot;string&quot;&gt;MHz&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;DDR3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;图形卡Intel&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;HD&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;Graphics&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;6000 &lt;/span&gt;&lt;span class=&quot;number&quot;&gt;1536 &lt;/span&gt;&lt;span class=&quot;string&quot;&gt;MB&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;绝了，我觉得这玩意还能动真是个奇迹&lt;/p&gt;
+&lt;p&gt;结果实际运行结果让我大吃一惊，它居然还能下载lunar client玩mc，而且1.20.2最高到120fps，稳定80fps！！！&lt;/p&gt;
+&lt;p&gt;真是牛逼，顽强的生命呐（赞叹&lt;/p&gt;
+&lt;p&gt;然后今天突然想起自己的博客，发现上一次更新居然在23年8月份，这下我立刻开始着手迁移博客源码到mac上，结果遇到了一堆匪夷所思的问题，气得我七窍生烟，必须记下来&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>中考惨败之后的一些感想</title>
+    <link href="https://blog.nbplus.eu.org/posts/18817.html"/>
+    <id>https://blog.nbplus.eu.org/posts/18817.html</id>
+    <published>2023-08-07T09:58:29.000Z</published>
+    <updated>2026-01-01T03:18:21.213Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;这篇是很久很久沉寂以后的新文章&lt;/p&gt;
+&lt;p&gt;主要先讲讲近况吧，之后再发一些新的东西&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>
