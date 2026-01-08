@@ -212,7 +212,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">73</span>
+          <span class="site-state-item-count">74</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -268,6 +268,172 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://blog.nbplus.eu.org/posts/55554.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/author.jpg">
+      <meta itemprop="name" content="晴雀">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="晴雀堂">
+      <meta itemprop="description" content="天行健，君子以自强不息">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 晴雀堂">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/posts/55554.html" class="post-title-link" itemprop="url">waline评论系统测试贴(持续更新)</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2022-07-20 09:12:15" itemprop="dateCreated datePublished" datetime="2022-07-20T09:12:15+00:00">2022-07-20</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/" itemprop="url" rel="index"><span itemprop="name">持续更新</span></a>
+        </span>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/posts/55554.html#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/posts/55554.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <!--
+<div class="post-ai" onclick="geminiAI()">
+  <img alt="Static Badge" src="https://api-shields.edui.fun/badge/Gemini-文章摘要-blue.svg?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Im0yMS42NCAzLjY0bC0xLjI4LTEuMjhhMS4yMSAxLjIxIDAgMCAwLTEuNzIgMEwyLjM2IDE4LjY0YTEuMjEgMS4yMSAwIDAgMCAwIDEuNzJsMS4yOCAxLjI4YTEuMiAxLjIgMCAwIDAgMS43MiAwTDIxLjY0IDUuMzZhMS4yIDEuMiAwIDAgMCAwLTEuNzJNMTQgN2wzIDNNNSA2djRtMTQgNHY0TTEwIDJ2Mk03IDhIM20xOCA4aC00TTExIDNIOSIvPjwvc3ZnPg==">
+</div>
+<style>
+@keyframes spin { from {transform: rotate(0deg);}to {transform: rotate(360deg);} }
+.post-ai-result svg{animation: spin 1s infinite linear;}
+</style>
+<script>
+async function geminiAI() {
+  let postAI = document.querySelector(".post-ai");
+  let postTile = document.querySelector("h1.post-title").textContent;
+  postAI.insertAdjacentHTML('afterend', '<div class="post-ai-result"><svg ...></svg></div>');
+  postAI.classList.add("noclick");
+  
+  let GeminiFetch = "https://api-gemini.nbplus.eu.org/v1/chat/completions/";
+  
+  try {
+    let postAIResult = document.querySelector(".post-ai-result");
+    let input = document.querySelector(".post-content").textContent;
+    input = input.replace(/\n/g, '').replace(/[ ]+/g, ' ').replace(/<pre>[\s\S]*?<\/pre>/g, '').substring(0, 30000);
+    let toAI = `文章标题：${postTile}，具体内容：${input}`;
+    const res = await fetch(GeminiFetch, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'AIzaSyDzPmfr5E_zWsBWCd4u2tZLC_eTQEMwoCY'
+      },
+      method: 'POST', 
+      body: JSON.stringify({
+        model: 'gemini-pro',
+        messages: [
+          { role: 'system',content:`You are a highly skilled AI trained in language comprehension and summarization. I would like you to read the text delimited by triple quotes and summarize it into a concise abstract paragraph. Aim to retain the most important points, providing a coherent and readable summary that could help a person understand the main points of the discussion without needing to read the entire text. Please avoid unnecessary details or tangential points.
+          Only give me the output and nothing else. Do not wrap responses in quotes. Respond in the Chinese language.`},
+          { role: 'user', content: toAI } 
+        ],
+        temperature: 0.7,
+      })
+    })
+
+    const data = await res.json();
+    if (data.choices && data.choices[0] && data.choices[0].message) {
+      postAIResult.textContent = data.choices[0].message.content;
+    }
+    
+  } catch (error) {
+    console.error('API Error:', error);
+    if (postAIResult) postAIResult.remove();
+  } finally {
+    if (postAI) postAI.classList.remove("noclick");
+  }
+}
+</script>
+
+-->
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>701</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>昨天上线了Waline评论系统，刚上线时觉得挺轻量的，不错<br>于是找来同学&amp;朋友们一起来测试，也让博客热闹了一会，<code>55554.html</code>的评论数也一度飙升至30个</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/55554.html" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1768,172 +1934,6 @@ async function geminiAI() {
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.nbplus.eu.org/posts/36000.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/img/author.jpg">
-      <meta itemprop="name" content="晴雀">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="晴雀堂">
-      <meta itemprop="description" content="天行健，君子以自强不息">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | 晴雀堂">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/posts/36000.html" class="post-title-link" itemprop="url">对于next主题归档错误的解决</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2022-04-05 20:35:03" itemprop="dateCreated datePublished" datetime="2022-04-05T20:35:03+00:00">2022-04-05</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-    <span class="post-meta-item-icon">
-      <i class="far fa-comment"></i>
-    </span>
-    <span class="post-meta-item-text">Waline：</span>
-  
-    <a title="waline" href="/posts/36000.html#waline" itemprop="discussionUrl">
-      <span class="post-comments-count waline-comment-count" data-path="/posts/36000.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <!--
-<div class="post-ai" onclick="geminiAI()">
-  <img alt="Static Badge" src="https://api-shields.edui.fun/badge/Gemini-文章摘要-blue.svg?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Im0yMS42NCAzLjY0bC0xLjI4LTEuMjhhMS4yMSAxLjIxIDAgMCAwLTEuNzIgMEwyLjM2IDE4LjY0YTEuMjEgMS4yMSAwIDAgMCAwIDEuNzJsMS4yOCAxLjI4YTEuMiAxLjIgMCAwIDAgMS43MiAwTDIxLjY0IDUuMzZhMS4yIDEuMiAwIDAgMCAwLTEuNzJNMTQgN2wzIDNNNSA2djRtMTQgNHY0TTEwIDJ2Mk03IDhIM20xOCA4aC00TTExIDNIOSIvPjwvc3ZnPg==">
-</div>
-<style>
-@keyframes spin { from {transform: rotate(0deg);}to {transform: rotate(360deg);} }
-.post-ai-result svg{animation: spin 1s infinite linear;}
-</style>
-<script>
-async function geminiAI() {
-  let postAI = document.querySelector(".post-ai");
-  let postTile = document.querySelector("h1.post-title").textContent;
-  postAI.insertAdjacentHTML('afterend', '<div class="post-ai-result"><svg ...></svg></div>');
-  postAI.classList.add("noclick");
-  
-  let GeminiFetch = "https://api-gemini.nbplus.eu.org/v1/chat/completions/";
-  
-  try {
-    let postAIResult = document.querySelector(".post-ai-result");
-    let input = document.querySelector(".post-content").textContent;
-    input = input.replace(/\n/g, '').replace(/[ ]+/g, ' ').replace(/<pre>[\s\S]*?<\/pre>/g, '').substring(0, 30000);
-    let toAI = `文章标题：${postTile}，具体内容：${input}`;
-    const res = await fetch(GeminiFetch, {
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'AIzaSyDzPmfr5E_zWsBWCd4u2tZLC_eTQEMwoCY'
-      },
-      method: 'POST', 
-      body: JSON.stringify({
-        model: 'gemini-pro',
-        messages: [
-          { role: 'system',content:`You are a highly skilled AI trained in language comprehension and summarization. I would like you to read the text delimited by triple quotes and summarize it into a concise abstract paragraph. Aim to retain the most important points, providing a coherent and readable summary that could help a person understand the main points of the discussion without needing to read the entire text. Please avoid unnecessary details or tangential points.
-          Only give me the output and nothing else. Do not wrap responses in quotes. Respond in the Chinese language.`},
-          { role: 'user', content: toAI } 
-        ],
-        temperature: 0.7,
-      })
-    })
-
-    const data = await res.json();
-    if (data.choices && data.choices[0] && data.choices[0].message) {
-      postAIResult.textContent = data.choices[0].message.content;
-    }
-    
-  } catch (error) {
-    console.error('API Error:', error);
-    if (postAIResult) postAIResult.remove();
-  } finally {
-    if (postAI) postAI.classList.remove("noclick");
-  }
-}
-</script>
-
--->
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>1.1k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>我们都知道next主题有个东西叫做categories，就是主页上显示的那个「分类」<br>但是在当前版本的next（也许最新的没有），有一个致命的bug，会导致他显示错误<br><strong>同时，这个bug也适用于除了<code>home主页</code>的其他所有在侧边栏显示的页面</strong></p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/posts/36000.html" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
     <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
@@ -1958,13 +1958,13 @@ async function geminiAI() {
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">154k</span>
+    <span title="站点总字数">170k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">2:20</span>
+    <span title="站点阅读时长">2:35</span>
   </span>
 </div><!--
 <div id="ft">
