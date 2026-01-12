@@ -6,7 +6,7 @@
   <link href="https://blog.nbplus.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.nbplus.eu.org/"/>
-  <updated>2026-01-08T12:04:38.530Z</updated>
+  <updated>2026-01-12T12:33:07.753Z</updated>
   <id>https://blog.nbplus.eu.org/</id>
   
   <author>
@@ -17,11 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>封印椅</title>
+    <link href="https://blog.nbplus.eu.org/posts/38442.html"/>
+    <id>https://blog.nbplus.eu.org/posts/38442.html</id>
+    <published>2026-01-12T12:25:17.000Z</published>
+    <updated>2026-01-12T12:33:07.753Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;虾塔的故事的后续，我在想应该搞成一个系列。经过提示词的改进opus4.5的文风已经趋于稳定了。&lt;/p&gt;
+&lt;p&gt;我感觉挺好的，平时学校里的抽象小乐子回家语音输入写出大纲，丢给opus4.5就可以稳定出货，高质又美味，我自己手改一改细节就很理想了，小乐子就这样变成了大故事&lt;/p&gt;
+&lt;p&gt;封印椅的故事是虾塔故事发生那天的下午发生的，学校的椅子一直是可拆卸的椅背，我们成功把陈家明骗进去后，金文鼎说也许这应该作为虾塔的后续，于是有了封印椅的故事。&lt;/p&gt;
+&lt;p&gt;陈家明是住宿生，看完虾塔的故事后，他提到史蒂芬·金。对，就是史蒂芬·金，他笔下的故事融在一个宇宙中。《纳粹高徒》的老纳粹军官会提到《肖申克的救赎》中关在肖申克监狱的安迪·杜佛兰，我觉得也许应该往这个方向发展。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>虾塔</title>
-    <link href="https://blog.nbplus.eu.org/posts/54343.html"/>
-    <id>https://blog.nbplus.eu.org/posts/54343.html</id>
+    <link href="https://blog.nbplus.eu.org/posts/54342.html"/>
+    <id>https://blog.nbplus.eu.org/posts/54342.html</id>
     <published>2026-01-08T11:59:23.000Z</published>
-    <updated>2026-01-08T12:04:38.530Z</updated>
+    <updated>2026-01-08T12:06:26.209Z</updated>
     
     
     <summary type="html">&lt;p&gt;很久没有写过随笔了，今天中午发生了这篇文章所讲的事情，其实是很简单一件事情：同学陈家明把用筷子戳穿午餐烧的如同狗屎一般的虾，把他们串在筷子上做成一座虾塔。&lt;/p&gt;
@@ -369,27 +387,6 @@
 &lt;p&gt;好在终于熬过了一个学期，又到了&lt;del&gt;美好的&lt;/del&gt;寒假。&lt;em&gt;说实话，寒假得一天隔着一天去补课机构，一直到除夕之前，我还不如继续上课……&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;已经在粥铺（本人对上海市周浦中学的习惯性称呼）度过了一个学期。上一篇文章评论区所有朋友们的鼓励我都认真看了，衷心感谢你们的鼓励，我也做好了准备，在高中三年继续努力，再拼一把！&lt;/p&gt;
 &lt;p&gt;既然已经来到了这里，那么再后悔当初也没有用了，既来之，则安之。那就聊聊在粥铺度过了一个学期的感受吧。&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>迁移hexo博客至mac避坑指北</title>
-    <link href="https://blog.nbplus.eu.org/posts/34459.html"/>
-    <id>https://blog.nbplus.eu.org/posts/34459.html</id>
-    <published>2024-02-07T15:52:42.000Z</published>
-    <updated>2026-01-01T03:18:21.217Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;寒假开始的时候获得了一台mac，我妈退役下来的超级老机子，查了一下机子什么配置&lt;/p&gt;
-&lt;figure class=&quot;highlight yaml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;MacBook&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;Air&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;(13-inch,&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;Early&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;2015&lt;/span&gt;&lt;span class=&quot;string&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;处理器1.6&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;GHz&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;双核Intel&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;Core&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;i5&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;内存4&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;GB&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;1600 &lt;/span&gt;&lt;span class=&quot;string&quot;&gt;MHz&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;DDR3&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;string&quot;&gt;图形卡Intel&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;HD&lt;/span&gt; &lt;span class=&quot;string&quot;&gt;Graphics&lt;/span&gt; &lt;span class=&quot;number&quot;&gt;6000 &lt;/span&gt;&lt;span class=&quot;number&quot;&gt;1536 &lt;/span&gt;&lt;span class=&quot;string&quot;&gt;MB&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-
-&lt;p&gt;绝了，我觉得这玩意还能动真是个奇迹&lt;/p&gt;
-&lt;p&gt;结果实际运行结果让我大吃一惊，它居然还能下载lunar client玩mc，而且1.20.2最高到120fps，稳定80fps！！！&lt;/p&gt;
-&lt;p&gt;真是牛逼，顽强的生命呐（赞叹&lt;/p&gt;
-&lt;p&gt;然后今天突然想起自己的博客，发现上一次更新居然在23年8月份，这下我立刻开始着手迁移博客源码到mac上，结果遇到了一堆匪夷所思的问题，气得我七窍生烟，必须记下来&lt;/p&gt;</summary>
     
     
     
