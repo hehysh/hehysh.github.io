@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.nbplus.eu.org/posts/64465.html</loc>
+    <loc>https://blog.nbplus.eu.org/posts/38442.html</loc>
     
     <lastmod>2026-01-15</lastmod>
     
@@ -11,18 +11,18 @@
   </url>
   
   <url>
-    <loc>https://blog.nbplus.eu.org/posts/38442.html</loc>
+    <loc>https://blog.nbplus.eu.org/posts/54342.html</loc>
     
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.nbplus.eu.org/posts/54342.html</loc>
+    <loc>https://blog.nbplus.eu.org/posts/64465.html</loc>
     
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-01-15</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -833,6 +833,13 @@
   
   <url>
     <loc>https://blog.nbplus.eu.org/tags/%E7%94%BB%E6%A2%A6/</loc>
+    <lastmod>2026-01-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.nbplus.eu.org/tags/%E4%BA%BA%E7%B1%BB%E7%BE%A4%E6%98%9F%E9%97%AA%E8%80%80%E6%97%B6/</loc>
     <lastmod>2026-01-15</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
