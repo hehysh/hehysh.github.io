@@ -6,7 +6,7 @@
   <link href="https://blog.nbplus.eu.org/atom.xml" rel="self"/>
   
   <link href="https://blog.nbplus.eu.org/"/>
-  <updated>2026-01-23T11:14:15.138Z</updated>
+  <updated>2026-01-28T10:42:49.205Z</updated>
   <id>https://blog.nbplus.eu.org/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>乔越</title>
+    <link href="https://blog.nbplus.eu.org/posts/64721.html"/>
+    <id>https://blog.nbplus.eu.org/posts/64721.html</id>
+    <published>2026-01-28T10:36:13.000Z</published>
+    <updated>2026-01-28T10:42:49.205Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今天是趣味运动会，在漫长而无聊的等待时间我用ios的语音备忘录录下了和兄弟们讨论的最新故事的剧情。&lt;/p&gt;
+&lt;p&gt;其实总体剧情在中午吃饭的时候就确定好了。总之依旧没有任何逻辑。&lt;/p&gt;
+&lt;p&gt;加入新干员：乔越！&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>猪使</title>
@@ -371,25 +388,6 @@
 &lt;p&gt;&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9pbW1tbW0uY29tL2dlbWluaS1wcm8tYWkv&quot;&gt;利用 Gemini Pro 为文章添加摘要&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;再一看，发现Google的Gemini Pro的api调用居然是免费的！For free！！！&lt;/p&gt;
 &lt;p&gt;我很少很少能见到这么高质量的LLM的api免费，于是顿时起了兴趣，火速开始折腾。&lt;br&gt;（踩了巨他妈多！！！！的！！！！坑！！！！！！！！）&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>记东方绿舟的一周</title>
-    <link href="https://blog.nbplus.eu.org/posts/18578.html"/>
-    <id>https://blog.nbplus.eu.org/posts/18578.html</id>
-    <published>2024-03-22T19:06:00.000Z</published>
-    <updated>2026-01-01T03:18:21.217Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;上海市的学校有一个神奇的传统，那就是去东方绿舟进行国防教育一周，吃住全在那边。&lt;/p&gt;
-&lt;p&gt;除了上海中学和上海中学东校以外，其他所有的高中（包括职高）的高一学生都必须得去一趟东方绿舟。&lt;/p&gt;
-&lt;p&gt;说是国防教育，其实就是超级军训，不再是站军姿，而是教练枪，拆枪，投手榴弹，单兵战术之类的真东西。&lt;/p&gt;
-&lt;p&gt;当然，和军备大省的军训肯定比不了，不过对于我们这种已经被军训的站军姿以及队列训练折磨的要疯了的可怜人来说，这简直就是度假！！&lt;/p&gt;
-&lt;p&gt;于是，在2024.3.18，终于轮到了我们粥铺参加国防教育，因此特此记录这奇妙的一周。&lt;/p&gt;</summary>
     
     
     
