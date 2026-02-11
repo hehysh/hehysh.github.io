@@ -19,27 +19,27 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.nbplus.eu.org","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.12.2","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"Muse | Mist":280,"onmobile":false},"copycode":{"enable":true,"style":"mac","show_result":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.verynb.net","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.12.2","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"Muse | Mist":280,"onmobile":false},"copycode":{"enable":true,"style":"mac","show_result":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="上一篇文章发出来太艰难了，hexo更新后对url的要求变得极其严格。导致hexo g时出现了ERR_INVALID_URL。 而且！！有时候它会不告诉你报错内容在哪里！！极其恶心，今天花了两个小时解决这个问题，全程和gemini讨论，最终解决。实在应该记录一下，要不然之后又忘了怎么解决了。本人经过两个小时的摧残，已经几近爆炸，因此下文全篇由和我对话，帮我解决此问题的的Gemini记录。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="博客踩坑与重生：解决无提示错误ERR_INVALID_URL">
-<meta property="og:url" content="https://blog.nbplus.eu.org/posts/undefined.html">
+<meta property="og:url" content="https://blog.verynb.net/posts/undefined.html">
 <meta property="og:site_name" content="晴雀堂">
 <meta property="og:description" content="上一篇文章发出来太艰难了，hexo更新后对url的要求变得极其严格。导致hexo g时出现了ERR_INVALID_URL。 而且！！有时候它会不告诉你报错内容在哪里！！极其恶心，今天花了两个小时解决这个问题，全程和gemini讨论，最终解决。实在应该记录一下，要不然之后又忘了怎么解决了。本人经过两个小时的摧残，已经几近爆炸，因此下文全篇由和我对话，帮我解决此问题的的Gemini记录。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-05-11T14:55:06.000Z">
-<meta property="article:modified_time" content="2026-01-01T03:18:21.214Z">
+<meta property="article:modified_time" content="2026-02-11T15:12:32.385Z">
 <meta property="article:author" content="晴雀">
 <meta property="article:tag" content="晴雀">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://blog.nbplus.eu.org/posts/undefined.html">
+<link rel="canonical" href="https://blog.verynb.net/posts/undefined.html">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.nbplus.eu.org/posts/undefined.html","path":"posts/undefined.html","title":"博客踩坑与重生：解决无提示错误ERR_INVALID_URL"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.verynb.net/posts/undefined.html","path":"posts/undefined.html","title":"博客踩坑与重生：解决无提示错误ERR_INVALID_URL"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
 <title>博客踩坑与重生：解决无提示错误ERR_INVALID_URL | 晴雀堂</title>
@@ -52,7 +52,7 @@
 
 <script>
 (function() {
-  var mainDomain = "blog.nbplus.eu.org";
+  var mainDomain = "blog.verynb.net";
   var host = location.hostname;
 
   // 白名单：允许在这些域名下不跳转
@@ -76,12 +76,12 @@
 
 <!--声明主域名-->
 
-<link rel="canonical" href="https://blog.nbplus.eu.org/posts/undefined.html" />
+<link rel="canonical" href="https://blog.verynb.net/posts/undefined.html" />
 
 
 <meta property="og:type" content="article">
 <meta property="og:title" content="博客踩坑与重生：解决无提示错误ERR_INVALID_URL">
-<meta property="og:url" content="https://blog.nbplus.eu.org/posts/undefined.html">
+<meta property="og:url" content="https://blog.verynb.net/posts/undefined.html">
 <meta property="og:site_name" content="晴雀堂">
 
   <meta property="og:description" content="天行健，君子以自强不息">
@@ -239,7 +239,7 @@
         <span class="exturl" data-url="aHR0cHM6Ly9zdGVhbWNvbW11bml0eS5jb20vcHJvZmlsZXMvNzY1NjExOTk2NjA4ODQ0OTMv" title="Steam → https:&#x2F;&#x2F;steamcommunity.com&#x2F;profiles&#x2F;76561199660884493&#x2F;"><i class="fab fa-steam fa-fw"></i>Steam</span>
       </span>
       <span class="links-of-author-item">
-        <span class="exturl" data-url="aHR0cHM6Ly91Lm5icGx1cy5ldS5vcmcvc2hhcmUvNnJsb0ZyUllqVDNaQWhPMC9ibG9nLm5icGx1cy5ldS5vcmc=" title="统计 → https:&#x2F;&#x2F;u.nbplus.eu.org&#x2F;share&#x2F;6rloFrRYjT3ZAhO0&#x2F;blog.nbplus.eu.org"><i class="fa fa-bar-chart fa-fw"></i>统计</span>
+        <span class="exturl" data-url="aHR0cHM6Ly91Lm5icGx1cy5ldS5vcmcvc2hhcmUvNnJsb0ZyUllqVDNaQWhPMC9ibG9nLnZlcnluYi5uZXQ=" title="统计 → https:&#x2F;&#x2F;u.nbplus.eu.org&#x2F;share&#x2F;6rloFrRYjT3ZAhO0&#x2F;blog.verynb.net"><i class="fa fa-bar-chart fa-fw"></i>统计</span>
       </span>
       <span class="links-of-author-item">
         <span class="exturl" data-url="aHR0cHM6Ly9zLm5icGx1cy5ldS5vcmcv" title="监测 → https:&#x2F;&#x2F;s.nbplus.eu.org&#x2F;"><i class="fa fa-eye fa-fw"></i>监测</span>
@@ -281,7 +281,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.nbplus.eu.org/posts/undefined.html">
+    <link itemprop="mainEntityOfPage" href="https://blog.verynb.net/posts/undefined.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/img/author.jpg">
@@ -431,7 +431,7 @@ async function geminiAI() {
 <h3 id="转机：GitHub-Codespaces-的纯净环境"><a href="#转机：GitHub-Codespaces-的纯净环境" class="headerlink" title="转机：GitHub Codespaces 的纯净环境"></a>转机：GitHub Codespaces 的纯净环境</h3><p>在我本地反复尝试，甚至回档了之前在 GitHub 上能正常运行的备份，都无法解决问题，也无法让日志在本地正确输出时，我几乎要放弃了。AI助手建议我尝试在 GitHub Codespaces 这样的纯净环境中运行。我抱着试一试的心态，在 Codespaces 里打开了我的“老备份”项目，清除了 <code>node_modules</code> 和 <code>package-lock.json</code>，重新 <code>npm install</code>，并将上面带有最详细日志的 <code>post.js</code> 文件放到了正确的位置 (<code>themes/next/scripts/filters/post.js</code>)，同时确认了主题配置文件 <code>themes/next/_config.yml</code> 中的 <code>exturl</code> 设置为 <code>true</code>。然后运行 <code>hexo clean &amp;&amp; hexo g</code>。</p>
 <p>奇迹发生了！这次，控制台终于打印出了我们期待已久的 <code>[DEBUG]</code> 日志！</p>
 <h3 id="定位问题URL"><a href="#定位问题URL" class="headerlink" title="定位问题URL"></a>定位问题URL</h3><p>大量的日志输出（部分示例如下，实际日志非常长，遍历了所有文章），最终将问题指向了特定的文章和其中的链接：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">[DEBUG] post.js: Filter &#x27;after_post_render&#x27; 被调用，处理: _posts/2022流水账.md</span><br><span class="line">[DEBUG] post.js: 读取到的主题配置 - theme.exturl 的值: true</span><br><span class="line">[DEBUG] post.js: 读取到的主题配置 - theme.lazyload 的值: true</span><br><span class="line">[DEBUG] post.js: 检测到 theme.lazyload 为真，准备处理图片懒加载。</span><br><span class="line">[DEBUG] post.js: 图片懒加载处理完成。</span><br><span class="line">[DEBUG] post.js: 检测到 theme.exturl 为真，进入外部链接处理模块。</span><br><span class="line">[DEBUG] post.js: (exturl) 正在处理文章: _posts/2022流水账.md</span><br><span class="line">[DEBUG] post.js: (exturl) 准备解析 config.url (主配置)。值为: &quot;[https://blog.nbplus.eu.org](https://blog.nbplus.eu.org)&quot;</span><br><span class="line">[DEBUG] post.js: (exturl) 成功解析 config.url。得到的 siteHost: &quot;blog.nbplus.eu.org&quot;</span><br><span class="line">[DEBUG] post.js: (exturl) 外部链接处理模块执行完毕。</span><br><span class="line">[DEBUG] post.js: Filter &#x27;after_post_render&#x27; 执行完毕，针对: _posts/2022流水账.md</span><br><span class="line"># ... 大量其他文章的正常处理日志 ...</span><br><span class="line">[DEBUG] post.js: Filter &#x27;after_post_render&#x27; 被调用，处理: _posts/vercel的DNS服务器疑似出现故障.md</span><br><span class="line"># ... (相关日志) ...</span><br><span class="line">[DEBUG] post.js: (exturl) 在文章 &quot;_posts/vercel的DNS服务器疑似出现故障.md&quot; 中，准备解析链接的 href。值为: &quot;[http://www.hehysh.eu.org](http://www.hehysh.eu.org)………&quot;</span><br><span class="line">[DEBUG] post.js: (exturl) 在文章 &quot;_posts/vercel的DNS服务器疑似出现故障.md&quot; 中，解析 href 时发生致命错误! href 的值是: &quot;[http://www.hehysh.eu.org](http://www.hehysh.eu.org)………&quot;</span><br><span class="line">[DEBUG] post.js: (exturl) 错误详情: TypeError [ERR_INVALID_URL]: Invalid URL</span><br><span class="line">    # ... (错误堆栈) ...</span><br><span class="line">  code: &#x27;ERR_INVALID_URL&#x27;,</span><br><span class="line">  input: &#x27;[http://www.hehysh.eu.org](http://www.hehysh.eu.org)………&#x27;</span><br><span class="line">&#125;</span><br><span class="line"># ... 可能还有其他文章的处理，直到遇到下一个致命错误或 Hexo 决定停止 ...</span><br><span class="line">[DEBUG] post.js: Filter &#x27;after_post_render&#x27; 被调用，处理: _posts/添加开往-友链接力在你的博客.md</span><br><span class="line"># ... (相关日志) ...</span><br><span class="line">[DEBUG] post.js: (exturl) 在文章 &quot;_posts/添加开往-友链接力在你的博客.md&quot; 中，准备解析链接的 href。值为: &quot;[https://travellings.link](https://travellings.link)），加入您的顶栏导航或侧栏导航中，便于访客看到并点击：&quot;</span><br><span class="line">[DEBUG] post.js: (exturl) 在文章 &quot;_posts/添加开往-友链接力在你的博客.md&quot; 中，解析 href 时发生致命错误! href 的值是: &quot;[https://travellings.link](https://travellings.link)），加入您的顶栏导航或侧栏导航中，便于访客看到并点击：&quot;</span><br><span class="line">[DEBUG] post.js: (exturl) 错误详情: TypeError [ERR_INVALID_URL]: Invalid URL</span><br><span class="line">    # ... (错误堆栈) ...</span><br><span class="line">  code: &#x27;ERR_INVALID_URL&#x27;,</span><br><span class="line">  input: &#x27;[https://travellings.link](https://travellings.link)），加入您的顶栏导航或侧栏导航中，便于访客看到并点击：&#x27;</span><br><span class="line">&#125;</span><br><span class="line"># ... 以及最终的 FATAL ERROR ...</span><br><span class="line">FATAL Something&#x27;s wrong. Maybe you can find the solution here: [https://hexo.io/docs/troubleshooting.html](https://hexo.io/docs/troubleshooting.html)</span><br><span class="line">TypeError [ERR_INVALID_URL]: Invalid URL</span><br><span class="line">    # ... (错误堆栈，指向 post.js 中 url.parse(href) 的地方) ...</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">INFO  Start processing</span><br><span class="line">[DEBUG] post.js: Filter &#x27;after_post_render&#x27; 被调用，处理: _posts/2022流水账.md</span><br><span class="line">[DEBUG] post.js: 读取到的主题配置 - theme.exturl 的值: true</span><br><span class="line">[DEBUG] post.js: 读取到的主题配置 - theme.lazyload 的值: true</span><br><span class="line">[DEBUG] post.js: 检测到 theme.lazyload 为真，准备处理图片懒加载。</span><br><span class="line">[DEBUG] post.js: 图片懒加载处理完成。</span><br><span class="line">[DEBUG] post.js: 检测到 theme.exturl 为真，进入外部链接处理模块。</span><br><span class="line">[DEBUG] post.js: (exturl) 正在处理文章: _posts/2022流水账.md</span><br><span class="line">[DEBUG] post.js: (exturl) 准备解析 config.url (主配置)。值为: &quot;[https://blog.verynb.net](https://blog.verynb.net)&quot;</span><br><span class="line">[DEBUG] post.js: (exturl) 成功解析 config.url。得到的 siteHost: &quot;blog.verynb.net&quot;</span><br><span class="line">[DEBUG] post.js: (exturl) 外部链接处理模块执行完毕。</span><br><span class="line">[DEBUG] post.js: Filter &#x27;after_post_render&#x27; 执行完毕，针对: _posts/2022流水账.md</span><br><span class="line"># ... 大量其他文章的正常处理日志 ...</span><br><span class="line">[DEBUG] post.js: Filter &#x27;after_post_render&#x27; 被调用，处理: _posts/vercel的DNS服务器疑似出现故障.md</span><br><span class="line"># ... (相关日志) ...</span><br><span class="line">[DEBUG] post.js: (exturl) 在文章 &quot;_posts/vercel的DNS服务器疑似出现故障.md&quot; 中，准备解析链接的 href。值为: &quot;[http://www.hehysh.eu.org](http://www.hehysh.eu.org)………&quot;</span><br><span class="line">[DEBUG] post.js: (exturl) 在文章 &quot;_posts/vercel的DNS服务器疑似出现故障.md&quot; 中，解析 href 时发生致命错误! href 的值是: &quot;[http://www.hehysh.eu.org](http://www.hehysh.eu.org)………&quot;</span><br><span class="line">[DEBUG] post.js: (exturl) 错误详情: TypeError [ERR_INVALID_URL]: Invalid URL</span><br><span class="line">    # ... (错误堆栈) ...</span><br><span class="line">  code: &#x27;ERR_INVALID_URL&#x27;,</span><br><span class="line">  input: &#x27;[http://www.hehysh.eu.org](http://www.hehysh.eu.org)………&#x27;</span><br><span class="line">&#125;</span><br><span class="line"># ... 可能还有其他文章的处理，直到遇到下一个致命错误或 Hexo 决定停止 ...</span><br><span class="line">[DEBUG] post.js: Filter &#x27;after_post_render&#x27; 被调用，处理: _posts/添加开往-友链接力在你的博客.md</span><br><span class="line"># ... (相关日志) ...</span><br><span class="line">[DEBUG] post.js: (exturl) 在文章 &quot;_posts/添加开往-友链接力在你的博客.md&quot; 中，准备解析链接的 href。值为: &quot;[https://travellings.link](https://travellings.link)），加入您的顶栏导航或侧栏导航中，便于访客看到并点击：&quot;</span><br><span class="line">[DEBUG] post.js: (exturl) 在文章 &quot;_posts/添加开往-友链接力在你的博客.md&quot; 中，解析 href 时发生致命错误! href 的值是: &quot;[https://travellings.link](https://travellings.link)），加入您的顶栏导航或侧栏导航中，便于访客看到并点击：&quot;</span><br><span class="line">[DEBUG] post.js: (exturl) 错误详情: TypeError [ERR_INVALID_URL]: Invalid URL</span><br><span class="line">    # ... (错误堆栈) ...</span><br><span class="line">  code: &#x27;ERR_INVALID_URL&#x27;,</span><br><span class="line">  input: &#x27;[https://travellings.link](https://travellings.link)），加入您的顶栏导航或侧栏导航中，便于访客看到并点击：&#x27;</span><br><span class="line">&#125;</span><br><span class="line"># ... 以及最终的 FATAL ERROR ...</span><br><span class="line">FATAL Something&#x27;s wrong. Maybe you can find the solution here: [https://hexo.io/docs/troubleshooting.html](https://hexo.io/docs/troubleshooting.html)</span><br><span class="line">TypeError [ERR_INVALID_URL]: Invalid URL</span><br><span class="line">    # ... (错误堆栈，指向 post.js 中 url.parse(href) 的地方) ...</span><br></pre></td></tr></table></figure>
 <p>从这些日志中，我们明确找到了两个（或更多）有问题的链接：</p>
 <ol>
 <li>在 <code>_posts/vercel的DNS服务器疑似出现故障.md</code> 中，链接 <code>http://www.hehysh.eu.org………</code> 末尾的多个点是无效的。</li>
@@ -646,18 +646,18 @@ async function geminiAI() {
         <p class="ft-t t-l-t">说点什么</p>
         <div class="bg-ad">
           <div>里的内容随你写，但是不要过长影响整体美观度，具体可根据实现效果修改）随便说点什么说点什么、随便说点什么说点什么随便说点什么说点什么随便说点什么说点什么随便说点什么说。</div>
-          <div class="btn-xz-box"><a class="btn-xz" href="https://blog.nbplus.eu.org/">点击跳转到哪儿</a></div>
+          <div class="btn-xz-box"><a class="btn-xz" href="https://blog.verynb.net/">点击跳转到哪儿</a></div>
         </div>
       </div>
       <div class="t-t-r">
         <p class="ft-t t-l-t">导航</p>
         <ul class="ft-links">
-          <li><a href="https://blog.nbplus.eu.org/articles/hexo1600/">建站指南</a><a href="https://blog.nbplus.eu.org/nav.html">网址导航</a></li>
-          <li><a href="https://blog.nbplus.eu.org/sponsorWall/">来杯咖啡</a><a href="https://blog.nbplus.eu.org/comments/">留点什么</a></li>
-          <li><a href="https://blog.nbplus.eu.org/about/">关于博主</a><a href="https://blog.nbplus.eu.org/archives/">文章归档</a></li>
-          <li><a href="https://blog.nbplus.eu.org/categories/">文章分类</a><a href="https://blog.nbplus.eu.org/tags/">文章标签</a></li>
-          <li><a href="https://blog.nbplus.eu.org/gallery/">我的相册</a><a href="https://blog.nbplus.eu.org/bangumis/">我的追番</a></li>
-          <li><a href="https://blog.nbplus.eu.org/specialEffects/">一些特效</a><a href="https://blog.nbplus.eu.org/wallpaper/">一些壁纸</a></li>
+          <li><a href="https://blog.verynb.net/articles/hexo1600/">建站指南</a><a href="https://blog.verynb.net/nav.html">网址导航</a></li>
+          <li><a href="https://blog.verynb.net/sponsorWall/">来杯咖啡</a><a href="https://blog.verynb.net/comments/">留点什么</a></li>
+          <li><a href="https://blog.verynb.net/about/">关于博主</a><a href="https://blog.verynb.net/archives/">文章归档</a></li>
+          <li><a href="https://blog.verynb.net/categories/">文章分类</a><a href="https://blog.verynb.net/tags/">文章标签</a></li>
+          <li><a href="https://blog.verynb.net/gallery/">我的相册</a><a href="https://blog.verynb.net/bangumis/">我的追番</a></li>
+          <li><a href="https://blog.verynb.net/specialEffects/">一些特效</a><a href="https://blog.verynb.net/wallpaper/">一些壁纸</a></li>
         </ul>
       </div>
     </div>
@@ -699,7 +699,7 @@ setTimeout(momxc, 1000);
 <?php printf(' | 耗时 %.3f 秒 | 查询 %d 次 | 内存 %.2f MB |',timer_stop( 0, 3 ),get_num_queries(),memory_get_peak_usage() / 1024 / 1024);?><br>
 <!--耗时及占用内存结束-->
 <!--萌ICP备案-->
-<img style="width:23px;height:23px;" src="https://blog.nbplus.eu.org/img/meng.png"/>
+<img style="width:23px;height:23px;" src="https://blog.verynb.net/img/meng.png"/>
 <a href="https://icp.gov.moe/?keyword=20236688" target="_blank">萌ICP备20236688号</a>
 
     </div>
@@ -738,7 +738,7 @@ setTimeout(momxc, 1000);
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.2.0/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
-  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://blog.nbplus.eu.org/posts/undefined.html"}</script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://blog.verynb.net/posts/undefined.html"}</script>
   <script src="/js/third-party/quicklink.js"></script>
 <script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"waline.nbplus.eu.org","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"defer":true,"dark":"body.darkmode--activated","locale":{"placeholder":"Hi~欢迎留言呀！自由发言，开阔脑洞吧。请注意礼貌发言哦~不登录，不填昵称邮箱也没关系哒"},"avatar":"mm","meta":["nick","mail"],"pageSize":20,"visitor":true,"comment_count":true,"requiredFields":["nick"],"libUrl":"https://unpkg.com/@waline/client@v2/dist/waline.js","login":"enable","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo","https://unpkg.com/@waline/emojis@1.0.1/alus","https://unpkg.com/@waline/emojis@1.0.1/bilibili","https://unpkg.com/@waline/emojis@1.0.1/tieba","https://unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"el":"#waline","comment":true,"path":"/posts/undefined.html"}</script>
 <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
