@@ -53,57 +53,6 @@
 ]]></content>
   </entry>
   <entry>
-    <title>casio计算器完全使用指南</title>
-    <url>/posts/50032.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近换新了计算器，换到了Casio 991-cnx。</p>
-<p>众所周知，上海高考可以使用计算器，目前允许带进的最高规格，功能最多的计算器就是Casio-991 cnx。</p>
-<p>因此我在网上搜索各种关于Casio 991的内容，其中有正常使用的，也有非正常使用的。</p>
-<p>无论你是想知道如何在高考考场中高效运用计算器，还是想要卡casio的bug，都可以在本文找到答案。</p>
-<p>本文主要是搜集各方资料，进行汇编而成。</p>
-<p>包括以下内容：<br>Casio 991-cnx计算器在上海高考中的高效运用教程<br>Casio 991-cnx计算器正常使用教程<br>Casio 991-cnx计算器非正常使用教程</p>
-<span id="more"></span>
-<h1 id="Casio-991-cnx在上海高考中的高效运用教程"><a href="#Casio-991-cnx在上海高考中的高效运用教程" class="headerlink" title="Casio 991-cnx在上海高考中的高效运用教程"></a>Casio 991-cnx在上海高考中的高效运用教程</h1><p>上海教考院规定，不得携带带有记忆存储功能、图像功能等功能的计算器。</p>
-<p>计算器虽然不是万能的，但是不带计算器可是万万不能的。</p>
-<p>因此学会高效用计算器很重要。</p>
-<p>目前找了一圈就这篇最全面和实用：</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8xMjU2NTAxNDk=">《CASIO fx-991CN X上海高考应用教程》<i class="fa fa-external-link-alt"></i></span></p>
-<p>这教程是彩色排版的PDF形式的书籍，获取要加群。但是作者在评论区又给出了pdf的连接，用的百度网盘：</p>
-<p><span class="exturl" data-url="aHR0cDovL2xpbmsuemhpaHUuY29tLz90YXJnZXQ9aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3MvMTBVaGpiQjNHQ0ZkU3BGX3EtVkMzc0E=">http://link.zhihu.com/?target=https%3A//pan.baidu.com/s/10UhjbB3GCFdSpF_q-VC3sA<i class="fa fa-external-link-alt"></i></span>  提取码：5j6k</p>
-<h1 id="Casio-991-cnx及82es计算器正常使用教程"><a href="#Casio-991-cnx及82es计算器正常使用教程" class="headerlink" title="Casio 991-cnx及82es计算器正常使用教程"></a>Casio 991-cnx及82es计算器正常使用教程</h1><p>还是得看官方。</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9zdXBwb3J0LmNhc2lvLmNvbS9jbi9tYW51YWwvMDA0L2Z4LTk5MUNOX1hfQl9DTi5wZGY=">Casio 991 CNX计算机说明书<i class="fa fa-external-link-alt"></i></span></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly9zdXBwb3J0LmNhc2lvLmNvbS9jbi9tYW51YWwvMDA0L2Z4LTgyRVNfZXRjX0NOLnBkZg==">Casio 82es计算器说明书<i class="fa fa-external-link-alt"></i></span></p>
-<p>没了，正经用法就这么点，现在来点不正经的。</p>
-<h1 id="Casio-991-cnx计算器非正常使用教程"><a href="#Casio-991-cnx计算器非正常使用教程" class="headerlink" title="Casio 991-cnx计算器非正常使用教程"></a>Casio 991-cnx计算器非正常使用教程</h1><p>咱们循序渐进，先从简单的玩起。</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8yNjExNTY2ODg=">人人都能看懂的卡西欧fx991cnx玩机指南，手把手教你如何利用计算器的漏洞爆机<i class="fa fa-external-link-alt"></i></span></p>
-<p>这篇文章里面演示的漏洞都不会损伤计算器。</p>
-<p>另：本人找了好久字符转换器的原理，最终找到一个比较正式的解释：</p>
-<div class="note info"><p>给大家简单讲一下字符转换器的原理：</p>
-<p>卡西欧中所有字符都是以一个或两个字节储存的，比如单字节的31对应数字1，77对应sin，7D对应log，23对应冒号，等等；常数和单位转换都是双字节的，其中常数（在卡西欧内部，Ran#也被视为常数）的第一个字节都是FD，单位转换的第一个字节都是FE，赋值操作的第一个字节都是FB。卡西欧的算式是由大量字节构成的，计算器会从左到右读取字节，如果遇到FD，FE或FB这些特殊字节，就会和下一个字节拼成一个字符。</p>
-<p>而bug在于：lbf&#x2F;in2→kpa对应的存储值为FE23，而23正好是冒号。用卡西欧比较多的人应该都知道，如果一个算式中有冒号，我们查看历史记录时，冒号及冒号右边的部分是不显示的。于是，23字节被删除，本来不可能单独出现的FE字节就出现在了算式的最右侧。此时在FE字节的后面添加东西就可以弄出一些非法字符，比如在FE的后面加上一个Ran#（对应FD18），计算器就会把FE和FD拼在一起构成那个t开头E结尾的乱码，剩下的单字节18构成非法字符@。</p>
-</div>
-
-<p>然后试着升级991.</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC80NjQwMTI4OTI=">利用FX991CNX的漏洞来升级计算器的教程<i class="fa fa-external-link-alt"></i></span></p>
-<p>这篇能通过卡bug调用出部分jp9000的功能，超脱原有991cnx的范畴。在上海高考中使用部分jp9000的功能似乎没有问题，毕竟是991cnx自带的隐藏功能。</p>
-<p>接着是高阶玩法。</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82MTg3MDQwMzE=">fx-991cnx计算器:利用ROP漏洞执行任意代码<i class="fa fa-external-link-alt"></i></span></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82MjA1ODQ2MzQ=">【进阶篇】fx-991cnx计算器:利用ROP漏洞执行任意代码<i class="fa fa-external-link-alt"></i></span></p>
-<p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82NTc5NjIxNDg=">「循环&#x2F;汇编器」991cnx:利用rop漏洞执行任意代码<i class="fa fa-external-link-alt"></i></span></p>
-<p>刑，太刑了，高考整活指日可待。</p>
-<p>还不满足？上面都是开胃小菜，请出唯一真神！！！！！</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly90aWViYS5iYWlkdS5jb20vZj9rdz1meC1lcyhtcykmaWU9dXRmLTg=">fx-(ms)吧<i class="fa fa-external-link-alt"></i></span></p>
-<p>专门研究计算器的神贴吧，感受一下他们的实力！</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly90aWViYS5iYWlkdS5jb20vcC8zMzk1ODIyMDI3">fx-es(ms)吧计算器研究成果索引及疑难解答（第三版）<i class="fa fa-external-link-alt"></i></span></p>
-<h1 id="附件"><a href="#附件" class="headerlink" title="附件"></a>附件</h1><p><img data-src="https://pica.zhimg.com/80/v2-d715154b596fae858a3f6c09305312ba_720w.webp?source=1def8aca" alt="991cnx的汉字字符表"></p>
-<p><img data-src="http://tiebapic.baidu.com/forum/w%3D580/sign=9a0d855f06dfa9ecfd2e561f52d1f754/275b532c11dfa9ece2cdb15475d0f703908fc11f.jpg?tbpicau=2024-03-07-05_cdf96abe64364fdb4e7988a7787228ea" alt="991CNX单字节字符字符表"></p>
-<p><img data-src="http://tiebapic.baidu.com/forum/w%3D580/sign=afe491f472380cd7e61ea2e59145ad14/65f6ce8065380cd78eb9cca9b644ad3458828153.jpg?tbpicau=2024-03-07-05_450ac95a23e6b239c8929009154a3360" alt="FE开头的双字节字符字符表"></p>
-<p><img data-src="http://tiebapic.baidu.com/forum/w%3D580/sign=f86297ae96cb39dbc1c0675ee01709a7/084c55da81cb39db935b9412c7160924aa183067.jpg?tbpicau=2024-03-07-05_c9706fe082951f15a0a3229e5301baba" alt="FD开头的双字节字符字符表"></p>
-<p><img data-src="http://tiebapic.baidu.com/forum/w%3D580/sign=e553283b8558d109c4e3a9bae158ccd0/08dc524e9258d1098bd9e2f7c658ccbf6d814dc1.jpg?tbpicau=2024-03-07-05_631473b1ee85afccb3048a565f21a41d" alt="FB开头的双字节字符字符表"></p>
-<p><img data-src="http://tiebapic.baidu.com/forum/w%3D580/sign=a96fb1786cec54e741ec1a1689399bfd/f4b7bc0e7bec54e7be812658ae389b504ec26a8b.jpg?tbpicau=2024-03-07-05_8b2073e312c6e9cce4c59c378dd19d71" alt="FA开头的双字节字符字符表"></p>
-<p>虚数模式+线性IO可打出全部字符。计算机119了可以拆电池，捂住太阳能板1分钟再把电池装回去，又是一个崭新出厂的计算器。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>cf-workers反代最新版</title>
     <url>/posts/28454.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>又到了一周了———<br>以后文章基本会在周五更新<br>之前搞了一个url隐形转发嘛<br>然后在评论区lyx提醒url隐形转发有许多问题，并且指出可以用cf-workers进行反代<br>半年前博客刚刚搞好没多久的时候我写过一篇用cf-workers镜像网站的文章，其实都是一样的<br>然后我想起来这茬，把代码复制一看，哦豁，代码没用了，于是我匆匆忙忙去找新代码，最终如下———</p>
@@ -269,6 +218,20 @@
 ]]></content>
   </entry>
   <entry>
+    <title>此博客第一篇文章-纪念</title>
+    <url>/posts/2949.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>哈哈，其实这篇文章是测试的<br>代码之神保佑-d成功<br>求你了试了一个上午了<br>点开👇看我的<strong>艰辛故事</strong>🤣</p>
+<span id="more"></span>
+<p>对于这个hexo博客的搭建，其实不止是花费了一天<br>起因是什么？我在b站上看到了一个视频：《使用cloudstudio搭建mc服务器》，就是这个视频视频，引导我发现了cloud studio<br>看完视频后，我发现cloudstudio可以直接在云端创建一个虚拟服务器，里面的环境都可以直接搭建，非常友好<br>像我这样的学生党，电脑没有，对于老爹的电脑也碰不了碰不了，更别说在他的电脑上安装node.js或者hexo了<br>我有的，只有一个iPad<br>我用iPad注册了腾讯的cloud studio账号，创建了一个工作空间，然后开始像在自己的电脑上一样操作终端，一点一点的搭建起一个标准的hexo博客<br>其实现在你在百度上搜「cloud studio搭建hexo博客」大部分结果都是「此方法已过期」，究其原因，他们都是基于腾讯的page功能进行静态网页搭建的<br>啊？！难道除了腾讯就没有其他的page功能来承载我们的博客了嘛？？！<br>当然有！！我们最棒的GitHub一直以来都提供稳定的page服务，我敢说大部分人的博客都是部署在这个靠谱的page上的<br>就这样，我的hexo博客，上线了！！</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>hexo博客魔改</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>switch大气层虚拟系统急救指南</title>
     <url>/posts/18424.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>上一次更新博客是在2024-9-22，已经半年没更新了。</p>
@@ -290,20 +253,6 @@
 <p>进入，发现虚拟系统能进了下载的游戏和存档也都保留着。那就有人问了，哎呀，能保留存档为什么前面还要导出存档，这个是以防万一。</p>
 <p>就这样成功救活，真是可喜可贺，可口可乐🎉</p>
 ]]></content>
-  </entry>
-  <entry>
-    <title>此博客第一篇文章-纪念</title>
-    <url>/posts/2949.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>哈哈，其实这篇文章是测试的<br>代码之神保佑-d成功<br>求你了试了一个上午了<br>点开👇看我的<strong>艰辛故事</strong>🤣</p>
-<span id="more"></span>
-<p>对于这个hexo博客的搭建，其实不止是花费了一天<br>起因是什么？我在b站上看到了一个视频：《使用cloudstudio搭建mc服务器》，就是这个视频视频，引导我发现了cloud studio<br>看完视频后，我发现cloudstudio可以直接在云端创建一个虚拟服务器，里面的环境都可以直接搭建，非常友好<br>像我这样的学生党，电脑没有，对于老爹的电脑也碰不了碰不了，更别说在他的电脑上安装node.js或者hexo了<br>我有的，只有一个iPad<br>我用iPad注册了腾讯的cloud studio账号，创建了一个工作空间，然后开始像在自己的电脑上一样操作终端，一点一点的搭建起一个标准的hexo博客<br>其实现在你在百度上搜「cloud studio搭建hexo博客」大部分结果都是「此方法已过期」，究其原因，他们都是基于腾讯的page功能进行静态网页搭建的<br>啊？！难道除了腾讯就没有其他的page功能来承载我们的博客了嘛？？！<br>当然有！！我们最棒的GitHub一直以来都提供稳定的page服务，我敢说大部分人的博客都是部署在这个靠谱的page上的<br>就这样，我的hexo博客，上线了！！</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>hexo博客魔改</tag>
-      </tags>
   </entry>
   <entry>
     <title>vercel的DNS服务器疑似出现故障</title>
@@ -359,6 +308,57 @@
       <tags>
         <tag>cloudflare</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>casio计算器完全使用指南</title>
+    <url>/posts/50032.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近换新了计算器，换到了Casio 991-cnx。</p>
+<p>众所周知，上海高考可以使用计算器，目前允许带进的最高规格，功能最多的计算器就是Casio-991 cnx。</p>
+<p>因此我在网上搜索各种关于Casio 991的内容，其中有正常使用的，也有非正常使用的。</p>
+<p>无论你是想知道如何在高考考场中高效运用计算器，还是想要卡casio的bug，都可以在本文找到答案。</p>
+<p>本文主要是搜集各方资料，进行汇编而成。</p>
+<p>包括以下内容：<br>Casio 991-cnx计算器在上海高考中的高效运用教程<br>Casio 991-cnx计算器正常使用教程<br>Casio 991-cnx计算器非正常使用教程</p>
+<span id="more"></span>
+<h1 id="Casio-991-cnx在上海高考中的高效运用教程"><a href="#Casio-991-cnx在上海高考中的高效运用教程" class="headerlink" title="Casio 991-cnx在上海高考中的高效运用教程"></a>Casio 991-cnx在上海高考中的高效运用教程</h1><p>上海教考院规定，不得携带带有记忆存储功能、图像功能等功能的计算器。</p>
+<p>计算器虽然不是万能的，但是不带计算器可是万万不能的。</p>
+<p>因此学会高效用计算器很重要。</p>
+<p>目前找了一圈就这篇最全面和实用：</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8xMjU2NTAxNDk=">《CASIO fx-991CN X上海高考应用教程》<i class="fa fa-external-link-alt"></i></span></p>
+<p>这教程是彩色排版的PDF形式的书籍，获取要加群。但是作者在评论区又给出了pdf的连接，用的百度网盘：</p>
+<p><span class="exturl" data-url="aHR0cDovL2xpbmsuemhpaHUuY29tLz90YXJnZXQ9aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3MvMTBVaGpiQjNHQ0ZkU3BGX3EtVkMzc0E=">http://link.zhihu.com/?target=https%3A//pan.baidu.com/s/10UhjbB3GCFdSpF_q-VC3sA<i class="fa fa-external-link-alt"></i></span>  提取码：5j6k</p>
+<h1 id="Casio-991-cnx及82es计算器正常使用教程"><a href="#Casio-991-cnx及82es计算器正常使用教程" class="headerlink" title="Casio 991-cnx及82es计算器正常使用教程"></a>Casio 991-cnx及82es计算器正常使用教程</h1><p>还是得看官方。</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9zdXBwb3J0LmNhc2lvLmNvbS9jbi9tYW51YWwvMDA0L2Z4LTk5MUNOX1hfQl9DTi5wZGY=">Casio 991 CNX计算机说明书<i class="fa fa-external-link-alt"></i></span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly9zdXBwb3J0LmNhc2lvLmNvbS9jbi9tYW51YWwvMDA0L2Z4LTgyRVNfZXRjX0NOLnBkZg==">Casio 82es计算器说明书<i class="fa fa-external-link-alt"></i></span></p>
+<p>没了，正经用法就这么点，现在来点不正经的。</p>
+<h1 id="Casio-991-cnx计算器非正常使用教程"><a href="#Casio-991-cnx计算器非正常使用教程" class="headerlink" title="Casio 991-cnx计算器非正常使用教程"></a>Casio 991-cnx计算器非正常使用教程</h1><p>咱们循序渐进，先从简单的玩起。</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8yNjExNTY2ODg=">人人都能看懂的卡西欧fx991cnx玩机指南，手把手教你如何利用计算器的漏洞爆机<i class="fa fa-external-link-alt"></i></span></p>
+<p>这篇文章里面演示的漏洞都不会损伤计算器。</p>
+<p>另：本人找了好久字符转换器的原理，最终找到一个比较正式的解释：</p>
+<div class="note info"><p>给大家简单讲一下字符转换器的原理：</p>
+<p>卡西欧中所有字符都是以一个或两个字节储存的，比如单字节的31对应数字1，77对应sin，7D对应log，23对应冒号，等等；常数和单位转换都是双字节的，其中常数（在卡西欧内部，Ran#也被视为常数）的第一个字节都是FD，单位转换的第一个字节都是FE，赋值操作的第一个字节都是FB。卡西欧的算式是由大量字节构成的，计算器会从左到右读取字节，如果遇到FD，FE或FB这些特殊字节，就会和下一个字节拼成一个字符。</p>
+<p>而bug在于：lbf&#x2F;in2→kpa对应的存储值为FE23，而23正好是冒号。用卡西欧比较多的人应该都知道，如果一个算式中有冒号，我们查看历史记录时，冒号及冒号右边的部分是不显示的。于是，23字节被删除，本来不可能单独出现的FE字节就出现在了算式的最右侧。此时在FE字节的后面添加东西就可以弄出一些非法字符，比如在FE的后面加上一个Ran#（对应FD18），计算器就会把FE和FD拼在一起构成那个t开头E结尾的乱码，剩下的单字节18构成非法字符@。</p>
+</div>
+
+<p>然后试着升级991.</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC80NjQwMTI4OTI=">利用FX991CNX的漏洞来升级计算器的教程<i class="fa fa-external-link-alt"></i></span></p>
+<p>这篇能通过卡bug调用出部分jp9000的功能，超脱原有991cnx的范畴。在上海高考中使用部分jp9000的功能似乎没有问题，毕竟是991cnx自带的隐藏功能。</p>
+<p>接着是高阶玩法。</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82MTg3MDQwMzE=">fx-991cnx计算器:利用ROP漏洞执行任意代码<i class="fa fa-external-link-alt"></i></span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82MjA1ODQ2MzQ=">【进阶篇】fx-991cnx计算器:利用ROP漏洞执行任意代码<i class="fa fa-external-link-alt"></i></span></p>
+<p><span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC82NTc5NjIxNDg=">「循环&#x2F;汇编器」991cnx:利用rop漏洞执行任意代码<i class="fa fa-external-link-alt"></i></span></p>
+<p>刑，太刑了，高考整活指日可待。</p>
+<p>还不满足？上面都是开胃小菜，请出唯一真神！！！！！</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly90aWViYS5iYWlkdS5jb20vZj9rdz1meC1lcyhtcykmaWU9dXRmLTg=">fx-(ms)吧<i class="fa fa-external-link-alt"></i></span></p>
+<p>专门研究计算器的神贴吧，感受一下他们的实力！</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly90aWViYS5iYWlkdS5jb20vcC8zMzk1ODIyMDI3">fx-es(ms)吧计算器研究成果索引及疑难解答（第三版）<i class="fa fa-external-link-alt"></i></span></p>
+<h1 id="附件"><a href="#附件" class="headerlink" title="附件"></a>附件</h1><p><img data-src="https://pica.zhimg.com/80/v2-d715154b596fae858a3f6c09305312ba_720w.webp?source=1def8aca" alt="991cnx的汉字字符表"></p>
+<p><img data-src="http://tiebapic.baidu.com/forum/w%3D580/sign=9a0d855f06dfa9ecfd2e561f52d1f754/275b532c11dfa9ece2cdb15475d0f703908fc11f.jpg?tbpicau=2024-03-07-05_cdf96abe64364fdb4e7988a7787228ea" alt="991CNX单字节字符字符表"></p>
+<p><img data-src="http://tiebapic.baidu.com/forum/w%3D580/sign=afe491f472380cd7e61ea2e59145ad14/65f6ce8065380cd78eb9cca9b644ad3458828153.jpg?tbpicau=2024-03-07-05_450ac95a23e6b239c8929009154a3360" alt="FE开头的双字节字符字符表"></p>
+<p><img data-src="http://tiebapic.baidu.com/forum/w%3D580/sign=f86297ae96cb39dbc1c0675ee01709a7/084c55da81cb39db935b9412c7160924aa183067.jpg?tbpicau=2024-03-07-05_c9706fe082951f15a0a3229e5301baba" alt="FD开头的双字节字符字符表"></p>
+<p><img data-src="http://tiebapic.baidu.com/forum/w%3D580/sign=e553283b8558d109c4e3a9bae158ccd0/08dc524e9258d1098bd9e2f7c658ccbf6d814dc1.jpg?tbpicau=2024-03-07-05_631473b1ee85afccb3048a565f21a41d" alt="FB开头的双字节字符字符表"></p>
+<p><img data-src="http://tiebapic.baidu.com/forum/w%3D580/sign=a96fb1786cec54e741ec1a1689399bfd/f4b7bc0e7bec54e7be812658ae389b504ec26a8b.jpg?tbpicau=2024-03-07-05_8b2073e312c6e9cce4c59c378dd19d71" alt="FA开头的双字节字符字符表"></p>
+<p>虚数模式+线性IO可打出全部字符。计算机119了可以拆电池，捂住太阳能板1分钟再把电池装回去，又是一个崭新出厂的计算器。</p>
+]]></content>
   </entry>
   <entry>
     <title>一些html小van具</title>
@@ -566,6 +566,67 @@
 <p>按理说没有药品是没有废料的，但是我显然忘记了金属M和那个假装是盐酸的自来水。于是我颤颤巍巍的看向废液缸，果然看到前任留下来的遗迹：“四五片金属M和一滩水”。我于是又又又又对着摄像头笑一笑，火速把试管往里面一倒，假装什么都没有发生。</p>
 <p>终于全部做完，出门拿东西，跑路。这个时候已经17:35左右了，没想到四场实验做了将近两个小时。出门刚想和zyk聊一聊合租实验室的事情，没想到zyk晚上要出去吃饭，于是他就跟着她妈妈先溜了。我于是跟着wzh回家。</p>
 <p>总之，我对理化实验模拟考的总结：“装模作样，化学实验全程都在演戏。”明天还有英语听说模拟考，之后还有正式考。真是累成狗（大悲）</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>体验传说中的Novel-AI作画</title>
+    <url>/posts/14729.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这件事的起因是我在b站上看到了AI作画的视频</p>
+<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMVA4NDExZTdGYQ==">https://www.bilibili.com/video/BV1P8411e7Fa<i class="fa fa-external-link-alt"></i></span></p>
+<p>看到的时候就一个反应，这居然是AI作画？和2022年中旬的水平完全不一样！！是脱胎换骨级别的！</p>
+<p><strong>多图预警！！</strong></p>
+<span id="more"></span>
+
+<p>上一次体验AI作画还是在体验Waifu Lab，和现在的完全不能比，那时只能生成简单的图像</p>
+<p>一想到AI在这么短的时间迅速进化，我就感觉文末的愿望有可能在短时间内成真了！</p>
+<p>于是我就准备也玩一玩这个AI作画</p>
+<p>我选的是很广泛的Novel AI，本着白嫖的目的，果断选择了部属在百度飞桨上面，每天免费高级GPU八个小时</p>
+<p>另外一种方案是部署在colab上面，要翻墙，pass</p>
+<p>或者部署在本地，电脑太垃圾，pass</p>
+<p>我选了这个作为基础：<span class="exturl" data-url="aHR0cHM6Ly9haXN0dWRpby5iYWlkdS5jb20vYWlzdHVkaW8vcHJvamVjdGRldGFpbC80OTA1NjIzP2NoYW5uZWxUeXBlPTAmY2hhbm5lbD0w">https://aistudio.baidu.com/aistudio/projectdetail/4905623?channelType=0&amp;channel=0<i class="fa fa-external-link-alt"></i></span></p>
+<p>这个作者整合的模型很多，功能全，推荐</p>
+<p>部署完了后我立刻从B站上找了个tag，输入进去，效果如下</p>
+<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_082327844_iOS.jpg"></p>
+<p>🤔……</p>
+<p>和b站视频似乎不是很一样</p>
+<p>怎么有种买家秀卖家秀的即视感</p>
+<p>感觉分辨率不好，于是选了生成1024x512的图片</p>
+<p>……程序崩了</p>
+<p>行8，就512x512的吧</p>
+<p>又生成了几张</p>
+<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_082330640_iOS.jpg"></p>
+<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_082333039_iOS.jpg" alt="水墨风很6"></p>
+<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230213_034904000_iOS.jpg" alt="这张不错"></p>
+<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230213_032102000_iOS.jpg" alt="我超，初音未来"></p>
+<p>有点牛逼，但不是很多</p>
+<p>第二天去翻资料，百度，发现是我用的模型有问题</p>
+<p>看了看b站，有用Naifu的，有用Anything的</p>
+<p>正好这个作者整合了一个Anything-v3.0，装上</p>
+<p>有8个G，无所谓，百度送的工作空间内存100G，赞！</p>
+<p>下载速度很快，一会就下完了，装上，再生成一张</p>
+<p>不错，很有感觉，从百度上找的元素法典里多找几组tag</p>
+<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_081901131_iOS.png" alt="六指琴魔，但是手指没有扭曲变形缠在一块"></p>
+<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_081902716_iOS.png"></p>
+<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_081859211_iOS.png" alt="瞪我瞪我！"></p>
+<p>wow</p>
+<p>最后我找到了一个超赞的tag，被别人命名为空间法，突出的就是一个玻璃碎片光学折射闪瞎眼大法</p>
+<p>我自己改进了一下，加了个光追tag，作用调整了一下打光。又加了个反射光增强tag，让玻璃片片更瞎眼了</p>
+<p>我在这里也把tag放出来</p>
+<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line">((illustration)), ((floating hair)),dynamic angle,  ((((full body)))), (<span class="number">1</span> female), ((solo)), detailed face, asymmetrical bangs, (beautiful detailed eyes), ((colorful refraction)), (beautiful detailed sky), (((Life optical flow))),((dark intense shadows)), ((cinematic lighting)),(expressionless),((sharp focus)), (((masterpiece))), (((best quality))),(((ray tracing))),((((masterpiece)))),reflection light,masterpiece,(((((chromatic aberration))))),((illustration)), ((floating hair)), ((chromatic aberration)), ((caustic)), lens flare, dynamic angle,  ((portrait)),  (<span class="number">1</span> girl), ((solo)), cute face, ((hidden hands)), asymmetrical bangs, (beautiful detailed eyes),(((depthoffield))), eye shadow, ((huge clocks)),  ((glass strips)),((((cinematiclighting)))), (floating glass fragments),(((((god rays))))), ((colorful refraction)), (beautiful detailed sky), ((dark intense shadows)), ((cinematic lighting)), ((overexposure)), (expressionless),  blank stare, big <span class="attribute">top</span> sleeves, ((frills)), hair_ornament, ribbons, bowties, buttons, (((small breast))), pleated skirt, ((sharp focus)), ((masterpiece)), (((best quality))), ((extremely detailed)), colorful, hdr</span><br></pre></td></tr></table></figure>
+
+<p>上图！！！！</p>
+<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_081904154_iOS.png"></p>
+<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_081905584_iOS.png"></p>
+<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_082009218_iOS.png"></p>
+<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_082011595_iOS.png"></p>
+<p>还有涩图……AI画涩图似乎很可以，不知道都喂了些什么……</p>
+<p>放几张不那么涩的<br><strong>&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</strong><br><strong>&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;涩涩预警&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</strong><br><strong>&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</strong></p>
+<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_082049350_iOS.jpg"></p>
+<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_091735060_iOS.jpg"></p>
+<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_091851379_iOS.png"></p>
+<p>（更涩的我没有放上来，自己去试吧）</p>
+<p>这次体验，我只是试了画二次元萌妹纸，但是据说Novel AI画的男生和风景图也超赞，有空更新一下（咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕</p>
+<p>总之，感觉AI作图现在明显水准上来了，替代掉一批底层画师也不再是天方夜谭。（于是多了很多落榜美术生）看到这些我很开心，我觉得AI能生成壁纸级别的图指日可待，期待那一天，估计不会太远。</p>
 ]]></content>
   </entry>
   <entry>
@@ -1060,67 +1121,6 @@
       </tags>
   </entry>
   <entry>
-    <title>体验传说中的Novel-AI作画</title>
-    <url>/posts/14729.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>这件事的起因是我在b站上看到了AI作画的视频</p>
-<p><span class="exturl" data-url="aHR0cHM6Ly93d3cuYmlsaWJpbGkuY29tL3ZpZGVvL0JWMVA4NDExZTdGYQ==">https://www.bilibili.com/video/BV1P8411e7Fa<i class="fa fa-external-link-alt"></i></span></p>
-<p>看到的时候就一个反应，这居然是AI作画？和2022年中旬的水平完全不一样！！是脱胎换骨级别的！</p>
-<p><strong>多图预警！！</strong></p>
-<span id="more"></span>
-
-<p>上一次体验AI作画还是在体验Waifu Lab，和现在的完全不能比，那时只能生成简单的图像</p>
-<p>一想到AI在这么短的时间迅速进化，我就感觉文末的愿望有可能在短时间内成真了！</p>
-<p>于是我就准备也玩一玩这个AI作画</p>
-<p>我选的是很广泛的Novel AI，本着白嫖的目的，果断选择了部属在百度飞桨上面，每天免费高级GPU八个小时</p>
-<p>另外一种方案是部署在colab上面，要翻墙，pass</p>
-<p>或者部署在本地，电脑太垃圾，pass</p>
-<p>我选了这个作为基础：<span class="exturl" data-url="aHR0cHM6Ly9haXN0dWRpby5iYWlkdS5jb20vYWlzdHVkaW8vcHJvamVjdGRldGFpbC80OTA1NjIzP2NoYW5uZWxUeXBlPTAmY2hhbm5lbD0w">https://aistudio.baidu.com/aistudio/projectdetail/4905623?channelType=0&amp;channel=0<i class="fa fa-external-link-alt"></i></span></p>
-<p>这个作者整合的模型很多，功能全，推荐</p>
-<p>部署完了后我立刻从B站上找了个tag，输入进去，效果如下</p>
-<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_082327844_iOS.jpg"></p>
-<p>🤔……</p>
-<p>和b站视频似乎不是很一样</p>
-<p>怎么有种买家秀卖家秀的即视感</p>
-<p>感觉分辨率不好，于是选了生成1024x512的图片</p>
-<p>……程序崩了</p>
-<p>行8，就512x512的吧</p>
-<p>又生成了几张</p>
-<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_082330640_iOS.jpg"></p>
-<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_082333039_iOS.jpg" alt="水墨风很6"></p>
-<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230213_034904000_iOS.jpg" alt="这张不错"></p>
-<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230213_032102000_iOS.jpg" alt="我超，初音未来"></p>
-<p>有点牛逼，但不是很多</p>
-<p>第二天去翻资料，百度，发现是我用的模型有问题</p>
-<p>看了看b站，有用Naifu的，有用Anything的</p>
-<p>正好这个作者整合了一个Anything-v3.0，装上</p>
-<p>有8个G，无所谓，百度送的工作空间内存100G，赞！</p>
-<p>下载速度很快，一会就下完了，装上，再生成一张</p>
-<p>不错，很有感觉，从百度上找的元素法典里多找几组tag</p>
-<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_081901131_iOS.png" alt="六指琴魔，但是手指没有扭曲变形缠在一块"></p>
-<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_081902716_iOS.png"></p>
-<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_081859211_iOS.png" alt="瞪我瞪我！"></p>
-<p>wow</p>
-<p>最后我找到了一个超赞的tag，被别人命名为空间法，突出的就是一个玻璃碎片光学折射闪瞎眼大法</p>
-<p>我自己改进了一下，加了个光追tag，作用调整了一下打光。又加了个反射光增强tag，让玻璃片片更瞎眼了</p>
-<p>我在这里也把tag放出来</p>
-<figure class="highlight scss"><table><tr><td class="code"><pre><span class="line">((illustration)), ((floating hair)),dynamic angle,  ((((full body)))), (<span class="number">1</span> female), ((solo)), detailed face, asymmetrical bangs, (beautiful detailed eyes), ((colorful refraction)), (beautiful detailed sky), (((Life optical flow))),((dark intense shadows)), ((cinematic lighting)),(expressionless),((sharp focus)), (((masterpiece))), (((best quality))),(((ray tracing))),((((masterpiece)))),reflection light,masterpiece,(((((chromatic aberration))))),((illustration)), ((floating hair)), ((chromatic aberration)), ((caustic)), lens flare, dynamic angle,  ((portrait)),  (<span class="number">1</span> girl), ((solo)), cute face, ((hidden hands)), asymmetrical bangs, (beautiful detailed eyes),(((depthoffield))), eye shadow, ((huge clocks)),  ((glass strips)),((((cinematiclighting)))), (floating glass fragments),(((((god rays))))), ((colorful refraction)), (beautiful detailed sky), ((dark intense shadows)), ((cinematic lighting)), ((overexposure)), (expressionless),  blank stare, big <span class="attribute">top</span> sleeves, ((frills)), hair_ornament, ribbons, bowties, buttons, (((small breast))), pleated skirt, ((sharp focus)), ((masterpiece)), (((best quality))), ((extremely detailed)), colorful, hdr</span><br></pre></td></tr></table></figure>
-
-<p>上图！！！！</p>
-<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_081904154_iOS.png"></p>
-<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_081905584_iOS.png"></p>
-<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_082009218_iOS.png"></p>
-<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_082011595_iOS.png"></p>
-<p>还有涩图……AI画涩图似乎很可以，不知道都喂了些什么……</p>
-<p>放几张不那么涩的<br><strong>&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</strong><br><strong>&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;涩涩预警&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</strong><br><strong>&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;</strong></p>
-<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_082049350_iOS.jpg"></p>
-<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_091735060_iOS.jpg"></p>
-<p><img data-src="https://onedrive.nbplus.eu.org/api/raw/?path=/%E5%9B%BE%E5%BA%8A/postimg/novel%20ai/20230214_091851379_iOS.png"></p>
-<p>（更涩的我没有放上来，自己去试吧）</p>
-<p>这次体验，我只是试了画二次元萌妹纸，但是据说Novel AI画的男生和风景图也超赞，有空更新一下（咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕咕</p>
-<p>总之，感觉AI作图现在明显水准上来了，替代掉一批底层画师也不再是天方夜谭。（于是多了很多落榜美术生）看到这些我很开心，我觉得AI能生成壁纸级别的图指日可待，期待那一天，估计不会太远。</p>
-]]></content>
-  </entry>
-  <entry>
     <title>再次小改博客</title>
     <url>/posts/34205.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近有篇文章下面评论我博客蛮好看的，嘻嘻。劳动成果得到肯定确实是一件蛮高兴的事情。</p>
@@ -1133,6 +1133,17 @@
 <hr>
 <p>今天看到了<span class="exturl" data-url="aHR0cHM6Ly9kdXNheXMuY29tLzY2OS8=">杜老师的文章<i class="fa fa-external-link-alt"></i></span>，遂更换加速节点，于是全绿<br><img data-src="https://img-verynb.s3.bitiful.net/4cf05932dc1a3866d11ef14eb2163d99.png" alt="更换vercel+更换vercel加速后"></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>助人使我快乐</title>
+    <url>/posts/18293.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>今天帮助明斯克数学家（zyk）搭建了他自己的博客<br>顺便验证了之前提到的vercel部署typecho博客，再次成功，证明可行</p>
+<span id="more"></span>
+<p>博客搭建时长仅仅为十五分钟，剩下半个小时在等github能访问（悲痛欲绝）和freenom的域名生效。哎，现在也没有访问成功，挂了梯子都不行，我真吐了，装下的逼（“十分钟让你拥有zyk220601.tk这个域名”）就这么被狠狠打脸了（悲痛）<br>总之最后是成功搭建好了，然后也加了友链，也欢迎大家访问zyk的小破站（我觉得不垃圾，不知道为什么zyk要叫垃圾小破站）<br>然后是php部署typecho博客，昨天我在GitHub上乱逛，逛到一个仓库，看了一下内容居然可以把typecho转到vercel上，今天顺着仓库找到了tianli的文章<br><span class="exturl" data-url="aHR0cHM6Ly90aWFubGktYmxvZy5jbHViL3BocC12ZXJjZWwv">https://tianli-blog.club/php-vercel/<i class="fa fa-external-link-alt"></i></span><br>我顿时觉得tianli有些熟悉，直到晚上去逛lyx的站，看到他的站页脚部分挂了一个CDN：TianliCDN，嘶，这是不是就是……我点进去，果然到了Tianli的博客<br>hhhh真是太巧了，总之又绕了回来，不得不说这次真是受益良多，据tianli的说法，vercel部署typecho只是一个例子，还可以部署其他的php程序，不禁让我决定继续研究</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
   </entry>
   <entry>
     <title>博客创建一个星期来加入的有趣功能汇总</title>
@@ -1170,15 +1181,26 @@
       </tags>
   </entry>
   <entry>
-    <title>助人使我快乐</title>
-    <url>/posts/18293.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>今天帮助明斯克数学家（zyk）搭建了他自己的博客<br>顺便验证了之前提到的vercel部署typecho博客，再次成功，证明可行</p>
+    <title>博客小修</title>
+    <url>/posts/60168.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>时隔几个月又再度更新啦，时过境迁，很多博客刚建立之初还能用的服务到三年之后已经无法使用了</p>
+<p>正好今天在套edge one的CDN，因此顺便修缮了一下博客，让博客处于最佳状态</p>
 <span id="more"></span>
-<p>博客搭建时长仅仅为十五分钟，剩下半个小时在等github能访问（悲痛欲绝）和freenom的域名生效。哎，现在也没有访问成功，挂了梯子都不行，我真吐了，装下的逼（“十分钟让你拥有zyk220601.tk这个域名”）就这么被狠狠打脸了（悲痛）<br>总之最后是成功搭建好了，然后也加了友链，也欢迎大家访问zyk的小破站（我觉得不垃圾，不知道为什么zyk要叫垃圾小破站）<br>然后是php部署typecho博客，昨天我在GitHub上乱逛，逛到一个仓库，看了一下内容居然可以把typecho转到vercel上，今天顺着仓库找到了tianli的文章<br><span class="exturl" data-url="aHR0cHM6Ly90aWFubGktYmxvZy5jbHViL3BocC12ZXJjZWwv">https://tianli-blog.club/php-vercel/<i class="fa fa-external-link-alt"></i></span><br>我顿时觉得tianli有些熟悉，直到晚上去逛lyx的站，看到他的站页脚部分挂了一个CDN：TianliCDN，嘶，这是不是就是……我点进去，果然到了Tianli的博客<br>hhhh真是太巧了，总之又绕了回来，不得不说这次真是受益良多，据tianli的说法，vercel部署typecho只是一个例子，还可以部署其他的php程序，不禁让我决定继续研究</p>
+<h1 id="套腾讯云edge-one"><a href="#套腾讯云edge-one" class="headerlink" title="套腾讯云edge one"></a>套腾讯云edge one</h1><p>首先路边捡一个腾讯云edge one免费层级兑换码</p>
+<p>然后可以去 <span class="exturl" data-url="aHR0cHM6Ly9lZGdlb25lLmFpL3poL3JlZGVtcHRpb24=">国际版兑换入口<i class="fa fa-external-link-alt"></i></span></p>
+<p>或者 <span class="exturl" data-url="aHR0cHM6Ly9jb25zb2xlLmNsb3VkLnRlbmNlbnQuY29tL2VkZ2VvbmUvcGFja2FnZT9jbl9mcmVlX3JlZGVlbT10cnVl">中国版入口<i class="fa fa-external-link-alt"></i></span> 进行兑换。</p>
+<p>换好了之后可以套CDN，我因为未成年，域名也没备案，只好选了海外版。</p>
+<p>另外经过我的测试，海外版CDN还不如vercel香港节点在国内的速度，vercel香港节点在国内的速度是真的快，接近80ms平均的速度</p>
+<p>我的建议是可以用来代替cloudflare，比cloudflare快多了，不过换来换去还是矮子里面挑将军</p>
+<h1 id="更换waline后端"><a href="#更换waline后端" class="headerlink" title="更换waline后端"></a>更换waline后端</h1><p>最近我访问自己博客的时候，waline老是加载不出来，我还以为是我的问题，后来发现其实是LeanCloud慢的令人发指。</p>
+<p>waline在我搭建好博客后就一直没换过，三年过后leancloud不再良心，奇慢无比，因此果断迁移到Supabase提供的PostgreSQL</p>
+<p>现在协议更新了，Supabase提供1GB储存，十分舒适</p>
+<p>我建议直接在vercel里的storage里进行创建，可以直接关联waline的vercel项目，十分方便，都不用自己填写了环境变量了</p>
+<p>可以参考 <span class="exturl" data-url="aHR0cHM6Ly9maW5pc2t5LmdpdGh1Yi5pby9oZXhvcm1sZWFuY2xvdWQv">这篇教程<i class="fa fa-external-link-alt"></i></span></p>
+<p>和<span class="exturl" data-url="aHR0cHM6Ly93YWxpbmUuanMub3JnL2d1aWRlL2RhdGFiYXNlLmh0bWw=">waline官方的指南<i class="fa fa-external-link-alt"></i></span></p>
+<p><del>更换之后我给waline也套了CDN，现在评论也秒开了，针不戳</del></p>
+<p>!!! note “警告”<br>给waline套CDN会让所有人的ip全部显示混乱，不要套！verel香港节点反而更快</p>
 ]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
   </entry>
   <entry>
     <title>博客名字终于定下来力</title>
@@ -1214,25 +1236,15 @@
 ]]></content>
   </entry>
   <entry>
-    <title>博客小修</title>
-    <url>/posts/60168.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>时隔几个月又再度更新啦，时过境迁，很多博客刚建立之初还能用的服务到三年之后已经无法使用了</p>
-<p>正好今天在套edge one的CDN，因此顺便修缮了一下博客，让博客处于最佳状态</p>
-<span id="more"></span>
-<h1 id="套腾讯云edge-one"><a href="#套腾讯云edge-one" class="headerlink" title="套腾讯云edge one"></a>套腾讯云edge one</h1><p>首先路边捡一个腾讯云edge one免费层级兑换码</p>
-<p>然后可以去 <span class="exturl" data-url="aHR0cHM6Ly9lZGdlb25lLmFpL3poL3JlZGVtcHRpb24=">国际版兑换入口<i class="fa fa-external-link-alt"></i></span></p>
-<p>或者 <span class="exturl" data-url="aHR0cHM6Ly9jb25zb2xlLmNsb3VkLnRlbmNlbnQuY29tL2VkZ2VvbmUvcGFja2FnZT9jbl9mcmVlX3JlZGVlbT10cnVl">中国版入口<i class="fa fa-external-link-alt"></i></span> 进行兑换。</p>
-<p>换好了之后可以套CDN，我因为未成年，域名也没备案，只好选了海外版。</p>
-<p>另外经过我的测试，海外版CDN还不如vercel香港节点在国内的速度，vercel香港节点在国内的速度是真的快，接近80ms平均的速度</p>
-<p>我的建议是可以用来代替cloudflare，比cloudflare快多了，不过换来换去还是矮子里面挑将军</p>
-<h1 id="更换waline后端"><a href="#更换waline后端" class="headerlink" title="更换waline后端"></a>更换waline后端</h1><p>最近我访问自己博客的时候，waline老是加载不出来，我还以为是我的问题，后来发现其实是LeanCloud慢的令人发指。</p>
-<p>waline在我搭建好博客后就一直没换过，三年过后leancloud不再良心，奇慢无比，因此果断迁移到Supabase提供的PostgreSQL</p>
-<p>现在协议更新了，Supabase提供1GB储存，十分舒适</p>
-<p>我建议直接在vercel里的storage里进行创建，可以直接关联waline的vercel项目，十分方便，都不用自己填写了环境变量了</p>
-<p>可以参考 <span class="exturl" data-url="aHR0cHM6Ly9maW5pc2t5LmdpdGh1Yi5pby9oZXhvcm1sZWFuY2xvdWQv">这篇教程<i class="fa fa-external-link-alt"></i></span></p>
-<p>和<span class="exturl" data-url="aHR0cHM6Ly93YWxpbmUuanMub3JnL2d1aWRlL2RhdGFiYXNlLmh0bWw=">waline官方的指南<i class="fa fa-external-link-alt"></i></span></p>
-<p><del>更换之后我给waline也套了CDN，现在评论也秒开了，针不戳</del></p>
-<p>!!! note “警告”<br>给waline套CDN会让所有人的ip全部显示混乱，不要套！verel香港节点反而更快</p>
+    <title>博客成立两年啦</title>
+    <url>/posts/3178.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近几天玩了玩字节跳动的coze</p>
+<p>于是在tg上部署了一个GPT4 trubo 128k的机器人，并且把我博客的所有文章和我的个人介绍做成数据集给他了</p>
+<p>经过我的测试，简直是超乎预想的效果，很多我写的文章中一些很细微的信息它也能知道</p>
+<p>准备结束的时候问了一句晴雀堂成立多久了，它回答两年！！</p>
+<p>我知道马上就要到两周年了，没想到就是今天！！去看了一下第一篇文章，果然是4月5号。</p>
+<p>赶紧写一篇文章庆祝一下。</p>
+<p>另外你可以在每篇文章的文末找到晴雀堂机器人的tg链接，快去试试吧～</p>
 ]]></content>
   </entry>
   <entry>
@@ -1392,18 +1404,6 @@
       </tags>
   </entry>
   <entry>
-    <title>博客成立两年啦</title>
-    <url>/posts/3178.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近几天玩了玩字节跳动的coze</p>
-<p>于是在tg上部署了一个GPT4 trubo 128k的机器人，并且把我博客的所有文章和我的个人介绍做成数据集给他了</p>
-<p>经过我的测试，简直是超乎预想的效果，很多我写的文章中一些很细微的信息它也能知道</p>
-<p>准备结束的时候问了一句晴雀堂成立多久了，它回答两年！！</p>
-<p>我知道马上就要到两周年了，没想到就是今天！！去看了一下第一篇文章，果然是4月5号。</p>
-<p>赶紧写一篇文章庆祝一下。</p>
-<p>另外你可以在每篇文章的文末找到晴雀堂机器人的tg链接，快去试试吧～</p>
-]]></content>
-  </entry>
-  <entry>
     <title>反诈中心：很快就到你家门口</title>
     <url>/posts/43801.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="昨天不是试了一下韩国新选手Groom的服务器嘛直接搭建一个宝塔面板，昨天注册了一个账号，在我的小服务器上登录了后续搭建wp博客的计划不了了之，就没去管了结果昨天半夜反诈骗中心直接打到我爸手机上了，说我注册了诈骗网站昨天我就只注册了宝塔一个号，不会错的"><a href="#昨天不是试了一下韩国新选手Groom的服务器嘛直接搭建一个宝塔面板，昨天注册了一个账号，在我的小服务器上登录了后续搭建wp博客的计划不了了之，就没去管了结果昨天半夜反诈骗中心直接打到我爸手机上了，说我注册了诈骗网站昨天我就只注册了宝塔一个号，不会错的" class="headerlink" title="昨天不是试了一下韩国新选手Groom的服务器嘛直接搭建一个宝塔面板，昨天注册了一个账号，在我的小服务器上登录了后续搭建wp博客的计划不了了之，就没去管了结果昨天半夜反诈骗中心直接打到我爸手机上了，说我注册了诈骗网站昨天我就只注册了宝塔一个号，不会错的"></a>昨天不是试了一下韩国新选手Groom的服务器嘛<br>直接搭建一个宝塔面板，昨天注册了一个账号，在我的小服务器上登录了<br>后续搭建wp博客的计划不了了之，就没去管了<br>结果昨天半夜反诈骗中心直接打到我爸手机上了，说我注册了诈骗网站<br>昨天我就只注册了宝塔一个号，不会错的<br><span id="more"></span></h2><p>大清早刚从床上爬起来接到这个消息感觉迷迷糊糊的<br>也不知道到底发生了什么事<br>好在爸妈相信我没整什么烂活<br>像是拿钱去给骗子之类的<br>不知道他们有没有检查过支付宝，银行卡之类的<br>反正我是一分钱也摸不到<br>要不然也不会在晚上苦苦寻找免费资源了<br>我想了想觉得很有可能是邻居在搞事<br>如果他们建诈骗网站的话，我在同ip风险还是蛮大的<br>（咬牙切齿</p>
@@ -1467,6 +1467,23 @@
 ]]></content>
   </entry>
   <entry>
+    <title>复活的晴雀茶馆以及终极白嫖指南</title>
+    <url>/posts/35637.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>晴雀茶馆复活版以及终极白嫖指南<br>很久之前（半个月前），我在Goorm上搭建了Flarum论坛系统<br>论坛很漂亮，拓展功能也很强<br>可惜由于是用的Cloudflared Tunnel穿透到club.hehysh.eu.org<br>顺便说一句，最近可能要换域名了，我已经申请了shier.eu.org，原来的域名太拗口了</p>
+<span id="more"></span>
+<h1 id="晴雀茶馆"><a href="#晴雀茶馆" class="headerlink" title="晴雀茶馆"></a>晴雀茶馆</h1><p>最新的晴雀茶馆搭载在了freeflarum上，这家可谓是良心，我在实际使用中没有受到任何限制，只有在页脚有一个广告<br>首先，一个邮箱即可开始使用，我很震惊因为刚注册好邮箱我的论坛立刻准备好了，无需任何操作，论坛就已经出现在域名上，当然也是可以自定义域名的，没有收费<br>其次，当我进入论坛后台后，我震惊到了，论坛已经预装好接近一百种不同的插件与语言包，这些东西都没有拖慢论坛的速度，反而节省了我大量的时间<br>第三，freeflarum已经预先装好了SMTP邮箱提示服务，完全不用我来设置，发送邮件没有限制，邮件上也没有广告<br>第四，这些所有免费的服务，唯一的限制就是论坛注册人数不得超过250人，但这对我来说毫无问图（我的论坛超过20人就谢天谢地了）<br>所以我必须得推荐FreeFlarum，实在是牛逼！！<br>同时也欢迎大家访问<span class="exturl" data-url="aHR0cHM6Ly9jbHViLmhlaHlzaC5ldS5vcmcv">晴雀茶馆<i class="fa fa-external-link-alt"></i></span></p>
+<h1 id="终极白嫖指南"><a href="#终极白嫖指南" class="headerlink" title="终极白嫖指南"></a>终极白嫖指南</h1><p>我是从哪里知道freeflarum的呢？<br>这就不得不说一下这份无数白嫖党总结出来的最终完全白嫖指南<br>他就是free-for.dev<br>里面集合繁多的为开发者准备的免费服务，基本都只需要邮箱，我就是在其中知道freeflarum的，当你点进free-for.dev，你将看到囊括了开发的各个步骤的免费服务，绝对是爽歪歪<br>当然，其他白嫖服务聚合也有很多，各位可以自己去搜搜看～</p>
+<hr>
+<h1 id="广告：晴雀茶馆诚邀您的加入～"><a href="#广告：晴雀茶馆诚邀您的加入～" class="headerlink" title="广告：晴雀茶馆诚邀您的加入～"></a>广告：晴雀茶馆诚邀您的加入～</h1><p>晴雀茶馆是一个论坛，内含各种板块：生活，闲聊，技术，等一干其他小板块<br>功能齐全，为丰富论坛，我们有成就系统，仿B站的硬币系统以及看起来好看却没啥用的大会员系统（其实是因为大会员一点特权都没有只是带一个粉色的大会员标志）。论坛虽然有类似b站的硬币系统，但整个论坛不会涉及到任何现实的货币（没有万恶的充值系统）。夜间模式，舒适简洁的UI，流畅的加载速度以及移动端的适配都可以带来更好的体验（移动端适配真的蛮舒适）<br>论坛有管理员积极维护（我没事就去康康论坛），论坛内气氛友好（这是真的），目前论坛刚刚建立（复活），注册会员尚少（个位数）（悲）<br>于此，诚邀您的加入<br>论坛网址club.hehysh.eu.org</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>奇怪的情况</title>
+    <url>/posts/58651.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>博客流量突然炸了，三分钟多了1000多pv<br>umami上显示来源域名是hehysh.github.io<br>这不是我站吗？？无限循环？？？</p>
+]]></content>
+  </entry>
+  <entry>
     <title>如何在lunar端中安装模组</title>
     <url>/posts/18818.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>最近每周玩玩生存，工作本的显卡Intel iRIS Xe Graphics虽然很烂，但是能把光影带到70fps，也不错了</p>
@@ -1502,23 +1519,6 @@
 <p>启动，未报错，正常运行。模组正常加载，完全胜利！！</p>
 <p>注意几个点：更改依赖只是为了能正常进入，能不能加载成功就看运气了，每个模组每个版本都不同</p>
 <p>但是能正常进入就有成功的希望，还是很有用的。</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>奇怪的情况</title>
-    <url>/posts/58651.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>博客流量突然炸了，三分钟多了1000多pv<br>umami上显示来源域名是hehysh.github.io<br>这不是我站吗？？无限循环？？？</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>复活的晴雀茶馆以及终极白嫖指南</title>
-    <url>/posts/35637.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>晴雀茶馆复活版以及终极白嫖指南<br>很久之前（半个月前），我在Goorm上搭建了Flarum论坛系统<br>论坛很漂亮，拓展功能也很强<br>可惜由于是用的Cloudflared Tunnel穿透到club.hehysh.eu.org<br>顺便说一句，最近可能要换域名了，我已经申请了shier.eu.org，原来的域名太拗口了</p>
-<span id="more"></span>
-<h1 id="晴雀茶馆"><a href="#晴雀茶馆" class="headerlink" title="晴雀茶馆"></a>晴雀茶馆</h1><p>最新的晴雀茶馆搭载在了freeflarum上，这家可谓是良心，我在实际使用中没有受到任何限制，只有在页脚有一个广告<br>首先，一个邮箱即可开始使用，我很震惊因为刚注册好邮箱我的论坛立刻准备好了，无需任何操作，论坛就已经出现在域名上，当然也是可以自定义域名的，没有收费<br>其次，当我进入论坛后台后，我震惊到了，论坛已经预装好接近一百种不同的插件与语言包，这些东西都没有拖慢论坛的速度，反而节省了我大量的时间<br>第三，freeflarum已经预先装好了SMTP邮箱提示服务，完全不用我来设置，发送邮件没有限制，邮件上也没有广告<br>第四，这些所有免费的服务，唯一的限制就是论坛注册人数不得超过250人，但这对我来说毫无问图（我的论坛超过20人就谢天谢地了）<br>所以我必须得推荐FreeFlarum，实在是牛逼！！<br>同时也欢迎大家访问<span class="exturl" data-url="aHR0cHM6Ly9jbHViLmhlaHlzaC5ldS5vcmcv">晴雀茶馆<i class="fa fa-external-link-alt"></i></span></p>
-<h1 id="终极白嫖指南"><a href="#终极白嫖指南" class="headerlink" title="终极白嫖指南"></a>终极白嫖指南</h1><p>我是从哪里知道freeflarum的呢？<br>这就不得不说一下这份无数白嫖党总结出来的最终完全白嫖指南<br>他就是free-for.dev<br>里面集合繁多的为开发者准备的免费服务，基本都只需要邮箱，我就是在其中知道freeflarum的，当你点进free-for.dev，你将看到囊括了开发的各个步骤的免费服务，绝对是爽歪歪<br>当然，其他白嫖服务聚合也有很多，各位可以自己去搜搜看～</p>
-<hr>
-<h1 id="广告：晴雀茶馆诚邀您的加入～"><a href="#广告：晴雀茶馆诚邀您的加入～" class="headerlink" title="广告：晴雀茶馆诚邀您的加入～"></a>广告：晴雀茶馆诚邀您的加入～</h1><p>晴雀茶馆是一个论坛，内含各种板块：生活，闲聊，技术，等一干其他小板块<br>功能齐全，为丰富论坛，我们有成就系统，仿B站的硬币系统以及看起来好看却没啥用的大会员系统（其实是因为大会员一点特权都没有只是带一个粉色的大会员标志）。论坛虽然有类似b站的硬币系统，但整个论坛不会涉及到任何现实的货币（没有万恶的充值系统）。夜间模式，舒适简洁的UI，流畅的加载速度以及移动端的适配都可以带来更好的体验（移动端适配真的蛮舒适）<br>论坛有管理员积极维护（我没事就去康康论坛），论坛内气氛友好（这是真的），目前论坛刚刚建立（复活），注册会员尚少（个位数）（悲）<br>于此，诚邀您的加入<br>论坛网址club.hehysh.eu.org</p>
 ]]></content>
   </entry>
   <entry>
@@ -1941,12 +1941,6 @@
       </tags>
   </entry>
   <entry>
-    <title>换网址啦</title>
-    <url>/posts/62518.html</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>看看博客，最近已经好久好久没有更新过了<br>掐指一算，快一个月了😂<br>这篇文章主要是通知一下，博客要换新网址了<br>从原来的hehysh.eu.org换成shier.eu.org<br>从原来的hehysh.eu.org换成shier.eu.org<br>从原来的hehysh.eu.org换成shier.eu.org<br>(重要的事情说三遍)<br>现在<span class="exturl" data-url="aHR0cDovL3d3dy5oZWh5c2guZXUub3JnLw==">www.hehysh.eu.org<i class="fa fa-external-link-alt"></i></span> 依然可以访问，一个多月后（12月1日），hehysh.eu.org会做302跳转<br>新的网址更好记，更顺口～<br>同时本站会更名为晴雀草堂<br>崭新的博客即将和大家见面:)</p>
-]]></content>
-  </entry>
-  <entry>
     <title>【已翻车】无敌牛逼的vps</title>
     <url>/posts/49631.html</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>无敌牛逼的vps</p>
@@ -2038,6 +2032,12 @@
 
 <p>这样打印机就接入wsl了，接下来按照上面给出的<span class="exturl" data-url="aHR0cHM6Ly93d3cueW91dHViZS5jb20vd2F0Y2g/dj1NYVVVOHN0c1pQbyZ0PTIxMnM=">youtube视频<i class="fa fa-external-link-alt"></i></span>继续操作就可以了，我直接复制了ender3 v2的cfg文件，发现也能用。</p>
 <p>一切就绪，klipper中应该就会显示打印机的相关信息，打印机的屏幕上也会显示数据了。现在可以开始打印了，真是可喜可贺，可口可乐🎉🎉🎉</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>换网址啦</title>
+    <url>/posts/62518.html</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>看看博客，最近已经好久好久没有更新过了<br>掐指一算，快一个月了😂<br>这篇文章主要是通知一下，博客要换新网址了<br>从原来的hehysh.eu.org换成shier.eu.org<br>从原来的hehysh.eu.org换成shier.eu.org<br>从原来的hehysh.eu.org换成shier.eu.org<br>(重要的事情说三遍)<br>现在<span class="exturl" data-url="aHR0cDovL3d3dy5oZWh5c2guZXUub3JnLw==">www.hehysh.eu.org<i class="fa fa-external-link-alt"></i></span> 依然可以访问，一个多月后（12月1日），hehysh.eu.org会做302跳转<br>新的网址更好记，更顺口～<br>同时本站会更名为晴雀草堂<br>崭新的博客即将和大家见面:)</p>
 ]]></content>
   </entry>
   <entry>
