@@ -83,15 +83,6 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.net/sec-site/index.html</loc>
-    
-    <lastmod>2026-01-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.verynb.net/schedule/index.html</loc>
     
     <lastmod>2026-01-01</lastmod>
@@ -101,7 +92,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.net/tags/index.html</loc>
+    <loc>https://blog.verynb.net/sec-site/index.html</loc>
     
     <lastmod>2026-01-01</lastmod>
     
@@ -111,6 +102,15 @@
   
   <url>
     <loc>https://blog.verynb.net/statement/index.html</loc>
+    
+    <lastmod>2026-01-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.verynb.net/tags/index.html</loc>
     
     <lastmod>2026-01-01</lastmod>
     
@@ -137,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.net/posts/48340.html</loc>
+    <loc>https://blog.verynb.net/posts/52415.html</loc>
     
     <lastmod>2026-01-01</lastmod>
     
@@ -146,7 +146,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.net/posts/52415.html</loc>
+    <loc>https://blog.verynb.net/posts/48340.html</loc>
     
     <lastmod>2026-01-01</lastmod>
     
@@ -263,7 +263,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.net/posts/4186.html</loc>
+    <loc>https://blog.verynb.net/posts/2505.html</loc>
     
     <lastmod>2026-01-01</lastmod>
     
@@ -272,7 +272,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.net/posts/2505.html</loc>
+    <loc>https://blog.verynb.net/posts/4186.html</loc>
     
     <lastmod>2026-01-01</lastmod>
     
@@ -632,7 +632,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.net/posts/48222.html</loc>
+    <loc>https://blog.verynb.net/posts/15084.html</loc>
     
     <lastmod>2026-01-01</lastmod>
     
@@ -641,7 +641,7 @@
   </url>
   
   <url>
-    <loc>https://blog.verynb.net/posts/15084.html</loc>
+    <loc>https://blog.verynb.net/posts/48222.html</loc>
     
     <lastmod>2026-01-01</lastmod>
     
