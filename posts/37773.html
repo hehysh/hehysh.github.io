@@ -98,10 +98,16 @@
 <div class="top-scroll-bar"></div>
 <!--使用umami统计，尊重访客隐私^-^-->
 <script defer src="https://u.nbplus.eu.org/script.js" data-website-id="061f90c5-2d4f-428f-be7c-40f5a99113b4"></script>
-<!--引入字体-->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css" />
-<meta name="msvalidate.01" content="AAFE56EEF8D0968CC1BC842FCE4448F5" />
 
+<!--引入字体-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.7.0/lxgwwenkailite-regular.css" />
+<style>
+  body {
+    /* 解决白屏的关键：字体加载完成前先显示系统字体 */
+    font-display: swap; 
+  }
+</style>
+<meta name="msvalidate.01" content="AAFE56EEF8D0968CC1BC842FCE4448F5" />
 
   <noscript>
     <link rel="stylesheet" href="/css/noscript.css">
