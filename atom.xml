@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>晴雀堂</title>
+  
+  <subtitle>晴雀的个人博客</subtitle>
+  <link href="https://blog.verynb.net/atom.xml" rel="self"/>
+  
+  <link href="https://blog.verynb.net/"/>
+  <updated>2026-05-09T13:29:49.196Z</updated>
+  <id>https://blog.verynb.net/</id>
+  
+  <author>
+    <name>晴雀</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>【虾塔完结篇】希腊决战 x 几维鸟</title>
+    <link href="https://blog.verynb.net/posts/47267.html"/>
+    <id>https://blog.verynb.net/posts/47267.html</id>
+    <published>2026-05-09T10:21:21.000Z</published>
+    <updated>2026-05-09T13:29:49.196Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;写完《乔越》后我本来构思了很多东西，也许虾塔这部小说本就没有特定的剧情，我只是在把学校里一个又一个无意义的意象强行串联起来。阳马，鱼羊，虾猫，硕鼠，生物老师吴冰和她的豌豆船，数学老师蒋次鳌和他的火焰杯，这些无意义的意象是我本来想要加入后续剧情的节点，或者说：是我先想到了这些事物，然后在午饭时的谈笑中用奇异魔幻的剧情将他们连接起来。他们是是现实生活一个又一个碎片的抽象化和陌生化。我想把他们写下来，以供我日后一笑，可是在我与伙伴们中午一次又一次的谈笑中慢慢清晰了《虾塔》后续的剧情时，我却发现自己难以落笔，因为我懒，懒到忘记在一节无精打采的体育课把手机偷出来用语音输入大纲然后回家扩写。&lt;/p&gt;
+&lt;p&gt;所以中间的剧情应该是再难出世了，好在金文鼎在2026.5.2时发来了他自己写的关于《虾塔》的结局，加入了咒术回战的一些设定（尽管除了他我们都没看过咒术回战，但是这很酷）因此我将其扩写（并非是我，我必须承认这来自ds v4），并且自己写了后传《几维鸟》的大纲，这是因为陈家明在一次午饭后的散步中吐槽我就像一个人形摄像头，从未参与过剧情。&lt;/p&gt;
+&lt;p&gt;总之，这是关于虾塔的结局和一切归零的后传的故事。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;程家明真的很黑，而且他刚在暑假做过近视治疗手术&lt;/em&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>乔越</title>
+    <link href="https://blog.verynb.net/posts/64721.html"/>
+    <id>https://blog.verynb.net/posts/64721.html</id>
+    <published>2026-01-28T10:36:13.000Z</published>
+    <updated>2026-05-09T09:44:39.726Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今天是趣味运动会，在漫长而无聊的等待时间我用ios的语音备忘录录下了和兄弟们讨论的最新故事的剧情。&lt;/p&gt;
+&lt;p&gt;其实总体剧情在中午吃饭的时候就确定好了。总之依旧没有任何逻辑。&lt;/p&gt;
+&lt;p&gt;加入新干员：乔越！&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="人类群星闪耀时" scheme="https://blog.verynb.net/tags/%E4%BA%BA%E7%B1%BB%E7%BE%A4%E6%98%9F%E9%97%AA%E8%80%80%E6%97%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>猪使</title>
+    <link href="https://blog.verynb.net/posts/1879.html"/>
+    <id>https://blog.verynb.net/posts/1879.html</id>
+    <published>2026-01-23T10:37:55.000Z</published>
+    <updated>2026-05-09T09:44:39.733Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;依旧灵感菇启动&lt;/p&gt;
+&lt;p&gt;我写的时候根本就没想过会字数爆炸。。&lt;/p&gt;
+&lt;p&gt;加入新干员：猪使（？）季奥翔！&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>晨阳</title>
+    <link href="https://blog.verynb.net/posts/64465.html"/>
+    <id>https://blog.verynb.net/posts/64465.html</id>
+    <published>2026-01-15T11:39:30.000Z</published>
+    <updated>2026-05-09T09:44:39.731Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;今天中午想到的，崭新的故事。&lt;/p&gt;
+&lt;p&gt;今天中午吃的又是一坨屎，我们每个人都面露难色，就在这时，郑子灏端着他的餐盘走过来，告诉我们他那操蛋的鱿鱼竟然是粉色的，每个人都狂笑。这时灵感来了。&lt;/p&gt;
+&lt;p&gt;众所周知最近claude抽风了，平时用的渠道挂了，只能启动后备隐藏能源，模型还是claude-opus-4.5，但是不知道为什么感觉味道不一样了，总之先将就着吧，之后原渠道恢复了可能会再写一版。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;胡晨阳在现实里并不是煎蛋大师。&lt;/em&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="人类群星闪耀时" scheme="https://blog.verynb.net/tags/%E4%BA%BA%E7%B1%BB%E7%BE%A4%E6%98%9F%E9%97%AA%E8%80%80%E6%97%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>封印椅</title>
+    <link href="https://blog.verynb.net/posts/38442.html"/>
+    <id>https://blog.verynb.net/posts/38442.html</id>
+    <published>2026-01-12T12:25:17.000Z</published>
+    <updated>2026-05-09T09:44:39.730Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;虾塔的故事的后续，我在想应该搞成一个系列。经过提示词的改进opus4.5的文风已经趋于稳定了。&lt;/p&gt;
+&lt;p&gt;我感觉挺好的，平时学校里的抽象小乐子回家语音输入写出大纲，丢给opus4.5就可以稳定出货，高质又美味，我自己手改一改细节就很理想了，小乐子就这样变成了大故事&lt;/p&gt;
+&lt;p&gt;封印椅的故事是虾塔故事发生那天的下午发生的，学校的椅子一直是可拆卸的椅背，我们成功把陈家明骗进去后，金文鼎说也许这应该作为虾塔的后续，于是有了封印椅的故事。&lt;/p&gt;
+&lt;p&gt;陈家明是住宿生，今天（2026&amp;#x2F;1&amp;#x2F;12，周一，浦东一模考完，选物化生的可以提前半天滚蛋回家）下午他才有机会看到我放在博客上的《虾塔》全文。他看完虾塔的故事后，提到史蒂芬·金。对，就是史蒂芬·金，他笔下的故事融在一个宇宙中。《纳粹高徒》的老纳粹军官会提到《肖申克的救赎》中关在肖申克监狱的安迪·杜佛兰，我觉得也许应该往这个方向发展。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="人类群星闪耀时" scheme="https://blog.verynb.net/tags/%E4%BA%BA%E7%B1%BB%E7%BE%A4%E6%98%9F%E9%97%AA%E8%80%80%E6%97%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>虾塔</title>
+    <link href="https://blog.verynb.net/posts/54342.html"/>
+    <id>https://blog.verynb.net/posts/54342.html</id>
+    <published>2026-01-08T11:59:23.000Z</published>
+    <updated>2026-05-09T09:44:39.735Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;很久没有写过随笔了，今天中午发生了这篇文章所讲的事情，其实是很简单一件事情：同学陈家明把用筷子戳穿午餐烧的如同狗屎一般的虾，把他们串在筷子上做成一座虾塔。&lt;/p&gt;
+&lt;p&gt;但我中午给同学讲故事的时候发现可以用马尔克斯的风格讲，会很好玩，所以我写了下面的大纲：&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="人类群星闪耀时" scheme="https://blog.verynb.net/tags/%E4%BA%BA%E7%B1%BB%E7%BE%A4%E6%98%9F%E9%97%AA%E8%80%80%E6%97%B6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>2026新年快乐！</title>
+    <link href="https://blog.verynb.net/posts/59748.html"/>
+    <id>https://blog.verynb.net/posts/59748.html</id>
+    <published>2026-01-01T03:21:26.000Z</published>
+    <updated>2026-05-09T09:44:39.723Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>博客小修</title>
+    <link href="https://blog.verynb.net/posts/60168.html"/>
+    <id>https://blog.verynb.net/posts/60168.html</id>
+    <published>2025-08-22T09:55:07.000Z</published>
+    <updated>2026-05-09T09:44:39.727Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;时隔几个月又再度更新啦，时过境迁，很多博客刚建立之初还能用的服务到三年之后已经无法使用了&lt;/p&gt;
+&lt;p&gt;正好今天在套edge one的CDN，因此顺便修缮了一下博客，让博客处于最佳状态&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>博客踩坑与重生：解决无提示错误ERR_INVALID_URL</title>
+    <link href="https://blog.verynb.net/posts/undefined.html"/>
+    <id>https://blog.verynb.net/posts/undefined.html</id>
+    <published>2025-05-11T14:55:06.000Z</published>
+    <updated>2026-05-09T09:44:39.728Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;上一篇文章发出来太艰难了，hexo更新后对url的要求变得极其严格。导致hexo g时出现了ERR_INVALID_URL。&lt;/p&gt;
+&lt;p&gt;而且！！有时候它会不告诉你报错内容在哪里！！极其恶心，今天花了两个小时解决这个问题，全程和gemini讨论，最终解决。实在应该记录一下，要不然之后又忘了怎么解决了。本人经过两个小时的摧残，已经几近爆炸，因此下文全篇由和我对话，帮我解决此问题的的Gemini记录。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>switch大气层虚拟系统急救指南</title>
+    <link href="https://blog.verynb.net/posts/18424.html"/>
+    <id>https://blog.verynb.net/posts/18424.html</id>
+    <published>2025-05-11T10:36:35.000Z</published>
+    <updated>2026-05-09T09:44:39.724Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;上一次更新博客是在2024-9-22，已经半年没更新了。&lt;/p&gt;
+&lt;p&gt;十一月份我骑公路车把手摔断了，后来忙于学业，久而久之就断更了。以前我刚建立博客的时候几乎一天一更，后来发现热情消退了连一月一更都很难坚持。希望我能继续坚持下去吧。&lt;/p&gt;
+&lt;p&gt;写这篇文章的契机主要是最近折腾switch结果把大气层虚拟系统给搞炸了，于是记录一下这次的救机过程，方便自己以后再查阅吧。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>无树莓派安装klipper固件</title>
+    <link href="https://blog.verynb.net/posts/28979.html"/>
+    <id>https://blog.verynb.net/posts/28979.html</id>
+    <published>2024-09-22T20:07:43.000Z</published>
+    <updated>2026-05-09T09:44:39.731Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近翻出了我的一台3d打印机，是21年买的。&lt;/p&gt;
+&lt;p&gt;记得那个时候我刚代表小学参加一个上海市的3d打印比赛，在4个月内学会了3d建模并且与小组的其他3个人共同建模了母校（现在忘光了）。&lt;/p&gt;
+&lt;p&gt;当时只拿了第二名，不过第一名是也是我们学校的。&lt;/p&gt;
+&lt;p&gt;反正回来之后对于3d打印很感兴趣，干脆自己买了一台放在家里玩。于是购入一台创想三维的Ender-3 v1。&lt;/p&gt;
+&lt;p&gt;现在翻出来，首先随便打印了个东西，发现打印速度、精度都好像有点过时。这三年来3d打印，尤其是小型的打印机发展速度太快了。&lt;/p&gt;
+&lt;p&gt;于是上网进行搜索，发现换一个固件可以快速有效的解决问题，把打印机的性能大幅提升，于是开始折腾。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>再次小改博客</title>
+    <link href="https://blog.verynb.net/posts/34205.html"/>
+    <id>https://blog.verynb.net/posts/34205.html</id>
+    <published>2024-07-09T14:32:08.000Z</published>
+    <updated>2026-05-09T09:44:39.727Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>两轮承载灵魂</title>
+    <link href="https://blog.verynb.net/posts/10286.html"/>
+    <id>https://blog.verynb.net/posts/10286.html</id>
+    <published>2024-07-08T10:12:21.000Z</published>
+    <updated>2026-05-09T09:44:39.725Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;有这么一句话：四轮承载肉体，两轮承载灵魂。&lt;/p&gt;
+&lt;p&gt;这说的是骑行，自行车作为交通工具，极大的方便了较短途又不方便走路的通勤路程。&lt;/p&gt;
+&lt;p&gt;以前自行车作为三大件，是稀罕物。现在只要几百块就能买一辆结实耐用的自行车，更有共享单车方便的供你选择。&lt;/p&gt;
+&lt;p&gt;不过，随着时代的发展，自行车也越来越从交通工具迈向运动器材，甚至是生活方式。&lt;/p&gt;
+&lt;p&gt;最近也实在禁不住诱惑，跟从内心的想法，生日礼物选了一辆喜德盛的一款AD350公路车。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>旧文钞-明斯克卷</title>
+    <link href="https://blog.verynb.net/posts/4186.html"/>
+    <id>https://blog.verynb.net/posts/4186.html</id>
+    <published>2024-06-17T19:51:45.000Z</published>
+    <updated>2026-05-09T09:44:39.731Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近期末也已考完，成绩还算满意，不料学校竟还需上两个星期的课。&lt;/p&gt;
+&lt;p&gt;于是为自己安排好休息，去图书馆借阅大量小说。今天是期末考完正常上课第一天，同学早已没有兴致听期末考卷讲评。&lt;/p&gt;
+&lt;p&gt;我三小科选择物理、化学、生物，而政治、历史、地理又比选这三科的人还要来得好，因此自是大胆不听政史地试卷讲评，便拿来鲁迅的《呐喊》、《彷徨》来读。&lt;/p&gt;
+&lt;p&gt;这学期语文书选入《祝福》，又想起那中学未读完的鲁迅，如《药》，《伤逝》之类，便起了兴致。即读完，有了些感伤，文风也拙劣的像起鲁迅来了。&lt;/p&gt;
+&lt;p&gt;然而又从鲁迅引出一篇新题目来，那便是明斯克数学家等初中好友的旧文章，何不也整理成集，也是一件快事，便为本集，暂定《旧文钞》。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>基于gpt4o的免费桌宠解决方案</title>
+    <link href="https://blog.verynb.net/posts/30407.html"/>
+    <id>https://blog.verynb.net/posts/30407.html</id>
+    <published>2024-06-07T21:32:25.000Z</published>
+    <updated>2026-05-09T09:44:39.728Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;看到标题你可能会难以置信，但是这套方案能做到：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; 零费，完全免费&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; 使用gpt4o等gpt4付费模型，也可选择cf worker AI系模型&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; 使用的都是开源项目&lt;/li&gt;
+&lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; 由于最终产生一个调用LLM的api，可以方便的接入其他场景</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>如何在lunar端中安装模组</title>
+    <link href="https://blog.verynb.net/posts/18818.html"/>
+    <id>https://blog.verynb.net/posts/18818.html</id>
+    <published>2024-06-02T16:19:09.000Z</published>
+    <updated>2026-05-09T09:44:39.729Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近每周玩玩生存，工作本的显卡Intel iRIS Xe Graphics虽然很烂，但是能把光影带到70fps，也不错了&lt;/p&gt;
+&lt;p&gt;虽然lunar端内置一大堆mod，但是现在的需求是要额外装个world map，移动光源和环境音增强&lt;/p&gt;
+&lt;p&gt;在bing上搜索不难发现现在lunar端已经支持装mod了，但是找了一圈没有详细教程&lt;/p&gt;
+&lt;p&gt;————因此！！本教程诞生！！&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>无视免费帐户限制！白嫖各家显卡爽玩SD webui</title>
+    <link href="https://blog.verynb.net/posts/63905.html"/>
+    <id>https://blog.verynb.net/posts/63905.html</id>
+    <published>2024-05-18T20:57:41.000Z</published>
+    <updated>2026-05-09T09:44:39.731Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;众所周知啊，我之前发过一篇玩novelai的文章。&lt;/p&gt;
+&lt;p&gt;那个时候用的是百度的aistudio的算力去跑的stable diffusion。&lt;/p&gt;
+&lt;p&gt;你说百度他抠门吧，他让你用A100显卡，你说他抠门吧，他只让你用paddle架构，不能运行原版webui，这就很难受啊！&lt;/p&gt;
+&lt;p&gt;最近学业压力小了点，又决定开始鼓捣，遂发现根本不用再赤百度的石了，有三家都可以爽玩原版webui，而且可以跟本地电脑一样添加各种插件lora。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>终于有独立域名啦</title>
+    <link href="https://blog.verynb.net/posts/59380.html"/>
+    <id>https://blog.verynb.net/posts/59380.html</id>
+    <published>2024-05-12T15:40:14.000Z</published>
+    <updated>2026-05-09T09:44:39.734Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>简评《饿殍：明末千里行》</title>
+    <link href="https://blog.verynb.net/posts/52223.html"/>
+    <id>https://blog.verynb.net/posts/52223.html</id>
+    <published>2024-05-06T20:55:24.000Z</published>
+    <updated>2026-05-09T09:44:39.734Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;又到了五一节，是时候休息一下了。4月30号晚上我们就连夜赶往江苏度过五一假期。&lt;/p&gt;
+&lt;p&gt;5月1号下午，我正在刷着小黑盒，发现steam上一个国产新GalGame《饿殍：明末千里行》（后简称饿殍）。也看到了游戏封面，也就是女主角满穗在木桶里泡澡里那张图（我敢肯定很多人都是被这张图骗入坑的，然后发现根本不是黄油，可恶！），发觉满穗居然长在我的xp上，思来想去半小时，抵抗诱惑无果，于是rmb23（watt toolkit优惠力度比小黑盒大，更比steam官渠大）果断入手。&lt;/p&gt;
+&lt;p&gt;当天晚上立刻下载并且开始爽玩。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;（有严重剧透！！）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&quot;https://img-verynb.s3.bitiful.net/b823b9017648d96e7762bd1813b3e077.png&quot; alt=&quot;万穗爷&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>博客成立两年啦</title>
+    <link href="https://blog.verynb.net/posts/3178.html"/>
+    <id>https://blog.verynb.net/posts/3178.html</id>
+    <published>2024-04-05T16:08:57.000Z</published>
+    <updated>2026-05-09T09:44:39.728Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
