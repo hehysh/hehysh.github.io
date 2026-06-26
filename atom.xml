@@ -6,7 +6,7 @@
   <link href="https://blog.verynb.net/atom.xml" rel="self"/>
   
   <link href="https://blog.verynb.net/"/>
-  <updated>2026-06-24T11:17:34.017Z</updated>
+  <updated>2026-06-26T10:02:49.794Z</updated>
   <id>https://blog.verynb.net/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>二周目了</title>
+    <link href="https://blog.verynb.net/posts/5172.html"/>
+    <id>https://blog.verynb.net/posts/5172.html</id>
+    <published>2026-06-26T09:46:40.000Z</published>
+    <updated>2026-06-26T10:02:49.794Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>后记</title>
@@ -369,27 +390,6 @@
 &lt;p&gt;那个时候用的是百度的aistudio的算力去跑的stable diffusion。&lt;/p&gt;
 &lt;p&gt;你说百度他抠门吧，他让你用A100显卡，你说他抠门吧，他只让你用paddle架构，不能运行原版webui，这就很难受啊！&lt;/p&gt;
 &lt;p&gt;最近学业压力小了点，又决定开始鼓捣，遂发现根本不用再赤百度的石了，有三家都可以爽玩原版webui，而且可以跟本地电脑一样添加各种插件lora。&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>终于有独立域名啦</title>
-    <link href="https://blog.verynb.net/posts/59380.html"/>
-    <id>https://blog.verynb.net/posts/59380.html</id>
-    <published>2024-05-12T15:40:14.000Z</published>
-    <updated>2026-05-09T09:44:39.734Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
-        
-      
     
     
     
