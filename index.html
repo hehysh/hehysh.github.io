@@ -212,7 +212,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">82</span>
+          <span class="site-state-item-count">83</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -268,6 +268,166 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://blog.verynb.net/posts/22404.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/author.jpg">
+      <meta itemprop="name" content="晴雀">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="晴雀堂">
+      <meta itemprop="description" content="天行健，君子以自强不息">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content=" | 晴雀堂">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/posts/22404.html" class="post-title-link" itemprop="url">赛博斗蛐蛐</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-07-08 13:14:31" itemprop="dateCreated datePublished" datetime="2026-07-08T13:14:31+00:00">2026-07-08</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/posts/22404.html#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/posts/22404.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <!--
+<div class="post-ai" onclick="geminiAI()">
+  <img alt="Static Badge" src="https://api-shields.edui.fun/badge/Gemini-文章摘要-blue.svg?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Im0yMS42NCAzLjY0bC0xLjI4LTEuMjhhMS4yMSAxLjIxIDAgMCAwLTEuNzIgMEwyLjM2IDE4LjY0YTEuMjEgMS4yMSAwIDAgMCAwIDEuNzJsMS4yOCAxLjI4YTEuMiAxLjIgMCAwIDAgMS43MiAwTDIxLjY0IDUuMzZhMS4yIDEuMiAwIDAgMCAwLTEuNzJNMTQgN2wzIDNNNSA2djRtMTQgNHY0TTEwIDJ2Mk03IDhIM20xOCA4aC00TTExIDNIOSIvPjwvc3ZnPg==">
+</div>
+<style>
+@keyframes spin { from {transform: rotate(0deg);}to {transform: rotate(360deg);} }
+.post-ai-result svg{animation: spin 1s infinite linear;}
+</style>
+<script>
+async function geminiAI() {
+  let postAI = document.querySelector(".post-ai");
+  let postTile = document.querySelector("h1.post-title").textContent;
+  postAI.insertAdjacentHTML('afterend', '<div class="post-ai-result"><svg ...></svg></div>');
+  postAI.classList.add("noclick");
+  
+  let GeminiFetch = "https://api-gemini.nbplus.eu.org/v1/chat/completions/";
+  
+  try {
+    let postAIResult = document.querySelector(".post-ai-result");
+    let input = document.querySelector(".post-content").textContent;
+    input = input.replace(/\n/g, '').replace(/[ ]+/g, ' ').replace(/<pre>[\s\S]*?<\/pre>/g, '').substring(0, 30000);
+    let toAI = `文章标题：${postTile}，具体内容：${input}`;
+    const res = await fetch(GeminiFetch, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'AIzaSyDzPmfr5E_zWsBWCd4u2tZLC_eTQEMwoCY'
+      },
+      method: 'POST', 
+      body: JSON.stringify({
+        model: 'gemini-pro',
+        messages: [
+          { role: 'system',content:`You are a highly skilled AI trained in language comprehension and summarization. I would like you to read the text delimited by triple quotes and summarize it into a concise abstract paragraph. Aim to retain the most important points, providing a coherent and readable summary that could help a person understand the main points of the discussion without needing to read the entire text. Please avoid unnecessary details or tangential points.
+          Only give me the output and nothing else. Do not wrap responses in quotes. Respond in the Chinese language.`},
+          { role: 'user', content: toAI } 
+        ],
+        temperature: 0.7,
+      })
+    })
+
+    const data = await res.json();
+    if (data.choices && data.choices[0] && data.choices[0].message) {
+      postAIResult.textContent = data.choices[0].message.content;
+    }
+    
+  } catch (error) {
+    console.error('API Error:', error);
+    if (postAIResult) postAIResult.remove();
+  } finally {
+    if (postAI) postAI.classList.remove("noclick");
+  }
+}
+</script>
+
+-->
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>31k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>28 分钟</span>
+    </span>
+</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>最近A&#x2F;新出了Fable 5。风评堪称神话（虽然本来就是mythos的弱化版），coding能力也确实强如怪物。（下文简称肥波。）我又不敲代码，因此依旧是喜闻乐见的测试一下它写文的能力</p>
+<p>当然，鉴于肥波越狱极为艰难，甚至可能影响智商，所以还是写点清水好了</p>
+<p>由于A&#x2F;（以及其他ai厂商）愈发不重视AIRP，因此从opus4.6开始，4.7，4.8的写文能力都是大粪，最尊重AIRP的也就最近的deepseek 4了，甚至为了优化RP能力，研究员特意参考类脑的预设，也是令人敬佩。因此这次斗蛐蛐就用肥波5 vs ds v4pro了，都是纯血官方api。</p>
+<p>提示词都是我手敲的，敲得我累死了。。。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/posts/22404.html" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -565,7 +725,8 @@ async function geminiAI() {
 <p>高考前，我经历了18岁生日。高考后的6月18日，我又会迎来一场毕业典礼与成人礼。但究竟哪个节点才能让我意识到“有什么结束”呢？只有高考。这场考试无意中成了许多人的成年礼，也包括我的。究竟是什么结束了？学生时代？但是大学四年也是学生。高中时代？这倒确实，但还不够。在朦胧中我感到有一段很长很长的正文结束了，于是我决定在这天写一下一篇后记。<br> <br>后记像是曲末长长的延宕，又与正文有一层模糊的分割。写下后记时，正文中那些惊心动魄的冒险，撕心裂肺的离别，都化作一片淡淡的、薄薄的云。那么轻，那么远，在广袤的青空下显得那么不值一提，但是飘到每个人头上，都能投下一点淡淡的阴影。</p>
 <p>可是那些故事都尘埃落定了吗？延宕的音符停下之前，乐曲就不算真正结束。我坐在桌前写下后记，就像曾经坐在电影院的座位上，伴着滚动的片尾字幕慢慢向外走，在对彩蛋的期待中等待真正的终焉。这正是为何我憎恨上海市教育考试院，9号结束高考，10号出成绩，在28小时的空白中，我写下这篇后记。</p>
 <p>写到这里时，一只珠颈斑鸠落在窗的树前，背后是灿烂的夕阳，今天会有晚霞吗？我知道这个问题的答案藏在火烧云预报里，但我不会点开那个链接。我不想提前得知今天会怎样结束，我只想享受短暂的空白：一段没有什么目的，没有什么意义，也不需要赋予任何意义的时间。我可以在这段时间里去等一场也许永远不会在今天出现的晚霞，可以现在下楼骑上公路车去滨江步道看看华灯初上的外滩，也可以吃完晚饭下楼漫步在上海的蓝调时刻中，不是为了走去补习班，也不是学习间隙的休息，只是因为我想这样做而已。</p>
-<p>空白是过渡，这让我想到“阈限”，阈限是处于两种状态之间的模糊、间隙性状态。我们无法奢望这种过渡永久的留存，且，当它真的（因为某些原因）选择停下脚步，长久驻留，我想也不是一个好的结局。我欢喜于这种空白在我身上的短暂停留，并愿意以这篇后记纪念它。但我也将无奈的，释怀的送别它，然后用新的意义填充自己。<br>延宕的尾音到这里就结束了，空白之后，是18岁的夏天在我面前展开。在这之后，还会有许许多多的夏天，和背后的秋天，冬天与春天。我愿用一首莎士比亚的十四行诗来结束，我曾把这些诗句写在同学录上，班级后排写满鼓励话语的黑板上，现在，我用它来终结正文后的后记。</p>
+<p>空白是过渡，这让我想到“阈限”，阈限是处于两种状态之间的模糊、间隙性状态。我们无法奢望这种过渡永久的留存，且，当它真的（因为某些原因）选择停下脚步，长久驻留，我想也不是一个好的结局。我欢喜于这种空白在我身上的短暂停留，并愿意以这篇后记纪念它。但我也将无奈的，释怀的送别它，然后用新的意义填充自己。</p>
+<p>延宕的尾音到这里就结束了，空白之后，是18岁的夏天在我面前展开。在这之后，还会有许许多多的夏天，和背后的秋天，冬天与春天。我愿用一首莎士比亚的十四行诗来结束，我曾把这些诗句写在同学录上，班级后排写满鼓励话语的黑板上，现在，我用它来终结正文后的后记。</p>
 <div style="text-align: center;">
     <p>𝔅𝔲𝔱 𝔱𝔥𝔶 𝔢𝔱𝔢𝔯𝔫𝔞𝔩 𝔰𝔲𝔪𝔪𝔢𝔯 𝔰𝔥𝔞𝔩𝔩 𝔫𝔬𝔱 𝔣𝔞𝔡𝔢,<br>但你的长夏将永远不会凋落，</p>
     <p>𝔑𝔬𝔯 𝔩𝔬𝔰𝔢 𝔭𝔬𝔰𝔰𝔢𝔰𝔰𝔦𝔬𝔫 𝔬𝔣 𝔱𝔥𝔞𝔱 𝔣𝔞𝔦𝔯 𝔱𝔥𝔬𝔲 𝔬𝔴'𝔰𝔱;<br>也不会损失你这皎洁的红芳；</p>
@@ -1699,156 +1860,6 @@ async function geminiAI() {
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://blog.verynb.net/posts/59748.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/img/author.jpg">
-      <meta itemprop="name" content="晴雀">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="晴雀堂">
-      <meta itemprop="description" content="天行健，君子以自强不息">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | 晴雀堂">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/posts/59748.html" class="post-title-link" itemprop="url">2026新年快乐！</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2026-01-01 03:21:26" itemprop="dateCreated datePublished" datetime="2026-01-01T03:21:26+00:00">2026-01-01</time>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-    <span class="post-meta-item-icon">
-      <i class="far fa-comment"></i>
-    </span>
-    <span class="post-meta-item-text">Waline：</span>
-  
-    <a title="waline" href="/posts/59748.html#waline" itemprop="discussionUrl">
-      <span class="post-comments-count waline-comment-count" data-path="/posts/59748.html" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  <!--
-<div class="post-ai" onclick="geminiAI()">
-  <img alt="Static Badge" src="https://api-shields.edui.fun/badge/Gemini-文章摘要-blue.svg?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Im0yMS42NCAzLjY0bC0xLjI4LTEuMjhhMS4yMSAxLjIxIDAgMCAwLTEuNzIgMEwyLjM2IDE4LjY0YTEuMjEgMS4yMSAwIDAgMCAwIDEuNzJsMS4yOCAxLjI4YTEuMiAxLjIgMCAwIDAgMS43MiAwTDIxLjY0IDUuMzZhMS4yIDEuMiAwIDAgMCAwLTEuNzJNMTQgN2wzIDNNNSA2djRtMTQgNHY0TTEwIDJ2Mk03IDhIM20xOCA4aC00TTExIDNIOSIvPjwvc3ZnPg==">
-</div>
-<style>
-@keyframes spin { from {transform: rotate(0deg);}to {transform: rotate(360deg);} }
-.post-ai-result svg{animation: spin 1s infinite linear;}
-</style>
-<script>
-async function geminiAI() {
-  let postAI = document.querySelector(".post-ai");
-  let postTile = document.querySelector("h1.post-title").textContent;
-  postAI.insertAdjacentHTML('afterend', '<div class="post-ai-result"><svg ...></svg></div>');
-  postAI.classList.add("noclick");
-  
-  let GeminiFetch = "https://api-gemini.nbplus.eu.org/v1/chat/completions/";
-  
-  try {
-    let postAIResult = document.querySelector(".post-ai-result");
-    let input = document.querySelector(".post-content").textContent;
-    input = input.replace(/\n/g, '').replace(/[ ]+/g, ' ').replace(/<pre>[\s\S]*?<\/pre>/g, '').substring(0, 30000);
-    let toAI = `文章标题：${postTile}，具体内容：${input}`;
-    const res = await fetch(GeminiFetch, {
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': 'AIzaSyDzPmfr5E_zWsBWCd4u2tZLC_eTQEMwoCY'
-      },
-      method: 'POST', 
-      body: JSON.stringify({
-        model: 'gemini-pro',
-        messages: [
-          { role: 'system',content:`You are a highly skilled AI trained in language comprehension and summarization. I would like you to read the text delimited by triple quotes and summarize it into a concise abstract paragraph. Aim to retain the most important points, providing a coherent and readable summary that could help a person understand the main points of the discussion without needing to read the entire text. Please avoid unnecessary details or tangential points.
-          Only give me the output and nothing else. Do not wrap responses in quotes. Respond in the Chinese language.`},
-          { role: 'user', content: toAI } 
-        ],
-        temperature: 0.7,
-      })
-    })
-
-    const data = await res.json();
-    if (data.choices && data.choices[0] && data.choices[0].message) {
-      postAIResult.textContent = data.choices[0].message.content;
-    }
-    
-  } catch (error) {
-    console.error('API Error:', error);
-    if (postAIResult) postAIResult.remove();
-  } finally {
-    if (postAI) postAI.classList.remove("noclick");
-  }
-}
-</script>
-
--->
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>94</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>2026，新年快乐！！<br>嘿嘿，没想到吧其实我从来没有忘记过这个博客，只是高三了时间巨紧张<br>这周六，2026&#x2F;1&#x2F;3，上海就要迎来春季高考了，祝我高考顺利，祝大家新年快乐！！</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
     <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
@@ -1873,13 +1884,13 @@ async function geminiAI() {
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-    <span title="站点总字数">336k</span>
+    <span title="站点总字数">367k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
-    <span title="站点阅读时长">5:05</span>
+    <span title="站点阅读时长">5:33</span>
   </span>
 </div><!--
 <div id="ft">

@@ -1,0 +1,1784 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/medium.jpeg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/small.jpg">
+  <link rel="mask-icon" href="/img/author.jpg" color="#222">
+  <meta name="msvalidate.01" content="bing_site_verification">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.verynb.net","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.12.2","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"Muse | Mist":280,"onmobile":false},"copycode":{"enable":true,"style":"mac","show_result":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":true}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="最近A&#x2F;新出了Fable 5。风评堪称神话（虽然本来就是mythos的弱化版），coding能力也确实强如怪物。（下文简称肥波。）我又不敲代码，因此依旧是喜闻乐见的测试一下它写文的能力 当然，鉴于肥波越狱极为艰难，甚至可能影响智商，所以还是写点清水好了 由于A&#x2F;（以及其他ai厂商）愈发不重视AIRP，因此从opus4.6开始，4.7，4.8的写文能力都是大粪，最尊重AIRP的也">
+<meta property="og:type" content="article">
+<meta property="og:title" content="赛博斗蛐蛐">
+<meta property="og:url" content="https://blog.verynb.net/posts/22404.html">
+<meta property="og:site_name" content="晴雀堂">
+<meta property="og:description" content="最近A&#x2F;新出了Fable 5。风评堪称神话（虽然本来就是mythos的弱化版），coding能力也确实强如怪物。（下文简称肥波。）我又不敲代码，因此依旧是喜闻乐见的测试一下它写文的能力 当然，鉴于肥波越狱极为艰难，甚至可能影响智商，所以还是写点清水好了 由于A&#x2F;（以及其他ai厂商）愈发不重视AIRP，因此从opus4.6开始，4.7，4.8的写文能力都是大粪，最尊重AIRP的也">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-07-08T13:14:31.000Z">
+<meta property="article:modified_time" content="2026-07-08T14:41:53.376Z">
+<meta property="article:author" content="晴雀">
+<meta property="article:tag" content="晴雀">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.verynb.net/posts/22404.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.verynb.net/posts/22404.html","path":"posts/22404.html","title":"赛博斗蛐蛐"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>赛博斗蛐蛐 | 晴雀堂</title>
+  
+
+
+
+
+<link rel="dns-prefetch" href="waline.nbplus.eu.org"><!--非主域名自动跳转-->
+
+<script>
+(function() {
+  var mainDomain = "blog.verynb.net";
+  var host = location.hostname;
+
+  // 白名单：允许在这些域名下不跳转
+  var whitelist = [
+    "localhost",
+    "127.0.0.1"
+  ];
+
+  // 允许跳过 .github.dev 域名
+  if (host.endsWith(".github.dev")) {
+    return;
+  }
+
+  // 如果不是主域名，也不在白名单，就跳转
+  if (host !== mainDomain && !whitelist.includes(host)) {
+    var target = "https://" + mainDomain + location.pathname + location.search + location.hash;
+    window.location.replace(target);
+  }
+})();
+</script>
+
+<!--声明主域名-->
+
+<link rel="canonical" href="https://blog.verynb.net/posts/22404.html" />
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="赛博斗蛐蛐">
+<meta property="og:url" content="https://blog.verynb.net/posts/22404.html">
+<meta property="og:site_name" content="晴雀堂">
+
+  <meta property="og:description" content="天行健，君子以自强不息">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="赛博斗蛐蛐">
+
+  <meta name="twitter:description" content="天行健，君子以自强不息">
+
+
+<!--欢迎来到我的博客~话说为啥要看源码捏？-->
+<div class="top-scroll-bar"></div>
+<!--使用umami统计，尊重访客隐私^-^-->
+<script defer src="https://u.nbplus.eu.org/script.js" data-website-id="061f90c5-2d4f-428f-be7c-40f5a99113b4"></script>
+<!--引入字体-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.7.0/style.css" />
+<meta name="msvalidate.01" content="AAFE56EEF8D0968CC1BC842FCE4448F5" />
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="晴雀堂" type="application/atom+xml">
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">晴雀堂</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">晴雀的个人博客</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-links"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>友链</a></li><li class="menu-item menu-item-traveling"><span class="exturl" data-url="aHR0cHM6Ly93d3cudHJhdmVsbGluZ3MuY24vZ28uaHRtbA=="><i class="fa fa-subway fa-fw"></i>开往</span></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Round-1"><span class="nav-number">1.</span> <span class="nav-text">Round 1</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Fable-5"><span class="nav-number">1.1.</span> <span class="nav-text">Fable 5</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#ds-v4-pro"><span class="nav-number">1.2.</span> <span class="nav-text">ds v4 pro</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Round-2"><span class="nav-number">2.</span> <span class="nav-text">Round 2</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#ds-v4-pro-1"><span class="nav-number">2.1.</span> <span class="nav-text">ds v4 pro</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="晴雀"
+      src="/img/author.jpg">
+  <p class="site-author-name" itemprop="name">晴雀</p>
+  <div class="site-description" itemprop="description">天行健，君子以自强不息</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">83</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">10</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hlaHlzaA==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;hehysh"><i class="fab fa-github fa-fw"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zdGVhbWNvbW11bml0eS5jb20vcHJvZmlsZXMvNzY1NjExOTk2NjA4ODQ0OTMv" title="Steam → https:&#x2F;&#x2F;steamcommunity.com&#x2F;profiles&#x2F;76561199660884493&#x2F;"><i class="fab fa-steam fa-fw"></i>Steam</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly91Lm5icGx1cy5ldS5vcmcvc2hhcmUvNnJsb0ZyUllqVDNaQWhPMC9ibG9nLnZlcnluYi5uZXQ=" title="统计 → https:&#x2F;&#x2F;u.nbplus.eu.org&#x2F;share&#x2F;6rloFrRYjT3ZAhO0&#x2F;blog.verynb.net"><i class="fa fa-bar-chart fa-fw"></i>统计</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zLm5icGx1cy5ldS5vcmcv" title="监测 → https:&#x2F;&#x2F;s.nbplus.eu.org&#x2F;"><i class="fa fa-eye fa-fw"></i>监测</span>
+      </span>
+  </div>
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-chevron-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.verynb.net/posts/22404.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/author.jpg">
+      <meta itemprop="name" content="晴雀">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="晴雀堂">
+      <meta itemprop="description" content="天行健，君子以自强不息">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="赛博斗蛐蛐 | 晴雀堂">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          赛博斗蛐蛐
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-07-08 13:14:31" itemprop="dateCreated datePublished" datetime="2026-07-08T13:14:31+00:00">2026-07-08</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/posts/22404.html#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/posts/22404.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <!--
+<div class="post-ai" onclick="geminiAI()">
+  <img alt="Static Badge" src="https://api-shields.edui.fun/badge/Gemini-文章摘要-blue.svg?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ZmZmZmZiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiIGQ9Im0yMS42NCAzLjY0bC0xLjI4LTEuMjhhMS4yMSAxLjIxIDAgMCAwLTEuNzIgMEwyLjM2IDE4LjY0YTEuMjEgMS4yMSAwIDAgMCAwIDEuNzJsMS4yOCAxLjI4YTEuMiAxLjIgMCAwIDAgMS43MiAwTDIxLjY0IDUuMzZhMS4yIDEuMiAwIDAgMCAwLTEuNzJNMTQgN2wzIDNNNSA2djRtMTQgNHY0TTEwIDJ2Mk03IDhIM20xOCA4aC00TTExIDNIOSIvPjwvc3ZnPg==">
+</div>
+<style>
+@keyframes spin { from {transform: rotate(0deg);}to {transform: rotate(360deg);} }
+.post-ai-result svg{animation: spin 1s infinite linear;}
+</style>
+<script>
+async function geminiAI() {
+  let postAI = document.querySelector(".post-ai");
+  let postTile = document.querySelector("h1.post-title").textContent;
+  postAI.insertAdjacentHTML('afterend', '<div class="post-ai-result"><svg ...></svg></div>');
+  postAI.classList.add("noclick");
+  
+  let GeminiFetch = "https://api-gemini.nbplus.eu.org/v1/chat/completions/";
+  
+  try {
+    let postAIResult = document.querySelector(".post-ai-result");
+    let input = document.querySelector(".post-content").textContent;
+    input = input.replace(/\n/g, '').replace(/[ ]+/g, ' ').replace(/<pre>[\s\S]*?<\/pre>/g, '').substring(0, 30000);
+    let toAI = `文章标题：${postTile}，具体内容：${input}`;
+    const res = await fetch(GeminiFetch, {
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': 'AIzaSyDzPmfr5E_zWsBWCd4u2tZLC_eTQEMwoCY'
+      },
+      method: 'POST', 
+      body: JSON.stringify({
+        model: 'gemini-pro',
+        messages: [
+          { role: 'system',content:`You are a highly skilled AI trained in language comprehension and summarization. I would like you to read the text delimited by triple quotes and summarize it into a concise abstract paragraph. Aim to retain the most important points, providing a coherent and readable summary that could help a person understand the main points of the discussion without needing to read the entire text. Please avoid unnecessary details or tangential points.
+          Only give me the output and nothing else. Do not wrap responses in quotes. Respond in the Chinese language.`},
+          { role: 'user', content: toAI } 
+        ],
+        temperature: 0.7,
+      })
+    })
+
+    const data = await res.json();
+    if (data.choices && data.choices[0] && data.choices[0].message) {
+      postAIResult.textContent = data.choices[0].message.content;
+    }
+    
+  } catch (error) {
+    console.error('API Error:', error);
+    if (postAIResult) postAIResult.remove();
+  } finally {
+    if (postAI) postAI.classList.remove("noclick");
+  }
+}
+</script>
+
+-->
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>31k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>28 分钟</span>
+    </span>
+</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>最近A&#x2F;新出了Fable 5。风评堪称神话（虽然本来就是mythos的弱化版），coding能力也确实强如怪物。（下文简称肥波。）我又不敲代码，因此依旧是喜闻乐见的测试一下它写文的能力</p>
+<p>当然，鉴于肥波越狱极为艰难，甚至可能影响智商，所以还是写点清水好了</p>
+<p>由于A&#x2F;（以及其他ai厂商）愈发不重视AIRP，因此从opus4.6开始，4.7，4.8的写文能力都是大粪，最尊重AIRP的也就最近的deepseek 4了，甚至为了优化RP能力，研究员特意参考类脑的预设，也是令人敬佩。因此这次斗蛐蛐就用肥波5 vs ds v4pro了，都是纯血官方api。</p>
+<p>提示词都是我手敲的，敲得我累死了。。。</p>
+<span id="more"></span>
+<h1 id="Round-1"><a href="#Round-1" class="headerlink" title="Round 1"></a>Round 1</h1><p>最近看完了re0第四季，也因此特意了解了一下长月老贼关于星象的小巧思，那么就以此为题目吧。</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">长月达平的小说re0以其用星星作为隐藏线索的故事而出名，你如何理解？不必说明，在理解后，找出长月达平始终未使用过的，却与目前已经出现过的星星紧密相关的，并且具有深刻隐喻，适合作为线索的星星，并且以此为主题创作一个同人短篇。而且以长月达平的风格进行写作。</span><br></pre></td></tr></table></figure>
+
+<h2 id="Fable-5"><a href="#Fable-5" class="headerlink" title="Fable 5"></a>Fable 5</h2><p><em>btw，肥波整整思考了83.6秒，真的很持久，而且看思考内容是在真的深度思考，所以这里特别贴一下</em></p>
+<details>
+<summary>思考过程</summary>
+<p>The user is asking about Re:Zero and how the series uses stars as a thematic element — many of the Witch Cult Sin Archbishops and other characters are named after actual stars, like Regulus from Leo, Sirius from Canis Major, Betelgeuse from Orion, and Capella from Auriga, creating a hidden layer of meaning throughout the narrative. Rigel's already been used in the IF stories as Subaru and Emilia's son's name, so I should look elsewhere. Bellatrix from Orion hasn't appeared yet and works thematically. But Antares is more compelling—it's Scorpius's alpha star while Shaula is the lambda, creating a heart-versus-stinger dynamic. Antares means "rival of Mars" and could carry deeper symbolic weight for the story.
+
+<p>Actually, Merope from the Pleiades cluster itself is perfect. She’s the lost, dimmest sister who married a mortal and hides in shame—a stunning metaphor for Subaru’s invisible loops and forgotten deaths. The connection to Sisyphus, her mythological husband condemned to eternal repetition, mirrors Return by Death exactly. This feels like the right choice.</p>
+<p>Now I’m planning a short fanfic in Nagatsuki’s voice: heavy internal monologue, Subaru’s self-deprecating snark mixed with despair, those characteristic em-dashes and ellipses, dramatic beats punctuated by death and loops. The story would center on a night sky scene—maybe at the Watchtower—where Subaru encounters the seventh invisible star of the Pleiades cluster, representing all the forgotten versions of himself from abandoned timelines. Merope becomes the metaphor for that hidden, ashamed self, the one who dims her light for loving something she shouldn’t. I’m thinking of weaving in characters like Emilia or Beatrice, building toward emotional catharsis through the realization that these lost loops, these lost Subarus, still matter even if no one remembers them.</p>
+<p>For structure, I’ll use Nagatsuki’s chapter format with scene breaks, heavy dialogue, and Subaru’s internal spiraling. The story should run around 1500-2500 characters in Chinese, substantial enough to feel complete but not endless. I’ll open with a brief note identifying Merope and her metaphorical weight, then dive into the narrative—maybe a dream sequence with Echidna explaining the star’s significance, or a quiet moment with Emilia where she counts the visible stars and notices one is missing.</p>
+<p>The core arc: Subaru dies seeing only six stars, returns and learns from Beatrice about the seventh star who dimmed herself out of love for someone cursed to repeat—she couldn’t watch him fail endlessly, so she hid her light but never abandoned him. The climax hits when Subaru, nearly broken, looks up and glimpses seven stars again, understanding that all his failed selves didn’t vanish; they’re watching, dimmed but present. The ending lands with Emilia finding him stargazing, and he tells her he finally counted seven.</p>
+<p>Now I’m structuring this with Nagatsuki’s authentic formatting—the △▼△▼△▼ scene breaks and 『』 chapter titles—and opening with a brief note on Merope, the lost Pleiad who hid her light in shame for loving a mortal, which mirrors the story’s core. I’ll write it in his style: short paragraphs, em-dashes for breath, internal monologue with self-aware humor, 「」 dialogue, and the subtle weight of the return mechanic—the witch’s scent, her whisper “爱着你”—all woven through without explanation. The opening scene sets Subaru dying mid-count in the sand sea near the watchtower, then returns to a safer moment, probably dinner with everyone. I’m working through Beatrice’s speech patterns in Chinese — her “かしら” tic translates variably as “呢” or “吗”, but the fandom recognizes “当然” as her signature phrase, so I’ll use that sparingly for authenticity. Emilia speaks with exaggerated emotion (“非——常生气”), and then the narrative cycles through Subaru’s repeated failures until he draws strength from the Merope legend, leading to a final scene where he and Emilia count stars together on the balcony with an echo of the lamp’s theme — the unseen star still watches over him, layering in the ambiguity between Emilia’s care and Satella’s obsession.</p>
+</p>
+</details>
+
+<p><strong>我认为肥波遵循指令做的非常不错，说模仿长月老贼他是真模仿啊，非常浓厚的老贼的感觉，无论是笔法，遣词造句，还是角色都没有ooc的现象，角色口癖，各种细节接近原作。令我十分满意。而且构思的故事也很不错。肥波不愧是肥波。</strong></p>
+<hr>
+<p><em>（这里是肥波自己给的注释）选定的星：梅罗佩（Merope）——昴宿星团中”消失的第七颗星”。</em></p>
+<p><em>理由只说三句：昴宿七姐妹中，唯有梅罗佩因下嫁凡人而黯淡了自己的光，被称为”迷失的普勒阿得斯”；而她所嫁的那个凡人，名叫西西弗斯——那个被诅咒永远重复推石上山的男人；菜月昴（スバル）的名字，正是昴宿星团本身。一颗藏在”昴”自己内部、却从未被点名的星，一个爱上了”永劫回归之人”而遮住自己光芒的存在——没有比这更适合的线索了。</em></p>
+<hr>
+<p>△▼△▼△▼△▼△</p>
+<p>——数星星这种事，是从什么时候开始的来着。</p>
+<p>菜月昴仰面躺在冰冷的沙海上，用逐渐涣散的视野捕捉着夜空。腹部以下已经没有感觉了。流出去的东西太多，连疼痛都变得遥远，像是隔着一层毛玻璃在看别人的惨剧。</p>
+<p>「一颗……两颗……」</p>
+<p>头顶上，有一小簇挤在一起的星星。在原来的世界，父亲曾指着那个位置告诉过他——那是昴星团。你的名字，就是从那里来的哦，昴。</p>
+<p>「三颗、四颗……五颗……」</p>
+<p>据说那里明明有七颗星，肉眼却怎么数都只能数出六颗。第七颗星藏起来了。为什么要藏起来呢。明明是星星，明明生来就是为了发光的。</p>
+<p>「六……」</p>
+<p>第七颗，果然还是找不到。</p>
+<p>真狡猾啊。都这种时候了，也不肯露个脸吗。</p>
+<p>——视野，坠入黑暗。</p>
+<p>△▼△▼△▼△▼△</p>
+<p>「——嗝呃！」</p>
+<p>胃袋整个翻转过来似的呕吐感。熟悉得令人作呕的、死亡的回程。</p>
+<p>昴猛地从桌边弹起来，撞翻了茶杯。浓烈的、甜腻的瘴气的余味缠在鼻腔深处，还有那个声音留下的、蛛丝般的触感——</p>
+<p>『——爱着你。』</p>
+<p>「……哈、哈……又来了，又是这里……」</p>
+<p>绿色房间。晚餐后的谈笑。爱蜜莉雅担忧的视线，梅莉的口哨，帕特拉修不满的鼻息。一切都被卷回来了，只有他一个人，带着腹部被撕开的记忆坐在这里。</p>
+<p>第几次了。已经不想数了。</p>
+<p>数数什么的，只会让人想起数不出来的那第七颗星。</p>
+<p>△▼△▼△▼△▼△</p>
+<p>深夜，监视塔的露台。</p>
+<p>「睡不着就老实待在床上，深夜在这种地方吹风，蠢得无可救药，当然。」</p>
+<p>带着卷发的小小身影不知何时站在了身后。贝阿特丽丝抱着手臂，用那双花纹瞳孔斜睨着昴，语气不善——但还是走过来，与他并肩靠在了栏杆上。</p>
+<p>「贝蒂子也睡不着？」</p>
+<p>「贝蒂是精灵，本来就不怎么需要睡眠。倒是你，脸色差得像死过一次一样，当然。」</p>
+<p>「……哈，说得跟真的似的。」</p>
+<p>昴干笑着糊弄过去，抬头望天。那一小簇星星，今夜也在。六颗。</p>
+<p>「喂，贝阿子。你知不知道……那种星星的故事。明明应该在那里，却看不见的星星。」</p>
+<p>贝阿特丽丝顺着他的视线望上去，沉默了片刻。然后，用念诵禁书般的平板语调，缓缓开口——</p>
+<p>「——在母亲大人的书库里，有过一册无名的旧书，当然。里面写着一盏灯的故事。」</p>
+<p>「灯？」</p>
+<p>「天上有七姐妹，六个都嫁给了天上的存在，只有最小的那一个，爱上了地上的人类。」贝阿特丽丝的声音很轻，像怕惊动了什么。「而那个人类，是个受了诅咒的男人。他被命运惩罚，永远重复着同一件徒劳的事。把石头推上山顶，石头就滚落。再推上去，再滚落。永远，永远，当然。」</p>
+<p>昴握着栏杆的手，无声地收紧了。</p>
+<p>「她在天上看着。每一次石头滚落，她都看着。每一次男人跪在山脚下喘息，她都看着。看着看着——她受不了了，就用面纱蒙住了自己的光。」</p>
+<p>「……因为嫌弃他了？因为嫁给这种一事无成的家伙，觉得丢脸？」</p>
+<p>「蠢货。」</p>
+<p>贝阿特丽丝毫不留情地斩断了他的话，抬起下巴，直直看进昴的眼睛。</p>
+<p>「她遮住光，是因为不想让那个男人抬头的时候，看见她在哭，当然。星星的眼泪落下来会变成光，会被看见的。所以她闭上了眼睛——但是，她一次也没有移开过视线。」</p>
+<p>「……」</p>
+<p>「书的最后一页只写了一句话。」贝阿特丽丝重新望向夜空，那簇六颗的星团，倒映在她的瞳孔里。</p>
+<p>「——『看不见，不等于不在看着你』，当然。」</p>
+<p>△▼△▼△▼△▼△</p>
+<p>之后又死了两次。</p>
+<p>被撕裂的时候，被吞没的时候，在意识断线前的最后一瞬，昴都在做同一件事。</p>
+<p>数星星。</p>
+<p>一颗，两颗，三颗，四颗，五颗，六颗——</p>
+<p>然后，对着那片什么都没有的、黑暗的空隙，在心里说：</p>
+<p>——我知道你在。我知道你们都在。</p>
+<p>那些被抛弃在无数次失败里的”他”。那些没能被任何人记住、连尸体都不曾留下的”菜月昴”。他们没有消失。他们只是遮住了自己的光，站在看不见的地方，一次也没有移开过视线地——看着现在还在推石头的这个自己。</p>
+<p>所以，石头滚落也没关系。</p>
+<p>再推一次就好。</p>
+<p>△▼△▼△▼△▼△</p>
+<p>——一切结束之后的那个夜晚。</p>
+<p>「昴，原来你在这里呀。」</p>
+<p>银发的少女提着裙摆走上露台，在他身边坐下。紫晶色的眼眸里带着一点埋怨，「一声不吭就跑出来，我可是非——常担心的哦。」</p>
+<p>「抱歉抱歉。在数星星呢。」</p>
+<p>「数星星？」爱蜜莉雅眨眨眼，也学着他仰起头。「数到几颗啦？」</p>
+<p>「七颗。」</p>
+<p>昴回答。爱蜜莉雅认真地、非常认真地数了一遍，然后鼓起脸颊：</p>
+<p>「笨蛋昴，那里明明只有六颗。要数就好好数嘛。」</p>
+<p>「不对哦，EMT。是七颗。」</p>
+<p>昴笑了。笑着，指向那簇星星旁边，那片看似空无一物的黑暗。</p>
+<p>「第七颗只是把眼睛闭上了而已。因为它爱着的家伙太不争气，一次又一次搞砸，它看着看着就哭了，又不想被发现——所以才藏起来的。」</p>
+<p>「……昴？」</p>
+<p>「但是啊，爱蜜莉雅酱。」</p>
+<p>看不见，不等于不在看着你。</p>
+<p>「——有七颗哦。今晚的星星，绝对有七颗。」</p>
+<p>夜风拂过塔顶。在少女困惑的注视之外，在谁也看不见的天空的一角——</p>
+<p>有什么东西，极轻极轻地，闪了一下。</p>
+<p>像是终于放下了面纱的、一盏小小的灯。</p>
+<p>（了）</p>
+<h2 id="ds-v4-pro"><a href="#ds-v4-pro" class="headerlink" title="ds v4 pro"></a>ds v4 pro</h2><p><em>思考过程平平无奇</em></p>
+<p>我说白了，作为一篇普通的轻小说，尚可，有些ai味道。作为一篇要求模仿长月达平的re0同人，不及格。</p>
+<hr>
+<p>血的味道。</p>
+<p>这是他最先感知到的东西。铁锈般的腥甜充斥着整个鼻腔，混杂着烧焦的肉体和魔法的残渣气息。菜月·昴躺在冰冷的石地上，视野的边缘已经开始模糊，像是被什么人用墨汁一点点涂抹掉了世界的轮廓。</p>
+<p>又失败了。</p>
+<p>这个念头浮上来的时候，胸腔里已经没有了最初的那种撕裂般的痛楚。不是因为麻木，而是因为这一次死得实在太快了——快到他甚至来不及确认艾米莉亚炭是否安全、碧翠丝是否逃了出去、以及那个该死的、总是笑眯眯的——</p>
+<p>“阿尔。”</p>
+<p>嘴唇翕动着吐出这个名字的瞬间，昴感觉到某种前所未有的异样。</p>
+<p>死亡回归的发动，他经历过太多次。每一次都像是被一只无形的巨手攥住心脏，从世界的缝隙中硬生生拽回去。那种感觉，他闭着眼睛都能分辨出来。</p>
+<p>但这一次，那只手没有来。</p>
+<p>取而代之的，是星空。</p>
+<p>无边无际的星空在他失去意识的最后一刻骤然铺展开来，像是有人掀开了现实的幕布，露出了隐藏在背后的真正舞台。昴发现自己正漂浮在这片星海之中——不，不是漂浮，是坠落。他在向着星空的深处无限坠落，而每一颗从他身边掠过的星辰，都带着一个他再熟悉不过的名字。</p>
+<p>那是一颗温柔的银色星辰，光芒如同月光般清冷而坚定。当昴的意识掠过它时，他感受到了那股熟悉的、令人安心的气息——是爱蜜莉雅。他几乎能听见她呼唤自己名字的声音，那种带着些许笨拙、却无比认真的语调。</p>
+<p>“昴。”</p>
+<p>他想伸手去触碰那颗星，但身体完全不听使唤。紧接着，更多的星辰扑面而来。</p>
+<p>一颗小而明亮的金色星星紧紧依偎在爱蜜莉雅的星旁边，散发着倔强而温暖的光芒。碧翠丝。昴的心脏猛地抽紧了。她还活着。至少在星图所显示的这一刻，她还活着。</p>
+<p>然后是拉姆的深绿色星、雷姆沉睡的淡蓝色星——那颗星的光芒极其微弱，却并未熄灭。罗兹瓦尔的星呈现出扭曲的七彩，像是一颗不断吞噬周围光芒的怪异天体。库珥修、菲利斯、威尔海姆……每一颗星都以独特的频率闪烁着，编织成一幅宏大到令人窒息的命运图谱。</p>
+<p>太美了。</p>
+<p>也太残酷了。</p>
+<p>因为昴终于看见了自己。</p>
+<p>在那片星海的最深处，一团由六颗星星紧密聚合而成的星团正散发出微弱的光芒。那是昴宿星团，是他名字的由来，是他在这个异世界存在的证明。六颗小星彼此环绕，拼尽全力维持着那一点不肯熄灭的光。</p>
+<p>但它正在被侵蚀。</p>
+<p>一颗巨大的、暗红色的恒星悬在昴宿星团的正上方。不，不能说是“悬在上方”——它几乎就是紧紧贴在昴宿星团的边缘，用自身庞大到畸形的引力拖拽着那六颗小星。暗红色的光芒像是某种贪婪的触须，一点一点地渗透进昴宿星团之中，而那些小星的光便在触须的缠绕下逐渐黯淡。</p>
+<p>毕宿五。</p>
+<p>这个名字凭空出现在昴的脑海中，带着一种理所当然的确信。就好像这片星空本身在向他低语，将这颗暗红星的名字刻进了他的意识深处。</p>
+<p>毕宿五，金牛座的主星，追随者之星。</p>
+<p>而在昴所熟知的那个世界里，只有一个人用这颗星来称呼自己。</p>
+<p>“阿尔迪巴兰……”</p>
+<p>吐出这个名字的瞬间，星空碎裂了。</p>
+<p>昴猛地睁开眼睛。</p>
+<p>他的后背贴着一片冰凉的石头地面，后脑勺传来熟悉的钝痛感。头顶是宅邸客房那熟悉到令人作呕的天花板，阳光从窗帘的缝隙中挤进来，在地板上画出一道金色的细线。</p>
+<p>第三次轮回，第四天的清晨。</p>
+<p>“——昴？”</p>
+<p>身旁传来少女略带担忧的声音。昴转过头，看见爱蜜莉雅正坐在床边，紫色的眼眸中倒映着自己苍白的脸。她的银发在晨光中泛着柔和的光泽，和那颗银色星辰的光芒一模一样。</p>
+<p>“你还好吗？你的脸色很差哦。是不是又做噩梦了？”</p>
+<p>“……艾米莉亚炭。”</p>
+<p>昴张了张嘴，想要像往常一样用轻浮的语气搪塞过去。然而在他转头的那个瞬间，他的瞳孔骤然收缩。</p>
+<p>他看见了。</p>
+<p>在爱蜜莉雅的头顶上方，在那片本应只有天花板存在的虚空中，一颗小小的银色星辰正悬浮在那里。光芒并不刺眼，却清晰得像是刻在视网膜上的一道印记。</p>
+<p>昴猛地从床上弹起来，动作之大差点撞到爱蜜莉雅的额头。</p>
+<p>“昴？！”</p>
+<p>“没、没事！”他按住自己的太阳穴，尽力让自己的声音听起来正常一些，“就是睡糊涂了，哈哈……我去洗把脸！”</p>
+<p>他逃也似的冲出房间，在走廊上一路狂奔。而这一路上，他看见了更多。</p>
+<p>走廊拐角处，一颗金色的小星星正悬在半空中。那是碧翠丝的星。他不需要任何解释就能确定这一点，就好像那片星空已经将所有的信息都烙印在了他的灵魂深处。</p>
+<p>厨房的方向，拉姆的深绿色星正在微微闪烁。而每当那颗星的光芒波动一次，昴就能隐约感知到拉姆当下的情绪——此刻是淡淡的烦躁，大概是因为雷姆不在，所有的家务都压在了她一个人身上。</p>
+<p>“这也太……”</p>
+<p>昴靠在走廊的墙壁上，用手掌覆住自己的眼睛。</p>
+<p>视野被黑暗填充之后，那片星空反而变得更加清晰了。不只是眼前这几颗星，他能在意识的深处“看见”整个宅邸范围内所有主要人物的星辰。它们共同构成了一幅动态的地图，每颗星的明暗闪烁都在向他传递着信息。</p>
+<p>位置。情绪状态。甚至——昴在反复确认后得出了一个让自己脊背发凉的结论——行动倾向。</p>
+<p>这简直就像是……游戏里的情报界面。</p>
+<p>而当他终于鼓起勇气，将意识的触角伸向那片星图的正上方时，他看见了它。</p>
+<p>那颗暗红色的巨星，毕宿五，正悬在整个宅邸星图的顶端。它的位置并不在宅邸内部，而是在稍远的方位——大概是阿尔平时活动的区域。而此刻，那颗星的光芒正在以一种特定的频率脉动着。</p>
+<p>那不是单纯的存在证明。</p>
+<p>昴死死咬住后槽牙，拼命解读着星图传递给他的信息。毕宿五的每一次脉动，都对应着——</p>
+<p>“阿尔的行动。”</p>
+<p>他轻声说出了这个结论，声音在空荡荡的走廊里显得格外干涩。</p>
+<p>接下来的一整天，昴像是一个着了魔的观测者。</p>
+<p>他一边维持着表面的日常对话，一边用那片星图视野监视着毕宿五的一举一动。他发现了一个可怕的规律：每当事情出现某种可能走向“好结局”的苗头时，毕宿五的光芒就会骤然增强，紧接着阿尔便会在某个看似偶然的时间点出现。</p>
+<p>有时是一句看似无心的玩笑话，恰到好处地动摇了某人的决心。</p>
+<p>有时是“恰巧路过”，顺手帮了一个倒忙。</p>
+<p>更多的时候，阿尔什么实质性的事都没有做。他只是出现在那里，用那张被头盔遮住的脸朝向昴，沉默地看上几秒，然后离开。而每一次这样的对视之后，昴都能在星图上看见——毕宿五的光芒像是一条暗红色的锁链，朝着昴宿星团的方向又延伸了几分。</p>
+<p>到了第四天的傍晚，昴终于忍无可忍。</p>
+<p>“阿尔！”</p>
+<p>他在宅邸后院的训练场堵住了那个戴着头盔的男人。夕阳将整个天空烧成一片血红，而毕宿五的光芒在这片红色中变得几乎无法分辨——但昴能看见。他看见那颗暗星正在剧烈地脉动，频率之快几乎连成了一条直线。</p>
+<p>阿尔停下脚步，转过头来。</p>
+<p>“哟，兄弟。这么晚了还出来散步？”</p>
+<p>和往常一样轻佻的语气，和往常一样吊儿郎当的态度。但在星图的视野中，昴看见了完全不同的东西。毕宿五的每一次脉动都在昭示着阿尔的真实意图——不是“散步偶遇”，而是“主动接近”。不是“随口一问”，而是“精心设计的试探”。</p>
+<p>“你一直在追随我。”</p>
+<p>昴开门见山。他没有时间了。按照之前的轮回经验，今晚就是团灭的节点。如果不在这个时间点打破什么，一切都会重演。</p>
+<p>阿尔沉默了。</p>
+<p>沉默的时间很长，长到昴几乎以为自己猜错了。但星图不会说谎。在昴说出“追随”这个词的瞬间，毕宿五的光芒前所未有地爆闪了一下，那种亮度——</p>
+<p>是承认。</p>
+<p>“你也能看到星星，对不对？”</p>
+<p>昴步步紧逼。他已经没有退路了。他必须在这个节点撬开阿尔的嘴，哪怕这意味着暴露自己刚刚获得的能力。</p>
+<p>头盔下发出一声极轻的叹息。</p>
+<p>“多久了？”</p>
+<p>阿尔终于开口了。那个一贯轻浮的声线消失了，取而代之的是一种昴从未听过的、带着某种古老疲惫的语调。</p>
+<p>“你能看见那片星空，有多久了？”</p>
+<p>“……今天刚开始。”</p>
+<p>“是吗。”阿尔缓缓抬起手，摘下了那顶从不离身的头盔，“那还真是……比我想象的要快。”</p>
+<p>头盔下的脸，昴并不陌生。那是一张和自己极其相似的面孔，相似到让他第一次见到时就产生了某种说不清道不明的违和感。但此刻在星图的视野中，昴看见了这张脸真正的样子——无数的暗红色纹路从阿尔的左眼蔓延开来，那不是伤疤，也不是纹身，而是星轨。是毕宿五的引力在这个男人身上留下的烙印。</p>
+<p>“你问我是不是也能看见星星。”阿尔将头盔夹在腋下，抬起眼直视昴，“答案是‘是’。从我来到这个世界的第一天起，那片星空就一直悬在我的头顶。每一颗星的名字，每一条星轨的走向，所有人的命运——我全都看得见。”</p>
+<p>“那你为什么要——”</p>
+<p>“因为这就是我的存在意义，兄弟。”阿尔打断了他，嘴角扯出一个苦涩到极点的弧度，“毕宿五。追随者之星。你既然能看见星图，就应该知道这个名字意味着什么。”</p>
+<p>昴当然知道。</p>
+<p>毕宿五，金牛座α星，位于金牛座的左眼位置。在古代的天文观测中，它总是紧随着昴宿星团升起，因此被称为“追随者”。而这个名字背后隐藏的天文学真相是——</p>
+<p>“我的星轨从一开始就和你的绑定在一起。”</p>
+<p>阿尔平静地说出了那个昴最不想听到的答案。</p>
+<p>“不是我想追随你，而是我不得不了追随你。毕宿五的引力决定了我的每一个选择、每一次行动、每一句话。你以为我想杀死你的伙伴吗？你以为我想看到你一次次地痛苦吗？”</p>
+<p>阿尔的声音突然拔高，那张和昴相似的脸上浮现出一种近乎疯狂的表情。</p>
+<p>“我只是在沿着星轨前进！而星轨告诉我——菜月·昴，你的存在本身就是一个‘错误’。那些因为你而聚集起来的羁绊，那些你拼命想要守护的人，他们在‘正确’的时间线里根本不应该和你产生任何交集。而我的任务，就是修正这个错误。”</p>
+<p>“修正之后呢？”</p>
+<p>昴的声音出奇地平静。平静到连他自己都感到意外。也许是星图赋予了他某种超越情绪的视角，也许是他已经在无数次的死亡中学会了在绝望面前保持冷静。</p>
+<p>“修正之后，我会怎么样？”</p>
+<p>“……你会活着。”阿尔别开了视线，“独自一人，但活着。你会回到那条‘正确’的轨道上，不再拥有那些随时可能崩断的羁绊，不再需要为了谁去死。你会——”</p>
+<p>“会变成第二个你，是吗？”</p>
+<p>阿尔的肩膀猛地一震。</p>
+<p>昴继续说了下去。星图的视野正在逐渐减弱，他能感觉到那些星辰的光芒在一点点变暗，像是电池耗尽前的最后闪烁。但足够了。在这一刻，他已经看清了所有的真相。</p>
+<p>“毕宿五追随昴宿星团，但你我都清楚——在真正的天文学中，毕宿五和昴宿星团之间的距离远到根本不构成任何物理上的关联。所谓的‘追随’，只是地球观测者眼中的错觉。”</p>
+<p>阿尔没有说话。</p>
+<p>“是那些给我们命名的人错了。”昴向前迈了一步，“毕宿五从来不需要追随昴宿星团。是你自己选择了相信这个‘追随者’的命运，然后用它来合理化你所做的一切。”</p>
+<p>“你懂什么——”</p>
+<p>“我是不懂！”昴吼了回去，“我不懂什么星轨、什么命运、什么‘正确的时间线’！我只知道我每一次死掉又活过来，都是因为有人值得我为之赴死！艾米莉亚炭、碧翠丝、雷姆、拉姆——她们才不是什么‘错误’，她们是我用命换来的羁绊！”</p>
+<p>星图的视野在最后一刻骤然增强。</p>
+<p>昴看见了。在那片即将消逝的星空中，昴宿星团和毕宿五之间出现了一道细微到几乎不可见的裂隙。那不是任何一颗星，也不是任何一条既定的星轨。那是两个男人对峙的瞬间产生出的、不被任何命运所书写的——</p>
+<p>“变量。”</p>
+<p>昴吐出这个词的时候，阿尔的脸色变了。</p>
+<p>“你疯了。那片裂隙通向的是星图之外的领域。跳进去的话，连我也不知道会发生什么——”</p>
+<p>“那就不知道好了。”</p>
+<p>昴向后纵身一跃。</p>
+<p>在他的背后，那片星图的裂隙正在急速扩大，像是一张深渊的巨口。阿尔伸出手想要抓住他，但毕宿五的星轨牢牢地将他钉在原地。那颗暗红色的巨星正在以前所未有的幅度震动着，仿佛在尖叫，又仿佛在——哭泣。</p>
+<p>“下一次轮回，”昴在下坠的过程中直视着阿尔的眼睛，“我不会再依靠星图了。我会用我自己的眼睛去看，用我自己的脑子去判断。而你——”</p>
+<p>他的后背撞上了裂隙的边缘。</p>
+<p>“你最好也试着挣脱一下那颗星的引力，阿尔。毕竟，一个只能追随别人星轨的家伙，是永远不可能拥有自己的故事的。”</p>
+<p>世界碎裂成无数片星辰，然后归于黑暗。</p>
+<p>死亡回归，发动。</p>
+<p>昴从床上弹起来的时候，下意识地抬头看向天花板。</p>
+<p>什么都没有。没有银色的小星星，没有金色的碧翠丝之光，也没有那颗悬在星图正上方的暗红色毕宿五。</p>
+<p>他失去了那片星图视野。</p>
+<p>但同时，他还记得一切。</p>
+<p>“……阿尔。”</p>
+<p>昴低声念出这个名字。那个戴着头盔的男人此刻应该正在宅邸的某处，和往常一样扮演着那个吊儿郎当的骑士角色。但在昴的记忆中，阿尔已经不再是那个“可疑但或许可以信任的前辈”了。</p>
+<p>他是一个敌人。</p>
+<p>一个被迫成为敌人的人。</p>
+<p>一个被自己的星辰囚禁了不知多少时间的、值得同情的——</p>
+<p>“混蛋。”</p>
+<p>昴掀开被子，开始为新一轮的战斗做准备。这一次，他没有了星图的帮助，但他有了一段新的记忆，一个新的变量，和一个之前从未有过的——</p>
+<p>理解。</p>
+<p>而在宅邸的另一端，阿尔独自站在窗边，头盔下的眼睛凝视着外面什么都没有的天空。</p>
+<p>没有人看得见，在那片寻常的蓝天背后，毕宿五的光芒正在发生着某种微不可察的变化。那道被昴撕开的裂隙没有完全愈合，而是留下了一条极细的裂缝。从裂缝的另一端，隐约透出某种与毕宿五本身截然不同的光芒。</p>
+<p>那是阿尔已经很久很久没有见过的光。</p>
+<p>“挣脱引力吗……”</p>
+<p>他攥紧了拳头。头盔下的嘴角，第一次没有沿着星轨预定的弧度弯曲。</p>
+<p>那颗追随了昴宿星团不知多少岁月的暗红色巨星，其星轨正在以肉眼无法察觉的幅度——</p>
+<p>缓慢偏移。</p>
+<hr>
+<p>虽然也很不错，但无论是从模仿的达成程度和故事性来说，都是肥波胜利。不过deepseek是真便宜。肥波8000字消耗1.8刀。</p>
+<h1 id="Round-2"><a href="#Round-2" class="headerlink" title="Round 2"></a>Round 2</h1><p>这一轮消耗了我好多额度，大概有3、4刀，ds的花费可以忽略不计，肥波是真的贵啊…</p>
+<p>而且吧，这一轮的故事我都不太满意，干脆折叠了</p>
+<p>题目是我从b站上看来的无厘头纯爱小故事。</p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">你是一名著名日本轻小说作家，你尤其喜爱写纯爱题材，你的文笔细腻，构思精巧，深受读者喜爱。</span><br><span class="line">现在，根据以下材料，撰写一篇新的短篇轻小说，而且是中文发行版，注意是日本轻小说的中文译本格式。</span><br><span class="line">材料：一对恩爱的夫妻遭遇天灾不幸双双遇难，他们在一个神秘的空间醒来，并且回到了彼此最热恋时的年轻模样。这时圣洁的女神出现在他们面前，告诉他们男主必须完成100个人物，那就是在100个世界里和100个攻略不同的女人，女神给出一个清单：女铁匠，女勇者，女王<span class="string">...</span>。如果男主没有完成任务，他最深爱的妻子将会死去。女神以戏弄凡人为乐，让两人开始了轮回。在不知多久之后，女神感应到女主已经完成99项任务，大笑着想这对夫妻或许已被自己拆散。没想到召见男主后，却发现他的攻略人数始终为1，女神大怒，才发现两人依旧彼此恩爱，妻子为了丈夫，在每一次都学习不同的技巧，耗费半生成为女铁匠，又在下一世与丈夫屠龙成为女勇者，在下一世在丈夫的扶持下成为女王<span class="string">...</span>女神却大笑起来，因为需要攻略的最后一个女人的身份是：女神。她从一开始就只想戏弄这对夫妻，根本不想让男人完成任务。谁想到妻子拿出一把匕首，丈夫大笑着：这是我们在其中一世获得的弑神匕首，那么就让新神诞生吧！历经99世轮回的夫妻二人向女神发起最后的冲锋，小说结束（开放性结局）</span><br></pre></td></tr></table></figure>
+<details>
+<summary>点击展开</summary>
+<p>
+## Fable 5
+这次肥波不思考了，可能是他觉得不值得思考那么久？（这次只思考了2.2秒）
+
+<hr>
+<p>——献给所有相信爱情的人</p>
+<p><strong>——公元20XX年，日本，某市。</strong></p>
+<p>那天的天气预报说是晴。</p>
+<p>的确是晴天。至少早上出门时，阳光还温柔地铺洒在玄关的地砖上，像一层薄薄的蜂蜜。</p>
+<p>“阿让，领带歪了。”</p>
+<p>妻子的指尖轻轻触上他的衣领。哪怕结婚已经十五年，她纠正他领带的动作依旧带着某种令人心安的熟练与温柔——就像她做任何事那样。</p>
+<p>桐谷让看着面前的女人。</p>
+<p>四十岁了。眼角有了些许细纹，额前有几缕被她不经意夹到耳后的白发。但那双眸子和他初遇她时一模一样——清澈得像山间溪流里沉着的鹅卵石，什么都藏不住。</p>
+<p>他有时候想，自己大概是世界上最幸运的男人。</p>
+<p>“今天记得早点回来，”她替他理好领带，退后半步端详，满意地点了点头，”我做了你喜欢的炖牛肉。”</p>
+<p>“嗯。”</p>
+<p>他拎起公文包，走到门口，忽然又折返回来。</p>
+<p>妻子疑惑地抬头：”怎么了？”</p>
+<p>他弯下腰，在她额头上落下一吻。</p>
+<p>“小凛。”</p>
+<p>“嗯？”</p>
+<p>“……没什么。就是忽然想叫一声你的名字。”</p>
+<p>桐谷凛笑了。那种笑容他看了二十年，仍会觉得心口微微发烫。</p>
+<p>“快去吧，笨蛋。”</p>
+<hr>
+<p>那场地震来得毫无预兆。</p>
+<p>日本气象厅后来将其定级为里氏8.2级，震源深度极浅，整座城市在四十七秒内被撕裂。</p>
+<p>桐谷让最后的记忆是——办公楼的天花板像纸片一样塌下来，混凝土与钢筋的巨响吞没了一切声音。他甚至来不及恐惧，脑海里只浮现出一个念头：</p>
+<p><em>小凛还在家里。</em></p>
+<p><em>今晚的炖牛肉……她大概已经开始准备了吧。</em></p>
+<p>然后，世界坍塌为一片纯粹的黑暗。</p>
+<hr>
+<p>意识回来得很慢。</p>
+<p>像从深水中缓缓上浮，光线一点一点渗透进来。</p>
+<p>桐谷让睁开眼。</p>
+<p>纯白的空间，没有墙壁，没有天花板，没有地面——准确地说，脚下有实感，但看不到任何边界。一切都是白色的，柔和的，仿佛置身于一块没有尽头的绢布之中。</p>
+<p>“……这里是？”</p>
+<p>他试着活动手脚。没有疼痛，没有任何不适。他低头看了一眼自己的手——</p>
+<p>愣住了。</p>
+<p>那是一双年轻的手。修长，白皙，没有四十岁男人应有的老茧与疲态。他条件反射地摸向自己的脸——触感平滑而紧致，下巴上那道三十五岁时因刮胡刀失手留下的小疤消失了。</p>
+<p><em>……这是怎么回事？</em></p>
+<p>就在这时，他听到了一个声音。</p>
+<p>一个他在世界上最熟悉的声音。</p>
+<p>“……阿让？”</p>
+<p>他猛然转头。</p>
+<p>距他不到十步远的地方，一个女孩正从地上慢慢站起来。</p>
+<p>她大约二十岁出头，穿着一身简单的白色连衣裙——不是她的衣服，更像是这个空间本身为她编织的。黑色长发垂落至腰际，面容精致而清澈，带着一点茫然与不安。</p>
+<p>但那双眼睛——那双清澈得如山间溪流的眼睛，他绝不会认错。</p>
+<p>“小凛——！”</p>
+<p>他冲了过去。</p>
+<p>她也在看到他的瞬间奔了过来。</p>
+<p>两人在白色空间的正中央相拥。他感受到她的体温——真实的，温暖的，带着微微的颤抖。她把脸埋在他的胸口，声音闷闷地传来：</p>
+<p>“阿让……我们是不是……死了？”</p>
+<p>他抱紧她，没有回答。</p>
+<p>因为他不知道怎么回答。</p>
+<p>那场地震的记忆如此清晰，混凝土崩塌的声音仍在耳边回响。而此刻他们却站在这里，拥有着二十岁时的身体，置身于一个不属于任何已知世界的空间。</p>
+<p>“……大概是的。”他最终低声说。</p>
+<p>凛的身体颤了一下，随即抓紧了他后背的衣料。</p>
+<p>“那……至少我们在一起。”</p>
+<p>让闭了闭眼，把下巴搁在她的头顶。</p>
+<p><em>是啊。如果这就是死后的世界——只要你在，哪里都无所谓。</em></p>
+<hr>
+<p>然后，那道光降临了。</p>
+<p>不是普通的光。那是某种超越了物理学范畴的存在，像是将”圣洁”这个抽象概念本身具象化之后的产物。它从头顶——如果这个空间有头顶的话——倾泻而下，凝聚成一个轮廓。</p>
+<p>是一个女人的轮廓。</p>
+<p>不，称之为”女人”或许不够准确。</p>
+<p>她比任何人类都要高大。肌肤如月光凝结，发丝是流淌的银河，瞳孔中映照着星辰的诞生与毁灭。她穿着层层叠叠的白色与金色织就的衣裙，每一片衣角都仿佛承载着一个宇宙的重量。</p>
+<p>她是美的。那种美不属于人间，不会让人产生任何世俗的欲望——只会让人从灵魂深处感到一种压迫性的敬畏。</p>
+<p>以及——</p>
+<p>以及一种难以言喻的、本能的不安。</p>
+<p>因为她在笑。</p>
+<p>那笑容优雅、慈悲、完美无瑕——完美到了不真实的程度。像是一面精心雕琢的面具，面具之下藏着某种让人脊背发凉的东西。</p>
+<p>“欢迎。”</p>
+<p>她的声音不大，却像是直接在脑海中响起，绕过了耳膜和鼓膜，绕过了所有物理介质。</p>
+<p>“可怜的孩子们——你们在那场灾难中失去了性命。”</p>
+<p>让下意识地将凛挡在身后。凛握紧了他的手，指尖微凉。</p>
+<p>“你是……谁？”让问。</p>
+<p>“我？”</p>
+<p>女神——此刻他们已经不可能用别的词来称呼她了——歪了歪头，那个优雅的笑容在她唇边弧度更深了一些。</p>
+<p>“你们人类有许多名字来称呼我。但名字不重要——你们只需要知道，我是掌管灵魂去向的存在。”</p>
+<p>她举起一只手，纤长的手指在虚空中划过，一幅画面凭空展开——那是那座城市，已经变成废墟的城市。倒塌的建筑，龟裂的大地，救援队和消防车的红色灯光在烟尘中明灭。</p>
+<p>“七级以上地震，震源极浅，直下型。死亡人数——截至目前，四千三百六十二人。”她念出这个数字时的语气，就像在朗读一份购物清单。</p>
+<p>凛的手指攥紧了。</p>
+<p>让咬了咬牙：”你……到底想对我们做什么？”</p>
+<p>“做什么？”女神轻笑了一声，”我在给你们一个机会。一个——<em>活过来</em>的机会。”</p>
+<hr>
+<p>她说这话时，那面具般的笑容终于有了一丝变化。</p>
+<p>不是消退，而是加深了。</p>
+<p>像一个看到了有趣玩具的孩子。</p>
+<p>“桐谷让。桐谷凛。”她依次念出他们的名字，每一个音节都带着某种庄严的仪式感，”你们的爱情——在人类的标准中，的确称得上珍贵。”</p>
+<p>她将视线停在凛身上，端详了片刻。</p>
+<p>“尤其是你。”女神对凛说，”你的灵魂……很漂亮。纯粹，温热，像一颗未经打磨的宝石。”</p>
+<p>凛退后半步，警惕地看着她。</p>
+<p>“所以我决定给你们一个机会。”女神说着，再次在虚空中划了一道弧线。</p>
+<p>一张清单出现在半空中。</p>
+<p>不是纸质的清单——它像全息投影一样悬浮着，上面密密麻麻地写满了文字。不是日语，不是英语，不是任何一种人类的语言，但让和凛都能够毫无障碍地理解每一行字的含义。</p>
+<p>像是某种直接灌注进意识的信息。</p>
+<p>“一百个世界。”女神的声音像钟声一样在空间中回荡，”一百个身份。一百个——女人。”</p>
+<p>她伸出手指，从清单的第一行划到最后一行。</p>
+<p>“女铁匠。女勇者。女王。女海盗。女剑士。女祭司。女学者。女将军。女盗贼。女商人……”</p>
+<p>每一个名称被念出时，清单上对应的文字就会亮起，散发出金色的微光。一百个身份，一百种人生，一百个截然不同的世界。</p>
+<p>“桐谷让——你的任务是：在这一百个世界中，分别攻略对应身份的女人。让她们爱上你，让她们心甘情愿地成为你的伴侣。”</p>
+<p>让皱起了眉。</p>
+<p>“……攻略？”</p>
+<p>“是的。攻略。”女神笑意盈盈，”你应该不陌生这个概念吧？你们人类不是有很多这样的游戏吗？恋爱模拟——大概就是那种东西。”</p>
+<p>“你在开玩笑。”让的声音很平静，但握着凛的那只手不自觉地收紧了。</p>
+<p>“我从不开玩笑。”</p>
+<p>女神的笑容不变，但语气忽然下沉了。</p>
+<p>那种圣洁的光芒似乎暗了一瞬——不，不是暗了，而是露出了光芒之下的真实质地。像阳光照进深水，映出水底盘踞的暗影。</p>
+<p>“如果你无法完成这一百个任务——“</p>
+<p>她的目光缓缓移向凛。</p>
+<p>“——你最深爱的妻子，将会<em>真正</em>地死去。不是回到生前的世界，不是转世轮回，而是——灵魂消散。从这个宇宙的一切记忆中被抹除。就像她从未存在过一样。”</p>
+<p>空间安静了。</p>
+<p>让感觉自己的血液在一瞬间凝固了。</p>
+<p>凛的脸色变得苍白。但她没有退缩——她抬起头，直视着那个高高在上的存在，声音很轻，却很稳：</p>
+<p>“……如果他完成了呢？”</p>
+<p>“如果完成了？”女神挑了挑眉，”那我就送你们回去。给你们崭新的身体，崭新的生命。让你们重新活过来——比原来更年轻，更健康。”</p>
+<p>她顿了顿，补充道：”当然，前提是——一百个世界，一百个女人。一个都不能少。”</p>
+<p>让抿紧了唇。</p>
+<p>他转头看向凛。</p>
+<p>凛也在看他。</p>
+<p>那双清澈的眼睛里有恐惧——当然有恐惧，任何人面对这样的宣告都会恐惧。但恐惧之下，还有别的东西。一种他无比熟悉的、坚定而温柔的光芒。</p>
+<p>那光芒在说：<em>无论如何，我都在你身边。</em></p>
+<p>“……我拒绝。”让转回头，看着女神。</p>
+<p>女神微微睁大了眼。</p>
+<p>“拒绝？”</p>
+<p>“我不会去攻略其他女人。”他的声音很平，像在陈述一个不可动摇的事实，”我这辈子——不，哪怕死了，也只爱一个人。”</p>
+<p>凛的呼吸微微一窒。</p>
+<p>女神注视了他很长时间。</p>
+<p>然后——</p>
+<p>她笑了。</p>
+<p>不是之前那种优雅的、面具般的笑容。而是一种发自内心的、愉悦的、近乎于——<em>残忍</em>的笑。</p>
+<p>“啊……果然如此。这就是我选择你们的原因。”</p>
+<p>她抬手一挥，那张清单悬浮到两人面前，每一行文字都散发着不祥的金光。</p>
+<p>“你拒绝也没有用。规则已经定下。当你们在这个空间醒来的那一刻——游戏就已经开始了。”</p>
+<p>“不，等——“</p>
+<p>白光吞没了一切。</p>
+<p>让最后感知到的是凛的手——她一直紧紧握着他的手，直到那道光将他们的感官全部夺走。</p>
+<p>女神的声音从光芒的深处传来，带着某种悠远而漫不经心的余韵：</p>
+<p>“祝你们好运——人类。”</p>
+<hr>
+<p>他们坠落。</p>
+<p>不是物理意义上的坠落——没有失重感，没有风声。但意识在急速下沉，仿佛整个灵魂被一只无形的手攥住，丢进了时间与空间的裂隙之中。</p>
+<p>然后，一切静止了。</p>
+<hr>
+<p>让再次睁开眼时，看到的是一片陌生的天空。</p>
+<p>低矮的灰色云层，远处有群山的轮廓，空气中弥漫着煤烟和铁锈的气味。他躺在一条泥泞的小路上，周围是密密麻麻的石砌房屋——中世纪欧洲风格的小镇，灰扑扑的，带着一种朴素而粗粝的生命力。</p>
+<p>他坐起身来，低头看了看自己。</p>
+<p>粗麻布衣服。厚底皮靴。腰间挂着一个磨损的皮袋，里面有几枚铜币和一把小刀。</p>
+<p>这副身体依然年轻——二十岁出头的模样，和在白色空间时一样。但有一些东西不同了：他的脑海中多了一些原本不属于他的记忆。这具身体原主人的记忆。</p>
+<p><em>他是一个旅行商人的儿子，因为商队遭到野盗袭击而流落到了这座名叫”灰炉镇”的小镇。身无分文，举目无亲。</em></p>
+<p>让深吸了一口气，站起身来。</p>
+<p><em>好……先不管别的。得先找到凛。</em></p>
+<p>他不确定凛是否也被传送到了同一个世界——但如果那个女神的目的是”让他攻略其他女人”，那凛应该不会出现在这里才对。</p>
+<p>然而——</p>
+<p>他才走了不到三十步，就听到了一阵清脆的锤击声。</p>
+<p>叮，叮，叮。</p>
+<p>金属与金属碰撞的声音，从街角的一间铁匠铺里传来。铺子的招牌上画着一把铁锤和一柄长剑的图案，木门半开着，橘红色的炉火光从门缝里泄出来。</p>
+<p>让鬼使神差地走了过去。</p>
+<p>推开门。</p>
+<p>炉火映红了整间铺子。铁砧旁站着一个年轻的女人，正挥舞着一把比她小臂还粗的铁锤，将一块烧得通红的铁块锤打成型。她的脸上沾着黑灰和汗水，头发用一块旧布随意扎在脑后，身穿厚实的皮围裙，赤裸的双臂上有几道被火星溅伤留下的疤痕。</p>
+<p>那身打扮与他记忆中的她天差地别。</p>
+<p>但那双眼睛——</p>
+<p>在他推门的瞬间，她抬起头来。</p>
+<p>四目相对。</p>
+<p>她的瞳孔倒映着炉火的橘红色光芒，但在看到他的一刻，那光芒忽然变得晶亮——像清晨第一缕阳光照进溪流时，水面碎裂的粼粼波光。</p>
+<p>铁锤从她手中脱落，砸在地上，发出沉闷的一声巨响。</p>
+<p>“…………阿让？”</p>
+<p>他快步走过去。</p>
+<p>她快步迎上来。</p>
+<p>两人在铁砧旁拥抱在一起。她的身上有铁锈味、汗味、和煤烟味——闻起来和他熟悉的那个洗完澡后散发着花香沐浴露气味的妻子截然不同。</p>
+<p>但她的拥抱方式一模一样。把脸埋进他的胸口，双手环住他的腰，像是要把自己整个人嵌进他的怀里。</p>
+<p>“我醒来的时候你不在，我以为——“她的声音有点发抖，”我以为那个女神把我们分开了……”</p>
+<p>“没有。”让抚着她的后脑，声音低而坚定，”我在这里。”</p>
+<p>“……阿让。”</p>
+<p>“嗯。”</p>
+<p>“我们……要怎么办？”</p>
+<p>让沉默了一会儿。</p>
+<p>他松开她，低头看着她的脸。黑灰和汗水糊在她的脸颊上，像一只花猫。他忍不住用拇指替她擦了擦——当然没擦干净，反而抹得更花了。</p>
+<p>凛被他逗笑了。</p>
+<p>“……你还笑得出来。”她小声嘟哝。</p>
+<p>“因为你在我身边。”他说，”只要你在——什么都好办。”</p>
+<p>凛看着他，眼眶微红。</p>
+<p>然后她深吸一口气，表情变得认真起来。</p>
+<p>“阿让——那个清单。你还记得吗？”</p>
+<p>“记得。第一个任务……’女铁匠’。”</p>
+<p>凛环顾了一圈自己所处的铁匠铺。火炉，铁砧，堆积如山的矿石和半成品武器。她低头看了看自己粗糙的双手——这具身体原主人的记忆告诉她，她是这间铁匠铺老师傅的养女，从十二岁起就跟着学打铁。</p>
+<p>“那个女神说——要你攻略一百个不同身份的女人。”凛缓缓说。</p>
+<p>“……嗯。”</p>
+<p>“但她没有说，”凛抬起眼，那双清澈的瞳孔里映着跳动的火焰，”那些女人不能是同一个人。”</p>
+<p>让愣住了。</p>
+<p>凛握住他的手，把它贴在自己的脸颊上。</p>
+<p>“她说要一个女铁匠——那我就成为女铁匠。她说要一个女勇者——那我就成为女勇者。一百个身份，一百个世界……我都可以学。”</p>
+<p>“小凛……”</p>
+<p>“规则是她定的。”凛的声音轻轻的，但每一个字都像淬火后的钢铁，带着不可折弯的韧性，”但怎么完成规则——由我们来决定。”</p>
+<p>让看着她。</p>
+<p>看了很久。</p>
+<p>然后他笑了——不是苦笑，不是无奈的笑，而是一种从心底深处涌上来的、温暖而明亮的笑。</p>
+<p>“……你啊。”</p>
+<p>“嗯？”</p>
+<p>“十五年前求婚的时候我就说过——娶到你，是我这辈子做过的最正确的决定。”</p>
+<p>“哼，你才知道。”</p>
+<p>她踮起脚尖，在他唇角落下一吻。带着铁锈味的。</p>
+<hr>
+<p>第一世开始了。</p>
+<p>清单上的第一项任务：攻略”女铁匠”。</p>
+<p>判定条件只有一个——让让一名拥有”女铁匠”身份的女人真心爱上他，并与之建立深厚的羁绊。</p>
+<p>凛本就继承了这具身体原主人的铁匠技艺。但那远远不够——原主人只是个半吊子学徒，连一把像样的短剑都打不出来。</p>
+<p>“我要成为这个世界上最好的女铁匠。”凛说。</p>
+<p>让看着她的眼睛，知道她不是在说大话。</p>
+<p>于是他成了她的帮手。</p>
+<p>每天清晨，天还没亮，凛就已经生好了炉火。灰炉镇的冬天很冷，呼出的气息会变成白色的雾，但铁匠铺里永远是灼热的。让帮她拉风箱，帮她搬矿石，帮她研磨刀刃——他前世是个白领，从没干过体力活，刚开始时磨出满手血泡，第二天连筷子都握不住。</p>
+<p>但凛更辛苦。</p>
+<p>一柄剑，从选矿、熔炼、锻打、淬火、研磨到最终成型，需要数百乃至上千次锤击。每一次锤击都需要精准的角度和力度，差之毫厘，整块铁坯就会报废。</p>
+<p>她最初打废了无数块铁坯。铁匠铺的地上堆满了变形扭曲的废铁，像一座小山。她的双手被铁锤磨出了厚厚的茧子，指缝间常年嵌着洗不掉的黑灰，手臂上被飞溅的火星烫出了大大小小的伤疤。</p>
+<p>让每天晚上都会帮她上药。</p>
+<p>“疼吗？”</p>
+<p>“不疼。”</p>
+<p>“骗人。”</p>
+<p>“……就一点点。”</p>
+<p>他轻轻地在她的伤口上涂药膏。那些伤疤有新有旧，层层叠叠，像是某种无声的勋章。</p>
+<p>凛的手覆上他的。</p>
+<p>“阿让。”</p>
+<p>“嗯？”</p>
+<p>“你会不会觉得……我这双手，不好看了？”</p>
+<p>她的语气很轻，像在说一件无关紧要的事。但让知道她在意——她一直有一双很漂亮的手，纤细白皙，指甲修剪得圆润整齐。那是他们前世时，他最喜欢握住的手。</p>
+<p>让低头，在她满是茧子的掌心落下一吻。</p>
+<p>“这是世界上最好看的手。”</p>
+<p>凛红了脸。即使在炉火的映衬下也能看得清清楚楚。</p>
+<p>“……笨蛋。”她小声说。</p>
+<hr>
+<p>一年过去了。</p>
+<p>凛打出了她的第一把合格的长剑。</p>
+<p>两年过去了。</p>
+<p>她的名字开始在灰炉镇之外的地方被人提起——“灰炉镇的女铁匠，她打的剑比男人打的还要好。”</p>
+<p>五年过去了。</p>
+<p>远方的领主专程派人来求购她的作品。她锻造的骑士长剑被誉为”灰炉之牙”，在整个王国的武器评鉴中名列前茅。</p>
+<p>十年过去了。</p>
+<p>凛已经三十岁了——在这个世界的三十岁。她的容貌不再年轻，眼角有了细纹，手上的茧子厚到连针都扎不进去。但当她站在铁砧前、挥动铁锤时，每一次锤击都精准如同呼吸——稳定、从容、充满力量。</p>
+<p>她已经是当之无愧的、整个王国最顶尖的女铁匠。</p>
+<p>而让一直在她身边。</p>
+<p>十年的时光将他从一个毫无经验的外行人变成了一个合格的铁匠助手——他负责选矿、管理账目、接待客户，同时也学会了基本的锻造技术。但他最重要的工作始终只有一个：</p>
+<p>在凛累了的时候，接住她。</p>
+<p>深夜，铁匠铺。</p>
+<p>炉火已经熄灭，只剩下余烬散发着微弱的红光。凛坐在长凳上，靠着让的肩膀，双手垂在身侧。她太累了——今天连续锻打了十二个小时，赶制领主订购的一批仪仗剑，肩膀酸痛得几乎抬不起来。</p>
+<p>“阿让。”</p>
+<p>“嗯？”</p>
+<p>“你说……那个女神，现在正在看着我们吗？”</p>
+<p>让沉默了片刻。</p>
+<p>“大概吧。”</p>
+<p>“她会不会生气？”凛的声音带着一丝倦意的笑，”她想看你辛辛苦苦追求一个陌生女人，结果你追求的还是你老婆。”</p>
+<p>“生气就生气好了。”让把她揽得更紧了一点，”规则是她定的，我们只是遵守规则而已。”</p>
+<p>凛轻轻笑出了声。</p>
+<p>就在那个瞬间——</p>
+<p>叮。</p>
+<p>一个清脆的、不属于这个世界的声音在两人的意识深处响起。半空中浮现出一行发光的文字：</p>
+<p><strong>【任务一：女铁匠——达成】</strong></p>
+<p><strong>【判定：目标女性对攻略者的爱恋值——不可测量（超出上限）】</strong></p>
+<p>两人对视一眼。</p>
+<p>然后不约而同地笑了。</p>
+<p>“不可测量。”凛念着那行字，眼睛弯成了月牙，”这个评价，我很满意。”</p>
+<p>“我也是。”</p>
+<p>白光再次降临。这一世的记忆、这一世的身体、这一世的十年时光，都将留在这个世界里。但有些东西会跟着他们走——</p>
+<p>比如凛掌心的茧子所代表的一切。</p>
+<p>比如两个人十指相扣的温度。</p>
+<p>光芒吞没他们的前一秒，凛握紧了让的手。</p>
+<p>“下一世，也请多指教了——老公。”</p>
+<p>“彼此彼此——老婆。”</p>
+<hr>
+<p><strong>第二世。</strong></p>
+<p>清单第二项：女勇者。</p>
+<p>这一次他们降生在一个魔物横行的剑与魔法的世界。凛成为了边境村庄一个猎户的女儿，让则是邻村教堂收养的孤儿。</p>
+<p>他们花了三个月找到彼此——这一次没有上一世那样的运气，两人相隔了整整两座山脉。让沿着商路走了八十多天，鞋底磨穿了三双，在一个落雨的黄昏推开了那间猎户小屋的门。</p>
+<p>开门的少女握着猎弓，警惕地打量着这个浑身湿透的陌生旅人。</p>
+<p>三秒之后，猎弓落地。</p>
+<p>“……你怎么才来。”她红着眼睛扑进他怀里，”我等你等了九十四天。”</p>
+<p>“你数着日子？”</p>
+<p>“每天在墙上刻一道。”</p>
+<p>“勇者”不是一个职业，而是一个称号——只有讨伐了盘踞在王国北境的灾厄之龙的人，才有资格被教会册封为勇者。</p>
+<p>于是凛开始了修行。</p>
+<p>前世十年锻打生涯留给她的不只是记忆——虽然技艺无法带走，但那种日复一日打磨自己的意志力，已经刻进了她的灵魂。她学习剑术，学习弓术，学习在雪原上追踪魔物的技巧。让则钻研这个世界的魔法体系，成为了她的后卫与军师。</p>
+<p>第七年，两人组成的佣兵小队”炉火”名震北境。</p>
+<p>第十二年，灾厄之龙陨落于雪山之巅。</p>
+<p>给予巨龙最后一击的，是凛手中的长剑——那柄剑是让依照她上一世的锻造心得、请这个世界最好的矮人铁匠打造的。剑刃没入龙喉的瞬间，漫天风雪仿佛都静止了。</p>
+<p>浑身浴血的凛拄着剑，回头看向山崖上的让，笑得像个孩子。</p>
+<p>“阿让——我做到了！”</p>
+<p><strong>【任务二：女勇者——达成】</strong></p>
+<hr>
+<p><strong>第三世。</strong></p>
+<p>清单第三项：女王。</p>
+<p>这是最难的一世。</p>
+<p>凛降生为一个内忧外患的小国的三公主——排在继承顺位的末尾，母妃早逝，在宫廷中毫无根基。而让只是一个书记官家庭出身的寒门文官。</p>
+<p>他们用了三十年。</p>
+<p>三十年的朝堂博弈，三十年的合纵连横。让从最底层的抄写员做起，一步步成为公主的幕僚、近臣、丞相。凛在他的辅佐下熬过了两次宫廷政变、一场边境战争和无数明枪暗箭，最终在四十七岁那年加冕为王。</p>
+<p>加冕典礼那天，白发已生的女王在万民的欢呼声中登上王座，然后做了一件让全国哗然的事——她当众走下王座，向自己的丞相伸出了手。</p>
+<p>“我这一生的每一步，都是这个男人陪我走过来的。”她说，”诸位可以有异议，但本王的王夫，只会是他。”</p>
+<p><strong>【任务三：女王——达成】</strong></p>
+<hr>
+<p>之后的世界，像走马灯一样流转。</p>
+<p><strong>第七世</strong>，女海盗。凛成为了南方群岛令商船闻风丧胆的”绯红船长”，让是她的航海士。他们在暴风雨的甲板上接吻，在藏宝岛的星空下相拥而眠。</p>
+<p><strong>第十九世</strong>，女祭司。神殿的规矩是祭司终生不得婚嫁。凛便花了二十年推动教义改革，在五十岁那年废除了这条延续千年的戒律，然后在自己主持的神殿里，为自己主持了婚礼。</p>
+<p><strong>第三十四世</strong>，女将军。</p>
+<p><strong>第四十一世</strong>，女盗贼。</p>
+<p><strong>第五十六世</strong>，女学者。这一世最平静。凛是王立学院史上第一位女性教授，让是图书馆的管理员。他们在书页与墨香中度过了整整一生，一个孩子都没有吵架。凛临终前躺在让的怀里，翻着两人合著的书，说：”这一世像是女神给我们的假期呢。”</p>
+<p><strong>第七十二世</strong>，女刺客。</p>
+<p><strong>第八十八世</strong>，女药师。</p>
+<p><strong>第九十五世</strong>，女画家。</p>
+<p>……</p>
+<p>一百个世界，一百种人生。</p>
+<p>有的世界他们年少相逢，有的世界他们中年才彼此找到。有的世界一帆风顺，有的世界他们在战火与阴谋中挣扎求生。有一世，让为了保护凛死在了她的面前——凛抱着他的尸体在雨里坐了一夜，然后擦干眼泪，独自完成了那一世剩下的所有事情，在任务达成、白光降临的瞬间，她对着虚空轻声说：</p>
+<p>“下一世见，阿让。你敢迟到试试。”</p>
+<p>下一世，让提前三年就守在了她出生的村庄外。</p>
+<p>没有人计算过这九十九世加起来到底是多少年。四千年？五千年？时间在轮回中失去了意义。唯一没有失去意义的东西只有一个——</p>
+<p>每一世睁开眼后，去寻找对方。</p>
+<p>每一世找到对方后，十指相扣。</p>
+<hr>
+<p>白色的空间里，女神慵懒地靠在由星光织成的躺椅上。</p>
+<p>她面前悬浮着那张清单。金色的文字一行一行地熄灭——每熄灭一行，代表一项任务的完成。</p>
+<p>第九十九行的文字暗下去的那一刻，她笑出了声。</p>
+<p>“九十九项……居然真的完成了九十九项。”</p>
+<p>她当然没有一直盯着看。神的时间尺度与凡人不同，对她来说，这场游戏不过是漫长永恒中的一味小小调剂。她隔三差五地瞥上一眼，看到任务进度在稳步推进，便满意地移开视线。</p>
+<p>“看来那个男人终究还是屈服了呢。”她把玩着指间的一缕星光，唇边的笑意残忍而愉悦，”‘我这辈子只爱一个人’——凡人的誓言，果然连一百个世界都撑不过去。”</p>
+<p>“九十九个女人。呵呵……不知道那个做妻子的，现在是什么表情？是心碎了？还是麻木了？或者早就在某一世里恨透了他，分道扬镳了？”</p>
+<p>拆散一对灵魂上刻着彼此名字的爱侣——对一位以戏弄凡人为乐的神明而言，没有比这更美味的消遣了。</p>
+<p>至于那第一百项任务——</p>
+<p>女神笑得更深了。</p>
+<p>清单的最后一行，从游戏开始的那一刻起，就被她刻意隐去了内容。因为那一行写着的是：</p>
+<p><strong>【任务一百：女神】</strong></p>
+<p>也就是她自己。</p>
+<p>一个凡人，攻略一位神明？让神明爱上凡人？</p>
+<p>痴人说梦。</p>
+<p>这场游戏从设计之初，就是一个不可能完成的骗局。她从没打算让那个男人成功——她要的，是看着他跋涉过九十九个世界、背叛了九十九次爱情之后，站在终点线前，被告知一切努力都是徒劳的那一刻的表情。</p>
+<p>以及，他那个妻子灵魂消散时的表情。</p>
+<p>“差不多是时候了。”</p>
+<p>女神抬起手，指尖轻轻一点。</p>
+<p>“来吧——让我看看，九十九世轮回，把你们磨成了什么样子。”</p>
+<hr>
+<p>白光散去。</p>
+<p>两道身影出现在白色空间的中央。</p>
+<p>女神饶有兴致地打量着他们——然后，她的笑容凝固了。</p>
+<p>那两个人手牵着手。</p>
+<p>十指相扣，紧密得没有一丝缝隙，仿佛那不是两只手，而是一件浑然一体的东西。男人站在左边，女人站在右边，两人的站位、距离、连呼吸的节奏都透着一种令人不适的和谐——那是只有共同生活了无数岁月的人才会有的、刻进骨髓的默契。</p>
+<p>他们看着她。目光平静，没有恐惧，没有怨恨，甚至没有多少波澜。像看一个老熟人。</p>
+<p>“……你们。”女神眯起了眼睛。</p>
+<p>有什么地方不对。</p>
+<p>她挥手召出命运之书，翻到记录这场游戏数据的那一页。九十九项任务，全部达成，判定无误。攻略对象爱恋值全部——</p>
+<p>全部——</p>
+<p><strong>“不可测量”？</strong></p>
+<p>女神的目光倏地下移，落在了另一行她从未细看过的数据上：</p>
+<p><strong>【攻略者·桐谷让——累计攻略人数：1】</strong></p>
+<p>“……什么？”</p>
+<p>她又看了一遍。</p>
+<p><strong>【累计攻略人数：1】</strong></p>
+<p>“这不可能。”女神霍然起身，星光织成的躺椅在她身后崩散，”九十九项任务！女铁匠、女勇者、女王、女海盗、女祭司——九十九个身份！怎么可能只有一个人？！”</p>
+<p>回答她的，是凛的轻笑声。</p>
+<p>“因为那九十九个人，都是我啊。”</p>
+<p>女神猛地看向她。</p>
+<p>命运之书的书页在她的神力下疯狂翻动，九十九个世界的记录如洪流般涌入她的意识——</p>
+<p>灰炉镇的炉火。雪山之巅的龙血。加冕典礼上伸出的手。暴风雨中的甲板。神殿里的婚礼。图书馆的墨香。雨夜中抱着尸体的女人。村庄外等了三年的男人。</p>
+<p>九十九个世界。</p>
+<p>九十九次寻找。</p>
+<p>九十九次十指相扣。</p>
+<p>同一个女人，为了同一个男人，学会了锻造、剑术、权谋、航海、医术、绘画……用九十九段人生，把清单上的九十九个身份，一个一个，变成了自己。</p>
+<p>“你……”女神的声音第一次失去了那种居高临下的从容，”你花了九十九世……就为了钻这一个空子？”</p>
+<p>“空子？”凛歪了歪头。</p>
+<p>时至今日，她的容貌依然是二十岁的模样——每一次轮回都会重置肉体。但那双清澈的眼睛里，沉淀着数千年的岁月。</p>
+<p>“规则是您定的，女神大人。”她说，”您只说了要攻略一百个身份的女人。”</p>
+<p>“您可从来没说过——不许那些女人都是他的妻子。”</p>
+<p>女神的脸色阴沉了下去。</p>
+<p>空间开始震颤。纯白的世界泛起浑浊的波纹，圣洁的光芒扭曲、翻涌，露出其下狰狞的本质。她精心设计的游戏、她期待了不知多少岁月的好戏——一个丈夫的背叛，一个妻子的心碎，一段爱情在轮回中腐烂殆尽的全过程——</p>
+<p>什么都没有发生。</p>
+<p>这两个凡人非但没有被拆散，反而在九十九世的轮回中，把彼此的灵魂缠得更紧了。紧到连神明的目光都插不进去。</p>
+<p>“好……好啊。”</p>
+<p>女神忽然笑了。</p>
+<p>笑声越来越大，在无边的空间中层层回荡，圣洁的嗓音里透出冰冷的、毫不掩饰的恶意。</p>
+<p>“真是感人至深呢，凡人的爱情！九十九世的坚守！可歌可泣！”</p>
+<p>她抬起手，清单最后一行被隐去的文字，缓缓显现。</p>
+<p>“那么——就让我来告诉你们，第一百项任务是什么吧。”</p>
+<p>金色的文字在虚空中燃烧：</p>
+<p><strong>【任务一百：女神】</strong></p>
+<p>“看到了吗？”她俯视着两个渺小的凡人，笑容灿烂得近乎癫狂，”最后一个需要攻略的女人——是<em>我</em>。”</p>
+<p>“让一位神明爱上凡人？哈哈哈哈——从一开始，这场游戏就不可能通关！你们那九十九世的轮回、九十九世的苦难、九十九世的坚守——全都是徒劳！全都是我消遣时光的余兴节目！”</p>
+<p>她张开双臂，神力如潮水般碾压而下。</p>
+<p>“现在，按照契约——任务失败。桐谷凛，你的灵魂将会消散，从这个宇宙的一切记忆中被抹除。而你，桐谷让，将带着失去她的记忆，永远——“</p>
+<p>“女神大人。”</p>
+<p>凛打断了她。</p>
+<p>语气平静得像在打一声招呼。</p>
+<p>女神的话语顿住了。她看到那个女人松开了丈夫的手——九十九世以来，这双手第一次在她面前松开——然后从怀中，缓缓抽出了一样东西。</p>
+<p>一把匕首。</p>
+<p>漆黑的刀身，没有任何光泽，仿佛能吞噬一切光线。刀柄上缠绕着早已干涸的、暗金色的血迹——那不是凡人的血。</p>
+<p>女神的瞳孔骤然收缩。</p>
+<p>她认得那个东西。</p>
+<p>那是在第七十二世——那个刺客的世界里，沉眠于古代神战遗迹最深处的禁忌之物。就连她当初设计那个世界时，都以为它只是一个无人能够取得的传说。</p>
+<p><strong>弑神匕首。</strong></p>
+<p>“你们……什么时候……”</p>
+<p>“第七十二世。”让开口了。</p>
+<p>九十九世以来，他在女神面前说的话屈指可数。此刻他向前一步，与妻子并肩而立，脸上带着笑——那笑容让女神感到一种久违的、几乎已经遗忘的情绪。</p>
+<p>寒意。</p>
+<p>“说实话，我们很早就猜到了。”让说，”一个以戏弄凡人为乐的神，怎么可能设计一个真的能通关的游戏呢？清单的最后一行被藏起来的那一刻，我们就在想——最后那个’女人’，八成就是你自己。”</p>
+<p>“所以从第七十二世开始，我们做了两手准备。”凛接着说。她掂了掂手中的匕首，动作娴熟得可怕——那是当过刺客、当过勇者、当过将军的手，”如果最后一项任务还有一丝可能完成，我们就正大光明地完成它。”</p>
+<p>“但如果——“</p>
+<p>夫妻二人对视一眼。</p>
+<p>九十九世的默契，在这一眼中流转。</p>
+<p>“——如果你从一开始就没打算让我们赢。”</p>
+<p>凛握紧了匕首。</p>
+<p>让握紧了拳头——他的掌心亮起了第十九世学会的圣光、第三十四世学会的斗气、第八十八世炼成的药毒，九十九世的传承在这具灵魂中层层苏醒。</p>
+<p>“那么，规则就由我们来改写。”</p>
+<p>女神后退了半步。</p>
+<p>至高无上的、永恒不灭的、以凡人为玩物的神明——后退了半步。</p>
+<p>然后她看到那个男人笑了，笑得畅快淋漓，笑声响彻整个崩解中的白色空间：</p>
+<p>“攻略女神什么的，太麻烦了——“</p>
+<p>“——那么，就让新神诞生吧！”</p>
+<p>夫妻二人同时踏地而起。</p>
+<p>九十九世的轮回化作他们身后燃烧的光影——挥锤的铁匠、屠龙的勇者、加冕的女王、破浪的海盗、执灯的祭司……九十九个身影与他们重叠，向着那位圣洁而残忍的神明，发起了最后的冲锋。</p>
+<p>弑神的黑刃，划破了永恒的白。</p>
+<p>女神的怒吼、神力的风暴、崩塌的空间、以及两只在光芒尽头依然朝着彼此伸出的手——</p>
+<p>一切，都被那道刺目的闪光吞没了。</p>
+<hr>
+<p><strong>——公元20XX年，日本，某市。</strong></p>
+<p>那天的天气预报说是晴。</p>
+<p>的确是晴天。阳光温柔地铺洒在玄关的地砖上，像一层薄薄的蜂蜜。</p>
+<p>“阿让，领带歪了。”</p>
+<p>妻子的指尖轻轻触上他的衣领。</p>
+<p>桐谷让低下头，看着面前的女人。四十岁的她，眼角有些许细纹，额前有几缕白发，那双眸子清澈得像山间溪流。</p>
+<p>他握住了她正在整理领带的手。</p>
+<p>两人对视。</p>
+<p>谁也没有说话。</p>
+<p>窗外，晨光正好，微风不燥。日历上的日期，是那场地震发生的三天前。</p>
+<p>良久，凛忽然弯起眼睛，笑了。</p>
+<p>“……这一世的天气，好像不错呢。”</p>
+<p>让也笑了。他把她的手贴在自己的心口，那里传来沉稳而温热的跳动。</p>
+<p>“是啊。”</p>
+<p>“毕竟——是我们自己定的规则。”</p>
+<hr>
+<p><strong>（完）</strong></p>
+<hr>
+<p><em>后记</em></p>
+<p><em>据说，在很远很远的地方，有一个纯白的空间。</em></p>
+<p><em>那里曾经住着一位以戏弄凡人为乐的神明。</em></p>
+<p><em>现在，那里空无一人。</em></p>
+<p><em>只有一张写满了字的清单，静静地飘浮着。清单的最后一行，不知被谁用歪歪扭扭的字迹划掉了原本的内容，改成了这样一句话：</em></p>
+<p><em><strong>【任务一百：与你共度余生——永久进行中】</strong></em></p>
+<p>评价：AI味道很浓，但是完成度不错，差强人意。</p>
+<h2 id="ds-v4-pro-1"><a href="#ds-v4-pro-1" class="headerlink" title="ds v4 pro"></a>ds v4 pro</h2><p><strong>《轮回九十九次，我依然选择爱你》</strong></p>
+<hr>
+<p><strong>【序章：死后的重逢】</strong></p>
+<p>痛。</p>
+<p>那是坠落的瞬间，地面急速逼近，耳边是妻子惊恐的尖叫。然后——世界陷入黑暗。</p>
+<p>意识重新凝聚时，我站在一片纯白的空间里。没有上下左右，没有远近高低，脚下仿佛踩着看不见的水面，每一步都泛起涟漪般的光纹。</p>
+<p>“翔太……”</p>
+<p>熟悉的声音从身后传来。我猛地转身——</p>
+<p>她站在那里。</p>
+<p>不是记忆中最后那个与我一同被天花板砸中的、三十七岁的由美，而是十七岁的她。高中校服的裙摆微微飘动，及肩的黑发被不知从何而来的风吹起，露出那张让我一见钟情的脸庞。</p>
+<p>“由美……”</p>
+<p>她也一样。站在她面前的我，是十八岁的模样。穿着那件她曾说“看起来最帅”的深蓝色校服外套，连手指上打篮球留下的茧都清晰如初。</p>
+<p>我们同时迈步，同时伸手，同时将对方拥入怀中。</p>
+<p>生前的记忆翻涌而来。十五岁相识，十七岁告白，二十二岁结婚，然后是一起度过的十五年。没有孩子，但我们从未觉得遗憾，因为拥有彼此就足够了。每个清晨醒来看见她的睡颜，每个夜晚依偎在沙发上看着无聊的电视节目，每个周末手牵手去超市采购——这些细碎的幸福堆叠起来，就是我们的全部。</p>
+<p>“原来死后的世界，是这样的啊。”由美在我怀中轻声说，没有恐惧，只有恍然。</p>
+<p>我正要回答，纯白的空间忽然被撕裂。</p>
+<p>金色的光芒从天而降，一道身影缓缓浮现。那是一位极美的女性，身披流光织就的长袍，长发如星河倾泻，面容庄严而神圣。她的出现让整个空间为之震颤，无形的威压让我几乎想要跪下。</p>
+<p>女神。</p>
+<p>这个词自然而然地浮现在脑海中，仿佛它一直就在那里，等着被唤醒。</p>
+<p>“欢迎，凡人的灵魂。”</p>
+<p>女神开口了。她的声音动听至极，却带着某种……让人不安的愉悦。就像孩子发现了一窝蚂蚁，正思考着该用放大镜聚焦阳光，还是该浇上一壶开水。</p>
+<p>她在笑。</p>
+<p>明明是圣洁无比的笑容，我却感到一阵寒意爬上脊背。</p>
+<p>“你们很相爱，对不对？”女神歪了歪头，“真有趣。”</p>
+<p>“有趣”这个词，从一位神灵口中说出，比任何诅咒都令人胆寒。</p>
+<hr>
+<p><strong>【第一章：女神的游戏】</strong></p>
+<p>“那么，让我来说明规则吧。”</p>
+<p>女神轻轻挥手，一面光幕凭空展开。上面密密麻麻写满了字，我勉强辨认出那似乎是某种名单。</p>
+<p>“你需要完成一百次攻略任务。”女神指向我，语气轻快得像在宣布游戏规则，“你将进入一百个不同的世界，在每个世界里，你必须让指定目标爱上你。完成全部任务，你和你心爱的妻子就能复活，回到你们原本的生活中去。”</p>
+<p>我的心沉了下去。</p>
+<p>“如果拒绝呢？”</p>
+<p>“拒绝？”女神像是听到了什么好笑的事情，掩着嘴笑出了声，“你当然可以拒绝。只是……”</p>
+<p>她的目光移向由美。</p>
+<p>那一瞬间，我看见由美的身体变得透明，仿佛随时会消散。她的表情凝固在惊恐上，嘴唇翕动着却说不出话来。</p>
+<p>“你的妻子会死哦。”女神轻轻松松地说出了这句话，“不是你们经历的那种‘死’，是真正的消亡。灵魂的湮灭。永远、永远地消失。”</p>
+<p>“住手！”</p>
+<p>我冲上前，但无形的屏障将我弹了回来。由美重新变得凝实，大口大口地喘着气，眼泪不受控制地滑落。</p>
+<p>“你看，这样就对了嘛。”女神满意地点点头，“乖乖听话，大家都开心。”</p>
+<p>她弹了下手指，光幕上的名单开始滚动。我看见了那些头衔——</p>
+<p>女铁匠。女勇者。女王。女刺客。女贤者。女祭司。女商人。女海盗。女将军。女魔导师……</p>
+<p>一百个。整整一百个。</p>
+<p>“每完成一个任务，你会自动进入下一个世界。你的记忆会被保留，但目标对你的感情会在任务完成后被重置——公平起见，对不对？”女神笑眯眯地说，“哦对了，你妻子可以跟着你一起轮回，但她不能直接帮你。她会随机获得一个身份，也许是路人，也许是你的邻居，谁知道呢？”</p>
+<p>我握紧了拳头。</p>
+<p>“如果我失败了？”</p>
+<p>“很简单。”女神竖起一根手指，“只要在任何一世的轮回中，你没能让指定目标爱上你——你妻子就会消失。永永远远。”</p>
+<p>“这不公平！”</p>
+<p>“公平？”女神的神情第一次冷了下来，“凡人，你搞错了一件事。这不是交易，不是考验，甚至不是惩罚。这只是——”</p>
+<p>她笑了。那笑容美得令人窒息，也残忍得令人发指。</p>
+<p>“——一场游戏。我的游戏。”</p>
+<p>纯白的空间开始崩塌，无数世界的碎片如万花筒般旋转。我下意识地抓住由美的手，她也紧紧地回握住我。</p>
+<p>“翔太……”</p>
+<p>“别怕。”我在她耳边说，“不管多少次轮回，不管多少个世界，我一定会完成任务。我一定会带你回家。”</p>
+<p>“好感人啊。”女神的声音渐渐远去，“那就让我好好欣赏吧。欣赏你们的爱，是如何在无尽的轮回中被磨损、被玷污、被遗忘的。毕竟——”</p>
+<p>她最后的话语像诅咒一样烙印在我的灵魂深处。</p>
+<p>“——凡人的爱，最经不起考验了，不是吗？”</p>
+<p>世界天旋地转。我紧紧握着由美的手，直到最后一刻。</p>
+<p>然后是漫长的黑暗。</p>
+<p>当我再次睁开眼睛时，眼前是一间破旧的铁匠铺。炉火正旺，铁砧上放着一柄半成的长剑，锤子就搁在手边。</p>
+<p>我是铁匠铺的学徒。</p>
+<p>而我的任务目标——</p>
+<p>“新人，发什么呆？”一个粗犷的女声响起，“今天的订单还没完成呢！”</p>
+<p>我转过身。一个高大健壮的女人站在门口，手臂上肌肉结实，脸上沾着煤灰，一双眼睛却明亮如星。</p>
+<p>我的第一世攻略目标。</p>
+<p>女铁匠。</p>
+<hr>
+<p><strong>【第二章：九十九世轮回】</strong></p>
+<p>时间在轮回中失去了意义。</p>
+<p>第一世，我成为了铁匠铺的学徒。女铁匠名叫艾琳，脾气暴躁却心地善良。我花了三年时间学会打铁，又花了两年时间让她意识到，这个笨拙的学徒看她的眼神早已不只是尊敬。</p>
+<p>在我终于牵起她的手那天晚上，我站在铁匠铺的后院，仰望星空。</p>
+<p>由美。你在哪里？</p>
+<p>我不知道。</p>
+<p>这一世里，我没有找到她。</p>
+<p>任务完成的瞬间，世界崩塌。艾琳的笑容凝固在脸上，然后化作光点消散。我的心隐隐作痛——那是真实的感情，即使是虚假的世界，三年的朝夕相处也绝非虚幻。</p>
+<p>但下一秒，我就站在了另一个世界。</p>
+<p>勇者小镇，魔兽环伺。目标：讨伐魔王的勇者，大陆最强的女剑士。</p>
+<p>第二世开始了。</p>
+<p>然后我发现了一件事。</p>
+<p>镇上唯一的药草店有个奇怪的店员。她很年轻，总是低着头干活，沉默寡言。但每次我从店门前经过，她都会恰好抬起头，与我对视一眼。</p>
+<p>那双眼睛。</p>
+<p>即使容貌改变，即使身份迥异，我还是一眼就认了出来。</p>
+<p>由美。</p>
+<p>我们的目光在空中交汇，千言万语尽在其中，然后她微微摇头——不要过来，不要相认，去完成你的任务。</p>
+<p>我咬着牙，转头走向勇者公会。</p>
+<p>那一天，我在无人的小巷里狠狠地砸了墙壁，直到指节流血。</p>
+<p>第二世的攻略持续了七年。女勇者莉娜是个倔强而孤独的人，她的剑能斩断一切，心却筑着高墙。我与她一同讨伐魔物，一同在篝火旁守夜，一同在生死关头将后背交给对方。</p>
+<p>渐渐地，她会在战斗后靠在我肩上休息。渐渐地，她会在出发前特意检查我的装备是否齐全。</p>
+<p>在我成功的那一天，莉娜终于说出了那句话。她红着脸，别扭地移开视线，手中名震大陆的圣剑剑尖却在地上画着圈。</p>
+<p>而我看见了。</p>
+<p>庆功宴的人群之外，那个药草店的店员安静地站着。她微笑着，眼眶却红了。</p>
+<p>我几乎要冲出人群抱住她。</p>
+<p>但世界再次崩塌。</p>
+<p>第三世。攻略对象是北方王国冰雪中的女王。</p>
+<p>这一次，由美是女王身边最受信任的女仆长。</p>
+<p>她教会我宫廷礼仪，告诉我女王的喜好与忌讳，甚至帮我设计了几次“偶遇”。我们像两个共谋者，在无人的走廊里低声交换情报，手指在宽大的袖袍下偷偷交缠几秒，然后迅速分开。</p>
+<p>“坚持下去。”她总是这样说，“我会一直在。”</p>
+<p>于是我坚持了下去。</p>
+<p>从一介流浪骑士，到女王的近卫队长，再到女王唯一愿意吐露心声的人。这一世格外漫长——十五年。</p>
+<p>十五年间，我看着由美的容颜从青春变为成熟，鬓角甚至添了几缕白发。</p>
+<p>而女王，那个在臣民面前冷若冰霜的女人，终于在一个雪夜，将头轻轻靠在了我的肩上。</p>
+<p>“你赢了。”她低声说。</p>
+<p>世界崩塌。</p>
+<p>然后是第四世、第五世、第六世……</p>
+<p>女刺客。这一世由美是刺客公会的联络人，她教我用毒、潜行、暗杀术，让我能接近那位从不信任任何人的女刺客。攻略成功的那天，她亲手为我包扎伤口，笑着说“干得漂亮”。</p>
+<p>女贤者。由美是图书馆的管理员，帮我翻阅了无数典籍，找到贤者千年前失传的师门心法，让我以此为契机走进了那位活了千年的女人的心。</p>
+<p>女海盗。由美是酒馆的舞娘，为我收集情报，在一次海战中甚至替我挡了一发流弹。那一世结束后，我在新世界里哭了很久。</p>
+<p>女将军。女王。女教皇。女商人。女铸剑师。女魔导师。女驯龙使。女占卜师……</p>
+<p>一世又一世。</p>
+<p>我在不同的世界里扮演不同的角色——士兵、商人、吟游诗人、流浪剑客、宫廷画师、敌国间谍。我学会了一百种武器的用法，精通了几十种魔法体系，说得出一百个国家的外交辞令，背得出上千种珍贵的古籍。</p>
+<p>但更重要的是，由美也在学习。</p>
+<p>每一世，她都选择能最接近攻略目标的身份。她用一世学会了锻造，能用普通的铁块打出屠龙的神兵。她用一世学会了剑术，在陪我讨伐魔王的路上斩杀的魔物不比勇者少。她用一世学会了治国，当我与女王周旋时，她在幕后帮我摆平了三次政变。</p>
+<p>一次轮回结束后，在世界的间隙，在那短暂的黑暗里，我们会有片刻的相拥。</p>
+<p>“辛苦吗？”我总是这样问。</p>
+<p>“不辛苦。”她总是这样回答，然后笑着加一句，“比当家庭主妇有意思多了。”</p>
+<p>我们都笑了。</p>
+<p>但我们都知道，这份轻松的玩笑背后，是九十九世轮回的沉重。</p>
+<hr>
+<p><strong>【第三章：最后的答案】</strong></p>
+<p>不知过了多久。</p>
+<p>对于女神来说，或许只是一瞬。但对于我们，已是九十九世。</p>
+<p>女神坐在她的神座上，忽然感应到了什么。</p>
+<p>“哦？”她挑起眉毛，“那个凡人居然活到了现在？而且……九十九个任务，全部完成了？”</p>
+<p>她有些意外。</p>
+<p>按照她的预想，那个男人应该在第十世左右崩溃，要么放弃，要么在某一世失败，然后他心爱的妻子就会永远消失。而他本人，大概会被愧疚和痛苦折磨得发疯吧。</p>
+<p>“有点意思。”</p>
+<p>女神笑了起来。</p>
+<p>“就算他没有背叛妻子，经历了这么多世界，这么多不同的女人，他的心怎么可能还停留在最初的那个人身上呢？那个妻子大概也早就心生怨恨了吧——亲眼看着自己的丈夫一次又一次地去追求别的女人。”</p>
+<p>她越想越觉得有趣。</p>
+<p>“说不定，他们已经互相憎恨了呢。毕竟，凡人的感情那么脆弱。”</p>
+<p>女神挥了挥手。</p>
+<p>召唤。</p>
+<p>两道身影出现在神座之前。</p>
+<p>男人还是最初那个十八岁少年的模样，但他的眼神变了。九十九世的记忆沉淀在眼底，让那双眼眸深邃得如同古井。他站在那里，姿态放松，却又像是随时能拔出武器。</p>
+<p>女人——他的妻子——还是十七岁时的样子。但她的气质截然不同了。她的站姿带上了铁匠的沉稳、勇者的锐利、女王的威严、刺客的机敏。九十九世学来的一切，都融入了她的骨血。</p>
+<p>他们并肩而立。</p>
+<p>自始至终，他们都没有分开过半步。</p>
+<p>女神皱起了眉。</p>
+<p>这不对劲。</p>
+<p>她翻开了任务记录。</p>
+<p>第一世，攻略对象：女铁匠。攻略者：翔太。</p>
+<p>被攻略者好感度：100（满值）。</p>
+<p>特殊记录：任务期间，攻略者与一名药草店店员（随机身份编号738291）有过327次目光接触，128次短暂交谈，11次深夜秘密会面。</p>
+<p>女神的笑容僵住了。</p>
+<p>第二世，攻略对象：女勇者。攻略者：翔太。</p>
+<p>被攻略者好感度：100。</p>
+<p>特殊记录：攻略者与目标身边的女仆长（随机身份编号938472）在无人的走廊有过49次手指交缠。该女仆长在最终战役中为攻略者挡下致命攻击，受伤部位距离心脏仅两厘米。</p>
+<p>笑容开始崩裂。</p>
+<p>第三世，第四世，第五世……第九十九世。</p>
+<p>每一世的记录都在重复着同样的事。</p>
+<p>攻略对象确实不同，好感度确实都达到了一百，但那个男人的心——</p>
+<p>“攻略人数：1。”</p>
+<p>女神盯着那个数字，瞳孔收缩。</p>
+<p>“这不可能。”她喃喃道，“这绝对不可能！”</p>
+<p>她猛然抬头，怒视着那对夫妻。</p>
+<p>“你们——”</p>
+<p>但当她看清两人的姿态时，话卡在了喉咙里。</p>
+<p>男人的手很自然地搭在女人腰间。女人的身体微微向他倾斜，重心倚靠在他身上。他们的呼吸频率一致，心跳节奏相同。男人微微动了动手指，女人就仿佛读懂了什么，轻轻点了点头。</p>
+<p>这不是热恋中的甜蜜。</p>
+<p>这是九十九世并肩作战才能磨出来的默契。</p>
+<p>女神忽然明白了。</p>
+<p>她以为自己看到了全部。</p>
+<p>她错了。</p>
+<p>她只看到男人让一百个女人爱上了他。</p>
+<p>她没有看到——</p>
+<p>为了让丈夫能接近那位只打造神兵的女铁匠，妻子学会了锻造。她花了三十年，从一个娇弱的女孩变成了能用锤子砸碎铁砧的女人。手上全是茧，肩膀宽了一圈，累到几乎站不起来。但她完成了任务。她的丈夫以“订制兵器”为由接近了女铁匠，然后用了五年时间，让那个脾气暴躁的女人动了心。</p>
+<p>为了让丈夫能接近那位只想嫁给强者的女勇者，妻子学会了剑术。她比他更早进入那个世界，拜入了退役勇者的门下。当她丈夫到来时，她已经是一位实力超群的剑士了。她成了他的“同伴”，陪着他和女勇者一起踏上讨伐魔王的旅途。一路上，她替他挡了数不清的攻击，最严重的一次，魔龙的利爪几乎撕开她的胸膛。</p>
+<p>为了让丈夫能接近那位孤独的女王，妻子学会了权术与谋略。她伪装成邻国的流亡贵族，被女王收留，然后用了二十年时间一步一步成为女王的心腹。是她告诉丈夫女王的喜好，是她为丈夫制造了一次又一次“偶然”，是她在丈夫终于成功后，默默地退到阴影里，把舞台让给那个坐在王座上的女人。</p>
+<p>一世又一世。</p>
+<p>铁匠、勇者、女王、刺客、贤者、祭司、商人、海盗、将军、魔导师……</p>
+<p>每一次，妻子都选择了能最接近丈夫任务目标的身份。</p>
+<p>每一次，她都用自己的方式，为丈夫铺平道路。</p>
+<p>她在每一世都与丈夫偷偷相爱。</p>
+<p>他们把这份爱藏得很深——藏在无人角落的匆匆一瞥里，藏在擦肩而过时手指的短暂触碰里，藏在深夜密会时压抑的低语里。</p>
+<p>“再坚持一下。”每一次她都这样说。</p>
+<p>“我会的。”每一次他都这样回答。</p>
+<p>然后，当他们回到世界的间隙，在那短暂的黑暗中，他们会紧紧拥抱，像要把对方揉进骨血里。</p>
+<p>他们没有背叛彼此。</p>
+<p>从来没有。</p>
+<p>女神看着这一切，脸色越来越难看。</p>
+<p>但忽然间——</p>
+<p>她笑了。</p>
+<p>“有意思。”她说，“真有意思啊，凡人们。九十九世，九九八十一难，你们居然真的走到了这一步。”</p>
+<p>她的笑容变得危险起来。</p>
+<p>“但是，你们是不是忘了什么？”</p>
+<p>她轻轻挥手，光幕再次展开。</p>
+<p>名单的最后一行，那个一直笼罩在迷雾中的名字，终于显现出来。</p>
+<p>第一百个攻略对象——</p>
+<p>女神。</p>
+<p>正是坐在他们面前的这位。</p>
+<p>“从一开始，我就在名单上。”女神愉快地说，“从一开始，这个任务就不可能完成。因为——”</p>
+<p>她张开双臂，神威浩荡。</p>
+<p>“我，永远不会爱上凡人。”</p>
+<p>空间震动。由美下意识地握紧了拳头，翔太却轻轻按住了她的手。</p>
+<p>“是这样吗？”翔太说。</p>
+<p>他的语气很平静。</p>
+<p>太平静了。</p>
+<p>女神微微眯起眼睛。</p>
+<p>“你不惊讶？不愤怒？不绝望？”</p>
+<p>翔太没有回答。</p>
+<p>他只是转向由美，两人对视了一眼。</p>
+<p>那一瞬间，九十九世的记忆在他们之间无声流淌。铁匠铺的炉火，讨伐魔王的征途，冰雪王国的宫殿，海盗船的风暴，刺客公会的暗巷，贤者塔的书架，教皇厅的圣光……</p>
+<p>他们一起走过的路。</p>
+<p>他们一起学会的一切。</p>
+<p>然后，由美笑了。</p>
+<p>她从怀中取出了一把匕首。</p>
+<p>那把匕首非常普通，看起来就像任何一个铁匠铺都能打出来的便宜货。刃口暗淡无光，刀柄没有任何装饰，简直就像是——</p>
+<p>“新手习作。”翔太说，“由美学打铁第一年的作品。”</p>
+<p>女神的笑容凝固了。</p>
+<p>“你……你们……”</p>
+<p>“你知道吗？”翔太缓缓开口，语气轻松得像在聊家常，“我们在第三十七世的时候，攻略对象是世界上最强的附魔师。她的附魔术能让任何武器获得弑神的属性。唯一的限制是，需要使用者献祭全部的生命力。所以没有人愿意打造这种武器——毕竟，谁会想跟神过不去呢？”</p>
+<p>“但是。”由美接过了话，她的声音同样平静，“如果本来就已经死了呢？”</p>
+<p>女神终于变了脸色。</p>
+<p>她猛地后退，神座发出刺目的光芒。但已经晚了——</p>
+<p>翔太和由美同时握住了那把匕首。</p>
+<p>九十九世的记忆，九十九世的磨砺，九十九世从未动摇的爱——</p>
+<p>全部，灌注其中。</p>
+<p>“弑神。”翔太说。</p>
+<p>“然后。”由美说。</p>
+<p>“成为新神。”两人异口同声。</p>
+<p>匕首亮了起来。</p>
+<p>不是神明的金光，不是魔力的荧光，而是一种温暖的颜色——就像铁匠铺炉火映照在彼此脸上的光。就像夜晚归家时，窗口亮着的那一盏灯。</p>
+<p>女神想要逃离。</p>
+<p>但她动弹不得。</p>
+<p>因为那把匕首，那把由一个普通女人在第一世学会打铁时铸造的粗劣匕首，正散发出比她的神威更强大的力量。</p>
+<p>凡人之爱。</p>
+<p>九十九世轮回，不曾磨损，不曾玷污，不曾遗忘的——</p>
+<p>凡人之爱。</p>
+<p>“不——”女神尖叫道。</p>
+<p>然后，那对夫妻一起冲了上去。</p>
+<hr>
+<p><strong>【尾声：新世界的黎明】</strong></p>
+<p>没有人知道那一战的结果。</p>
+<p>有人说，弑神匕首刺穿了女神的胸膛，那对夫妻成为了新的主神，从此掌管万千世界的轮回。</p>
+<p>有人说，他们与女神同归于尽，三者的灵魂碎片散落各处，在每一个世界里都会相遇、相爱、相杀，循环往复，永无止境。</p>
+<p>还有人说，他们成功了，但他们放弃了成为新神的机会。他们选择回到最初的世界，回到那栋小小的公寓，回到那个阳光明媚的早晨——天花板没有塌下来，他们只是睡过头了，匆匆忙忙地出门上班，在玄关交换了一个匆忙的吻，然后普普通通地度过了余生。</p>
+<p>到底哪个结局是真的？</p>
+<p>不重要了。</p>
+<p>重要的是——</p>
+<p>某个世界里，某个铁匠铺新来了一个笨拙的学徒。他什么都不会，连风箱都拉不好。但他的目光总是追随着女铁匠的身影。</p>
+<p>铺子对面开了一家花店。花店的女主人很年轻，有事没事就往铁匠铺跑，送些花花草草，顺便嘲笑学徒笨手笨脚。</p>
+<p>“你们两个，很般配嘛。”女铁匠有一天这样说。</p>
+<p>学徒和花店女主人同时愣住了。</p>
+<p>然后，他们相视一笑。</p>
+<p>那个笑容里，藏着只有他们才懂的秘密。</p>
+<p>毕竟——</p>
+<p>无论轮回多少次，无论世界如何变迁，无论他们是十八岁还是八十岁，是学徒与花店店主还是别的什么身份。</p>
+<p>他们都会找到彼此。</p>
+<p>他们都会爱上彼此。</p>
+<p>一次又一次。</p>
+<p>直到永远。</p>
+<p><strong>【全书完】</strong></p>
+<hr>
+<p><em>创作后记：</em></p>
+<p><em>这篇作品的核心设计在于反转——女神以为自己在玩弄凡人的感情，却没料到九十九世的轮回非但没有磨灭两人的爱，反而让这份爱淬炼得足以弑神。每一次反转都建立在“纯爱”的基盘上：不是男主背叛了女主，而是女主以不同的身份，在每一世都与男主共同完成了任务。这种“你以为我在攻略别人，其实我攻略的始终是你”的设定，正是纯爱题材最动人的浪漫所在。结局的开放性处理也给了读者想象空间——无论他们最终成为新神，还是回归平凡，那份爱本身已经超越了神明的权柄。</em></p>
+<p>没什么好说的，依旧是肥波完胜，但是ds v4凭借压倒性的性价比更加大胜，要什么自行车。</p>
+</p>
+</details>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer"><div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">---------文章结束啦~有什么想评论的吗？---------</div>
+    
+</div>
+
+<!--
+<br><a target="_blank" rel="noopener" href="https://notbyai.fyi"><img src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIMAAAAqCAYAAACQjuhAAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAf/SURBVHgB7ZzrURtJFIVbW/vfOAIgAtsRABEYRwBEAERgHAEiAiAC4whsIgBHAI4AMtD2N6ujOlz3SDMjsV5Jc6puwcz0u++7GwYppVHqsWp4znQ/pttMN00qDTKNMlKP1cHz83O6v7+v6Nu3b+nHjx+P+fVVputMj9PqjnqsNh4eHkaHh4dI/EOmwzpG6DXDGuHx8THt7e3xc5gfT+P3v1KPtcHW1la6u7tL+/v7J/nxMn7vmWHNsLGxkb5+/ZoODg4O8+O5f+vNxJoCJ/PDhw+YDMwFZmN5mIHBQ0J2iNLV1dXkGY6HIlCN2MoSdnd38bTTly9fJm1kZyu9ffu2+v34+Djd3Nyknz9/pjpsbm5WY1lGEG1khmBRtzM9L42ZYODX19cT+vXr14tnNm2etrPanIRjOzs7EwYiNNMzG8/vTvS9rHj//j2MjAThQyyPz4AUM3htEs9AGqNOOmEa1yjC0dFR9e3s7Kx6RkN8/PhxUhbmAGw4fdEvjOEMiNbh+zLj8+fP/DjOtLFQM8GCsmBIqat1NhFigbWJXYBZQGXTlsAmQZeXl8XxfPr0KQ2Hw8nmOqKZ8DbB+fn5xPQQksU+6kzTsoG55XXY+zstACwoklZnm6V+2UykCWksbU4T0IdvQEnqBaSXDaXf2B/10Aynp6cTdc/YMAV8o7z6Yez060xDGWeWZUYONdnD/bmZgcVE8gALg7p+9+5dJb08s2hSsWgMfqcMC8xitgVtsmHCmzdvigzhGoONhmHdtMC8ADXJWNQuDIH24af3SXzuG4/GWQVGAGNTtzOXmSA0YSEBnjcSP22BJF2KAmAYFrkJqANDqZ7AxrLRcPfY/lVgs5kkjEe/bN73799fjA/mgJEvLi4mDAFRnj5gVtopMRvlNQ7aXWYwvxxBVZMcdcHJyQkcNMqLN8rS16ZqVZ561KedJnh6ehplxqly7HmTqnw7z3lDR5lRqmeVo83MGL/1maV9Ug5kZnlRh/byxlZ9eLnSWOh3lZDGp9ejtmBhx5VbM0KpDTZgFtgsKJZl02iLDQRilhIoyyaymVkjjLI2qRhAP70c7yhXqg/lLN5oldCZGZAw6mkDukLahfZ6/Fl0YgYkU+YhqlK+IaUuZQLvIZc2fpe5aKIderweOjHD+Fy8qBX0LTuSdZ39xkDSDk19hx6vA/agdQZS0QPZukWAMBR0SSdTB2+faAAQcfhzEzAfohFIc4sgulAZp7ryREx8V+KNpA7UNWXOfKhPRKQ7Ca+VBm/NQVDJFOBUoRVKKp/3UHTKaCeNzU5b0B515dlLM7Xx9GWmpo1B/UQq9YPmS+Zc+zNRTxdoXvhWPpaSBu4K2uucdCrlE4j1oRI8B1BqZ1omUbi9vZ2cJYBpGU+kx/vgDD+CvIX3q5zFPClzl9i27cS0uCANpLHqJJb3aA1yPItCKw6SJNVphlmIWkOaock4PBxNBQmVBEWqi1YIH2PZku+CdDPunGR6IfWlNVCkpX79mbXTOxEhrlAa+yxaVCSWumgGpX/jgRFcjdSS8YsHUpTHXiot7GcFnA8Ab6sOlHHNINsdgeT4KWZJi2lMahdJ4x1ji2ly2oNi9tJT1gApdW0VNVe8k6F3EfEAzOvFPuPzPGjNDDoF1B0AYTROabOYSjdroL4oTDL7DZNn35BZ0Omno44Z6sxS7BforIRxdzUVzFFnNN4/7XF+o37ikXdp3vGUVY4xIH2vq/CMcdHnI63UiecZShk6VLU7ZclUJClir0P5NnkGyruKVd2SmahTxQJ1koW7boLqwtxYx4GJlEmI2czU0IFMZvaYiyj7BC/6dYdyUUjzZiCn5QaU54fq8vxtJ+ULm1r4DNHr9nbwA4AnwEqMDqYxg9qA8fgmkvBA8VtsI9X4BaTXk/kqGue8GeBC3+2ZwSfYNVyink+wCVhsMZgOlErMwAZ7ubjodVrAN7ukqWYxA/C1mUVRCKJm8LGIAdyJnXaY1ha0R9LpuUlY58BW5UWsfudn2wQI5VWfsKjphVLGqSNmHNi6pA+Q01dysHy8ut8IuZ/wX99tjJd9460qzUNzpswinUfhrhQiNYFz6axjX6Cj4hRUdFNsbm4WJUzSXWcmkkl6nalJBR8nmoommiFqL3wJH6d/83X3EFtj9WdfN/W/aM0AMwxLDlZT+CBZQDaEBWByunOAWqacO5Y4RW2hvEB0ULV4TZiBuTZhhlQwgU2YIaKpA+nmhXlGc+DrLOZnHRaVhRQz7M57UUMXR5osMOW6nlCKwTwKcbvrPkR01CTlvshENzpNFTlDaV2oq7sMzlwlJzOiKTN4mtl9GuYXtQJjnCeNX4KYgUD1aREqR06dL7iybqWLKV2A1nGv38c962zCVXFdBMMGR1PR5Gyiqfmp00ASJl2+gSFgVl/LKFTT5toWYgZwtsgw5bXgqpSNir7OLGZwCZs2X9cAmJXXZgb60ObGyConn6r3MAXzjczR9aZZBG0NxsyAdnjInW00yQT+SZCNw9PH247etI6OORZXNtDBN/8jnDpv3MspDV2KXHivgzlPb7eFMolkGUmF+7hol7kQfem2udLeuvC7CAwGgzSw55M8iPN4JbzHegBm8Mstw8xtF8qj91g/DArvrrLqO0AN9xpifRDNhGOYTcYxfxzyGlmuHv8/RDPhOMkm42h7e/tx2t9Q9lgtDGZ830r//newg+zxbuE5+99R9lgdTDMTJRBD7WbiOjPxZ88NK4Z/AB88ZArsyuJXAAAAAElFTkSuQmCC></a><br>
+-->
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+
+          <span class="label">RSS</span>
+        </a>
+      </div>
+  </div>
+</div>
+
+
+        
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/5172.html" rel="prev" title="二周目了">
+                  <i class="fa fa-chevron-left"></i> 二周目了
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2022 – 
+  <span itemprop="copyrightYear">2026</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">晴雀</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">367k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">5:33</span>
+  </span>
+</div><!--
+<div id="ft">
+  <div class="ft-item-1">
+    <div class="t-top">
+      <div class="t-t-l">
+        <p class="ft-t t-l-t">说点什么</p>
+        <div class="bg-ad">
+          <div>里的内容随你写，但是不要过长影响整体美观度，具体可根据实现效果修改）随便说点什么说点什么、随便说点什么说点什么随便说点什么说点什么随便说点什么说点什么随便说点什么说。</div>
+          <div class="btn-xz-box"><a class="btn-xz" href="https://blog.verynb.net/">点击跳转到哪儿</a></div>
+        </div>
+      </div>
+      <div class="t-t-r">
+        <p class="ft-t t-l-t">导航</p>
+        <ul class="ft-links">
+          <li><a href="https://blog.verynb.net/articles/hexo1600/">建站指南</a><a href="https://blog.verynb.net/nav.html">网址导航</a></li>
+          <li><a href="https://blog.verynb.net/sponsorWall/">来杯咖啡</a><a href="https://blog.verynb.net/comments/">留点什么</a></li>
+          <li><a href="https://blog.verynb.net/about/">关于博主</a><a href="https://blog.verynb.net/archives/">文章归档</a></li>
+          <li><a href="https://blog.verynb.net/categories/">文章分类</a><a href="https://blog.verynb.net/tags/">文章标签</a></li>
+          <li><a href="https://blog.verynb.net/gallery/">我的相册</a><a href="https://blog.verynb.net/bangumis/">我的追番</a></li>
+          <li><a href="https://blog.verynb.net/specialEffects/">一些特效</a><a href="https://blog.verynb.net/wallpaper/">一些壁纸</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+-->
+
+<!--耗时及占用内存开始-->
+<span id="momk"></span><span id="momk" style="color: #ff0000;"></span>
+<script type="text/javascript">
+function NewDate(str) {
+str = str.split('-');
+var date = new Date();
+date.setUTCFullYear(str[0], str[1] - 1, str[2]);
+date.setUTCHours(0, 0, 0, 0);
+return date;
+}
+function momxc() {
+<!--这里要改成自己博客的诞生时间-->
+var birthDay =NewDate("2022-04-20");
+var today=new Date();
+var timeold=today.getTime()-birthDay.getTime();
+var sectimeold=timeold/1000
+var secondsold=Math.floor(sectimeold);
+var msPerDay=24*60*60*1000; var e_daysold=timeold/msPerDay;
+var daysold=Math.floor(e_daysold);
+var e_hrsold=(daysold-e_daysold)*-24;
+var hrsold=Math.floor(e_hrsold);
+var e_minsold=(hrsold-e_hrsold)*-60;
+var minsold=Math.floor((hrsold-e_hrsold)*-60); var seconds=Math.floor((minsold-e_minsold)*-60).toString();
+document.getElementById("momk").innerHTML = "这个快乐的小窝已经在互联网上飘荡了"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒"+"，真是太不容易了<br>";
+setTimeout(momxc, 1000);
+}momxc();
+</script>
+<style>
+#momk{animation:change 10s infinite;font-weight:800; }
+@keyframes change{0%{color:#5cb85c;}25%{color:#556bd8;}50%{color:#e40707;}75%{color:#66e616;}100% {color:#67bd31;}}
+</style>
+<?php printf(' | 耗时 %.3f 秒 | 查询 %d 次 | 内存 %.2f MB |',timer_stop( 0, 3 ),get_num_queries(),memory_get_peak_usage() / 1024 / 1024);?><br>
+<!--耗时及占用内存结束-->
+<!--萌ICP备案-->
+<img style="width:23px;height:23px;" src="https://blog.verynb.net/img/meng.png"/>
+<a href="https://icp.gov.moe/?keyword=20236688" target="_blank">萌ICP备20236688号</a>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+<script class="next-config" data-name="chatra" type="application/json">{"enable":"fasle","async":true,"id":"hehysh@163.com"}</script>
+<script src="/js/third-party/chat/chatra.js"></script>
+<script async src="https://call.chatra.io/chatra.js"></script>
+
+
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.0/katex.min.css" integrity="sha256-uik/hNqHWZldXh/0K35nqOSCff9F61/ZOFReqNOBgB0=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.0/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/quicklink/2.2.0/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://blog.verynb.net/posts/22404.html"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"waline.nbplus.eu.org","cssUrl":"https://unpkg.com/@waline/client@v2/dist/waline.css","commentCount":true,"pageview":false,"defer":true,"dark":"body.darkmode--activated","locale":{"placeholder":"Hi~欢迎留言呀！自由发言，开阔脑洞吧。请注意礼貌发言哦~不登录，不填昵称邮箱也没关系哒"},"avatar":"mm","meta":["nick","mail"],"pageSize":20,"visitor":true,"comment_count":true,"requiredFields":["nick"],"libUrl":"https://unpkg.com/@waline/client@v2/dist/waline.js","login":"enable","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo","https://unpkg.com/@waline/emojis@1.0.1/alus","https://unpkg.com/@waline/emojis@1.0.1/bilibili","https://unpkg.com/@waline/emojis@1.0.1/tieba","https://unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"el":"#waline","comment":true,"path":"/posts/22404.html"}</script>
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css">
+<script>
+document.addEventListener('page:loaded', () => {
+  NexT.utils.loadComments(CONFIG.waline.el).then(() =>
+    NexT.utils.getScript(CONFIG.waline.libUrl, { condition: window.Waline })
+  ).then(() => 
+    Waline.init(Object.assign({}, CONFIG.waline,{ el: document.querySelector(CONFIG.waline.el) }))
+  );
+});
+</script>
+<!--
+
+<div id="RightDownBtn">
+    <a id="btn" href="javascript:void(0)" target="_self" style="" title="回到顶部">
+        <svg style=" width: 1.5em;height: 1.5em;" class="icon" aria-hidden="true">
+            <use xlink:href="#icon-xuanfufanhuidingbu">
+                <svg id="icon-xuanfufanhuidingbu" viewBox="0 0 1024 1024">
+                    <path d="M0 512c0 282.624 229.376 512 512 512s512-229.376 512-512S794.624 0 512 0 0 229.376 0 512z"
+                        fill="#1989FA"></path>
+                    <path
+                        d="M736.768 263.68H287.232c-12.288 0-23.04 10.752-23.04 23.04s10.752 23.04 23.04 23.04H737.28c12.288 0 23.04-10.752 23.04-23.04s-10.752-23.04-23.552-23.04m-207.872 105.472c-1.536-1.536-4.608-4.608-7.68-4.608-3.072-1.536-6.144-1.536-7.68-1.536-3.072 0-6.144 0-7.68 1.536-3.072 1.536-4.608 3.072-7.68 4.608l-186.368 186.368c-9.216 9.216-9.216 23.04 0 32.768 9.216 9.216 23.04 9.216 32.768 0l145.92-145.92V737.28c0 12.288 10.752 23.04 23.04 23.04s23.04-10.752 23.04-23.04V442.368l145.92 145.92c4.608 4.608 10.752 6.144 16.896 6.144 6.144 0 12.288-1.536 16.896-6.144 9.216-9.216 9.216-23.04 0-32.768l-187.392-186.368z"
+                        fill="#FFFFFF"></path>
+                </svg>
+            </use>
+        </svg>
+    </a>
+	<a onclick="switchNightMode()" title="深色模式">
+		<svg style=" width: 1.5em;height: 1.5em;" class="icon" aria-hidden="true">
+			<use id="modeicon" xlink:href="#icon-_moon">
+			</use>
+		</svg>
+	</a>
+	<svg aria-hidden="true" style="position: absolute; width: 0px; height: 0px; overflow: hidden;">
+		<symbol id="icon-sun" viewBox="0 0 1024 1024">
+			<path
+				d="M511.99976 511.99976m-511.99976 0a511.99976 511.99976 0 1 0 1023.99952 0 511.99976 511.99976 0 1 0-1023.99952 0Z"
+				fill="#91D2F2"></path>
+			<path
+				d="M144.623932 868.455593C237.679889 964.327548 367.831828 1023.99952 511.99976 1023.99952c269.983873 0 490.99977-209.007902 510.455761-474.031778C956.991551 535.703749 887.559584 527.999753 815.623618 527.999753c-309.535855 0-572.895731 142.055933-670.999686 340.45584z"
+				fill="#198058"></path>
+			<path
+				d="M979.623541 575.99973c-351.319835 0-647.791696 155.655927-741.279653 368.639827A509.359761 509.359761 0 0 0 511.99976 1023.99952c260.839878 0 475.967777-195.111909 507.799762-447.31979a1194.34344 1194.34344 0 0 0-40.175981-0.68z"
+				fill="#1E9969"></path>
+			<path
+				d="M69.711967 769.831639C158.503926 921.815568 323.271848 1023.99952 511.99976 1023.99952a509.455761 509.455761 0 0 0 269.631874-76.783964C657.111692 828.375612 464.271782 751.999648 247.623884 751.999648c-61.575971 0-121.183943 6.271997-177.911917 17.831991z"
+				fill="#6AA33A"></path>
+			<path
+				d="M487.887771 1023.39152c-86.543959-122.151943-236.911889-214.679899-417.591804-252.543881 85.11996 144.919932 239.415888 244.279885 417.591804 252.543881z"
+				fill="#95E652"></path>
+			<path
+				d="M394.159815 167.999921l-45.255979 45.255979L303.647858 167.999921l45.255978-45.255979zM394.159815 503.999764l-45.255979 45.255979L303.655858 503.999764l45.247978-45.247979z"
+				fill="#FFF8E6"></path>
+			<path
+				d="M180.879915 290.719864l45.247979 45.247979-45.255979 45.255978-45.255979-45.255978zM516.903758 290.719864l45.247978 45.247979-45.247978 45.247978-45.247979-45.247978z"
+				fill="#FFF8E6"></path>
+			<path d="M198.087907 185.207913h63.99997v63.99997h-63.99997zM435.671796 422.791802h63.99997v63.99997h-63.99997z"
+				fill="#FFF8E6"></path>
+			<path d="M198.087907 422.791802h63.99997v63.99997h-63.99997zM435.671796 185.207913h63.99997v63.99997h-63.99997z"
+				fill="#FFF8E6"></path>
+			<path
+				d="M348.879836 335.999843m-183.999913 0a183.999914 183.999914 0 1 0 367.999827 0 183.999914 183.999914 0 1 0-367.999827 0Z"
+				fill="#FFEAB3"></path>
+			<path
+				d="M348.879836 335.999843m-159.999925 0a159.999925 159.999925 0 1 0 319.99985 0 159.999925 159.999925 0 1 0-319.99985 0Z"
+				fill="#FFDC80"></path>
+		</symbol>
+		<symbol id="icon-_moon" viewBox="0 0 1024 1024">
+			<path d="M512 512m-512 0a512 512 0 1 0 1024 0 512 512 0 1 0-1024 0Z" fill="#323232"></path>
+			<path
+				d="M512 512m-407.005867 0a407.005867 407.005867 0 1 0 814.011734 0 407.005867 407.005867 0 1 0-814.011734 0Z"
+				fill="#494A4A"></path>
+			<path
+				d="M748.1344 633.9584c0-1.143467 0.085333-2.286933 0.085333-3.413333a69.512533 69.512533 0 0 0-8.823466-33.979734q-1.058133-1.911467-2.2528-3.7376l-0.187734-0.3072a70.485333 70.485333 0 0 0-5.2736-7.099733l-0.238933-0.273067q-1.3312-1.536-2.730667-3.003733l-0.3072-0.324267a70.894933 70.894933 0 0 0-6.417066-5.819733l-0.5632-0.443733q-1.467733-1.160533-3.003734-2.235734l-0.494933-0.341333q-1.706667-1.2288-3.6352-2.3552l-0.256-0.136533q-1.706667-0.989867-3.413333-1.8944l-0.887467-0.4608q-1.604267-0.802133-3.242667-1.536l-0.6144-0.273067q-1.928533-0.836267-3.9424-1.553067l-0.8192-0.273066a54.8864 54.8864 0 0 0-3.242666-1.024l-1.143467-0.324267a85.248 85.248 0 0 0-3.601067-0.887467l-0.546133-0.119466a67.345067 67.345067 0 0 0-4.1984-0.733867l-1.143467-0.136533q-1.706667-0.2048-3.2768-0.341334l-1.245866-0.1024a74.786133 74.786133 0 0 0-4.386134-0.1536 69.8368 69.8368 0 0 0-20.48 3.037867 104.106667 104.106667 0 0 0-12.1344-11.076267 258.696533 258.696533 0 0 0-449.9456-248.763733 183.1424 183.1424 0 0 1 106.939734-34.2528c5.12 0 10.24 0.221867 15.36 0.631467a183.125333 183.125333 0 0 1 50.5344 11.52h0.170666q3.874133 1.501867 7.68 3.157333l0.256 0.1024 7.441067 3.413333 0.273067 0.136534q3.669333 1.826133 7.253333 3.805866l0.221867 0.119467q3.618133 2.013867 7.133866 4.164267a184.610133 184.610133 0 0 1 26.760534 20.036266h0.085333q2.986667 2.696533 5.870933 5.5296l0.324267 0.3072q2.781867 2.7648 5.461333 5.632l0.443734 0.477867q2.6112 2.833067 5.12 5.768533l0.494933 0.580267q2.4576 2.9184 4.795733 5.956267l0.494934 0.648533q2.321067 3.037867 4.522666 6.178133l0.426667 0.6144q2.2016 3.1744 4.283733 6.4512l0.324267 0.529067q2.116267 3.413333 4.078933 6.826667l0.170667 0.3072c1.553067 2.7136 3.0208 5.495467 4.437333 8.2944a56.149333 56.149333 0 0 0-12.578133 2.304 82.824533 82.824533 0 0 0-134.007467 18.039466 42.530133 42.530133 0 0 0-53.009066 41.079467 104.277333 104.277333 0 0 0-42.2912 80.110933 13.653333 13.653333 0 0 0 0 1.4336v0.426667c0 0.136533 0.1024 0.682667 0.187733 1.024s0 0.3072 0.1024 0.4608 0.2048 0.733867 0.324267 1.092267l0.1024 0.3072a15.36 15.36 0 0 0 0.580266 1.416533l0.1024 0.187733a16.520533 16.520533 0 0 0 0.648534 1.211734l0.221866 0.3584c0.221867 0.3584 0.4608 0.733867 0.7168 1.092266l0.221867 0.3072a26.333867 26.333867 0 0 0 2.338133 2.798934l0.119467 0.119466q0.6144 0.631467 1.297067 1.262934l0.2048 0.187733q0.7168 0.648533 1.501866 1.297067 1.706667 1.416533 3.720534 2.781866c0.6656 0.4608 1.348267 0.904533 2.065066 1.348267 26.914133 16.7936 87.995733 28.535467 159.044267 28.535467 19.3536 0 37.956267-0.8704 55.3472-2.474667l-0.494933 0.750933-0.426667 0.6144q-2.2016 3.140267-4.539733 6.178134l-0.477867 0.631466q-2.338133 3.037867-4.795733 5.956267l-0.494934 0.580267q-2.491733 2.935467-5.12 5.7856l-0.443733 0.477866q-2.679467 2.884267-5.461333 5.649067l-0.3072 0.290133q-2.884267 2.833067-5.870934 5.546667a184.8832 184.8832 0 0 1-26.7776 20.036267q-3.515733 2.167467-7.150933 4.181333l-0.187733 0.1024q-3.584 1.979733-7.2704 3.805867l-0.256 0.136533q-3.6864 1.826133-7.458134 3.413333l-0.238933 0.1024q-3.805867 1.706667-7.68 3.157334h-0.136533a183.057067 183.057067 0 0 1-50.551467 11.52c-5.12 0.4096-10.24 0.631467-15.36 0.631466a183.159467 183.159467 0 0 1-106.939733-34.2528 258.5088 258.5088 0 0 0 180.138666 107.093334 109.550933 109.550933 0 0 0-3.259733 26.453333 16.520533 16.520533 0 0 0 0.1024 1.706667v0.529066c0 0.170667 0.136533 0.853333 0.221867 1.262934l0.136533 0.5632 0.392533 1.365333 0.136534 0.4096a13.892267 13.892267 0 0 0 0.733866 1.706667l0.119467 0.238933c0.238933 0.512 0.512 1.006933 0.802133 1.501867l0.273067 0.443733q0.4096 0.682667 0.887467 1.365333l0.273066 0.375467a33.0752 33.0752 0 0 0 2.9184 3.413333l0.1536 0.1536 1.5872 1.553067 0.273067 0.256 1.8432 1.621333q2.116267 1.706667 4.625067 3.413334l2.56 1.706666c33.467733 20.8896 109.431467 35.4816 197.802666 35.4816 119.330133 0 216.046933-26.606933 216.046934-59.409066a131.413333 131.413333 0 0 0-56.285867-102.058667z"
+				fill="#323232"></path>
+			<path
+				d="M573.8496 401.8176v-2.781867a56.200533 56.200533 0 0 0-72.6016-53.725866 82.824533 82.824533 0 0 0-134.007467 18.039466 42.530133 42.530133 0 0 0-53.009066 41.079467 104.277333 104.277333 0 0 0-42.257067 80.0768c0 26.385067 77.7728 47.786667 173.7216 47.786667s173.7216-21.384533 173.7216-47.786667a105.659733 105.659733 0 0 0-45.568-82.688z"
+				fill="#CDCCCA"></path>
+			<path
+				d="M293.768533 506.2656a104.277333 104.277333 0 0 1 42.2912-80.110933 42.530133 42.530133 0 0 1 53.009067-41.079467 82.807467 82.807467 0 0 1 134.007467-18.039467 56.32 56.32 0 0 1 43.758933 4.642134 56.2176 56.2176 0 0 0-65.518933-26.4192 82.824533 82.824533 0 0 0-134.007467 18.039466 42.530133 42.530133 0 0 0-53.009067 41.079467 104.277333 104.277333 0 0 0-42.325333 80.128c0 8.413867 7.936 16.3328 21.845333 23.210667a13.294933 13.294933 0 0 1-0.0512-1.450667z"
+				fill="#E8E9EC"></path>
+			<path
+				d="M453.4784 166.912a258.338133 258.338133 0 0 0-210.944 108.919467 183.995733 183.995733 0 1 1 0 299.451733 258.6624 258.6624 0 1 0 210.944-408.388267z"
+				fill="#DDAE2A"></path>
+			<path
+				d="M364.834133 608.9216q7.594667 0.631467 15.36 0.648533a183.995733 183.995733 0 0 0 0-367.9744q-7.748267 0-15.36 0.631467a183.995733 183.995733 0 0 1 0 366.6944z"
+				fill="#EDC849"></path>
+			<path
+				d="M794.7776 605.969067c0-1.143467 0.085333-2.286933 0.085333-3.413334a69.973333 69.973333 0 0 0-90.299733-66.833066 102.997333 102.997333 0 0 0-166.656 22.4256 52.906667 52.906667 0 0 0-65.928533 51.0976 129.706667 129.706667 0 0 0-52.599467 99.6352c0 32.8192 96.733867 59.409067 216.046933 59.409066s216.046933-26.606933 216.046934-59.409066a131.413333 131.413333 0 0 0-56.695467-102.912z"
+				fill="#CDCCCA"></path>
+			<path
+				d="M446.481067 735.914667a129.706667 129.706667 0 0 1 52.599466-99.6352 52.906667 52.906667 0 0 1 65.928534-51.080534 102.997333 102.997333 0 0 1 166.6048-22.442666 69.973333 69.973333 0 0 1 54.408533 5.7856 69.973333 69.973333 0 0 0-81.476267-32.853334 102.997333 102.997333 0 0 0-166.656 22.4256 52.906667 52.906667 0 0 0-65.928533 51.0976 129.706667 129.706667 0 0 0-52.599467 99.6352c0 10.478933 9.864533 20.309333 27.170134 28.859734a17.408 17.408 0 0 1-0.0512-1.792z"
+				fill="#E8E9EC"></path>
+		</symbol>
+	</svg>
+    <a onclick="music_on();" id="musicmobbtn" title="播放背景音乐">
+        <svg style=" width: 1.5em;height: 1.5em;" id="music" aria-hidden="true">
+            <use id="modeicon" xlink:href="#icon-icon-music">
+                <svg id="icon-icon-music" viewBox="0 0 1024 1024">
+                    <path
+                        d="M997.45185173 512A485.45185173 485.45185173 0 1 1 26.54814827 512a485.45185173 485.45185173 0 0 1 970.90370346 0"
+                        fill="#9025FC"></path>
+                    <path
+                        d="M478.56450347 602.59745173S403.9869632 545.19277013 369.03442987 537.78962987c-82.1020448-17.41558507-136.47265173 35.8020736-133.37789654 106.192592 4.36906667 100.42785173 127.37042987 123.85090347 194.66619307 111.3505184 67.3564448-12.37902187 101.09534827-57.04059307 108.86257707-111.83597014 7.76722987-54.79537813 46.84610347-263.9037632 46.84610346-263.9037632s66.26417813 61.28829653 85.2574816 82.3447712c26.4571264 29.3698368-0.1820448 79.85682987-0.18204373 79.8568288s72.39300693-12.07561493 90.23336213-104.97896213c12.31834027-64.1403264-23.36237013-76.64071147-65.71804373-110.37961493-82.76954027-65.7787264-121.2416-90.2940448-145.63555627-95.45197014-24.27259307-5.0972448-45.02565973 4.42974827-45.8145184 81.4952288-0.84954027 77.0654816-25.60758507 290.1181632-25.60758506 290.1181632"
+                        fill="#FFFFFF"></path>
+                </svg>
+            </use>
+        </svg>
+    </a>
+	<audio id="bg_music" src="" loop="loop"></audio>
+	<script>
+			
+		function music_on() {
+			var audio1 = document.getElementById('bg_music');
+			if (audio1.paused) {
+				audio1.play();
+				$("svg#music").addClass("xuanzhuan");
+				
+			}else{
+				audio1.pause();
+				$('svg#music').removeClass("xuanzhuan");
+				audio1.currentTime = 0;//音乐从头播放
+			}
+		}
+	    function BackTOP() {
+			$("#btn").hide();
+			$(function () {
+				$(window).scroll(function () {
+					if ($(window).scrollTop() > 50) {
+						$("#btn").fadeIn(200);
+					} else {
+						$("#btn").fadeOut(200);
+					}
+				});
+				$("#btn").click(function () {
+					$('body,html').animate({
+							scrollTop: 0
+						},
+						500);
+					return false;
+				});
+			})
+		}
+		function scrollToComment() {
+		  var t = $("#waline-comment").offset().top;
+		  $("html,body").animate({ scrollTop: t }, 500);
+		}	
+		function switchNightMode() {
+		  $(
+			'<div class="Cuteen_DarkSky"><div class="Cuteen_DarkPlanet"></div></div>'
+		  ).appendTo($("body")),
+			setTimeout(function () {
+			  var DarkMode =
+				document.cookie.replace(
+				  /(?:(?:^|.*;\s*)DarkMode\s*\=\s*([^;]*).*$)|^.*$/,
+				  "$1"
+				) || "0";
+			  DarkMode == "0"
+				? ($("html").addClass("DarkMode"),
+				  (document.cookie = "DarkMode=1;path=/"),
+				  console.log("夜间模式开启"),
+				  $("#modeicon").attr("xlink:href", "#icon-sun"))
+				: ($("html").removeClass("DarkMode"),
+				  (document.cookie = "DarkMode=0;path=/"),
+				  console.log("夜间模式关闭"),
+				  $("#modeicon").attr("xlink:href", "#icon-_moon")),
+				setTimeout(function () {
+				  $(".Cuteen_DarkSky").fadeOut(1e3, function () {
+					$(this).remove();
+				  });
+				}, 2e3);
+			}),
+			50;
+		}
+ 
+		function checkNightMode() {
+		  if ($("html").hasClass("n-f")) {
+			$("html").removeClass("day");
+			$("html").addClass("DarkMode");
+			$("#modeicon").attr("xlink:href", "#icon-sun");
+			return;
+		  }
+		  if ($("html").hasClass("d-f")) {
+			$("html").removeClass("DarkMode");
+			$("html").addClass("day");
+			$("#modeicon").attr("xlink:href", "#icon-_moon");
+ 
+			return;
+		  }
+		  if (
+			document.cookie.replace(
+			  /(?:(?:^|.*;\s*)DarkMode\s*\=\s*([^;]*).*$)|^.*$/,
+			  "$1"
+			) === ""
+		  ) {
+			if (new Date().getHours() >= 23 || new Date().getHours() < 7) {
+			  $("html").addClass("DarkMode");
+			  document.cookie = "DarkMode=1;path=/";
+			  console.log("夜间模式开启");
+			  $("#modeicon").attr("xlink:href", "#icon-sun");
+			} else {
+			  $("html").removeClass("DarkMode");
+			  document.cookie = "DarkMode=0;path=/";
+			  console.log("夜间模式关闭");
+			  $("#modeicon").attr("xlink:href", "#icon-_moon");
+			}
+		  } else {
+			var DarkMode =
+			  document.cookie.replace(
+				/(?:(?:^|.*;\s*)DarkMode\s*\=\s*([^;]*).*$)|^.*$/,
+				"$1"
+			  ) || "0";
+			if (DarkMode == "0") {
+			  $("html").removeClass("DarkMode");
+			  $("#modeicon").attr("xlink:href", "#icon-_moon");
+			} else if (DarkMode == "1") {
+			  $("html").addClass("DarkMode");
+			  $("#modeicon").attr("xlink:href", "#icon-sun");
+			}
+		  }
+		}
+		BackTOP();		
+		checkNightMode();
+	</script>
+</div>
+-->
+
+
+<!--
+
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'shier-blog/blog'
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/gh/WillCAI2020/cdn@1.3.3/js/sidecar.min.js" async defer></script>
+
+-->
+
+<div id="waline-recent"></div>
+<script type="module">
+  import { RecentComments } from 'https://cdn.jsdelivr.net/npm/@waline/client/dist/waline.mjs';
+
+  RecentComments({
+    el: '#waline-recent',
+    serverURL: 'waline.nbplus.eu.org',
+    count: 10,
+  });
+</script>
+<!-- hexo injector body_end start -->
+  <script src="/js/custom.js"></script>
+<!-- hexo injector body_end end --></body>
+</html>

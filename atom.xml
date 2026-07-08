@@ -6,7 +6,7 @@
   <link href="https://blog.verynb.net/atom.xml" rel="self"/>
   
   <link href="https://blog.verynb.net/"/>
-  <updated>2026-06-26T10:02:49.794Z</updated>
+  <updated>2026-07-08T14:41:53.376Z</updated>
   <id>https://blog.verynb.net/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>赛博斗蛐蛐</title>
+    <link href="https://blog.verynb.net/posts/22404.html"/>
+    <id>https://blog.verynb.net/posts/22404.html</id>
+    <published>2026-07-08T13:14:31.000Z</published>
+    <updated>2026-07-08T14:41:53.376Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;最近A&amp;#x2F;新出了Fable 5。风评堪称神话（虽然本来就是mythos的弱化版），coding能力也确实强如怪物。（下文简称肥波。）我又不敲代码，因此依旧是喜闻乐见的测试一下它写文的能力&lt;/p&gt;
+&lt;p&gt;当然，鉴于肥波越狱极为艰难，甚至可能影响智商，所以还是写点清水好了&lt;/p&gt;
+&lt;p&gt;由于A&amp;#x2F;（以及其他ai厂商）愈发不重视AIRP，因此从opus4.6开始，4.7，4.8的写文能力都是大粪，最尊重AIRP的也就最近的deepseek 4了，甚至为了优化RP能力，研究员特意参考类脑的预设，也是令人敬佩。因此这次斗蛐蛐就用肥波5 vs ds v4pro了，都是纯血官方api。&lt;/p&gt;
+&lt;p&gt;提示词都是我手敲的，敲得我累死了。。。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>二周目了</title>
@@ -42,7 +60,7 @@
     <link href="https://blog.verynb.net/posts/57344.html"/>
     <id>https://blog.verynb.net/posts/57344.html</id>
     <published>2026-06-09T18:30:18.000Z</published>
-    <updated>2026-06-24T11:17:34.017Z</updated>
+    <updated>2026-07-08T14:30:35.188Z</updated>
     
     
       
@@ -372,24 +390,6 @@
 &lt;p&gt;虽然lunar端内置一大堆mod，但是现在的需求是要额外装个world map，移动光源和环境音增强&lt;/p&gt;
 &lt;p&gt;在bing上搜索不难发现现在lunar端已经支持装mod了，但是找了一圈没有详细教程&lt;/p&gt;
 &lt;p&gt;————因此！！本教程诞生！！&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>无视免费帐户限制！白嫖各家显卡爽玩SD webui</title>
-    <link href="https://blog.verynb.net/posts/63905.html"/>
-    <id>https://blog.verynb.net/posts/63905.html</id>
-    <published>2024-05-18T20:57:41.000Z</published>
-    <updated>2026-05-09T09:44:39.731Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;众所周知啊，我之前发过一篇玩novelai的文章。&lt;/p&gt;
-&lt;p&gt;那个时候用的是百度的aistudio的算力去跑的stable diffusion。&lt;/p&gt;
-&lt;p&gt;你说百度他抠门吧，他让你用A100显卡，你说他抠门吧，他只让你用paddle架构，不能运行原版webui，这就很难受啊！&lt;/p&gt;
-&lt;p&gt;最近学业压力小了点，又决定开始鼓捣，遂发现根本不用再赤百度的石了，有三家都可以爽玩原版webui，而且可以跟本地电脑一样添加各种插件lora。&lt;/p&gt;</summary>
     
     
     
