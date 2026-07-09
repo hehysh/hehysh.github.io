@@ -6,7 +6,7 @@
   <link href="https://blog.verynb.net/atom.xml" rel="self"/>
   
   <link href="https://blog.verynb.net/"/>
-  <updated>2026-07-08T14:41:53.376Z</updated>
+  <updated>2026-07-09T02:47:19.663Z</updated>
   <id>https://blog.verynb.net/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>为hexo博客添加隐藏ai文本的功能</title>
+    <link href="https://blog.verynb.net/posts/57342.html"/>
+    <id>https://blog.verynb.net/posts/57342.html</id>
+    <published>2026-07-09T02:26:06.000Z</published>
+    <updated>2026-07-09T02:47:19.663Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;昨天刚刚斗完赛博蛐蛐，把文章上传到博客。这时我发现我的博客中，文章主要内容为ai生成的博客竟然已达6篇，就想到一个功能，那就是为hexo博客添加隐藏ai文本的功能。&lt;/p&gt;
+&lt;p&gt;我的初步构想是：在用户第一次进入博客是，弹窗询问：你是否能够接受AI-generated文本的展示？&lt;/p&gt;
+&lt;p&gt;如果用户选择是，则展示带有AI-gen标签的文章，用户选择否，则隐藏带有AI-gen标签的文章。而且此过程由cookie记录。为了简化代码量，可以提示：如需更改选项，只需清除cookie即可。&lt;/p&gt;
+&lt;p&gt;这样，能接受ai-gen的人，可以看到博客里一些自娱自乐性质的文章，以及我还读高三时创作的虾塔系列。陈家明读完（他显然难以读完这些又臭又长的后现代先锋狗屎）后告诉我，搭配上ai生成让这些奇异搞笑的故事具有类似迷幻剂的效果。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;注：本博客是不存在100% ai生成的文章的，文章前的序都是我自己手写的，不过如果文章主体内容为ai生成，就会被我归入ai-gen，当然代码类内容除外。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;不能接受ai-gen的人，将会获得一个干净的主页，可以看到100%我自行创作的文章，也就免去了被ai污染的烦恼。&lt;/p&gt;
+&lt;p&gt;说干就干，虽然这种小事交给美国豆包Gemini足以，但我还是要大炮打蚊子，搬出肥波来，只是为了满足一下我的好奇心而已。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>赛博斗蛐蛐</title>
     <link href="https://blog.verynb.net/posts/22404.html"/>
     <id>https://blog.verynb.net/posts/22404.html</id>
     <published>2026-07-08T13:14:31.000Z</published>
-    <updated>2026-07-08T14:41:53.376Z</updated>
+    <updated>2026-07-09T02:06:24.890Z</updated>
     
     
     <summary type="html">&lt;p&gt;最近A&amp;#x2F;新出了Fable 5。风评堪称神话（虽然本来就是mythos的弱化版），coding能力也确实强如怪物。（下文简称肥波。）我又不敲代码，因此依旧是喜闻乐见的测试一下它写文的能力&lt;/p&gt;
@@ -31,6 +52,8 @@
     
     
     
+    
+    <category term="AI-gen" scheme="https://blog.verynb.net/tags/AI-gen/"/>
     
   </entry>
   
@@ -102,7 +125,7 @@
     <link href="https://blog.verynb.net/posts/47267.html"/>
     <id>https://blog.verynb.net/posts/47267.html</id>
     <published>2026-05-09T10:21:21.000Z</published>
-    <updated>2026-05-09T14:32:12.047Z</updated>
+    <updated>2026-07-09T02:19:04.574Z</updated>
     
     
     <summary type="html">&lt;p&gt;写完《乔越》后我本来构思了很多东西，也许虾塔这部小说本就没有特定的剧情，我只是在把学校里一个又一个无意义的意象强行串联起来。阳马，鱼羊，虾猫，刺猬，生物老师吴冰和她的豌豆船，数学老师蒋次鳌和他的火焰杯，这些无意义的意象是我本来想要加入后续剧情的节点，或者说：是我先想到了这些事物，然后在午饭时的谈笑中用奇异魔幻的剧情将他们连接起来。他们是是现实生活一个又一个碎片的抽象化和陌生化。我想把他们写下来，以供我日后一笑，可是在我与伙伴们中午一次又一次的谈笑中慢慢清晰了《虾塔》后续的剧情时，我却发现自己难以落笔，因为我懒，懒到忘记在一节无精打采的体育课把手机偷出来用语音输入大纲然后回家扩写。&lt;/p&gt;
@@ -113,6 +136,8 @@
     
     
     
+    <category term="AI-gen" scheme="https://blog.verynb.net/tags/AI-gen/"/>
+    
   </entry>
   
   <entry>
@@ -120,7 +145,7 @@
     <link href="https://blog.verynb.net/posts/64721.html"/>
     <id>https://blog.verynb.net/posts/64721.html</id>
     <published>2026-01-28T10:36:13.000Z</published>
-    <updated>2026-05-09T09:44:39.726Z</updated>
+    <updated>2026-07-09T02:18:48.229Z</updated>
     
     
     <summary type="html">&lt;p&gt;今天是趣味运动会，在漫长而无聊的等待时间我用ios的语音备忘录录下了和兄弟们讨论的最新故事的剧情。&lt;/p&gt;
@@ -130,7 +155,7 @@
     
     
     
-    <category term="人类群星闪耀时" scheme="https://blog.verynb.net/tags/%E4%BA%BA%E7%B1%BB%E7%BE%A4%E6%98%9F%E9%97%AA%E8%80%80%E6%97%B6/"/>
+    <category term="AI-gen" scheme="https://blog.verynb.net/tags/AI-gen/"/>
     
   </entry>
   
@@ -139,7 +164,7 @@
     <link href="https://blog.verynb.net/posts/1879.html"/>
     <id>https://blog.verynb.net/posts/1879.html</id>
     <published>2026-01-23T10:37:55.000Z</published>
-    <updated>2026-05-09T09:44:39.733Z</updated>
+    <updated>2026-07-09T02:18:22.094Z</updated>
     
     
     <summary type="html">&lt;p&gt;依旧灵感菇启动&lt;/p&gt;
@@ -149,6 +174,8 @@
     
     
     
+    <category term="AI-gen" scheme="https://blog.verynb.net/tags/AI-gen/"/>
+    
   </entry>
   
   <entry>
@@ -156,7 +183,7 @@
     <link href="https://blog.verynb.net/posts/64465.html"/>
     <id>https://blog.verynb.net/posts/64465.html</id>
     <published>2026-01-15T11:39:30.000Z</published>
-    <updated>2026-05-09T09:44:39.731Z</updated>
+    <updated>2026-07-09T02:19:27.471Z</updated>
     
     
     <summary type="html">&lt;p&gt;今天中午想到的，崭新的故事。&lt;/p&gt;
@@ -167,7 +194,7 @@
     
     
     
-    <category term="人类群星闪耀时" scheme="https://blog.verynb.net/tags/%E4%BA%BA%E7%B1%BB%E7%BE%A4%E6%98%9F%E9%97%AA%E8%80%80%E6%97%B6/"/>
+    <category term="AI-gen" scheme="https://blog.verynb.net/tags/AI-gen/"/>
     
   </entry>
   
@@ -176,7 +203,7 @@
     <link href="https://blog.verynb.net/posts/38442.html"/>
     <id>https://blog.verynb.net/posts/38442.html</id>
     <published>2026-01-12T12:25:17.000Z</published>
-    <updated>2026-05-09T09:44:39.730Z</updated>
+    <updated>2026-07-09T02:19:20.770Z</updated>
     
     
     <summary type="html">&lt;p&gt;虾塔的故事的后续，我在想应该搞成一个系列。经过提示词的改进opus4.5的文风已经趋于稳定了。&lt;/p&gt;
@@ -187,7 +214,7 @@
     
     
     
-    <category term="人类群星闪耀时" scheme="https://blog.verynb.net/tags/%E4%BA%BA%E7%B1%BB%E7%BE%A4%E6%98%9F%E9%97%AA%E8%80%80%E6%97%B6/"/>
+    <category term="AI-gen" scheme="https://blog.verynb.net/tags/AI-gen/"/>
     
   </entry>
   
@@ -196,7 +223,7 @@
     <link href="https://blog.verynb.net/posts/54342.html"/>
     <id>https://blog.verynb.net/posts/54342.html</id>
     <published>2026-01-08T11:59:23.000Z</published>
-    <updated>2026-05-09T09:44:39.735Z</updated>
+    <updated>2026-07-09T02:17:46.043Z</updated>
     
     
     <summary type="html">&lt;p&gt;很久没有写过随笔了，今天中午发生了这篇文章所讲的事情，其实是很简单一件事情：同学陈家明把用筷子戳穿午餐烧的如同狗屎一般的虾，把他们串在筷子上做成一座虾塔。&lt;/p&gt;
@@ -204,6 +231,8 @@
     
     
     
+    
+    <category term="AI-gen" scheme="https://blog.verynb.net/tags/AI-gen/"/>
     
     <category term="人类群星闪耀时" scheme="https://blog.verynb.net/tags/%E4%BA%BA%E7%B1%BB%E7%BE%A4%E6%98%9F%E9%97%AA%E8%80%80%E6%97%B6/"/>
     
@@ -251,7 +280,7 @@
     <link href="https://blog.verynb.net/posts/undefined.html"/>
     <id>https://blog.verynb.net/posts/undefined.html</id>
     <published>2025-05-11T14:55:06.000Z</published>
-    <updated>2026-05-09T09:44:39.728Z</updated>
+    <updated>2026-07-09T02:20:23.798Z</updated>
     
     
     <summary type="html">&lt;p&gt;上一篇文章发出来太艰难了，hexo更新后对url的要求变得极其严格。导致hexo g时出现了ERR_INVALID_URL。&lt;/p&gt;
@@ -259,6 +288,8 @@
     
     
     
+    
+    <category term="AI-gen" scheme="https://blog.verynb.net/tags/AI-gen/"/>
     
   </entry>
   
@@ -372,24 +403,6 @@
 &lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; 使用gpt4o等gpt4付费模型，也可选择cf worker AI系模型&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; 使用的都是开源项目&lt;/li&gt;
 &lt;li&gt;&lt;input checked=&quot;&quot; disabled=&quot;&quot; type=&quot;checkbox&quot;&gt; 由于最终产生一个调用LLM的api，可以方便的接入其他场景</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>如何在lunar端中安装模组</title>
-    <link href="https://blog.verynb.net/posts/18818.html"/>
-    <id>https://blog.verynb.net/posts/18818.html</id>
-    <published>2024-06-02T16:19:09.000Z</published>
-    <updated>2026-05-09T09:44:39.729Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;最近每周玩玩生存，工作本的显卡Intel iRIS Xe Graphics虽然很烂，但是能把光影带到70fps，也不错了&lt;/p&gt;
-&lt;p&gt;虽然lunar端内置一大堆mod，但是现在的需求是要额外装个world map，移动光源和环境音增强&lt;/p&gt;
-&lt;p&gt;在bing上搜索不难发现现在lunar端已经支持装mod了，但是找了一圈没有详细教程&lt;/p&gt;
-&lt;p&gt;————因此！！本教程诞生！！&lt;/p&gt;</summary>
     
     
     
