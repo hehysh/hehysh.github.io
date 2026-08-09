@@ -1,0 +1,811 @@
+/*!
+ * 附件卡片与沉浸式附件预览器
+ * - 卡片样式全部限定在 .post-body 内，避免污染其它页面组件
+ * - 预览器挂载在 body 下，因此使用独立的 .atc-viewer 命名空间
+ * - 颜色尽量继承 NexT 的正文/链接颜色，不大面积硬编码纯黑
+ */
+
+.post-body .atc-card,
+.atc-viewer {
+  /* 强调色：默认沿用 NexT 主题链接色 */
+  --atc-accent: #495a80;
+  --atc-surface: rgba(255, 255, 255, 0.62);
+  --atc-surface-hover: rgba(255, 255, 255, 0.82);
+  --atc-border: rgba(90, 100, 125, 0.18);
+  --atc-border-strong: rgba(90, 100, 125, 0.3);
+  --atc-title: #333;
+  --atc-muted: #7c8087;
+  --atc-radius: 5px;
+  --atc-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+    "PingFang SC", "Microsoft YaHei", monospace;
+}
+
+/* 文件类型强调色 */
+.post-body .atc-tone-pdf     { --atc-accent: #c75146; }
+.post-body .atc-tone-sheet   { --atc-accent: #2f8a5b; }
+.post-body .atc-tone-slide   { --atc-accent: #d2803a; }
+.post-body .atc-tone-code    { --atc-accent: #7a5ea8; }
+.post-body .atc-tone-image   { --atc-accent: #2f8a9e; }
+.post-body .atc-tone-doc     { --atc-accent: #3a6ea5; }
+.post-body .atc-tone-text    { --atc-accent: #6b7280; }
+.post-body .atc-tone-archive { --atc-accent: #8a7a52; }
+.post-body .atc-tone-media   { --atc-accent: #a0567f; }
+
+/* ------------------------------------------------------------------ *
+ * 一、正文中的附件卡片
+ * ------------------------------------------------------------------ */
+
+.post-body .atc-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 1.4em 0;
+  padding: 13px 14px 13px 20px;
+  overflow: hidden;
+  border: 1px solid var(--atc-border);
+  border-radius: var(--atc-radius);
+  background-color: var(--atc-surface);
+  /* 半透明浅色纸张质感 */
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(248, 249, 251, 0.28) 100%
+  );
+  box-shadow: 0 1px 2px rgba(48, 55, 70, 0.05);
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease,
+    border-color 0.18s ease, background-color 0.18s ease;
+}
+
+.post-body .atc-card:hover {
+  /* hover 只轻微上浮并增加柔和阴影 */
+  transform: translateY(-2px);
+  border-color: var(--atc-border-strong);
+  background-color: var(--atc-surface-hover);
+  box-shadow: 0 6px 18px rgba(48, 55, 70, 0.1);
+}
+
+.post-body .atc-card:focus-visible {
+  outline: 2px solid var(--atc-accent);
+  outline-offset: 2px;
+}
+
+/* 左侧文件类型强调色条 */
+.post-body .atc-card .atc-edge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: var(--atc-accent);
+  opacity: 0.85;
+}
+
+/* 略微倾斜的纸张图标 */
+.post-body .atc-card .atc-thumb {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 46px;
+}
+
+.post-body .atc-card .atc-paper {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 34px;
+  height: 42px;
+  padding-bottom: 5px;
+  border: 1px solid var(--atc-accent);
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.72);
+  /* 轻微倾斜，模拟一张纸 */
+  transform: rotate(-5deg);
+  transition: transform 0.18s ease;
+}
+
+/* 右上角折角 */
+.post-body .atc-card .atc-paper::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 11px;
+  height: 11px;
+  border-left: 1px solid var(--atc-accent);
+  border-bottom: 1px solid var(--atc-accent);
+  border-radius: 0 3px 0 2px;
+  background-color: var(--atc-accent);
+  opacity: 0.16;
+}
+
+.post-body .atc-card:hover .atc-paper {
+  transform: rotate(-2deg);
+}
+
+.post-body .atc-card .atc-paper-ext {
+  /* 反向旋转，让扩展名保持水平易读 */
+  transform: rotate(5deg);
+  color: var(--atc-accent);
+  font-family: var(--atc-mono);
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  text-shadow: none;
+  white-space: nowrap;
+}
+
+/* 中部文字 */
+.post-body .atc-card .atc-meta {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.post-body .atc-card .atc-title {
+  display: block;
+  overflow: hidden;
+  color: var(--atc-title);
+  font-size: 0.95em;
+  font-weight: 600;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.post-body .atc-card .atc-sub {
+  display: block;
+  overflow: hidden;
+  color: var(--atc-muted);
+  font-size: 0.78em;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* 右侧按钮 */
+.post-body .atc-card .atc-actions {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.post-body .atc-card .atc-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  box-sizing: border-box;
+  padding: 5px 11px;
+  border: 1px solid var(--atc-border-strong);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.55);
+  color: var(--atc-muted);
+  font-size: 0.78em;
+  line-height: 1.5;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.16s ease, border-color 0.16s ease,
+    background-color 0.16s ease;
+}
+
+/* 覆盖 NexT 对正文链接的下划线/边框处理 */
+.post-body .atc-card .atc-btn,
+.post-body .atc-card .atc-btn:hover {
+  border-bottom-style: solid;
+  box-shadow: none;
+}
+
+.post-body .atc-card .atc-btn:hover {
+  border-color: var(--atc-accent);
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--atc-accent);
+}
+
+.post-body .atc-card .atc-btn:focus-visible {
+  outline: 2px solid var(--atc-accent);
+  outline-offset: 1px;
+}
+
+.post-body .atc-card .atc-btn .fa {
+  font-size: 0.95em;
+}
+
+.post-body .atc-card.atc-card-error {
+  border-color: rgba(199, 81, 70, 0.4);
+  color: #c75146;
+  cursor: default;
+}
+
+/* 窄屏：隐藏按钮文字，仅保留图标 */
+@media (max-width: 767px) {
+  .post-body .atc-card {
+    gap: 11px;
+    padding: 11px 11px 11px 16px;
+  }
+
+  .post-body .atc-card .atc-btn-text {
+    display: none;
+  }
+
+  .post-body .atc-card .atc-btn {
+    padding: 6px 9px;
+  }
+}
+
+/* ------------------------------------------------------------------ *
+ * 二、沉浸式附件预览器
+ * ------------------------------------------------------------------ */
+
+/* 打开时锁定页面滚动 */
+html.atc-locked,
+html.atc-locked body {
+  overflow: hidden !important;
+}
+
+.atc-viewer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* 必须高于 NexT 正文、侧栏与常规组件 */
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4vh 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.atc-viewer.atc-open {
+  opacity: 1;
+}
+
+/* 浅灰遮罩 + 轻微模糊；不改变正文自身的 opacity */
+.atc-viewer .atc-backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(116, 121, 132, 0.32);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+/* 中央独立文档阅读窗口 */
+.atc-viewer .atc-window {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1100px;
+  height: 91vh;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  background-color: #fdfdfc;
+  box-shadow: 0 24px 64px rgba(28, 32, 42, 0.28);
+  color: #333;
+  text-shadow: none;
+  transform: translateY(8px) scale(0.994);
+  transition: transform 0.2s ease;
+}
+
+.atc-viewer.atc-open .atc-window {
+  transform: none;
+}
+
+/* 顶栏 */
+.atc-viewer .atc-bar {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px 11px 18px;
+  border-bottom: 1px solid rgba(90, 100, 125, 0.16);
+  background-color: rgba(250, 250, 249, 0.96);
+}
+
+.atc-viewer .atc-bar-info {
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.atc-viewer .atc-bar-name {
+  overflow: hidden;
+  color: #2f333a;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.4;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.atc-viewer .atc-bar-sub {
+  overflow: hidden;
+  color: #85898f;
+  font-size: 0.76rem;
+  line-height: 1.3;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.atc-viewer .atc-bar-actions {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.atc-viewer .atc-bar-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-sizing: border-box;
+  height: 32px;
+  padding: 0 12px;
+  border: 1px solid rgba(90, 100, 125, 0.24);
+  border-radius: 4px;
+  background-color: #fff;
+  color: #5c6067;
+  font-size: 0.8rem;
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.16s ease, border-color 0.16s ease,
+    background-color 0.16s ease;
+}
+
+.atc-viewer .atc-bar-btn:hover {
+  border-color: rgba(73, 90, 128, 0.55);
+  background-color: #f6f7f9;
+  color: #495a80;
+}
+
+.atc-viewer .atc-bar-btn:focus-visible {
+  outline: 2px solid #495a80;
+  outline-offset: 1px;
+}
+
+.atc-viewer .atc-bar-close {
+  width: 32px;
+  padding: 0;
+  font-size: 0.95rem;
+}
+
+/* 内容区 */
+.atc-viewer .atc-body {
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  background-color: #fdfdfc;
+}
+
+.atc-viewer .atc-body.atc-body-flush {
+  /* PDF / 图片：铺满，无内边距 */
+  display: flex;
+  overflow: hidden;
+  background-color: #f1f1ef;
+}
+
+.atc-viewer .atc-frame {
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.atc-viewer .atc-image-wrap {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  padding: 20px;
+}
+
+.atc-viewer .atc-image-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 3px;
+  box-shadow: 0 2px 12px rgba(28, 32, 42, 0.16);
+  object-fit: contain;
+}
+
+/* 纯文本 / 代码 */
+.atc-viewer .atc-plain {
+  margin: 0;
+  padding: 22px 26px;
+  background-color: transparent;
+  color: #3a3f46;
+  font-family: var(--atc-mono);
+  font-size: 0.83rem;
+  line-height: 1.72;
+  tab-size: 4;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* 状态提示（加载 / 失败 / 不支持预览） */
+.atc-viewer .atc-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 100%;
+  padding: 40px 24px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.atc-viewer .atc-state-icon {
+  color: #b7bcc4;
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.atc-viewer .atc-state-title {
+  color: #454a52;
+  font-size: 0.98rem;
+  font-weight: 600;
+}
+
+.atc-viewer .atc-state-desc {
+  max-width: 34em;
+  color: #85898f;
+  font-size: 0.84rem;
+  line-height: 1.7;
+}
+
+.atc-viewer .atc-state-error .atc-state-icon {
+  color: #c75146;
+}
+
+.atc-viewer .atc-state-actions {
+  margin-top: 4px;
+}
+
+.atc-viewer .atc-state-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 16px;
+  border: 1px solid rgba(73, 90, 128, 0.4);
+  border-radius: 4px;
+  background-color: #fff;
+  color: #495a80;
+  font-size: 0.84rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.16s ease, border-color 0.16s ease;
+}
+
+.atc-viewer .atc-state-btn:hover {
+  border-color: #495a80;
+  background-color: #f4f6fa;
+}
+
+/* Markdown 渲染结果 */
+.atc-viewer .atc-markdown {
+  box-sizing: border-box;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 30px 34px 56px;
+  color: #3a3f46;
+  font-size: 0.94rem;
+  line-height: 1.85;
+  word-wrap: break-word;
+}
+
+.atc-viewer .atc-markdown > :first-child {
+  margin-top: 0;
+}
+
+.atc-viewer .atc-markdown h1,
+.atc-viewer .atc-markdown h2,
+.atc-viewer .atc-markdown h3,
+.atc-viewer .atc-markdown h4,
+.atc-viewer .atc-markdown h5,
+.atc-viewer .atc-markdown h6 {
+  margin: 1.6em 0 0.7em;
+  color: #2f333a;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.atc-viewer .atc-markdown h1 { font-size: 1.5em; }
+.atc-viewer .atc-markdown h2 {
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid rgba(90, 100, 125, 0.16);
+  font-size: 1.3em;
+}
+.atc-viewer .atc-markdown h3 { font-size: 1.14em; }
+.atc-viewer .atc-markdown h4 { font-size: 1em; }
+.atc-viewer .atc-markdown h5,
+.atc-viewer .atc-markdown h6 { font-size: 0.94em; }
+
+.atc-viewer .atc-markdown p,
+.atc-viewer .atc-markdown ul,
+.atc-viewer .atc-markdown ol,
+.atc-viewer .atc-markdown blockquote,
+.atc-viewer .atc-markdown table,
+.atc-viewer .atc-markdown pre {
+  margin: 0 0 1.05em;
+}
+
+.atc-viewer .atc-markdown ul,
+.atc-viewer .atc-markdown ol {
+  padding-left: 1.6em;
+}
+
+.atc-viewer .atc-markdown li {
+  margin: 0.3em 0;
+}
+
+.atc-viewer .atc-markdown a {
+  border-bottom: 1px solid rgba(73, 90, 128, 0.35);
+  color: #495a80;
+  text-decoration: none;
+}
+
+.atc-viewer .atc-markdown a:hover {
+  border-bottom-color: #495a80;
+}
+
+.atc-viewer .atc-markdown blockquote {
+  padding: 0.2em 1.1em;
+  border-left: 3px solid rgba(90, 100, 125, 0.28);
+  color: #6f747c;
+}
+
+.atc-viewer .atc-markdown code {
+  padding: 0.15em 0.42em;
+  border-radius: 3px;
+  background-color: rgba(90, 100, 125, 0.1);
+  color: #4b5058;
+  font-family: var(--atc-mono);
+  font-size: 0.87em;
+  word-break: break-word;
+}
+
+.atc-viewer .atc-markdown pre {
+  overflow: auto;
+  padding: 14px 16px;
+  border: 1px solid rgba(90, 100, 125, 0.14);
+  border-radius: 4px;
+  background-color: #f7f7f5;
+  line-height: 1.65;
+}
+
+.atc-viewer .atc-markdown pre code {
+  padding: 0;
+  border-radius: 0;
+  background-color: transparent;
+  font-size: 0.84rem;
+  white-space: pre;
+}
+
+.atc-viewer .atc-markdown img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 3px;
+}
+
+.atc-viewer .atc-markdown hr {
+  height: 1px;
+  margin: 1.8em 0;
+  border: 0;
+  background-color: rgba(90, 100, 125, 0.18);
+}
+
+.atc-viewer .atc-markdown table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  border-collapse: collapse;
+  font-size: 0.88em;
+}
+
+.atc-viewer .atc-markdown th,
+.atc-viewer .atc-markdown td {
+  padding: 7px 12px;
+  border: 1px solid rgba(90, 100, 125, 0.18);
+}
+
+.atc-viewer .atc-markdown th {
+  background-color: rgba(90, 100, 125, 0.07);
+  font-weight: 600;
+}
+
+/* 手机端全屏 */
+@media (max-width: 767px) {
+  .atc-viewer {
+    padding: 0;
+  }
+
+  .atc-viewer .atc-window {
+    max-width: none;
+    height: 100%;
+    border: 0;
+    border-radius: 0;
+  }
+
+  .atc-viewer .atc-bar {
+    padding: 10px 10px 10px 14px;
+  }
+
+  .atc-viewer .atc-bar-btn .atc-btn-text {
+    display: none;
+  }
+
+  .atc-viewer .atc-bar-btn {
+    width: 32px;
+    padding: 0;
+  }
+
+  .atc-viewer .atc-markdown {
+    padding: 20px 18px 44px;
+  }
+
+  .atc-viewer .atc-plain {
+    padding: 16px 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .post-body .atc-card,
+  .post-body .atc-card .atc-paper,
+  .atc-viewer,
+  .atc-viewer .atc-window {
+    transition: none;
+  }
+
+  .post-body .atc-card:hover {
+    transform: none;
+  }
+}
+
+/* ------------------------------------------------------------------ *
+ * 三、暗色模式
+ * 仅跟随本站自身的 body.darkmode--activated 开关，
+ * 不使用 prefers-color-scheme，避免在亮色站点上出现深色孤岛
+ * ------------------------------------------------------------------ */
+
+body.darkmode--activated .post-body .atc-card,
+body.darkmode--activated .atc-viewer {
+  --atc-surface: rgba(255, 255, 255, 0.05);
+  --atc-surface-hover: rgba(255, 255, 255, 0.09);
+  --atc-border: rgba(255, 255, 255, 0.14);
+  --atc-border-strong: rgba(255, 255, 255, 0.26);
+  --atc-title: #d6d8dc;
+  --atc-muted: #969aa1;
+}
+
+body.darkmode--activated .post-body .atc-card {
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 255, 255, 0.015) 100%
+  );
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.28);
+}
+
+body.darkmode--activated .post-body .atc-card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+body.darkmode--activated .post-body .atc-card .atc-paper {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+body.darkmode--activated .post-body .atc-card .atc-btn {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.darkmode--activated .post-body .atc-card .atc-btn:hover {
+  background-color: rgba(255, 255, 255, 0.11);
+  color: #e7e9ec;
+}
+
+body.darkmode--activated .atc-viewer .atc-backdrop {
+  background-color: rgba(12, 14, 18, 0.55);
+}
+
+body.darkmode--activated .atc-viewer .atc-window {
+  border-color: rgba(255, 255, 255, 0.1);
+  background-color: #23262b;
+  color: #d6d8dc;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.55);
+}
+
+body.darkmode--activated .atc-viewer .atc-bar {
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+  background-color: #1e2126;
+}
+
+body.darkmode--activated .atc-viewer .atc-bar-name { color: #e2e4e8; }
+body.darkmode--activated .atc-viewer .atc-bar-sub  { color: #969aa1; }
+
+body.darkmode--activated .atc-viewer .atc-bar-btn {
+  border-color: rgba(255, 255, 255, 0.16);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #b9bdc4;
+}
+
+body.darkmode--activated .atc-viewer .atc-bar-btn:hover {
+  border-color: rgba(255, 255, 255, 0.34);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+body.darkmode--activated .atc-viewer .atc-body,
+body.darkmode--activated .atc-viewer .atc-window { background-color: #23262b; }
+
+body.darkmode--activated .atc-viewer .atc-body.atc-body-flush {
+  background-color: #1a1c20;
+}
+
+body.darkmode--activated .atc-viewer .atc-plain,
+body.darkmode--activated .atc-viewer .atc-markdown { color: #c9ccd1; }
+
+body.darkmode--activated .atc-viewer .atc-markdown h1,
+body.darkmode--activated .atc-viewer .atc-markdown h2,
+body.darkmode--activated .atc-viewer .atc-markdown h3,
+body.darkmode--activated .atc-viewer .atc-markdown h4,
+body.darkmode--activated .atc-viewer .atc-markdown h5,
+body.darkmode--activated .atc-viewer .atc-markdown h6 { color: #e2e4e8; }
+
+body.darkmode--activated .atc-viewer .atc-markdown h2,
+body.darkmode--activated .atc-viewer .atc-markdown th,
+body.darkmode--activated .atc-viewer .atc-markdown td,
+body.darkmode--activated .atc-viewer .atc-markdown pre {
+  border-color: rgba(255, 255, 255, 0.14);
+}
+
+body.darkmode--activated .atc-viewer .atc-markdown a { color: #8fa6d8; }
+
+body.darkmode--activated .atc-viewer .atc-markdown code {
+  background-color: rgba(255, 255, 255, 0.09);
+  color: #d8dbe0;
+}
+
+body.darkmode--activated .atc-viewer .atc-markdown pre {
+  background-color: rgba(0, 0, 0, 0.28);
+}
+
+body.darkmode--activated .atc-viewer .atc-markdown blockquote {
+  border-left-color: rgba(255, 255, 255, 0.22);
+  color: #9ea2a9;
+}
+
+body.darkmode--activated .atc-viewer .atc-state-title { color: #dcdee2; }
+body.darkmode--activated .atc-viewer .atc-state-desc  { color: #9ea2a9; }
+
+body.darkmode--activated .atc-viewer .atc-state-btn {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #8fa6d8;
+}
