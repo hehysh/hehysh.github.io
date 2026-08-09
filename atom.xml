@@ -6,7 +6,7 @@
   <link href="https://blog.verynb.net/atom.xml" rel="self"/>
   
   <link href="https://blog.verynb.net/"/>
-  <updated>2026-08-09T10:34:37.364Z</updated>
+  <updated>2026-08-09T10:47:52.960Z</updated>
   <id>https://blog.verynb.net/</id>
   
   <author>
@@ -21,11 +21,17 @@
     <link href="https://blog.verynb.net/posts/16103.html"/>
     <id>https://blog.verynb.net/posts/16103.html</id>
     <published>2026-08-09T10:30:28.000Z</published>
-    <updated>2026-08-09T10:34:37.364Z</updated>
+    <updated>2026-08-09T10:47:52.960Z</updated>
     
     
-    <summary type="html">&lt;p&gt;写文章的时候经常想丢一份文件给读者——一份大纲、一张表、一段源码。以前我的做法是甩一个裸链接出去，读者点一下，浏览器要么下载，要么把 Markdown 当纯文本糊在屏幕上，丑得很。&lt;/p&gt;
-&lt;p&gt;于是花了个上午做了这么个东西：文章里写一行标签，编译出来是一张附件卡片；点一下卡片，页面上浮起一层预览器，Markdown 当场渲染，PDF 内嵌，图片直接看，办公文档提示下载。全程不跳页，不依赖任何在线预览服务。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;这篇文章主体是Opus 5写的，有时候真的感慨ai的方便，以前想添加这种小功能，又不会编程，就是跑到别人博客到处抄。&lt;/p&gt;
+&lt;p&gt;现在cc一装，账户一连，提出要求，看会小说回来就发现已经搞好了，甚至还写了个教程。&lt;/p&gt;
+&lt;p&gt;Man,what can I say&lt;/p&gt;
+&lt;p&gt;总之这确实是一个很重要的需求，因为我老是喜欢赛博斗蛐蛐，尤其是之前A&amp;#x2F;出bug零元购max20x账户让我爽玩了一晚上Fable5，不仅写了几个网页还生产了一堆清水文，让我好不过瘾。但是想要放到博客上就很累了，复制粘贴固然简单但是排版特别烂。&lt;/p&gt;
+&lt;p&gt;所以就有了添加这个功能的契机，那么下面就是教程了，由Opus 5撰写。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;写文章的时候经常想丢一份文件给读者——一份大纲、一张表、一段源码。以前我的做法是甩一个裸链接出去，读者点一下，浏览器要么下载，要么把 Markdown 当纯文本糊在屏幕上，丑得很。&lt;/p&gt;
+&lt;p&gt;于是花了个下午做了这么个东西：文章里写一行标签，编译出来是一张附件卡片；点一下卡片，页面上浮起一层预览器，Markdown 当场渲染，PDF 内嵌，图片直接看，办公文档提示下载。全程不跳页，不依赖任何在线预览服务。&lt;/p&gt;
 &lt;p&gt;下面是成品，可以点开试试：&lt;/p&gt;
 &lt;div class=&quot;atc-card atc-tone-md&quot; data-atc-url=&quot;/files/attachment-test.md&quot; data-atc-name=&quot;附件预览器测试文档&quot; data-atc-ext=&quot;md&quot; data-atc-kind=&quot;markdown&quot; data-atc-label=&quot;Markdown 文档&quot; data-atc-size=&quot;&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;打开附件：附件预览器测试文档&quot;&gt;&lt;span class=&quot;atc-edge&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span class=&quot;atc-thumb&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;atc-paper&quot;&gt;&lt;span class=&quot;atc-paper-ext&quot;&gt;MD&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;atc-meta&quot;&gt;&lt;span class=&quot;atc-title&quot;&gt;附件预览器测试文档&lt;/span&gt;&lt;span class=&quot;atc-sub&quot;&gt;Markdown 文档&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;atc-actions&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;atc-btn atc-btn-view&quot; aria-label=&quot;查看 附件预览器测试文档&quot;&gt;&lt;i class=&quot;fa fa-eye&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;atc-btn-text&quot;&gt;查看&lt;/span&gt;&lt;/button&gt;&lt;a class=&quot;atc-btn atc-btn-download&quot; href=&quot;/files/attachment-test.md&quot; download rel=&quot;noopener&quot; aria-label=&quot;下载 附件预览器测试文档&quot;&gt;&lt;i class=&quot;fa fa-download&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;atc-btn-text&quot;&gt;下载&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;</summary>
     
