@@ -6,7 +6,7 @@
   <link href="https://blog.verynb.net/atom.xml" rel="self"/>
   
   <link href="https://blog.verynb.net/"/>
-  <updated>2026-08-17T13:16:11.402Z</updated>
+  <updated>2026-08-18T06:37:23.849Z</updated>
   <id>https://blog.verynb.net/</id>
   
   <author>
@@ -15,6 +15,21 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>日中见斗</title>
+    <link href="https://blog.verynb.net/posts/41617.html"/>
+    <id>https://blog.verynb.net/posts/41617.html</id>
+    <published>2026-08-18T12:42:00.000Z</published>
+    <updated>2026-08-18T06:37:23.849Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;偶然发现用fable-5和gemini-3.7-flash联合写小说是王炸。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>第三根黑烛</title>
@@ -399,26 +414,6 @@
     <summary type="html">&lt;p&gt;上一次更新博客是在2024-9-22，已经半年没更新了。&lt;/p&gt;
 &lt;p&gt;十一月份我骑公路车把手摔断了，后来忙于学业，久而久之就断更了。以前我刚建立博客的时候几乎一天一更，后来发现热情消退了连一月一更都很难坚持。希望我能继续坚持下去吧。&lt;/p&gt;
 &lt;p&gt;写这篇文章的契机主要是最近折腾switch结果把大气层虚拟系统给搞炸了，于是记录一下这次的救机过程，方便自己以后再查阅吧。&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>无树莓派安装klipper固件</title>
-    <link href="https://blog.verynb.net/posts/28979.html"/>
-    <id>https://blog.verynb.net/posts/28979.html</id>
-    <published>2024-09-22T20:07:43.000Z</published>
-    <updated>2026-08-09T07:12:24.406Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;最近翻出了我的一台3d打印机，是21年买的。&lt;/p&gt;
-&lt;p&gt;记得那个时候我刚代表小学参加一个上海市的3d打印比赛，在4个月内学会了3d建模并且与小组的其他3个人共同建模了母校（现在忘光了）。&lt;/p&gt;
-&lt;p&gt;当时只拿了第二名，不过第一名是也是我们学校的。&lt;/p&gt;
-&lt;p&gt;反正回来之后对于3d打印很感兴趣，干脆自己买了一台放在家里玩。于是购入一台创想三维的Ender-3 v1。&lt;/p&gt;
-&lt;p&gt;现在翻出来，首先随便打印了个东西，发现打印速度、精度都好像有点过时。这三年来3d打印，尤其是小型的打印机发展速度太快了。&lt;/p&gt;
-&lt;p&gt;于是上网进行搜索，发现换一个固件可以快速有效的解决问题，把打印机的性能大幅提升，于是开始折腾。&lt;/p&gt;</summary>
     
     
     
