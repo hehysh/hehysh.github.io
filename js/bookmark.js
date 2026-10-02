@@ -4,49 +4,48 @@ document.addEventListener('DOMContentLoaded', () => {
   'use strict';
 
   const doSaveScroll = () => {
-    localStorage.setItem('bookmark' + location.pathname, window.scrollY);
+    try {
+      localStorage.setItem('bookmark' + location.pathname, window.scrollY);
+    } catch (error) { /* Reading still works when storage is unavailable. */ }
   };
 
   const scrollToMark = () => {
-    let top = localStorage.getItem('bookmark' + location.pathname);
+    let top;
+    try {
+      top = localStorage.getItem('bookmark' + location.pathname);
+    } catch (error) { return; }
     top = parseInt(top, 10);
     // If the page opens with a specific hash, just jump out
-    if (!isNaN(top) && location.hash === '') {
-      // Auto scroll to the position
-      window.anime({
-        targets  : document.scrollingElement,
-        duration : 200,
-        easing   : 'linear',
-        scrollTop: top
-      });
+    if (!isNaN(top) && top > 0 && location.hash === '' && Math.abs(window.scrollY - top) > 1) {
+      window.scrollTo({ top, behavior: 'instant' });
     }
   };
   // Register everything
   const init = function(trigger) {
     // Create a link element
     const link = document.querySelector('.book-mark-link');
+    if (!link) return;
     // Scroll event
     window.addEventListener('scroll', () => link.classList.toggle('book-mark-link-fixed', window.scrollY === 0), { passive: true });
-    // Register beforeunload event when the trigger is auto
+    // pagehide preserves the browser's back/forward cache.
     if (trigger === 'auto') {
-      // Register beforeunload event
-      window.addEventListener('beforeunload', doSaveScroll);
+      window.addEventListener('pagehide', doSaveScroll);
+      document.addEventListener('visibilitychange', () => {
+        if (document.hidden) doSaveScroll();
+      });
       document.addEventListener('pjax:send', doSaveScroll);
     }
     // Save the position by clicking the icon
     link.addEventListener('click', () => {
       doSaveScroll();
-      window.anime({
-        targets : link,
-        duration: 200,
-        easing  : 'linear',
-        top     : -30,
-        complete: () => {
-          setTimeout(() => {
-            link.style.top = '';
-          }, 400);
-        }
-      });
+      if (link.animate && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        link.animate([
+          { transform: 'translateY(0)' },
+          { transform: 'translateY(-30px)', offset: 0.25 },
+          { transform: 'translateY(-30px)', offset: 0.75 },
+          { transform: 'translateY(0)' }
+        ], { duration: 800, easing: 'ease-out' });
+      }
     });
     scrollToMark();
     document.addEventListener('pjax:success', scrollToMark);

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#222222">
+  <meta name="robots" content="noindex">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="晴雀堂">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="stylesheet" href="/css/pwa.css">
+  <title>离线阅读 | 晴雀堂</title>
+</head>
+<body class="pwa-offline-page">
+  <main class="pwa-offline-main">
+    <a class="pwa-home" href="/">晴雀堂</a>
+    <h1>离线也能继续阅读</h1>
+    <p id="pwa-offline-intro">这里列出已保存在这台设备上的页面。未缓存的页面需要联网后打开。</p>
+    <p id="pwa-status" role="status">正在读取离线页面…</p>
+    <div class="pwa-actions">
+      <a href="/">返回首页</a>
+      <button type="button" id="pwa-retry">重试连接</button>
+      <button type="button" id="pwa-enable">启用离线阅读</button>
+      <button type="button" id="pwa-update" hidden>更新并重新打开</button>
+      <button type="button" id="pwa-install" hidden>安装到设备</button>
+    </div>
+    <h2>可以离线打开的页面</h2>
+    <ul id="pwa-pages" aria-live="polite"></ul>
+    <noscript>请开启 JavaScript 以查看缓存列表；已缓存的页面仍可通过原链接打开。</noscript>
+    <details class="pwa-tools" id="pwa-tools">
+      <summary>安装与离线说明</summary>
+      <p id="pwa-install-help">iPhone / iPad：在 Safari 中点“分享”→“添加到主屏幕”。若出现“作为 Web App 打开”，请保持开启。</p>
+      <p>启用后会缓存最近访问的最多 60 个页面。页面图片与附件仅在加载后缓存；外链图片、视频和评论需要联网。</p>
+      <p>离线内容保存在当前浏览器或主屏幕应用内，两者可能不共享数据。设备空间不足或长时间未使用时，系统可能清理缓存；请勿将它作为唯一备份。</p>
+    </details>
+    <div class="pwa-notice" id="pwa-notice" role="status" hidden></div>
+  </main>
+  <script src="/js/pwa.js" data-root="/" defer></script>
+</body>
+</html>

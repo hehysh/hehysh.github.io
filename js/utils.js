@@ -126,37 +126,49 @@ NexT.utils = {
     const backToTop = document.querySelector('.back-to-top');
     const readingProgressBar = document.querySelector('.reading-progress-bar');
     // For init back to top in sidebar if page was scrolled after page refresh.
-    window.addEventListener('scroll', () => {
+    let frame = 0;
+    const update = () => {
+      frame = 0;
+      // Read positions before changing progress text or TOC classes.
+      let index = -1;
+      if (Array.isArray(NexT.utils.sections)) {
+        index = NexT.utils.sections.findIndex(element => element && element.getBoundingClientRect().top > 10);
+        if (index === -1) index = NexT.utils.sections.length - 1;
+        else if (index > 0) index--;
+      }
       if (backToTop || readingProgressBar) {
-        const contentHeight = document.body.scrollHeight - window.innerHeight;
-        const scrollPercent = contentHeight > 0 ? Math.min(100 * window.scrollY / contentHeight, 100) : 0;
+        const contentHeight = document.scrollingElement.scrollHeight - window.innerHeight;
+        const scrollPercent = contentHeight > 0 ? Math.max(0, Math.min(100 * window.scrollY / contentHeight, 100)) : 0;
         if (backToTop) {
           backToTop.classList.toggle('back-to-top-on', Math.round(scrollPercent) >= 5);
-          backToTop.querySelector('span').innerText = Math.round(scrollPercent) + '%';
+          const label = backToTop.querySelector('span');
+          const text = Math.round(scrollPercent) + '%';
+          if (label.textContent !== text) label.textContent = text;
+          backToTop.setAttribute('aria-label', '返回顶部 · ' + text);
         }
         if (readingProgressBar) {
           readingProgressBar.style.setProperty('--progress', scrollPercent.toFixed(2) + '%');
         }
       }
-      if (!Array.isArray(NexT.utils.sections)) return;
-      let index = NexT.utils.sections.findIndex(element => {
-        return element && element.getBoundingClientRect().top > 10;
-      });
-      if (index === -1) {
-        index = NexT.utils.sections.length - 1;
-      } else if (index > 0) {
-        index--;
-      }
-      this.activateNavByIndex(index);
-    }, { passive: true });
+      if (index >= 0) this.activateNavByIndex(index);
+    };
+    const schedule = () => {
+      if (!frame) frame = requestAnimationFrame(update);
+    };
+    window.addEventListener('scroll', schedule, { passive: true });
+    window.addEventListener('resize', schedule);
+    document.addEventListener('page:loaded', schedule);
+    schedule();
 
     backToTop && backToTop.addEventListener('click', () => {
-      window.anime({
-        targets  : document.scrollingElement,
-        duration : 500,
-        easing   : 'linear',
-        scrollTop: 0
-      });
+      this.scrollTo(window, 0);
+    });
+  },
+
+  scrollTo: function(element, top) {
+    element.scrollTo({
+      top,
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
     });
   },
 
@@ -186,12 +198,7 @@ NexT.utils = {
         }));
         if (!CONFIG.stickytabs) return;
         const offset = nav.parentNode.getBoundingClientRect().top + window.scrollY + 10;
-        window.anime({
-          targets  : document.scrollingElement,
-          duration : 500,
-          easing   : 'linear',
-          scrollTop: offset
-        });
+        this.scrollTo(window, offset);
       });
     });
 
@@ -237,17 +244,11 @@ NexT.utils = {
       const target = document.getElementById(decodeURI(element.getAttribute('href')).replace('#', ''));
       // TOC item animation navigate.
       element.addEventListener('click', event => {
+        if (!target) return;
         event.preventDefault();
         const offset = target.getBoundingClientRect().top + window.scrollY;
-        window.anime({
-          targets  : document.scrollingElement,
-          duration : 500,
-          easing   : 'linear',
-          scrollTop: offset,
-          complete : () => {
-            history.pushState(null, document.title, element.href);
-          }
-        });
+        history.pushState(null, document.title, element.href);
+        this.scrollTo(window, offset);
       });
       return target;
     });

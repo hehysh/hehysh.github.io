@@ -1,0 +1,461 @@
+.atc-viewer {
+  /* 强调色：默认沿用 NexT 主题链接色 */
+  --atc-accent: #495a80;
+  --atc-surface: rgba(255, 255, 255, 0.62);
+  --atc-surface-hover: rgba(255, 255, 255, 0.82);
+  --atc-border: rgba(90, 100, 125, 0.18);
+  --atc-border-strong: rgba(90, 100, 125, 0.3);
+  --atc-title: #333;
+  --atc-muted: #7c8087;
+  --atc-radius: 5px;
+  --atc-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+    "PingFang SC", "Microsoft YaHei", monospace;
+}
+
+/* ------------------------------------------------------------------ *
+ * 二、沉浸式附件预览器
+ * 与正文共用文楷、灰蓝标题和格子纸观感，不另载字体或背景图片。
+ * ------------------------------------------------------------------ */
+
+html.atc-locked,
+html.atc-locked body {
+  overflow: hidden !important;
+}
+
+.atc-viewer {
+  --atc-paper: #fafaf8;
+  --atc-paper-muted: #f3f4f3;
+  --atc-text: var(--text-color, #555);
+  --atc-heading-line: #f27c8d;
+  --atc-quote-line: #1098ad;
+  --atc-quote-bg: rgba(16, 152, 173, 0.055);
+  --atc-code: #9a582d;
+  --atc-tint: rgba(73, 90, 128, 0.045);
+  --atc-grid: rgba(73, 90, 128, 0.025);
+  --atc-overlay: rgba(40, 46, 60, 0.36);
+  position: fixed;
+  inset: 0;
+  z-index: 100000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 4vh 24px;
+  color: var(--atc-text);
+  font-family: inherit;
+  line-height: 1.8;
+  text-shadow: none;
+  opacity: 0;
+  transition: opacity 0.16s ease;
+}
+
+.atc-viewer.atc-open {
+  opacity: 1;
+}
+
+/* 轻遮罩；避免全屏 backdrop-filter 带来的额外合成开销。 */
+.atc-viewer .atc-backdrop {
+  position: absolute;
+  inset: 0;
+  background: var(--atc-overlay);
+}
+
+.atc-viewer .atc-window {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1040px;
+  height: 92vh;
+  max-height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  border: 1px solid var(--atc-border);
+  border-top: 3px solid var(--atc-accent);
+  border-radius: 3px;
+  background-color: var(--atc-paper);
+  background-image:
+    linear-gradient(var(--atc-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--atc-grid) 1px, transparent 1px);
+  background-size: 24px 24px;
+  box-shadow: 0 8px 28px rgba(28, 32, 42, 0.16);
+}
+
+.atc-viewer .atc-bar {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 22px;
+  border-bottom: 1px solid var(--atc-border);
+  background: var(--atc-paper);
+}
+
+.atc-viewer .atc-bar-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.atc-viewer .atc-bar-name,
+.atc-viewer .atc-bar-sub {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.atc-viewer .atc-bar-name {
+  color: var(--atc-accent);
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.atc-viewer .atc-bar-sub {
+  color: var(--atc-muted);
+  font-size: 0.75em;
+}
+
+.atc-viewer .atc-bar-actions {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.atc-viewer .atc-bar-btn,
+.atc-viewer .atc-state-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  border: 1px solid var(--atc-border-strong);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--atc-accent);
+  font-family: inherit;
+  font-size: 0.8em;
+  line-height: 1.5;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.atc-viewer .atc-bar-btn:hover,
+.atc-viewer .atc-state-btn:hover {
+  border-color: var(--atc-accent);
+  background: var(--atc-tint);
+  color: var(--atc-accent);
+}
+
+.atc-viewer .atc-bar-btn:focus-visible,
+.atc-viewer .atc-state-btn:focus-visible,
+.atc-viewer .atc-markdown a:focus-visible {
+  outline: 2px solid var(--atc-accent);
+  outline-offset: 3px;
+}
+
+.atc-viewer .atc-bar-close {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border-color: transparent;
+}
+
+.atc-viewer .atc-body {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  scrollbar-gutter: stable;
+  -webkit-overflow-scrolling: touch;
+}
+
+.atc-viewer .atc-body.atc-body-flush {
+  display: flex;
+  overflow: hidden;
+  background: var(--atc-paper-muted);
+  scrollbar-gutter: auto;
+}
+
+.atc-viewer .atc-frame {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.atc-viewer .atc-image-wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  min-width: 0;
+  padding: 20px;
+}
+
+.atc-viewer .atc-image-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.atc-viewer .atc-plain {
+  margin: 0;
+  padding: 26px 32px;
+  background: transparent;
+  color: var(--atc-text);
+  font-family: var(--atc-mono);
+  font-size: 0.85em;
+  line-height: 1.8;
+  tab-size: 4;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.atc-viewer .atc-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  box-sizing: border-box;
+  min-height: 100%;
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.atc-viewer .atc-state-icon {
+  color: var(--atc-muted);
+  font-size: 2em;
+  line-height: 1;
+}
+
+.atc-viewer .atc-state-title {
+  color: var(--atc-accent);
+  font-size: 1em;
+}
+
+.atc-viewer .atc-state-desc {
+  max-width: 32em;
+  color: var(--atc-muted);
+  font-size: 0.85em;
+  overflow-wrap: anywhere;
+}
+
+.atc-viewer .atc-state-error .atc-state-icon {
+  color: #c75146;
+}
+
+.atc-viewer .atc-state-actions {
+  margin-top: 8px;
+}
+
+/* 阅读宽度、字号和行距贴近博客正文。 */
+.atc-viewer .atc-markdown {
+  box-sizing: border-box;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 36px 40px 64px;
+  color: var(--atc-text);
+  font-size: 1em;
+  line-height: 2;
+  overflow-wrap: anywhere;
+}
+
+.atc-viewer .atc-markdown > :first-child {
+  margin-top: 0;
+}
+
+.atc-viewer .atc-markdown :is(h1, h2, h3, h4, h5, h6) {
+  margin: 1.8em 0 0.8em;
+  color: var(--atc-accent);
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.6;
+  scroll-margin-top: 24px;
+}
+
+.atc-viewer .atc-markdown h1 { font-size: 1.6em; }
+.atc-viewer .atc-markdown h2 { font-size: 1.3em; }
+.atc-viewer .atc-markdown h3 { font-size: 1.15em; }
+.atc-viewer .atc-markdown :is(h4, h5, h6) { font-size: 1em; }
+
+.atc-viewer .atc-markdown :is(h2, h3) {
+  padding-left: 14px;
+  border-left: 3px solid var(--atc-heading-line);
+  border-bottom: 0;
+}
+
+.atc-viewer .atc-markdown :is(p, ul, ol, blockquote, table, pre) {
+  margin: 0 0 1.2em;
+}
+
+.atc-viewer .atc-markdown :is(ul, ol) {
+  padding-left: 1.6em;
+}
+
+.atc-viewer .atc-markdown li {
+  margin: 0.25em 0;
+}
+
+.atc-viewer .atc-markdown a {
+  border-bottom: 1px solid var(--atc-border-strong);
+  color: var(--atc-accent);
+  text-decoration: none;
+}
+
+.atc-viewer .atc-markdown a:hover {
+  border-bottom-color: var(--atc-accent);
+}
+
+.atc-viewer .atc-markdown blockquote {
+  padding: 10px 18px;
+  border-left: 3px solid var(--atc-quote-line);
+  border-radius: 0 3px 3px 0;
+  background: var(--atc-quote-bg);
+  color: var(--atc-text);
+}
+
+.atc-viewer .atc-markdown blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.atc-viewer .atc-markdown code {
+  margin: 0;
+  padding: 0.15em 0.4em;
+  border-radius: 2px;
+  background: var(--atc-tint);
+  color: var(--atc-code);
+  font-family: var(--atc-mono);
+  font-size: 0.85em;
+}
+
+.atc-viewer .atc-markdown pre {
+  overflow: auto;
+  padding: 16px 18px;
+  border: 1px solid var(--atc-border);
+  border-radius: 3px;
+  background: var(--atc-paper-muted);
+  line-height: 1.8;
+}
+
+.atc-viewer .atc-markdown pre code {
+  padding: 0;
+  background: transparent;
+  color: var(--atc-text);
+  white-space: pre;
+}
+
+.atc-viewer .atc-markdown img {
+  max-width: 100%;
+  height: auto;
+}
+
+.atc-viewer .atc-markdown hr {
+  height: 1px;
+  margin: 2em auto;
+  border: 0;
+  background: var(--atc-border);
+}
+
+.atc-viewer .atc-markdown table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+
+.atc-viewer .atc-markdown :is(th, td) {
+  padding: 8px 14px;
+  border: 1px solid var(--atc-border);
+}
+
+.atc-viewer .atc-markdown tr {
+  background: transparent;
+}
+
+.atc-viewer .atc-markdown th,
+.atc-viewer .atc-markdown tbody tr:nth-child(odd),
+.atc-viewer .atc-markdown tbody tr:hover {
+  background: var(--atc-tint);
+}
+
+/* 手机端使用完整阅读空间；按钮保留足够的触摸面积。 */
+@media (max-width: 767px) {
+  .atc-viewer {
+    padding: 0;
+  }
+
+  .atc-viewer .atc-window {
+    max-width: none;
+    height: 100%;
+    height: 100dvh;
+    border: 0;
+    border-top: 2px solid var(--atc-accent);
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .atc-viewer .atc-bar {
+    gap: 10px;
+    padding: calc(10px + env(safe-area-inset-top)) 14px 10px;
+  }
+
+  .atc-viewer .atc-bar-btn .atc-btn-text {
+    display: none;
+  }
+
+  .atc-viewer .atc-bar-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  }
+
+  .atc-viewer .atc-markdown {
+    padding: 24px 22px calc(40px + env(safe-area-inset-bottom));
+  }
+
+  .atc-viewer .atc-plain {
+    padding: 20px 18px calc(24px + env(safe-area-inset-bottom));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .atc-viewer {
+    transition: none;
+  }
+
+}
+
+/* ------------------------------------------------------------------ *
+ * 三、暗色模式：跟随博客自己的开关，不单独跟随系统切换。
+ * ------------------------------------------------------------------ */
+
+body.darkmode--activated .atc-viewer {
+  --atc-surface: rgba(255, 255, 255, 0.05);
+  --atc-surface-hover: rgba(255, 255, 255, 0.09);
+  --atc-border: rgba(255, 255, 255, 0.14);
+  --atc-border-strong: rgba(255, 255, 255, 0.26);
+  --atc-title: #d6d8dc;
+  --atc-muted: #a0a5ad;
+}
+
+body.darkmode--activated .atc-viewer {
+  --atc-accent: #a8badc;
+  --atc-paper: #282828;
+  --atc-paper-muted: #242424;
+  --atc-text: #ccc;
+  --atc-heading-line: #c97b8c;
+  --atc-quote-line: #6eafb3;
+  --atc-quote-bg: rgba(110, 175, 179, 0.07);
+  --atc-code: #ddb28e;
+  --atc-tint: rgba(168, 186, 220, 0.055);
+  --atc-grid: rgba(168, 186, 220, 0.025);
+  --atc-overlay: rgba(12, 14, 18, 0.55);
+}
+

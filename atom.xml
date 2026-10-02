@@ -6,7 +6,7 @@
   <link href="https://blog.verynb.net/atom.xml" rel="self"/>
   
   <link href="https://blog.verynb.net/"/>
-  <updated>2026-08-18T06:37:23.849Z</updated>
+  <updated>2026-10-01T10:14:48.881Z</updated>
   <id>https://blog.verynb.net/</id>
   
   <author>
@@ -21,13 +21,15 @@
     <link href="https://blog.verynb.net/posts/41617.html"/>
     <id>https://blog.verynb.net/posts/41617.html</id>
     <published>2026-08-18T12:42:00.000Z</published>
-    <updated>2026-08-18T06:37:23.849Z</updated>
+    <updated>2026-10-01T10:14:48.881Z</updated>
     
     
     <summary type="html">&lt;p&gt;偶然发现用fable-5和gemini-3.7-flash联合写小说是王炸。&lt;/p&gt;</summary>
     
     
     
+    
+    <category term="AI-gen" scheme="https://blog.verynb.net/tags/AI-gen/"/>
     
   </entry>
   
@@ -36,7 +38,7 @@
     <link href="https://blog.verynb.net/posts/47820.html"/>
     <id>https://blog.verynb.net/posts/47820.html</id>
     <published>2026-08-17T12:59:08.000Z</published>
-    <updated>2026-08-17T13:16:11.402Z</updated>
+    <updated>2026-10-01T09:55:12.984Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;第三根黑烛：绝罚逆裁&quot;&gt;&lt;a href=&quot;#第三根黑烛：绝罚逆裁&quot; class=&quot;headerlink&quot; title=&quot;第三根黑烛：绝罚逆裁&quot;&gt;&lt;/a&gt;第三根黑烛：绝罚逆裁&lt;/h1&gt;&lt;blockquote&gt;
@@ -58,6 +60,8 @@
     
     
     
+    <category term="AI-gen" scheme="https://blog.verynb.net/tags/AI-gen/"/>
+    
   </entry>
   
   <entry>
@@ -65,7 +69,7 @@
     <link href="https://blog.verynb.net/posts/62029.html"/>
     <id>https://blog.verynb.net/posts/62029.html</id>
     <published>2026-08-10T12:00:00.000Z</published>
-    <updated>2026-08-11T08:29:21.779Z</updated>
+    <updated>2026-10-01T10:14:48.882Z</updated>
     
     
     <summary type="html">&lt;p&gt;最近发现用claude code写小说益处多多，缓存命中高，api还是纯血&lt;/p&gt;
@@ -75,6 +79,8 @@
     
     
     
+    <category term="AI-gen" scheme="https://blog.verynb.net/tags/AI-gen/"/>
+    
   </entry>
   
   <entry>
@@ -82,19 +88,15 @@
     <link href="https://blog.verynb.net/posts/50998.html"/>
     <id>https://blog.verynb.net/posts/50998.html</id>
     <published>2026-08-09T10:53:30.000Z</published>
-    <updated>2026-08-09T14:58:11.350Z</updated>
+    <updated>2026-10-01T11:08:53.605Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
-        
-      
+    <summary type="html">&lt;p&gt;现在最大的问题是，靠北，我忘了哪些是fable写的哪些是opus写的了，不管了，之后再整理吧。&lt;/p&gt;</summary>
     
     
     
+    
+    <category term="AI-gen" scheme="https://blog.verynb.net/tags/AI-gen/"/>
     
   </entry>
   
@@ -115,7 +117,7 @@
 &lt;p&gt;写文章的时候经常想丢一份文件给读者——一份大纲、一张表、一段源码。以前我的做法是甩一个裸链接出去，读者点一下，浏览器要么下载，要么把 Markdown 当纯文本糊在屏幕上，丑得很。&lt;/p&gt;
 &lt;p&gt;于是花了个下午做了这么个东西：文章里写一行标签，编译出来是一张附件卡片；点一下卡片，页面上浮起一层预览器，Markdown 当场渲染，PDF 内嵌，图片直接看，办公文档提示下载。全程不跳页，不依赖任何在线预览服务。&lt;/p&gt;
 &lt;p&gt;下面是成品，可以点开试试：&lt;/p&gt;
-&lt;div class=&quot;atc-card atc-tone-md&quot; data-atc-url=&quot;/files/attachment-test.md&quot; data-atc-name=&quot;附件预览器测试文档&quot; data-atc-ext=&quot;md&quot; data-atc-kind=&quot;markdown&quot; data-atc-label=&quot;Markdown 文档&quot; data-atc-size=&quot;&quot; role=&quot;button&quot; tabindex=&quot;0&quot; aria-label=&quot;打开附件：附件预览器测试文档&quot;&gt;&lt;span class=&quot;atc-edge&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span class=&quot;atc-thumb&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;atc-paper&quot;&gt;&lt;span class=&quot;atc-paper-ext&quot;&gt;MD&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;atc-meta&quot;&gt;&lt;span class=&quot;atc-title&quot;&gt;附件预览器测试文档&lt;/span&gt;&lt;span class=&quot;atc-sub&quot;&gt;Markdown 文档&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;atc-actions&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;atc-btn atc-btn-view&quot; aria-label=&quot;查看 附件预览器测试文档&quot;&gt;&lt;i class=&quot;fa fa-eye&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;atc-btn-text&quot;&gt;查看&lt;/span&gt;&lt;/button&gt;&lt;a class=&quot;atc-btn atc-btn-download&quot; href=&quot;/files/attachment-test.md&quot; download rel=&quot;noopener&quot; aria-label=&quot;下载 附件预览器测试文档&quot;&gt;&lt;i class=&quot;fa fa-download&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;atc-btn-text&quot;&gt;下载&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;</summary>
+&lt;div class=&quot;atc-card atc-tone-md&quot; data-atc-url=&quot;/files/attachment-test.md&quot; data-atc-name=&quot;附件预览器测试文档&quot; data-atc-ext=&quot;md&quot; data-atc-kind=&quot;markdown&quot; data-atc-label=&quot;Markdown 文档&quot; data-atc-size=&quot;&quot; role=&quot;group&quot; aria-label=&quot;附件：附件预览器测试文档&quot;&gt;&lt;span class=&quot;atc-edge&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;&lt;span class=&quot;atc-thumb&quot; aria-hidden=&quot;true&quot;&gt;&lt;span class=&quot;atc-paper&quot;&gt;&lt;span class=&quot;atc-paper-ext&quot;&gt;MD&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;atc-meta&quot;&gt;&lt;span class=&quot;atc-title&quot;&gt;附件预览器测试文档&lt;/span&gt;&lt;span class=&quot;atc-sub&quot;&gt;Markdown 文档&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;atc-actions&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;atc-btn atc-btn-view&quot; aria-label=&quot;查看 附件预览器测试文档&quot;&gt;&lt;i class=&quot;fa fa-eye&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;atc-btn-text&quot;&gt;查看&lt;/span&gt;&lt;/button&gt;&lt;a class=&quot;atc-btn atc-btn-download&quot; href=&quot;/files/attachment-test.md&quot; download rel=&quot;noopener&quot; aria-label=&quot;下载 附件预览器测试文档&quot;&gt;&lt;i class=&quot;fa fa-download&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;span class=&quot;atc-btn-text&quot;&gt;下载&lt;/span&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;</summary>
     
     
     
@@ -172,16 +174,10 @@
     <link href="https://blog.verynb.net/posts/5172.html"/>
     <id>https://blog.verynb.net/posts/5172.html</id>
     <published>2026-06-26T09:46:40.000Z</published>
-    <updated>2026-08-09T07:12:24.391Z</updated>
+    <updated>2026-10-01T11:08:53.599Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
-        
-      
+    <summary type="html">&lt;p&gt;上海6&amp;#x2F;10小三门出分后给我当头一棒，本来以为自己无缘厦大，带着不去白不去的心态去了早就报名好了的强基初试，没想到却踩线过了初试，这给了我新的希望。&lt;/p&gt;</summary>
     
     
     
@@ -193,16 +189,10 @@
     <link href="https://blog.verynb.net/posts/57344.html"/>
     <id>https://blog.verynb.net/posts/57344.html</id>
     <published>2026-06-09T18:30:18.000Z</published>
-    <updated>2026-08-09T07:12:24.396Z</updated>
+    <updated>2026-10-01T11:08:53.603Z</updated>
     
     
-      
-      
-        
-        
-    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot;</summary>
-        
-      
+    <summary type="html">&lt;p&gt;我不是一个经常自己写文章的人，作为上海的高中生，我最常写的是思辨议论文，上一次写随笔大概是在初中吧。后来我也只写过一些以同学为主角的无厘头小故事。但是今天下午，当高考结束，我坐在我熟悉的书桌前，只能望着湛蓝的高天中一架划出航迹云的飞机无所事事地出神时，我想起我应该写点什么。&lt;/p&gt;</summary>
     
     
     

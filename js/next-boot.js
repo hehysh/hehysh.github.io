@@ -41,7 +41,20 @@ NexT.boot.refresh = function() {
   CONFIG.mediumzoom && window.mediumZoom('.post-body :not(a) > img, .post-body > img', {
     background: 'var(--content-bg-color)'
   });
-  CONFIG.lazyload && window.lozad('.post-body img').observe();
+  // Older cached posts still use data-src. Restore native lazy images without
+  // waiting for a third-party observer; newly rendered posts already have src.
+  if (CONFIG.lazyload) {
+    document.querySelectorAll('.post-body img[data-src]').forEach(image => {
+      if (!image.hasAttribute('loading')) image.loading = 'lazy';
+      if (!image.hasAttribute('decoding')) image.decoding = 'async';
+      if (image.dataset.srcset) {
+        image.srcset = image.dataset.srcset;
+        image.removeAttribute('data-srcset');
+      }
+      image.src = image.dataset.src;
+      image.removeAttribute('data-src');
+    });
+  }
   CONFIG.pangu && window.pangu.spacingPage();
 
   CONFIG.exturl && NexT.utils.registerExtURL();

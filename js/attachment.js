@@ -15,6 +15,7 @@
   var ROOT = CONFIG.root || '/';
   var MARKED_URL = CONFIG.markedUrl || joinRoot('lib/attachment/marked.js');
   var PURIFY_URL = CONFIG.purifyUrl || joinRoot('lib/attachment/purify.min.js');
+  var VIEWER_CSS_URL = CONFIG.viewerCssUrl || joinRoot('css/attachment-viewer.css');
 
   // 纯文本预览的体积上限，超出后只提示下载，避免卡死页面
   var TEXT_LIMIT = 2 * 1024 * 1024;
@@ -81,6 +82,26 @@
   // ---------------------------------------------------------------- //
 
   var viewer = null;
+  var viewerStyles = null;
+  var openSequence = 0;
+
+  function ensureViewerStyles() {
+    if (!viewerStyles) {
+      viewerStyles = new Promise(function (resolve, reject) {
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = VIEWER_CSS_URL;
+        link.onload = resolve;
+        link.onerror = function () {
+          viewerStyles = null;
+          link.remove();
+          reject(new Error('预览器样式加载失败'));
+        };
+        document.head.appendChild(link);
+      });
+    }
+    return viewerStyles;
+  }
 
   function buildViewer() {
     var root = el('div', 'atc-viewer');
@@ -104,6 +125,7 @@
     download.className = 'atc-bar-btn atc-bar-download';
     download.setAttribute('download', '');
     download.setAttribute('rel', 'noopener');
+    download.setAttribute('aria-label', '下载附件');
     download.innerHTML = '<i class="fa fa-download" aria-hidden="true"></i>'
       + '<span class="atc-btn-text">下载</span>';
 
@@ -171,6 +193,24 @@
   }
 
   function openViewer(data) {
+    var sequence = ++openSequence;
+    document.querySelectorAll('.atc-card[aria-busy]').forEach(function (card) { card.removeAttribute('aria-busy'); });
+    var oldError = data.card.querySelector('.atc-load-error');
+    if (oldError) oldError.remove();
+    data.card.setAttribute('aria-busy', 'true');
+    ensureViewerStyles().then(function () {
+      if (sequence === openSequence && document.body.contains(data.card)) displayViewer(data);
+    }).catch(function () {
+      if (sequence !== openSequence || !document.body.contains(data.card)) return;
+      var message = el('span', 'atc-load-error', '预览暂不可用，请重试或下载附件。');
+      message.setAttribute('role', 'status');
+      data.card.querySelector('.atc-meta').appendChild(message);
+    }).finally(function () {
+      if (sequence === openSequence) data.card.removeAttribute('aria-busy');
+    });
+  }
+
+  function displayViewer(data) {
     var v = getViewer();
     var token = ++v.token;
 
@@ -197,6 +237,8 @@
   }
 
   function closeViewer() {
+    openSequence++;
+    document.querySelectorAll('.atc-card[aria-busy]').forEach(function (card) { card.removeAttribute('aria-busy'); });
     var v = viewer;
     if (!v || !v.open) return;
 
@@ -493,6 +535,7 @@
 
   function dataFromCard(card) {
     return {
+      card: card,
       url: card.getAttribute('data-atc-url') || '',
       name: card.getAttribute('data-atc-name') || '附件',
       ext: card.getAttribute('data-atc-ext') || '',

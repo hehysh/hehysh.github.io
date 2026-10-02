@@ -1,0 +1,278 @@
+/* 延续 NexT 的文楷、灰蓝主色与细分隔线。仅作用于 AI-gen 阅读控件。 */
+/* HTML 生成时已有折叠栏，head 在首次绘制前选定显示状态。禁用 JS 时展示全文。 */
+html:not([data-ai-gen-consent]) .index .ai-gen-ui,
+html[data-ai-gen-consent] .index .post-block[data-ai-gen-group]:not(.ai-gen-post-expanded),
+html[data-ai-gen-consent="no"] .index .post-block[data-ai-gen="true"],
+html[data-ai-gen-consent="no"] .index .ai-gen-group,
+html[data-ai-gen-consent="no"] .ai-gen-status-shown,
+html:not([data-ai-gen-consent="no"]) .ai-gen-status-hidden,
+html:not([data-ai-gen-consent="no"]) .index .ai-gen-empty {
+  display: none !important;
+}
+
+.ai-gen-ui {
+  --ai-gen-accent: #495a80;
+  --ai-gen-text: var(--text-color, #555);
+  --ai-gen-muted: #747982;
+  --ai-gen-border: rgba(73, 90, 128, 0.22);
+  --ai-gen-paper: #fafaf8;
+  --ai-gen-tint: rgba(73, 90, 128, 0.035);
+  color: var(--ai-gen-text);
+  font-family: inherit;
+  line-height: 1.8;
+  text-shadow: none;
+}
+
+.ai-gen-post-hidden,
+.ai-gen-ui[hidden] {
+  display: none !important;
+}
+
+.ai-gen-ui button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.ai-gen-ui button:focus-visible {
+  outline: 2px solid var(--ai-gen-accent);
+  outline-offset: 4px;
+}
+
+.ai-gen-preference {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 20px;
+  margin: 0 0 28px;
+  padding: 8px 0 12px;
+  border-bottom: 1px solid var(--ai-gen-border);
+  color: var(--ai-gen-muted);
+  font-size: 13px;
+}
+
+.ai-gen-text-button {
+  flex-shrink: 0;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid var(--ai-gen-border);
+  background: transparent;
+  color: var(--ai-gen-accent);
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.ai-gen-text-button:hover {
+  border-bottom-color: var(--ai-gen-accent);
+}
+
+.ai-gen-group {
+  margin: 0 0 50px;
+  border-top: 1px solid var(--ai-gen-border);
+  border-bottom: 1px solid var(--ai-gen-border);
+  background: var(--ai-gen-tint);
+}
+
+.ai-gen-group-toggle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 22px;
+  border: 0;
+  background: transparent;
+  color: var(--ai-gen-accent);
+  line-height: 1.8;
+  text-align: left;
+}
+
+.ai-gen-group-toggle:hover {
+  background: var(--ai-gen-tint);
+}
+
+.ai-gen-group-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.ai-gen-group-label {
+  display: block;
+  font-size: 17px;
+}
+
+.ai-gen-group-titles {
+  display: block;
+  overflow: hidden;
+  margin-top: 4px;
+  color: var(--ai-gen-muted);
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ai-gen-group-action {
+  flex-shrink: 0;
+  font-size: 14px;
+}
+
+.ai-gen-group-action::after {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 2px 3px 10px;
+  border-right: 1px solid currentColor;
+  border-bottom: 1px solid currentColor;
+  content: '';
+  transform: rotate(45deg);
+}
+
+[aria-expanded="true"] .ai-gen-group-action::after {
+  margin-bottom: 0;
+  transform: rotate(225deg);
+}
+
+.ai-gen-empty {
+  margin: 40px 0;
+  color: var(--ai-gen-muted);
+  font-size: 15px;
+  text-align: center;
+}
+
+html.ai-gen-modal-open {
+  overflow: hidden;
+}
+
+.ai-gen-dialog {
+  position: fixed;
+  box-sizing: border-box;
+  width: calc(100% - 40px);
+  max-width: 480px;
+  max-height: calc(100% - 40px);
+  margin: auto;
+  padding: 32px;
+  overflow: auto;
+  border: 1px solid var(--ai-gen-border);
+  border-top: 3px solid var(--ai-gen-accent);
+  border-radius: 3px;
+  background: var(--ai-gen-paper);
+  box-shadow: 0 12px 40px rgba(40, 46, 60, 0.16);
+  font-size: 15px;
+}
+
+.ai-gen-dialog::backdrop {
+  background: rgba(40, 46, 60, 0.34);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+}
+
+.ai-gen-dialog-close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--ai-gen-muted);
+  font-size: 24px;
+  line-height: 1;
+}
+
+.ai-gen-dialog-close:hover {
+  color: var(--ai-gen-accent);
+}
+
+.ai-gen-dialog p {
+  margin: 0 0 16px;
+}
+
+.ai-gen-dialog .ai-gen-dialog-kicker {
+  margin-bottom: 12px;
+  color: var(--ai-gen-muted);
+  font-size: 13px;
+  letter-spacing: 0.08em;
+}
+
+.ai-gen-dialog h2 {
+  margin: 0 0 18px;
+  color: var(--ai-gen-accent);
+  font-family: inherit;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.ai-gen-dialog-note {
+  padding-left: 14px;
+  border-left: 2px solid var(--ai-gen-border);
+  color: var(--ai-gen-muted);
+  font-size: 13px;
+}
+
+.ai-gen-dialog-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.ai-gen-button {
+  flex: 1;
+  padding: 7px 12px;
+  border: 1px solid var(--ai-gen-accent);
+  border-radius: 2px;
+  background: transparent;
+  color: var(--ai-gen-accent);
+  font-size: 14px;
+  line-height: 1.8;
+  white-space: nowrap;
+}
+
+.ai-gen-button-primary,
+.ai-gen-button:hover {
+  background: var(--ai-gen-accent);
+  color: var(--ai-gen-paper);
+}
+
+.ai-gen-button-primary:hover {
+  opacity: 0.85;
+}
+
+.ai-gen-dialog .ai-gen-dialog-hint {
+  margin: 18px 0 0;
+  color: var(--ai-gen-muted);
+  font-size: 12px;
+}
+
+body.darkmode--activated .ai-gen-ui {
+  --ai-gen-accent: #a8badc;
+  --ai-gen-muted: #a0a5ad;
+  --ai-gen-border: rgba(168, 186, 220, 0.25);
+  --ai-gen-paper: #282828;
+  --ai-gen-tint: rgba(168, 186, 220, 0.045);
+}
+
+@media (max-width: 767px) {
+  .ai-gen-preference {
+    flex-wrap: wrap;
+    margin-bottom: 22px;
+  }
+
+  .ai-gen-group-toggle {
+    gap: 12px;
+    padding: 16px 12px;
+  }
+
+  .ai-gen-group-label {
+    font-size: 16px;
+  }
+
+  .ai-gen-dialog {
+    padding: 28px 22px 24px;
+  }
+
+  .ai-gen-dialog h2 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16.png">
+  <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+  <meta name="msvalidate.01" content="bing_site_verification">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="/css/blog-icons.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/css/blog-icons.css"></noscript>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.verynb.net","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.12.2","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"Muse | Mist":280,"onmobile":false},"copycode":{"enable":true,"style":"mac","show_result":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script>if (!window.NexT) window.NexT = {};
+
+(function() {
+  const className = 'next-config';
+
+  const staticConfig = {};
+  let variableConfig = {};
+
+  const parse = text => JSON.parse(text || '{}');
+
+  const update = name => {
+    const targetEle = document.querySelector(`.${className}[data-name="${name}"]`);
+    if (!targetEle) return;
+    const parsedConfig = parse(targetEle.text);
+    if (name === 'main') {
+      Object.assign(staticConfig, parsedConfig);
+    } else {
+      variableConfig[name] = parsedConfig;
+    }
+  };
+
+  update('main');
+
+  window.CONFIG = new Proxy({}, {
+    get(overrideConfig, name) {
+      let existing;
+      if (name in staticConfig) {
+        existing = staticConfig[name];
+      } else {
+        if (!(name in variableConfig)) update(name);
+        existing = variableConfig[name];
+      }
+
+      // For unset override and mixable existing
+      if (!(name in overrideConfig) && typeof existing === 'object') {
+        // Get ready to mix.
+        overrideConfig[name] = {};
+      }
+
+      if (name in overrideConfig) {
+        const override = overrideConfig[name];
+
+        // When mixable
+        if (typeof override === 'object' && typeof existing === 'object') {
+          // Mix, proxy changes to the override.
+          return new Proxy({ ...existing, ...override }, {
+            set(target, prop, value) {
+              target[prop] = value;
+              override[prop] = value;
+              return true;
+            }
+          });
+        }
+
+        return override;
+      }
+
+      // Only when not mixable and override hasn't been set.
+      return existing;
+    }
+  });
+
+  document.addEventListener('pjax:success', () => {
+    variableConfig = {};
+  });
+})();
+</script>
+
+    <meta name="description" content="海压竹枝低复举，风吹山角晦还明">
+<meta property="og:type" content="website">
+<meta property="og:title" content="晴雀堂">
+<meta property="og:url" content="https://blog.verynb.net/tags/AI-gen/page/2/index.html">
+<meta property="og:site_name" content="晴雀堂">
+<meta property="og:description" content="海压竹枝低复举，风吹山角晦还明">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="晴雀">
+<meta property="article:tag" content="博客">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.verynb.net/tags/AI-gen/page/2/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"tags/AI-gen/page/2/index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>标签: AI-gen | 晴雀堂</title>
+  
+
+
+
+
+<link rel="dns-prefetch" href="https://waline.nbplus.eu.org"><!--非主域名自动跳转-->
+
+<script>
+(function() {
+  var mainDomain = "blog.verynb.net";
+  var host = location.hostname;
+
+  // 白名单：允许在这些域名下不跳转
+  var whitelist = [
+    "localhost",
+    "127.0.0.1"
+  ];
+
+  // 允许跳过 .github.dev 域名
+  if (host.endsWith(".github.dev")) {
+    return;
+  }
+
+  // 如果不是主域名，也不在白名单，就跳转
+  if (host !== mainDomain && !whitelist.includes(host)) {
+    var target = "https://" + mainDomain + location.pathname + location.search + location.hash;
+    window.location.replace(target);
+  }
+})();
+</script>
+
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="晴雀堂">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="晴雀堂">
+<meta property="og:url" content="tags/AI-gen/page/2/index.html">
+<meta property="og:site_name" content="晴雀堂">
+
+  <meta property="og:description" content="海压竹枝低复举，风吹山角晦还明">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="晴雀堂">
+
+  <meta name="twitter:description" content="海压竹枝低复举，风吹山角晦还明">
+
+
+<!--欢迎来到我的博客~话说为啥要看源码捏？-->
+<!--使用umami统计，尊重访客隐私^-^-->
+<script defer src="https://u.nbplus.eu.org/script.js" data-website-id="061f90c5-2d4f-428f-be7c-40f5a99113b4"></script>
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+<link rel="stylesheet" href="/css/blog-fonts.css" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="/css/blog-fonts.css" /></noscript>
+
+<meta name="msvalidate.01" content="AAFE56EEF8D0968CC1BC842FCE4448F5" />
+
+
+<script>
+(function () {
+  var consent = 'yes';
+  try {
+    var match = document.cookie.match(/(?:^|;\s*)ai_gen_consent=([^;]*)/);
+    if (match && decodeURIComponent(match[1]) === 'no') consent = 'no';
+  } catch (e) { /* Cookie 不可用时采用默认折叠展示。 */ }
+  document.documentElement.setAttribute('data-ai-gen-consent', consent);
+})();
+</script>
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="晴雀堂" type="application/atom+xml">
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">晴雀堂</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">晴雀的个人博客</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-links"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>友链</a></li><li class="menu-item menu-item-traveling"><span class="exturl" data-url="aHR0cHM6Ly93d3cudHJhdmVsbGluZ3MuY24vZ28uaHRtbA=="><i class="fa fa-subway fa-fw"></i>开往</span></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="晴雀"
+      src="/img/author.jpg">
+  <p class="site-author-name" itemprop="name">晴雀</p>
+  <div class="site-description" itemprop="description">海压竹枝低复举，风吹山角晦还明</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">89</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hlaHlzaA==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;hehysh"><i class="fab fa-github fa-fw"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zdGVhbWNvbW11bml0eS5jb20vcHJvZmlsZXMvNzY1NjExOTk2NjA4ODQ0OTMv" title="Steam → https:&#x2F;&#x2F;steamcommunity.com&#x2F;profiles&#x2F;76561199660884493&#x2F;"><i class="fab fa-steam fa-fw"></i>Steam</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly91Lm5icGx1cy5ldS5vcmcvc2hhcmUvNnJsb0ZyUllqVDNaQWhPMC9ibG9nLnZlcnluYi5uZXQ=" title="统计 → https:&#x2F;&#x2F;u.nbplus.eu.org&#x2F;share&#x2F;6rloFrRYjT3ZAhO0&#x2F;blog.verynb.net"><i class="fa fa-bar-chart fa-fw"></i>统计</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zLm5icGx1cy5ldS5vcmcv" title="监测 → https:&#x2F;&#x2F;s.nbplus.eu.org&#x2F;"><i class="fa fa-eye fa-fw"></i>监测</span>
+      </span>
+  </div>
+
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-chevron-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner tag posts-collapse">
+
+
+  
+  
+  
+  <div class="post-block">
+    <div class="post-content">
+      <div class="collection-title">
+        <h1 class="collection-header">AI-gen
+          <small>标签</small>
+        </h1>
+      </div>
+
+      
+    <div class="collection-year">
+      <span class="collection-header">2026</span>
+    </div>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2026-01-08T11:59:23+00:00"
+              content="2026-01-08">
+          01-08
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/posts/54342.html" itemprop="url">
+            <span itemprop="name">虾塔</span>
+          </a>
+      </div>
+
+      
+    </header>
+  </article>
+    <div class="collection-year">
+      <span class="collection-header">2025</span>
+    </div>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2025-05-11T14:55:06+00:00"
+              content="2025-05-11">
+          05-11
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/posts/undefined.html" itemprop="url">
+            <span itemprop="name">博客踩坑与重生：解决无提示错误ERR_INVALID_URL</span>
+          </a>
+      </div>
+
+      
+    </header>
+  </article>
+
+    </div>
+  </div>
+  
+  
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/tags/AI-gen/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/tags/AI-gen/">1</a><span class="page-number current">2</span>
+  </nav>
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2022 – 
+  <span itemprop="copyrightYear">2026</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">晴雀</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">436k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">6:37</span>
+  </span>
+</div>
+<span id="momk"></span>
+<script src="/js/site-runtime.js" defer></script>
+<br>
+<img src="/img/meng.png" alt="" width="23" height="23" loading="lazy" decoding="async" />
+<a class="icp-link" href="https://icp.gov.moe/?keyword=20236688" target="_blank" rel="noopener">萌ICP备20236688号</a>
+
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+  <script class="next-config" data-name="fancybox" type="application/json">{"jquery":{"url":"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js","integrity":"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="},"script":{"url":"https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js","integrity":"sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8="},"style":{"url":"https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css","integrity":"sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA="}}</script>
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script>
+
+
+
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"https://waline.nbplus.eu.org","cssUrl":"https://unpkg.com/@waline/client@2.15.8/dist/waline.css","commentCount":true,"pageview":false,"defer":true,"dark":"body.darkmode--activated","locale":{"placeholder":"Hi~欢迎留言呀！自由发言，开阔脑洞吧。请注意礼貌发言哦~不登录，不填昵称邮箱也没关系哒"},"avatar":"mm","meta":["nick","mail"],"pageSize":20,"visitor":true,"requiredFields":["nick"],"libUrl":"https://unpkg.com/@waline/client@2.15.8/dist/waline.js","login":"enable","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo","https://unpkg.com/@waline/emojis@1.0.1/alus","https://unpkg.com/@waline/emojis@1.0.1/bilibili","https://unpkg.com/@waline/emojis@1.0.1/tieba","https://unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"el":"#waline","comment":true,"path":"/tags/AI-gen/page/2/"}</script>
+<script src="/js/waline-loader.js" defer></script>
+<div class="top-scroll-bar" aria-hidden="true"></div>
+
+<script>
+window.AI_GEN_POSTS = ["/posts/64721.html",
+    "/posts/47267.html",
+    "/posts/undefined.html",
+    "/posts/38442.html",
+    "/posts/50998.html",
+    "/posts/64465.html",
+    "/posts/1879.html",
+    "/posts/47820.html",
+    "/posts/54342.html",
+    "/posts/22404.html",
+    "/posts/62029.html",
+    "/posts/41617.html",
+    ];
+window.SITE_ROOT = "/";
+</script>
+<script src="/js/ai-gen-filter.js"></script>
+
+
+
+
+<script>
+window.ATTACHMENT_CONFIG = {
+  root: "/",
+  viewerScriptUrl: "/js/attachment.js",
+  viewerCssUrl: "/css/attachment-viewer.css",
+  markedUrl: "/lib/attachment/marked.js",
+  purifyUrl: "/lib/attachment/purify.min.js"
+};
+</script>
+<script src="/js/attachment-loader.js" defer></script>
+
+
+<script src="/js/pwa.js" data-root="/" defer></script>
+
+<!-- hexo injector body_end start -->
+  <script src="/js/custom.js"></script>
+<!-- hexo injector body_end end --></body>
+</html>

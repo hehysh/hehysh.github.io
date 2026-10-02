@@ -1,0 +1,166 @@
+.pwa-tools {
+  box-sizing: border-box;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 12px 20px;
+  border-top: 1px solid rgba(73, 90, 128, .22);
+  font-size: 14px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.pwa-tools summary {
+  min-height: 44px;
+  line-height: 44px;
+  cursor: pointer;
+}
+.pwa-tools p { margin: 12px 0; }
+.pwa-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.pwa-actions a, .pwa-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-height: 44px;
+  padding: 8px 14px;
+  border: 1px solid #687b88;
+  border-radius: 6px;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: 1.5;
+  text-decoration: none;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.pwa-actions button:disabled { opacity: .6; cursor: wait; }
+.pwa-actions [hidden], .pwa-notice[hidden] { display: none; }
+.pwa-tools summary:focus-visible, .pwa-actions :focus-visible, #pwa-pages a:focus-visible {
+  outline: 3px solid #1098ad;
+  outline-offset: 3px;
+}
+.pwa-hint { font-size: 13px; }
+.pwa-notice {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: static;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 12px 0;
+  padding: 4px 4px 4px 16px;
+  border-radius: 6px;
+  background: #edf3f7;
+  border: 1px solid #c7d4df;
+  color: #495a80;
+  font: inherit;
+  line-height: 1.6;
+}
+.pwa-notice > span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.pwa-notice-close {
+  flex: 0 0 44px;
+  width: 44px;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: inherit;
+  font: 24px/1 system-ui, sans-serif;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.pwa-notice-close:hover { background: rgba(255, 255, 255, .12); }
+.pwa-notice-close:focus-visible {
+  outline: 2px solid #1098ad;
+  outline-offset: -4px;
+}
+body.darkmode--activated .pwa-notice {
+  background: #293440;
+  border-color: #546577;
+  color: #d3deeb;
+}
+
+/* viewport-fit=cover: keep content clear of the notch in either orientation. */
+body {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+  -webkit-text-size-adjust: 100%;
+}
+html.pwa-standalone body {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: calc(64px + env(safe-area-inset-bottom));
+}
+html.pwa-standalone .headband { top: env(safe-area-inset-top); }
+.pwa-app-nav { display: none; }
+.pwa-standalone .pwa-app-nav {
+  position: fixed;
+  display: flex;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  gap: 8px;
+  padding: 8px max(16px, env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) max(16px, env(safe-area-inset-left));
+  border-top: 1px solid #d0d8dc;
+  background: #fff;
+  color: #263b43;
+}
+.pwa-app-nav a, .pwa-app-nav button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 44px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: 16px/1.5 system-ui, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+.pwa-app-nav :focus-visible { outline: 3px solid #1098ad; outline-offset: -3px; }
+.pwa-standalone .pwa-notice { bottom: calc(76px + env(safe-area-inset-bottom)); }
+
+@media (max-width: 767px) {
+  /* Prevent Safari focus zoom without disabling pinch-to-zoom. */
+  input[type="text"], input[type="search"], input[type="email"], input[type="url"], textarea {
+    font-size: 16px;
+  }
+  .site-nav-toggle .toggle { min-width: 44px; min-height: 44px; }
+  .pwa-tools { margin-bottom: calc(60px + env(safe-area-inset-bottom)); }
+}
+@supports (min-height: 100dvh) {
+  html.pwa-standalone body, .pwa-offline-page { min-height: 100dvh; }
+}
+
+/* The fallback has no theme or CDN dependencies. */
+.pwa-offline-page {
+  margin: 0;
+  background: #fafbfc;
+  color: #263b43;
+  font: 16px/1.8 system-ui, -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif;
+}
+.pwa-offline-main {
+  box-sizing: border-box;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: calc(40px + env(safe-area-inset-top)) 24px calc(64px + env(safe-area-inset-bottom));
+}
+.pwa-offline-main h1 { font-size: clamp(26px, 5vw, 36px); line-height: 1.4; }
+.pwa-offline-main h2 { margin-top: 32px; font-size: 20px; }
+.pwa-offline-main a { color: #176678; }
+.pwa-offline-main .pwa-tools { padding-left: 0; padding-right: 0; }
+#pwa-pages { padding-left: 24px; }
+#pwa-pages li { padding: 8px 0; overflow-wrap: anywhere; }
+#pwa-pages a { display: inline-block; min-height: 44px; }
+@media (prefers-color-scheme: dark) {
+  .pwa-offline-page { background: #172126; color: #e1e8eb; }
+  .pwa-offline-main a { color: #8fd5e5; }
+}
