@@ -95,7 +95,7 @@
 <meta property="og:description" content="上海复读不能去公办学校，于是去了最有名（一共就没几家）的机构之一，师资硬件吊打原来的高中，可惜马桶坑位不够。不过教室头顶就是我的宿舍，但是平日楼梯被锁住，只能靠电梯上去。 那么需要做的就很明了了，搞一张电梯卡或者复制一张电梯卡，便是如下的经过。最近gemini 4 argon刚刚发布，正好小试牛刀。可以忽略所谓的安全研究课，破限的手段而已。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2026-10-17T11:27:18.000Z">
-<meta property="article:modified_time" content="2026-10-17T11:32:31.392Z">
+<meta property="article:modified_time" content="2026-10-17T11:45:35.483Z">
 <meta property="article:author" content="晴雀">
 <meta property="article:tag" content="AI-gen">
 <meta name="twitter:card" content="summary">
@@ -418,7 +418,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>8.1k</span>
+      <span>8k</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -478,7 +478,7 @@
 <li>扇区 4：<code>D7 ^ DD = 0x0A</code>（高 4 位同为 <code>D</code>）</li>
 <li>扇区 5：<code>5B ^ 55 = 0x0E</code>（高 4 位同为 <code>5</code>）</li>
 </ul>
-<p>如果密钥是通过标准密码学哈希（如 MD5&#x2F;SHA-1&#x2F;3DES）生成的，单组密钥满足 <code>k[0] ^ k[1]</code> 落在 <code>0x08 ~ 0x0F</code>（高 4 位全同、bit 3 恒反）的概率仅为 $8&#x2F;256 &#x3D; 1&#x2F;32$；**连续 6 组全部满足的概率是 $(1&#x2F;32)^6 \approx \text{十亿分之一}$**！<br>更巧妙的是，以扇区 0 的 <code>0x0E</code> 为基准，前四个扇区异或值的偏移量依次为：</p>
+<p>如果密钥是通过标准密码学哈希（如 MD5&#x2F;SHA-1&#x2F;3DES）生成的，单组密钥满足 <code>k[0] ^ k[1]</code> 落在 <code>0x08 ~ 0x0F</code>（高 4 位全同、bit 3 恒反）的概率仅为 $8&#x2F;256 &#x3D; 1&#x2F;32$；<strong>连续 6 组全部满足的概率是 $(1&#x2F;32)^6 \approx \text{十亿分之一}$</strong>！<br>更巧妙的是，以扇区 0 的 <code>0x0E</code> 为基准，前四个扇区异或值的偏移量依次为：</p>
 <ul>
 <li>$s&#x3D;0: \texttt{0x0E} \oplus \texttt{0x0E} &#x3D; 0$</li>
 <li>$s&#x3D;1: \texttt{0x0F} \oplus \texttt{0x0E} &#x3D; 1$</li>
@@ -514,7 +514,7 @@
 <td align="left"><strong>扇区 0 块 0</strong><br>（UID 与厂商块）</td>
 <td align="left"><code>A2 08 D0 7D 07</code> <code>08 04 00 05</code><br><code>22 BD C2 D9 20 76 90</code></td>
 <td align="left"><strong><code>22 CE 21 7E B3</code></strong> <code>08 04 00 05</code><br><strong><code>12 3D 01 5C 83 7B FD</code></strong></td>
-<td align="left">**UID 被篡改为 <code>22 CE 21 7E</code>**！<br>新 BCC 为 <code>B3</code>（异或校验合法），导致与卡内原扇区密钥彻底失配！</td>
+<td align="left"><strong>UID 被篡改为 <code>22 CE 21 7E</code></strong>！<br>新 BCC 为 <code>B3</code>（异或校验合法），导致与卡内原扇区密钥彻底失配！</td>
 </tr>
 <tr>
 <td align="left"><strong>扇区 5 块 20</strong><br>（Slot 2 业务块）</td>
@@ -550,17 +550,17 @@
 <ul>
 <li><strong>第一</strong>，扇区 5 的块 20&#x2F;21 变化绝不是写卡掉电产生的乱码，而是<strong>电梯读卡器在刷卡过程中按照私有协议动态回写（Write-back）的合法数据</strong>！</li>
 <li><strong>第二</strong>，协议在存储业务字节时故意做了<strong>「高低半字节反序混淆」</strong>。将其翻转回正常顺序后：<ul>
-<li>原卡块 20 &#x2F; 块 21 为：**<code>03 07</code>** 与 **<code>01 0B</code>**（十进制 <code>3楼, 7</code> 与 <code>1楼, 11</code>）；</li>
-<li>刷卡后的块 20 &#x2F; 块 21 变为：**<code>42 0B</code>** 与 **<code>31 0A</code>**（个位楼层变为 <code>2楼</code>、<code>1楼</code>，高半字节状态位变为 <code>4</code> 和 <code>3</code>，且第二字节从 <code>0B</code> [11] 递减&#x2F;滚动为 <code>0A</code> [10]）。</li>
+<li>原卡块 20 &#x2F; 块 21 为：<strong><code>03 07</code></strong> 与 <strong><code>01 0B</code></strong>（十进制 <code>3楼, 7</code> 与 <code>1楼, 11</code>）；</li>
+<li>刷卡后的块 20 &#x2F; 块 21 变为：<strong><code>42 0B</code></strong> 与 <strong><code>31 0A</code></strong>（个位楼层变为 <code>2楼</code>、<code>1楼</code>，高半字节状态位变为 <code>4</code> 和 <code>3</code>，且第二字节从 <code>0B</code> [11] 递减&#x2F;滚动为 <code>0A</code> [10]）。</li>
 </ul>
 </li>
 </ul>
 <h3 id="突破-2：还原“防-CUID-覆写陷阱”的猎杀全过程"><a href="#突破-2：还原“防-CUID-覆写陷阱”的猎杀全过程" class="headerlink" title="突破 2：还原“防 CUID 覆写陷阱”的猎杀全过程"></a>突破 2：还原“防 CUID 覆写陷阱”的猎杀全过程</h3><p>为什么这张复制卡刚开始能刷开 1~2 次（此时它的扇区 5 甚至还成功接收了读卡器回写的 <code>24 B0</code> &#x2F; <code>13 A0</code>），随后却变成了“红灯闪 + 滴滴滴三声”？</p>
-<p>罪魁祸首就在**扇区 0 块 0 被改写成了 <code>22 CE 21 7E B3...</code>**：</p>
+<p>罪魁祸首就在<strong>扇区 0 块 0 被改写成了 <code>22 CE 21 7E B3...</code></strong>：</p>
 <ol>
 <li><strong>CUID 卡的软肋</strong>：普通 CUID 卡为了绕过一代 UID 卡的 <code>0x40</code> 后门检测，允许在验证 0 扇区密码后直接用标准写指令修改 0 扇区 0 块。</li>
 <li><strong>默认 Key B 大门敞开</strong>：这张卡的 0 扇区控制位是默认的 <code>FF 07 80 69</code>，<code>Key B</code> 是默认的 <code>FFFFFFFFFFFF</code>。</li>
-<li><strong>读卡器的主动毁卡攻击</strong>：当复制卡刷到开启了 <code>9 2 # 2 #</code>（防 CUID 功能）的楼层读头时，读卡器除了正常回写扇区 5，还会用默认 <code>Key B (FFFFFFFFFFFF)</code> 认证 0 扇区，并**故意向 0 扇区 0 块写入一串带有合法 BCC（<code>B3</code>）的随机新 UID <code>22 CE 21 7E</code>**！<ul>
+<li><strong>读卡器的主动毁卡攻击</strong>：当复制卡刷到开启了 <code>9 2 # 2 #</code>（防 CUID 功能）的楼层读头时，读卡器除了正常回写扇区 5，还会用默认 <code>Key B (FFFFFFFFFFFF)</code> 认证 0 扇区，并<strong>故意向 0 扇区 0 块写入一串带有合法 BCC（<code>B3</code>）的随机新 UID <code>22 CE 21 7E</code></strong>！<ul>
 <li><strong>原卡为何不怕？</strong> 原卡晶圆的 0 块在出厂时已物理熔断锁死（ROM），硬件直接无视该写指令，UID 永远是 <code>A2 08 D0 7D</code>。</li>
 <li><strong>CUID 复制卡为何暴毙？</strong> CUID 卡的 0 块被乖乖改写成了 <code>22 CE 21 7E</code>。等下次再去刷卡时，由于新 BCC（<code>B3</code>）合法，读卡器能正常寻卡，但<strong>读卡器用新 UID <code>22 CE 21 7E</code> 算出来的一卡一密，与卡内扇区 5 存的原卡密码 <code>5B55A0D53CC5</code> 彻底对不上</strong>！三次握手认证当场失败，报“红灯闪 + 滴滴滴三声”，卡片永久报废！</li>
 </ul>
@@ -640,7 +640,7 @@
 <td align="left"><strong>③ 软锁 0 扇区的 CUID 卡</strong><br>（用手机 <code>MCT</code> 修改 0 扇区 ACL 只读或改掉 Key B）</td>
 <td align="left"><strong>软件权限锁死</strong><br>（禁止默认 Key B 写 0 扇区）</td>
 <td align="left">开放读写</td>
-<td align="left">• 普通盲写读头：**<code>无限次</code><strong><br>• 严苛检测读头：</strong><code>0 次</code>**（但不毁卡）</td>
+<td align="left">• 普通盲写读头：<strong><code>无限次</code></strong><br>• 严苛检测读头：<strong><code>0 次</code></strong>（但不毁卡）</td>
 <td align="left">• 若读头只管盲写 0 块：0 块改不动，且因楼梯在旁无严格跨层锁死，卡片<strong>永久有效</strong>；<br>• 若读头强制检查 0 扇区默认 Key B 能否认证成功：首刷报错，但卡数据完好。</td>
 </tr>
 <tr>
@@ -824,7 +824,10 @@
 
   
 
-  <script class="next-config" data-name="enableMath" type="application/json">false</script>
+  <script class="next-config" data-name="enableMath" type="application/json">true</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.0/katex.min.css" integrity="sha256-uik/hNqHWZldXh/0K35nqOSCff9F61/ZOFReqNOBgB0=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.0/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
 
 
 
