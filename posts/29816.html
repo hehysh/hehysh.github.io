@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16.png">
+  <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+  <meta name="msvalidate.01" content="bing_site_verification">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="/css/blog-icons.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/css/blog-icons.css"></noscript>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"blog.verynb.net","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.12.2","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"Muse | Mist":280,"onmobile":false},"copycode":{"enable":true,"style":"mac","show_result":true},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"stickytabs":false,"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script>if (!window.NexT) window.NexT = {};
+
+(function() {
+  const className = 'next-config';
+
+  const staticConfig = {};
+  let variableConfig = {};
+
+  const parse = text => JSON.parse(text || '{}');
+
+  const update = name => {
+    const targetEle = document.querySelector(`.${className}[data-name="${name}"]`);
+    if (!targetEle) return;
+    const parsedConfig = parse(targetEle.text);
+    if (name === 'main') {
+      Object.assign(staticConfig, parsedConfig);
+    } else {
+      variableConfig[name] = parsedConfig;
+    }
+  };
+
+  update('main');
+
+  window.CONFIG = new Proxy({}, {
+    get(overrideConfig, name) {
+      let existing;
+      if (name in staticConfig) {
+        existing = staticConfig[name];
+      } else {
+        if (!(name in variableConfig)) update(name);
+        existing = variableConfig[name];
+      }
+
+      // For unset override and mixable existing
+      if (!(name in overrideConfig) && typeof existing === 'object') {
+        // Get ready to mix.
+        overrideConfig[name] = {};
+      }
+
+      if (name in overrideConfig) {
+        const override = overrideConfig[name];
+
+        // When mixable
+        if (typeof override === 'object' && typeof existing === 'object') {
+          // Mix, proxy changes to the override.
+          return new Proxy({ ...existing, ...override }, {
+            set(target, prop, value) {
+              target[prop] = value;
+              override[prop] = value;
+              return true;
+            }
+          });
+        }
+
+        return override;
+      }
+
+      // Only when not mixable and override hasn't been set.
+      return existing;
+    }
+  });
+
+  document.addEventListener('pjax:success', () => {
+    variableConfig = {};
+  });
+})();
+</script>
+
+    <meta name="description" content="上海复读不能去公办学校，于是去了最有名（一共就没几家）的机构之一，师资硬件吊打原来的高中，可惜马桶坑位不够。不过教室头顶就是我的宿舍，但是平日楼梯被锁住，只能靠电梯上去。 那么需要做的就很明了了，搞一张电梯卡或者复制一张电梯卡，便是如下的经过。最近gemini 4 argon刚刚发布，正好小试牛刀。可以忽略所谓的安全研究课，破限的手段而已。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="电梯卡">
+<meta property="og:url" content="https://blog.verynb.net/posts/29816.html">
+<meta property="og:site_name" content="晴雀堂">
+<meta property="og:description" content="上海复读不能去公办学校，于是去了最有名（一共就没几家）的机构之一，师资硬件吊打原来的高中，可惜马桶坑位不够。不过教室头顶就是我的宿舍，但是平日楼梯被锁住，只能靠电梯上去。 那么需要做的就很明了了，搞一张电梯卡或者复制一张电梯卡，便是如下的经过。最近gemini 4 argon刚刚发布，正好小试牛刀。可以忽略所谓的安全研究课，破限的手段而已。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-10-17T11:27:18.000Z">
+<meta property="article:modified_time" content="2026-10-17T11:32:31.392Z">
+<meta property="article:author" content="晴雀">
+<meta property="article:tag" content="AI-gen">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://blog.verynb.net/posts/29816.html">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://blog.verynb.net/posts/29816.html","path":"posts/29816.html","title":"电梯卡"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>电梯卡 | 晴雀堂</title>
+  
+
+
+
+
+<link rel="dns-prefetch" href="https://waline.nbplus.eu.org"><!--非主域名自动跳转-->
+
+<script>
+(function() {
+  var mainDomain = "blog.verynb.net";
+  var host = location.hostname;
+
+  // 白名单：允许在这些域名下不跳转
+  var whitelist = [
+    "localhost",
+    "127.0.0.1"
+  ];
+
+  // 允许跳过 .github.dev 域名
+  if (host.endsWith(".github.dev")) {
+    return;
+  }
+
+  // 如果不是主域名，也不在白名单，就跳转
+  if (host !== mainDomain && !whitelist.includes(host)) {
+    var target = "https://" + mainDomain + location.pathname + location.search + location.hash;
+    window.location.replace(target);
+  }
+})();
+</script>
+
+
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="晴雀堂">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="电梯卡">
+<meta property="og:url" content="https://blog.verynb.net/posts/29816.html">
+<meta property="og:site_name" content="晴雀堂">
+
+  <meta property="og:description" content="海压竹枝低复举，风吹山角晦还明">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="电梯卡">
+
+  <meta name="twitter:description" content="海压竹枝低复举，风吹山角晦还明">
+
+
+<!--欢迎来到我的博客~话说为啥要看源码捏？-->
+<!--使用umami统计，尊重访客隐私^-^-->
+<script defer src="https://u.nbplus.eu.org/script.js" data-website-id="061f90c5-2d4f-428f-be7c-40f5a99113b4"></script>
+
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+<link rel="stylesheet" href="/css/blog-fonts.css" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="/css/blog-fonts.css" /></noscript>
+
+<meta name="msvalidate.01" content="AAFE56EEF8D0968CC1BC842FCE4448F5" />
+
+
+<script>
+(function () {
+  var consent = 'yes';
+  try {
+    var match = document.cookie.match(/(?:^|;\s*)ai_gen_consent=([^;]*)/);
+    if (match && decodeURIComponent(match[1]) === 'no') consent = 'no';
+  } catch (e) { /* Cookie 不可用时采用默认折叠展示。 */ }
+  document.documentElement.setAttribute('data-ai-gen-consent', consent);
+})();
+</script>
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="晴雀堂" type="application/atom+xml">
+<style>.darkmode--activated{--body-bg-color:#282828;--content-bg-color:#333;--card-bg-color:#555;--text-color:#ccc;--blockquote-color:#bbb;--link-color:#ccc;--link-hover-color:#eee;--brand-color:#ddd;--brand-hover-color:#ddd;--table-row-odd-bg-color:#282828;--table-row-hover-bg-color:#363636;--menu-item-bg-color:#555;--btn-default-bg:#222;--btn-default-color:#ccc;--btn-default-border-color:#555;--btn-default-hover-bg:#666;--btn-default-hover-color:#ccc;--btn-default-hover-border-color:#666;--highlight-background:#282b2e;--highlight-foreground:#a9b7c6;--highlight-gutter-background:#34393d;--highlight-gutter-foreground:#9ca9b6}.darkmode--activated img{opacity:.75}.darkmode--activated img:hover{opacity:.9}.darkmode--activated code{color:#69dbdc;background:0 0}button.darkmode-toggle{z-index:9999}.darkmode-ignore,img{display:flex!important}.beian img{display:inline-block!important}</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">晴雀堂</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">晴雀的个人博客</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-links"><a href="/links/" rel="section"><i class="fa fa-link fa-fw"></i>友链</a></li><li class="menu-item menu-item-traveling"><span class="exturl" data-url="aHR0cHM6Ly93d3cudHJhdmVsbGluZ3MuY24vZ28uaHRtbA=="><i class="fa fa-subway fa-fw"></i>开往</span></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%A0%B4%E8%AF%91%E6%A0%A1%E5%9B%AD%E6%A2%AF%E6%8E%A7%E2%80%9C%E7%8E%84%E5%AD%A6%E2%80%9D%E5%A4%B1%E7%81%B5%E4%B9%8B%E8%B0%9C%EF%BC%9A%E4%BB%8E-16-%E8%BF%9B%E5%88%B6-Dump-%E5%B7%AE%E5%88%86%E5%88%B0-M1-%E5%8D%A1%E9%98%B2%E5%85%8B%E9%9A%86%E6%94%BB%E9%98%B2%E5%85%A8%E8%A7%A3%E6%9E%90"><span class="nav-number">1.</span> <span class="nav-text">破译校园梯控“玄学”失灵之谜：从 16 进制 Dump 差分到 M1 卡防克隆攻防全解析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81-%E5%88%9D%E6%8E%A2%E6%9C%AA%E7%9F%A5%EF%BC%9A%E4%B8%80%E5%BC%A0-3-%E5%B1%82%E6%A5%BC%E7%94%B5%E6%A2%AF%E5%8E%9F%E5%8D%A1%E7%9A%84%E5%88%9D%E5%A7%8B-Dump"><span class="nav-number">1.1.</span> <span class="nav-text">一、 初探未知：一张 3 层楼电梯原卡的初始 Dump</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E8%BD%AE%E9%9D%99%E6%80%81%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%EF%BC%9A%E6%88%91%E4%BB%AC%E4%BB%8E%E5%8D%95%E5%BC%A0%E5%8D%A1%E9%87%8C%E7%9C%8B%E5%87%BA%E4%BA%86%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">1.1.1.</span> <span class="nav-text">第一轮静态数学分析：我们从单张卡里看出了什么？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E3%80%8C5-%C3%97-3-%E5%AD%97%E8%8A%82%E5%AE%9A%E9%95%BF%E6%A7%BD%E4%BD%8D%EF%BC%88Slot%EF%BC%89-1-%E5%AD%97%E8%8A%82%E6%A0%A1%E9%AA%8C%E3%80%8D%E7%9A%84%E5%9D%97%E7%BB%93%E6%9E%84"><span class="nav-number">1.1.1.1.</span> <span class="nav-text">1. 「5 × 3 字节定长槽位（Slot） + 1 字节校验」的块结构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E5%8D%81%E4%BA%BF%E5%88%86%E4%B9%8B%E4%B8%80%E5%B7%A7%E5%90%88%E7%8E%87%E6%9A%B4%E9%9C%B2%E7%9A%84%E3%80%8C%E8%BD%BB%E9%87%8F%E7%BA%A7%E7%BA%BF%E6%80%A7%E4%B8%80%E5%8D%A1%E4%B8%80%E5%AF%86%E7%AE%97%E6%B3%95%E3%80%8D"><span class="nav-number">1.1.1.2.</span> <span class="nav-text">2. 十亿分之一巧合率暴露的「轻量级线性一卡一密算法」</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81-%E6%A1%88%E5%8F%91%E7%8E%B0%E5%9C%BA%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E5%A4%8D%E5%88%B6%E5%8D%A1%E2%80%9C%E5%88%9A%E8%83%BD%E7%94%A8%E4%B8%80%E4%B8%A4%E6%AC%A1%EF%BC%8C%E9%9A%8F%E5%90%8E%E6%BB%B4%E4%B8%89%E5%A3%B0%E6%9A%B4%E6%AF%99%E2%80%9D%EF%BC%9F"><span class="nav-number">1.2.</span> <span class="nav-text">二、 案发现场：为什么复制卡“刚能用一两次，随后滴三声暴毙”？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81-%E9%93%81%E8%AF%81%E7%A0%B4%E6%A1%88%EF%BC%9A%E5%A4%B1%E6%95%88%E5%A4%8D%E5%88%B6%E5%8D%A1-Dump-%E5%B7%AE%E5%88%86%E4%B8%8E%E7%AE%97%E6%B3%95-100-%E7%A0%B4%E8%A7%A3"><span class="nav-number">1.3.</span> <span class="nav-text">三、 铁证破案：失效复制卡 Dump 差分与算法 100% 破解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B2%BE%E9%AB%93%E8%A1%A8%E6%A0%BC%E4%B8%80%EF%BC%9A%E5%8E%9F%E5%8D%A1%E5%88%9D%E5%A7%8B-Dump-vs-%E4%BD%BF%E7%94%A8%E5%90%8E%E5%A4%B1%E6%95%88%E5%A4%8D%E5%88%B6%E5%8D%A1-Dump-%E6%A0%B8%E5%BF%83%E5%B7%AE%E5%88%86%E8%A1%A8"><span class="nav-number">1.3.1.</span> <span class="nav-text">精髓表格一：原卡初始 Dump vs. 使用后失效复制卡 Dump 核心差分表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AA%81%E7%A0%B4-1%EF%BC%9A100-%E7%A0%B4%E8%A7%A3%E5%9D%97%E5%B0%BE%E6%A0%A1%E9%AA%8C%E7%AE%97%E6%B3%95%E4%B8%8E%E3%80%8C%E5%8D%8A%E5%AD%97%E8%8A%82%E5%8F%8D%E5%BA%8F%EF%BC%88Swap-Nibbles%EF%BC%89%E3%80%8D%E7%BC%96%E7%A0%81"><span class="nav-number">1.3.2.</span> <span class="nav-text">突破 1：100% 破解块尾校验算法与「半字节反序（Swap Nibbles）」编码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AA%81%E7%A0%B4-2%EF%BC%9A%E8%BF%98%E5%8E%9F%E2%80%9C%E9%98%B2-CUID-%E8%A6%86%E5%86%99%E9%99%B7%E9%98%B1%E2%80%9D%E7%9A%84%E7%8C%8E%E6%9D%80%E5%85%A8%E8%BF%87%E7%A8%8B"><span class="nav-number">1.3.3.</span> <span class="nav-text">突破 2：还原“防 CUID 覆写陷阱”的猎杀全过程</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81-%E5%88%B7%E5%8D%A1%E4%BA%94%E6%AD%A5%E4%BA%A4%E4%BA%92%E5%85%A8%E6%B5%81%E7%A8%8B%E4%B8%8E%E6%A0%B8%E5%BF%83%E8%A7%84%E5%BE%8B%E6%80%BB%E7%BB%93%EF%BC%88%E7%B2%BE%E9%AB%93%E8%A1%A8%E6%A0%BC%E9%9B%86%EF%BC%89"><span class="nav-number">1.4.</span> <span class="nav-text">四、 刷卡五步交互全流程与核心规律总结（精髓表格集）</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B2%BE%E9%AB%93%E8%A1%A8%E6%A0%BC%E4%BA%8C%EF%BC%9A%E6%AD%A3%E7%89%88%E5%8E%9F%E5%8D%A1-vs-%E6%99%AE%E9%80%9A-CUID-%E5%A4%8D%E5%88%B6%E5%8D%A1%E5%BA%95%E5%B1%82%E5%B7%AE%E5%BC%82%E5%AF%B9%E7%85%A7%E8%A1%A8"><span class="nav-number">1.4.1.</span> <span class="nav-text">精髓表格二：正版原卡 vs. 普通 CUID 复制卡底层差异对照表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B2%BE%E9%AB%93%E8%A1%A8%E6%A0%BC%E4%B8%89%EF%BC%9A%E4%B8%8D%E5%90%8C%E4%BF%9D%E6%8A%A4%E7%AD%96%E7%95%A5%E4%B8%8B%E5%90%84%E7%B1%BB%E5%8D%A1%E7%89%87%E7%9A%84%E3%80%8C%E5%AE%9E%E9%99%85%E4%BD%BF%E7%94%A8%E9%A2%9D%E5%BA%A6-x2F-%E5%AF%BF%E5%91%BD%E3%80%8D%E5%88%86%E7%B1%BB%E8%A1%A8"><span class="nav-number">1.4.2.</span> <span class="nav-text">精髓表格三：不同保护策略下各类卡片的「实际使用额度&#x2F;寿命」分类表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%B2%BE%E9%AB%93%E8%A1%A8%E6%A0%BC%E5%9B%9B%EF%BC%9A%E4%B8%8D%E5%90%8C%E5%8F%91%E5%8D%A1%E8%A7%84%E6%A8%A1%E4%B8%8B%E7%9A%84%E4%BD%BF%E7%94%A8%E7%BB%93%E6%9E%9C%E6%8E%A8%E6%BC%94%E8%A1%A8%EF%BC%881-%E5%8E%9F%E5%8D%A1-x2F-1-1-x2F-1-3-x2F-1-x%EF%BC%89"><span class="nav-number">1.4.3.</span> <span class="nav-text">精髓表格四：不同发卡规模下的使用结果推演表（1 原卡 &#x2F; 1+1 &#x2F; 1+3 &#x2F; 1+x）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81-%E5%B7%A5%E5%85%B7%E9%93%BE%E4%B8%8E%E6%9E%B6%E6%9E%84%E5%8D%87%E5%8D%8E%EF%BC%9A%E5%A4%8D%E5%88%B6%E5%8D%A1%E5%BD%BB%E5%BA%95%E5%AE%8C%E7%BB%93%E4%BA%86%E5%90%97%EF%BC%9F"><span class="nav-number">1.5.</span> <span class="nav-text">五、 工具链与架构升华：复制卡彻底完结了吗？</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E5%BC%80%E6%BA%90%E5%B7%A5%E5%85%B7%E9%93%BE%E7%9A%84%E5%AE%9E%E9%AA%8C%E8%BE%B9%E7%95%8C"><span class="nav-number">1.5.1.</span> <span class="nav-text">1. 开源工具链的实验边界</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E7%BB%88%E6%9E%81%E6%80%9D%E8%80%83%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E2%80%9C%E6%89%93%E8%A1%A5%E4%B8%81%E2%80%9D%E6%95%91%E4%B8%8D%E4%BA%86-M1-%E5%8D%A1%EF%BC%9F"><span class="nav-number">1.5.2.</span> <span class="nav-text">2. 终极思考：为什么“打补丁”救不了 M1 卡？</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="晴雀"
+      src="/img/author.jpg">
+  <p class="site-author-name" itemprop="name">晴雀</p>
+  <div class="site-description" itemprop="description">海压竹枝低复举，风吹山角晦还明</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">90</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hlaHlzaA==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;hehysh"><i class="fab fa-github fa-fw"></i>GitHub</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zdGVhbWNvbW11bml0eS5jb20vcHJvZmlsZXMvNzY1NjExOTk2NjA4ODQ0OTMv" title="Steam → https:&#x2F;&#x2F;steamcommunity.com&#x2F;profiles&#x2F;76561199660884493&#x2F;"><i class="fab fa-steam fa-fw"></i>Steam</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly91Lm5icGx1cy5ldS5vcmcvc2hhcmUvNnJsb0ZyUllqVDNaQWhPMC9ibG9nLnZlcnluYi5uZXQ=" title="统计 → https:&#x2F;&#x2F;u.nbplus.eu.org&#x2F;share&#x2F;6rloFrRYjT3ZAhO0&#x2F;blog.verynb.net"><i class="fa fa-bar-chart fa-fw"></i>统计</span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9zLm5icGx1cy5ldS5vcmcv" title="监测 → https:&#x2F;&#x2F;s.nbplus.eu.org&#x2F;"><i class="fa fa-eye fa-fw"></i>监测</span>
+      </span>
+  </div>
+
+
+
+
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-chevron-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.verynb.net/posts/29816.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/img/author.jpg">
+      <meta itemprop="name" content="晴雀">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="晴雀堂">
+      <meta itemprop="description" content="海压竹枝低复举，风吹山角晦还明">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="电梯卡 | 晴雀堂">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          电梯卡
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-10-17 11:27:18" itemprop="dateCreated datePublished" datetime="2026-10-17T11:27:18+00:00">2026-10-17</time>
+    </span>
+
+  
+  
+  <span class="post-meta-item">
+    
+    <span class="post-meta-item-icon">
+      <i class="far fa-comment"></i>
+    </span>
+    <span class="post-meta-item-text">Waline：</span>
+  
+    <a title="waline" href="/posts/29816.html#waline" itemprop="discussionUrl">
+      <span class="post-comments-count waline-comment-count" data-path="/posts/29816.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>8.1k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>7 分钟</span>
+    </span>
+</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <p>上海复读不能去公办学校，于是去了最有名（一共就没几家）的机构之一，师资硬件吊打原来的高中，可惜马桶坑位不够。不过教室头顶就是我的宿舍，但是平日楼梯被锁住，只能靠电梯上去。</p>
+<p>那么需要做的就很明了了，搞一张电梯卡或者复制一张电梯卡，便是如下的经过。最近gemini 4 argon刚刚发布，正好小试牛刀。可以忽略所谓的安全研究课，破限的手段而已。</p>
+<span id="more"></span>
+
+<h1 id="破译校园梯控“玄学”失灵之谜：从-16-进制-Dump-差分到-M1-卡防克隆攻防全解析"><a href="#破译校园梯控“玄学”失灵之谜：从-16-进制-Dump-差分到-M1-卡防克隆攻防全解析" class="headerlink" title="破译校园梯控“玄学”失灵之谜：从 16 进制 Dump 差分到 M1 卡防克隆攻防全解析"></a>破译校园梯控“玄学”失灵之谜：从 16 进制 Dump 差分到 M1 卡防克隆攻防全解析</h1><blockquote>
+<p><strong>摘要</strong>：在一次经过授权的校园门禁与梯控安全研究课上，我们遇到了一个诡异的现场现象：一张用于 3 层教学楼的电梯原卡在任何时候、任何楼层都能秒开；而用同一份数据复制出来的 4 张 CUID 卡，却总是刚能正常刷开 1~2 次，随后就在不同时间、不同楼层陆续出现<strong>“红灯闪烁 + 滴滴滴三声短鸣”</strong>并彻底报废。<br>本文将完整复盘我们如何仅凭两份 1K 十六进制 Dump 数据与一份设备说明书，一步步完成<strong>私有校验算法逆向、线性一卡一密特征还原、动态回写机制取证，以及“防 CUID 覆写陷阱”的破案全过程</strong>。</p>
+</blockquote>
+<hr>
+<h2 id="一、-初探未知：一张-3-层楼电梯原卡的初始-Dump"><a href="#一、-初探未知：一张-3-层楼电梯原卡的初始-Dump" class="headerlink" title="一、 初探未知：一张 3 层楼电梯原卡的初始 Dump"></a>一、 初探未知：一张 3 层楼电梯原卡的初始 Dump</h2><p>故事的起点是一张学校 3 层楼宇的电梯卡（MIFARE Classic 1K，共 16 个扇区 × 4 块 × 16 字节）。导出原卡的初始 Dump 后，基本参数如下：</p>
+<ul>
+<li><strong>UID</strong>：<code>A2 08 D0 7D</code>（第 5 字节异或校验 <code>BCC = 07</code>，校验正确）</li>
+<li><strong>SAK &#x2F; ATQA</strong>：<code>08</code> &#x2F; <code>04 00</code></li>
+<li><strong>制造商块尾</strong>：<code>05 22 BD C2 D9 20 76 90</code></li>
+<li><strong>访问控制位（ACL）与 Key B</strong>：全卡几乎所有扇区控制位均为出厂默认的 <code>FF 07 80 69</code>，且 <code>Key B</code> 均为默认的 <code>FFFFFFFFFFFF</code>（<strong>埋下伏笔：这意味着任何持有默认 Key B 的读卡器都拥有对各扇区的完全写入权限</strong>）。</li>
+<li><strong>Key A 分布</strong>：<ul>
+<li>扇区 0：<code>2C 22 0C 19 43 4C</code></li>
+<li>扇区 1：<code>66 69 6D 3C 72 1F</code></li>
+<li>扇区 2：<code>C7 CA 4B A9 B1 1E</code></li>
+<li>扇区 3：<code>D2 DA 08 8D 91 C1</code></li>
+<li>扇区 4：<code>D7 DD F9 48 8C 69</code></li>
+<li>扇区 5<del>10：共用 <code>5B 55 A0 D5 3C C5</code>（仅扇区 5 有非零业务数据，6</del>10 扇区全 <code>00</code> 预留扩展）</li>
+<li>扇区 11~15：未初始化的出厂 <code>FF FF FF FF FF FF</code></li>
+</ul>
+</li>
+</ul>
+<p>全卡唯一存在非零业务数据的位置在<strong>扇区 5 的块 20 与块 21</strong>：</p>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">块20: 00 00 00 00 00 00 BB 30 70 00 00 00 00 00 00 C5</span><br><span class="line">块21: 00 00 00 00 00 00 00 00 00 BB 10 B0 00 00 00 C7</span><br><span class="line">块22: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</span><br></pre></td></tr></table></figure>
+
+<h3 id="第一轮静态数学分析：我们从单张卡里看出了什么？"><a href="#第一轮静态数学分析：我们从单张卡里看出了什么？" class="headerlink" title="第一轮静态数学分析：我们从单张卡里看出了什么？"></a>第一轮静态数学分析：我们从单张卡里看出了什么？</h3><p>表面上看，块 20 和块 21 只有两段以 <code>BB</code> 开头的三字节记录，且简单的整块累加或异或都对不上块尾的 <code>C5</code> 和 <code>C7</code>。但深入到字节与半字节（Nibble）层面后，我们发现了两个惊人的规律：</p>
+<h4 id="1-「5-×-3-字节定长槽位（Slot）-1-字节校验」的块结构"><a href="#1-「5-×-3-字节定长槽位（Slot）-1-字节校验」的块结构" class="headerlink" title="1. 「5 × 3 字节定长槽位（Slot） + 1 字节校验」的块结构"></a>1. 「5 × 3 字节定长槽位（Slot） + 1 字节校验」的块结构</h4><p>为什么块 20 的记录从偏移 <code>6</code> 开始，而块 21 的记录从偏移 <code>9</code> 开始？<br>因为每块前 15 个字节被均分成了 $5 \times 3 &#x3D; 15$ 字节的定长槽位（Slot 0~4，偏移分别为 <code>0, 3, 6, 9, 12</code>），最后第 16 字节（偏移 <code>15</code>）存放整块校验码：</p>
+<ul>
+<li>块 20 的 <code>BB 30 70</code> 完整落在 <strong>Slot 2（偏移 6~8）</strong>；</li>
+<li>块 21 的 <code>BB 10 B0</code> 完整落在 <strong>Slot 3（偏移 9~11）</strong>。<br>在国产梯控系统中，不同的 Slot 通常对应不同的电梯梯号或楼栋控制板地址。</li>
+</ul>
+<h4 id="2-十亿分之一巧合率暴露的「轻量级线性一卡一密算法」"><a href="#2-十亿分之一巧合率暴露的「轻量级线性一卡一密算法」" class="headerlink" title="2. 十亿分之一巧合率暴露的「轻量级线性一卡一密算法」"></a>2. 十亿分之一巧合率暴露的「轻量级线性一卡一密算法」</h4><p>观察扇区 0 到扇区 5 的全部 6 组 <code>Key A</code> 的<strong>前两个字节（<code>k[0]</code> 与 <code>k[1]</code>）</strong>：</p>
+<ul>
+<li>扇区 0：<code>2C ^ 22 = 0x0E</code>（高 4 位同为 <code>2</code>）</li>
+<li>扇区 1：<code>66 ^ 69 = 0x0F</code>（高 4 位同为 <code>6</code>）</li>
+<li>扇区 2：<code>C7 ^ CA = 0x0D</code>（高 4 位同为 <code>C</code>）</li>
+<li>扇区 3：<code>D2 ^ DA = 0x08</code>（高 4 位同为 <code>D</code>）</li>
+<li>扇区 4：<code>D7 ^ DD = 0x0A</code>（高 4 位同为 <code>D</code>）</li>
+<li>扇区 5：<code>5B ^ 55 = 0x0E</code>（高 4 位同为 <code>5</code>）</li>
+</ul>
+<p>如果密钥是通过标准密码学哈希（如 MD5&#x2F;SHA-1&#x2F;3DES）生成的，单组密钥满足 <code>k[0] ^ k[1]</code> 落在 <code>0x08 ~ 0x0F</code>（高 4 位全同、bit 3 恒反）的概率仅为 $8&#x2F;256 &#x3D; 1&#x2F;32$；**连续 6 组全部满足的概率是 $(1&#x2F;32)^6 \approx \text{十亿分之一}$**！<br>更巧妙的是，以扇区 0 的 <code>0x0E</code> 为基准，前四个扇区异或值的偏移量依次为：</p>
+<ul>
+<li>$s&#x3D;0: \texttt{0x0E} \oplus \texttt{0x0E} &#x3D; 0$</li>
+<li>$s&#x3D;1: \texttt{0x0F} \oplus \texttt{0x0E} &#x3D; 1$</li>
+<li>$s&#x3D;2: \texttt{0x0D} \oplus \texttt{0x0E} &#x3D; 3$</li>
+<li>$s&#x3D;3: \texttt{0x08} \oplus \texttt{0x0E} &#x3D; 6$</li>
+</ul>
+<p><strong>$0, 1, 3, 6$ 恰好是三角数累加序列 $\frac{s(s+1)}{2}$（步进 $+1, +2, +3$）</strong>，且 <code>UID[1]</code> 恰好是 <code>0x08</code>！这直接证明：厂商并未使用强密码学散列，而是用一个简单的 <code>for</code> 循环将 <code>UID</code> 字节与扇区累加量做了线性位运算派生出全卡密钥。</p>
+<hr>
+<h2 id="二、-案发现场：为什么复制卡“刚能用一两次，随后滴三声暴毙”？"><a href="#二、-案发现场：为什么复制卡“刚能用一两次，随后滴三声暴毙”？" class="headerlink" title="二、 案发现场：为什么复制卡“刚能用一两次，随后滴三声暴毙”？"></a>二、 案发现场：为什么复制卡“刚能用一两次，随后滴三声暴毙”？</h2><p>在随后的测试中，我们用上述原卡数据制作了 4 张 CUID 复制卡，却遇到了令人费解的现象：</p>
+<ol>
+<li><strong>原卡</strong>在任何时候、任何楼层（1~3 楼）刷卡均 100% 正常；</li>
+<li><strong>4 张复制卡</strong>刚拿去刷的前 1~2 次能正常使用，但很快就在不同时间、不同楼层失效；</li>
+<li>失效时的现场表现为：读卡器<strong>红灯闪烁 + 蜂鸣器“滴滴滴”三声短鸣</strong>。</li>
+</ol>
+<p>结合现场配套读头的《使用说明书》以及建筑物理环境，我们排除了几个干扰项，锁定了怀疑方向：</p>
+<ul>
+<li><strong>排除“防潜回（Anti-Passback）”</strong>：虽然说明书 <code>3.14.1</code> 提供了防潜回功能（一进一出成对刷卡），但这栋 3 层楼的<strong>电梯旁边就是开放式楼梯间</strong>。合法持卡人随时可能“坐电梯上 3 楼，走楼梯下 1 楼再坐电梯”。如果开启严格的跨层防潜回，走楼梯的原卡用户也会被锁死。</li>
+<li><strong>锁定说明书 <code>3.14.2 防复制卡功能（二级防 CUID 防火墙：9 2 # 2 #）</code><strong>：说明书明确记载了读头支持开启“防 CUID 卡”功能，且右上角《声光指示表》写明：</strong>无效刷卡 &#x3D; 红灯闪 + “滴滴滴”三声短鸣</strong>。</li>
+</ul>
+<p>为了查明复制卡内部到底遭遇了什么，我们将一张<strong>使用后已经失效（报滴三声）的复制卡</strong>重新放回读卡器导出了完整 Dump。真相瞬间大白！</p>
+<hr>
+<h2 id="三、-铁证破案：失效复制卡-Dump-差分与算法-100-破解"><a href="#三、-铁证破案：失效复制卡-Dump-差分与算法-100-破解" class="headerlink" title="三、 铁证破案：失效复制卡 Dump 差分与算法 100% 破解"></a>三、 铁证破案：失效复制卡 Dump 差分与算法 100% 破解</h2><h3 id="精髓表格一：原卡初始-Dump-vs-使用后失效复制卡-Dump-核心差分表"><a href="#精髓表格一：原卡初始-Dump-vs-使用后失效复制卡-Dump-核心差分表" class="headerlink" title="精髓表格一：原卡初始 Dump vs. 使用后失效复制卡 Dump 核心差分表"></a>精髓表格一：原卡初始 Dump vs. 使用后失效复制卡 Dump 核心差分表</h3><p>对比整张卡 64 个块，全卡 1~15 扇区的<strong>所有密钥（Key A &#x2F; Key B）和访问控制位均分毫未变</strong>，但有 <strong>3 个块的数据被读卡器彻底改写</strong>：</p>
+<table>
+<thead>
+<tr>
+<th align="left">扇区与块位置</th>
+<th align="left">原卡（初始正常状态）</th>
+<th align="left">使用后失效的复制卡（当前状态）</th>
+<th align="left">核心变化与取证解读</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>扇区 0 块 0</strong><br>（UID 与厂商块）</td>
+<td align="left"><code>A2 08 D0 7D 07</code> <code>08 04 00 05</code><br><code>22 BD C2 D9 20 76 90</code></td>
+<td align="left"><strong><code>22 CE 21 7E B3</code></strong> <code>08 04 00 05</code><br><strong><code>12 3D 01 5C 83 7B FD</code></strong></td>
+<td align="left">**UID 被篡改为 <code>22 CE 21 7E</code>**！<br>新 BCC 为 <code>B3</code>（异或校验合法），导致与卡内原扇区密钥彻底失配！</td>
+</tr>
+<tr>
+<td align="left"><strong>扇区 5 块 20</strong><br>（Slot 2 业务块）</td>
+<td align="left"><code>... BB</code> <strong><code>30 70</code></strong> <code>...</code> <strong><code>C5</code></strong></td>
+<td align="left"><code>... BB</code> <strong><code>24 B0</code></strong> <code>...</code> <strong><code>08</code></strong></td>
+<td align="left">载荷从 <code>30 70</code> 被改写为 <strong><code>24 B0</code></strong><br>块尾校验码从 <code>C5</code> 更新为 <strong><code>08</code></strong></td>
+</tr>
+<tr>
+<td align="left"><strong>扇区 5 块 21</strong><br>（Slot 3 业务块）</td>
+<td align="left"><code>... BB</code> <strong><code>10 B0</code></strong> <code>...</code> <strong><code>C7</code></strong></td>
+<td align="left"><code>... BB</code> <strong><code>13 A0</code></strong> <code>...</code> <strong><code>F6</code></strong></td>
+<td align="left">载荷从 <code>10 B0</code> 被改写为 <strong><code>13 A0</code></strong><br>块尾校验码从 <code>C7</code> 更新为 <strong><code>F6</code></strong></td>
+</tr>
+<tr>
+<td align="left"><strong>扇区 0~10 尾块</strong><br>（各扇区密钥块）</td>
+<td align="left"><code>2C22...</code> &#x2F; <code>5B55A0D53CC5</code><br><code>FF078069</code> <code>FFFFFFFFFFFF</code></td>
+<td align="left"><code>2C22...</code> &#x2F; <code>5B55A0D53CC5</code><br><code>FF078069</code> <code>FFFFFFFFFFFF</code></td>
+<td align="left"><strong>完全未变</strong>（仍保留着由原卡 UID <code>A208D07D</code> 派生出的密钥）</td>
+</tr>
+</tbody></table>
+<p>这份差分数据直接帮我们完成了两项决定性的突破：</p>
+<h3 id="突破-1：100-破解块尾校验算法与「半字节反序（Swap-Nibbles）」编码"><a href="#突破-1：100-破解块尾校验算法与「半字节反序（Swap-Nibbles）」编码" class="headerlink" title="突破 1：100% 破解块尾校验算法与「半字节反序（Swap Nibbles）」编码"></a>突破 1：100% 破解块尾校验算法与「半字节反序（Swap Nibbles）」编码</h3><p>此前仅凭原卡的 <code>30 70 -&gt; C5</code> 和 <code>10 B0 -&gt; C7</code>（低 4 位全为 <code>0</code>），无法唯一确定低 4 位在校验中的权重。现在有了失效卡被改写后的 <code>24 B0 -&gt; 08</code> 和 <code>13 A0 -&gt; F6</code>，联立四个同余方程，<strong>唯一的精确校验算法被 100% 锁定</strong>：</p>
+<p>定义半字节翻转函数 $\text{Swap}(x) &#x3D; ((x \ &amp; \ \texttt{0x0F}) \ll 4) \mid (x \gg 4)$（即将一个字节的高 4 位与低 4 位互换，例如 <code>30</code> $\rightarrow$ <code>03</code>，<code>24</code> $\rightarrow$ <code>42</code>，<code>13</code> $\rightarrow$ <code>31</code>，<code>B0</code> $\rightarrow$ <code>0B</code>，<code>BB</code> $\rightarrow$ <code>BB</code>）。<br>则块末第 16 字节（偏移 <code>15</code>）的校验公式为：</p>
+<p>$$\text{Checksum} &#x3D; \left( \sum_{i&#x3D;0}^{14} \text{Swap}(\text{Byte}_i) \right) \bmod 256$$</p>
+<p>代入全部 4 条记录验算，分毫不差：</p>
+<ol>
+<li><strong>原卡 块 20</strong>（<code>BB 30 70</code>）：$\texttt{0xBB} + \texttt{0x03} + \texttt{0x07} &#x3D; \mathbf{\texttt{0xC5}}$</li>
+<li><strong>原卡 块 21</strong>（<code>BB 10 B0</code>）：$\texttt{0xBB} + \texttt{0x01} + \texttt{0x0B} &#x3D; \mathbf{\texttt{0xC7}}$</li>
+<li><strong>使用后复制卡 块 20</strong>（<code>BB 24 B0</code>）：$\texttt{0xBB} + \texttt{0x42} + \texttt{0x0B} &#x3D; \texttt{0x108} \equiv \mathbf{\texttt{0x08}} \pmod{256}$</li>
+<li><strong>使用后复制卡 块 21</strong>（<code>BB 13 A0</code>）：$\texttt{0xBB} + \texttt{0x31} + \texttt{0x0A} &#x3D; \mathbf{\texttt{0xF6}}$</li>
+</ol>
+<p><strong>这证明了什么？</strong></p>
+<ul>
+<li><strong>第一</strong>，扇区 5 的块 20&#x2F;21 变化绝不是写卡掉电产生的乱码，而是<strong>电梯读卡器在刷卡过程中按照私有协议动态回写（Write-back）的合法数据</strong>！</li>
+<li><strong>第二</strong>，协议在存储业务字节时故意做了<strong>「高低半字节反序混淆」</strong>。将其翻转回正常顺序后：<ul>
+<li>原卡块 20 &#x2F; 块 21 为：**<code>03 07</code>** 与 **<code>01 0B</code>**（十进制 <code>3楼, 7</code> 与 <code>1楼, 11</code>）；</li>
+<li>刷卡后的块 20 &#x2F; 块 21 变为：**<code>42 0B</code>** 与 **<code>31 0A</code>**（个位楼层变为 <code>2楼</code>、<code>1楼</code>，高半字节状态位变为 <code>4</code> 和 <code>3</code>，且第二字节从 <code>0B</code> [11] 递减&#x2F;滚动为 <code>0A</code> [10]）。</li>
+</ul>
+</li>
+</ul>
+<h3 id="突破-2：还原“防-CUID-覆写陷阱”的猎杀全过程"><a href="#突破-2：还原“防-CUID-覆写陷阱”的猎杀全过程" class="headerlink" title="突破 2：还原“防 CUID 覆写陷阱”的猎杀全过程"></a>突破 2：还原“防 CUID 覆写陷阱”的猎杀全过程</h3><p>为什么这张复制卡刚开始能刷开 1~2 次（此时它的扇区 5 甚至还成功接收了读卡器回写的 <code>24 B0</code> &#x2F; <code>13 A0</code>），随后却变成了“红灯闪 + 滴滴滴三声”？</p>
+<p>罪魁祸首就在**扇区 0 块 0 被改写成了 <code>22 CE 21 7E B3...</code>**：</p>
+<ol>
+<li><strong>CUID 卡的软肋</strong>：普通 CUID 卡为了绕过一代 UID 卡的 <code>0x40</code> 后门检测，允许在验证 0 扇区密码后直接用标准写指令修改 0 扇区 0 块。</li>
+<li><strong>默认 Key B 大门敞开</strong>：这张卡的 0 扇区控制位是默认的 <code>FF 07 80 69</code>，<code>Key B</code> 是默认的 <code>FFFFFFFFFFFF</code>。</li>
+<li><strong>读卡器的主动毁卡攻击</strong>：当复制卡刷到开启了 <code>9 2 # 2 #</code>（防 CUID 功能）的楼层读头时，读卡器除了正常回写扇区 5，还会用默认 <code>Key B (FFFFFFFFFFFF)</code> 认证 0 扇区，并**故意向 0 扇区 0 块写入一串带有合法 BCC（<code>B3</code>）的随机新 UID <code>22 CE 21 7E</code>**！<ul>
+<li><strong>原卡为何不怕？</strong> 原卡晶圆的 0 块在出厂时已物理熔断锁死（ROM），硬件直接无视该写指令，UID 永远是 <code>A2 08 D0 7D</code>。</li>
+<li><strong>CUID 复制卡为何暴毙？</strong> CUID 卡的 0 块被乖乖改写成了 <code>22 CE 21 7E</code>。等下次再去刷卡时，由于新 BCC（<code>B3</code>）合法，读卡器能正常寻卡，但<strong>读卡器用新 UID <code>22 CE 21 7E</code> 算出来的一卡一密，与卡内扇区 5 存的原卡密码 <code>5B55A0D53CC5</code> 彻底对不上</strong>！三次握手认证当场失败，报“红灯闪 + 滴滴滴三声”，卡片永久报废！</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 id="四、-刷卡五步交互全流程与核心规律总结（精髓表格集）"><a href="#四、-刷卡五步交互全流程与核心规律总结（精髓表格集）" class="headerlink" title="四、 刷卡五步交互全流程与核心规律总结（精髓表格集）"></a>四、 刷卡五步交互全流程与核心规律总结（精髓表格集）</h2><p>每次将卡片贴上这台电梯读卡器的几十毫秒内，底层依次发生了以下 <strong>5 步交互</strong>：</p>
+<ol>
+<li><strong>Step 1（明文寻卡与一代防火墙）</strong>：读取 0 块明文 <code>UID</code> 并校验 <code>BCC</code>；同时发送 <code>0x40</code> 试探，拦截普通一代 UID 卡。</li>
+<li><strong>Step 2（一卡一密认证）</strong>：读卡器根据当前 <code>UID</code> 现场推算扇区 5 的 <code>Key A</code> 并认证（若 0 块 UID 曾被篡改，在此步直接报错“滴三声”）。</li>
+<li><strong>Step 3（读取与校验）</strong>：读取块 20&#x2F;21，执行 $\sum \text{Swap} \bmod 256$ 校验并核对楼层权限。</li>
+<li><strong>Step 4（动态状态回写）</strong>：绿灯放行同时，将新的楼层状态与滚动计数及新校验和写回扇区 5 的块 20&#x2F;21。</li>
+<li><strong>Step 5（防 CUID 0 块覆写陷阱）</strong>：用默认 <code>Key B (FFFFFFFFFFFF)</code> 向 0 扇区 0 块写入随机假 UID（原卡硬件拒绝，未锁死的 CUID 卡被改写自爆）。</li>
+</ol>
+<hr>
+<h3 id="精髓表格二：正版原卡-vs-普通-CUID-复制卡底层差异对照表"><a href="#精髓表格二：正版原卡-vs-普通-CUID-复制卡底层差异对照表" class="headerlink" title="精髓表格二：正版原卡 vs. 普通 CUID 复制卡底层差异对照表"></a>精髓表格二：正版原卡 vs. 普通 CUID 复制卡底层差异对照表</h3><table>
+<thead>
+<tr>
+<th align="left">对比维度</th>
+<th align="left">正版原卡（NXP 原厂 M1 晶圆）</th>
+<th align="left">普通复制卡（未锁 0 块的 CUID 晶圆）</th>
+<th align="left">导致的现场表现差异</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>0 扇区 0 块<br>（UID 块）物理属性</strong></td>
+<td align="left"><strong>硬件只读（熔丝熔断 &#x2F; ROM）</strong><br>晶圆出厂后物理切断写使能线，任何无线指令均无法修改</td>
+<td align="left"><strong>可擦写 EEPROM（未锁死）</strong><br>只要通过 0 扇区密码认证，即可用标准写指令修改</td>
+<td align="left">原卡无视读卡器的恶意写 0 块指令；<br><strong>复制卡被读头改写 UID，一刷即废</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>UID 与扇区密码<br>的一致性</strong></td>
+<td align="left"><strong>永远一致</strong><br>UID 恒为 <code>A208D07D</code>，与扇区 5 密码 <code>5B55...</code> 永远匹配</td>
+<td align="left"><strong>刷卡后失配</strong><br>UID 被篡改为 <code>22CE217E</code>，与卡内原密码脱节</td>
+<td align="left">原卡全楼层随时可用；<br><strong>复制卡刷 1~2 次后报“红灯闪+滴三声”</strong></td>
+</tr>
+<tr>
+<td align="left"><strong>扇区 5 动态回写</strong><br>（块 20 &#x2F; 块 21）</td>
+<td align="left">每次刷卡正常更新状态与 $\text{Swap}$ 校验码</td>
+<td align="left">虽能被正常回写（如变为 <code>24B0</code>&#x2F;<code>13A0</code>），但受限于 0 块被毁及慢速写入</td>
+<td align="left">复制卡一旦刷卡过快还会发生回写半途掉电（Write Tear）损坏校验码</td>
+</tr>
+<tr>
+<td align="left"><strong>芯片内部架构<br>与写入耗时</strong></td>
+<td align="left"><strong>纯硬件数字逻辑门</strong><br>功耗极低，EEPROM 写入仅需 <code>2~3 ms</code></td>
+<td align="left"><strong>廉价 MCU（单片机）软件模拟</strong><br>功耗高，EEPROM 写入需 <code>15~30 ms</code></td>
+<td align="left">原卡一晃即过；复制卡在供电波动或移开过快时易超时报错</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="精髓表格三：不同保护策略下各类卡片的「实际使用额度-x2F-寿命」分类表"><a href="#精髓表格三：不同保护策略下各类卡片的「实际使用额度-x2F-寿命」分类表" class="headerlink" title="精髓表格三：不同保护策略下各类卡片的「实际使用额度&#x2F;寿命」分类表"></a>精髓表格三：不同保护策略下各类卡片的「实际使用额度&#x2F;寿命」分类表</h3><p>既然找到了死因（0 扇区允许默认 Key B 写入 + 5 扇区需要动态回写），不同处理方式下的卡片寿命如下：</p>
+<table>
+<thead>
+<tr>
+<th align="left">卡片处理分类</th>
+<th align="left">0 扇区状态（UID 保护）</th>
+<th align="left">5 扇区状态（业务回写）</th>
+<th align="left">实际可用额度（能刷几次？）</th>
+<th align="left">最终结局与原理剖析</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>① 未保护的普通 CUID 卡</strong><br>（最初测试的 4 张卡）</td>
+<td align="left"><strong>未锁死</strong><br>（默认 <code>FF078069</code> 允许 Key B 写）</td>
+<td align="left">开放读写</td>
+<td align="left"><strong>仅 <code>1 ~ 2 次</code></strong><br>（一次性消耗品）</td>
+<td align="left"><strong>UID 被篡改致死</strong>：<br>撞上开启防 CUID 覆写的楼层读头后，0 块 UID 被改写，下次刷卡密码失配永久作废。</td>
+</tr>
+<tr>
+<td align="left"><strong>② 连 5 扇区也锁死的卡</strong><br>（错误保护方式）</td>
+<td align="left">已锁死</td>
+<td align="left"><strong>误设为只读</strong></td>
+<td align="left"><strong><code>0 ~ 1 次</code></strong></td>
+<td align="left"><strong>回写失败致死</strong>：<br>电梯每次刷卡必须向 5 扇区块 20&#x2F;21 回写新状态，5 扇区不可写会导致读头写卡失败拒开。</td>
+</tr>
+<tr>
+<td align="left"><strong>③ 软锁 0 扇区的 CUID 卡</strong><br>（用手机 <code>MCT</code> 修改 0 扇区 ACL 只读或改掉 Key B）</td>
+<td align="left"><strong>软件权限锁死</strong><br>（禁止默认 Key B 写 0 扇区）</td>
+<td align="left">开放读写</td>
+<td align="left">• 普通盲写读头：**<code>无限次</code><strong><br>• 严苛检测读头：</strong><code>0 次</code>**（但不毁卡）</td>
+<td align="left">• 若读头只管盲写 0 块：0 块改不动，且因楼梯在旁无严格跨层锁死，卡片<strong>永久有效</strong>；<br>• 若读头强制检查 0 扇区默认 Key B 能否认证成功：首刷报错，但卡数据完好。</td>
+</tr>
+<tr>
+<td align="left"><strong>④ 硬锁 0 块的 FUID &#x2F; UFUID 卡</strong><br>（或正版原卡）</td>
+<td align="left"><strong>硬件物理只读</strong><br>（0 扇区密码不变，仅 0 块熔断只读）</td>
+<td align="left">开放读写</td>
+<td align="left"><strong><code>无限次</code></strong><br>（与原卡寿命完全一致）</td>
+<td align="left"><strong>100% 完美复刻</strong>：<br>0 扇区默认 Key B 认证通过、写 0 块返回硬件 NAK（与原卡表现完全一致），5 扇区正常循环回写。</td>
+</tr>
+</tbody></table>
+<hr>
+<h3 id="精髓表格四：不同发卡规模下的使用结果推演表（1-原卡-x2F-1-1-x2F-1-3-x2F-1-x）"><a href="#精髓表格四：不同发卡规模下的使用结果推演表（1-原卡-x2F-1-1-x2F-1-3-x2F-1-x）" class="headerlink" title="精髓表格四：不同发卡规模下的使用结果推演表（1 原卡 &#x2F; 1+1 &#x2F; 1+3 &#x2F; 1+x）"></a>精髓表格四：不同发卡规模下的使用结果推演表（<code>1 原卡</code> &#x2F; <code>1+1</code> &#x2F; <code>1+3</code> &#x2F; <code>1+x</code>）</h3><table>
+<thead>
+<tr>
+<th align="left">卡片组合规模</th>
+<th align="left">现状模式：普通 CUID 卡（未锁 0 扇区）</th>
+<th align="left">改进模式 A：已锁 0 块的复制卡<br>（读头仅做脱机宽松覆盖校验——最贴合“电梯旁是楼梯”现状）</th>
+<th align="left">改进模式 B：已锁 0 块的复制卡<br>（假设读头本地维护同 UID 状态队列&#x2F;短时冷却）</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>仅 1 张原卡</strong><br>（基准对照）</td>
+<td align="left"><strong>全天候、全楼层 100% 稳定可用</strong><br>• 0 块物理只读，5 扇区硬件极速回写。</td>
+<td align="left"><strong>全天候、全楼层 100% 稳定可用</strong></td>
+<td align="left"><strong>全天候、全楼层 100% 稳定可用</strong><br>• 单卡独享 UID，卡内状态与读卡器永远同步。</td>
+</tr>
+<tr>
+<td align="left"><strong>1 原卡 + 1 复制卡</strong><br>（双卡模式）</td>
+<td align="left"><strong>原卡正常；复制卡刷 1~2 次后报废</strong><br>• 复制卡 0 块被覆写为随机 UID 后暴毙。</td>
+<td align="left"><strong>原卡与复制卡均可长期无限次使用</strong><br>• 0 块不再被改写，5 扇区各自正常接收回写覆盖。</td>
+<td align="left"><strong>原卡稳定；复制卡绝大部分时间可用</strong><br>• 仅当两张卡在几秒内于同一读头交替连刷时触发冷却或单步重同步。</td>
+</tr>
+<tr>
+<td align="left"><strong>1 原卡 + 3 复制卡</strong><br>（1+4 实验规模）</td>
+<td align="left"><strong>原卡正常；复制卡在不同时间、不同楼层陆续暴毙</strong><br>• 谁先刷到开启防 CUID 覆写的读头或刷卡手势过快掉电，谁先阵亡。</td>
+<td align="left"><strong>全部卡均可长期稳定使用</strong><br>• 只要刷卡时贴稳停留 0.5 秒避免慢速 EEPROM 写掉电，各楼层均把刷卡视为“走楼梯换层后的正常刷卡”。</td>
+<td align="left"><strong>原卡稳定；复制卡在高频交叉使用时偶发单次“滴三声”</strong><br>• 多人同时间段在 1~3 楼穿插刷卡，后刷者需重刷一次以覆盖同步状态。</td>
+</tr>
+<tr>
+<td align="left"><strong>1 原卡 + $x$ 复制卡</strong><br>（大规模克隆，$x \ge 10$）</td>
+<td align="left"><strong>原卡正常；所有 $x$ 张复制卡在首日全部阵亡</strong></td>
+<td align="left"><strong>单卡物理可用，但高峰期触发「同卡号冷却」与日志异常</strong><br>• 多人排队连刷同一 UID 会触发门禁机 3~5 秒重复刷卡防抖限制。</td>
+<td align="left"><strong>大面积失步冲突</strong><br>• 同一个 UID 在多楼层高频并发跳跃，状态队列频繁溢出。</td>
+</tr>
+</tbody></table>
+<hr>
+<h2 id="五、-工具链与架构升华：复制卡彻底完结了吗？"><a href="#五、-工具链与架构升华：复制卡彻底完结了吗？" class="headerlink" title="五、 工具链与架构升华：复制卡彻底完结了吗？"></a>五、 工具链与架构升华：复制卡彻底完结了吗？</h2><h3 id="1-开源工具链的实验边界"><a href="#1-开源工具链的实验边界" class="headerlink" title="1. 开源工具链的实验边界"></a>1. 开源工具链的实验边界</h3><p>在本次研究分析中，GitHub 上的开源生态发挥了重要作用，但不同工具与介质的组合决定了防护模拟的上限：</p>
+<ul>
+<li><strong><code>MIFARE Classic Tool (MCT)</code>（Android 纯手机端）</strong>：<ul>
+<li>配合普通 <strong>CUID 卡</strong>：可利用内置的 <em>Access Condition Decoder</em> 修改 0 扇区第 3 块实现<strong>“协议层软锁”</strong>；</li>
+<li>配合 <strong>FUID 卡（一次性自动熔断卡）</strong>：手机写入块 0 完成的瞬间，芯片硬件自动将块 0 永久转为只读 ROM，仅靠一部安卓手机即可实现 <strong>100% 硬件级锁死模拟</strong>。</li>
+</ul>
+</li>
+<li><strong><code>ChameleonUltra</code> &#x2F; <code>Proxmark3 (Iceman)</code>（开源外置硬件生态）</strong>：<ul>
+<li>支持对 <strong>UFUID 卡</strong>发送底层 <code>0x40/0x43</code> 封卡锁死指令，或开启<strong>“影子写保护（Shadow Mode）”</strong>，在无线电层面对读卡器的写 0 块陷阱做出与原厂晶圆分毫不差的欺骗响应。</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-终极思考：为什么“打补丁”救不了-M1-卡？"><a href="#2-终极思考：为什么“打补丁”救不了-M1-卡？" class="headerlink" title="2. 终极思考：为什么“打补丁”救不了 M1 卡？"></a>2. 终极思考：为什么“打补丁”救不了 M1 卡？</h3><p>回看这套电梯系统，工程师在几毛钱的 M1 卡上可谓煞费苦心：设计了<strong>线性一卡一密</strong>、<strong>半字节翻转校验（$\sum \text{Swap}$）</strong>、<strong>扇区 5 动态回写</strong>以及<strong>0 块覆写毁卡陷阱</strong>。这套组合拳在工程经济学上非常成功，低成本地消灭了市面上 90% 的普通复制卡和手机模拟。</p>
+<p>然而从密码学与系统安全角度看，它依然存在两个根本性软肋：</p>
+<ol>
+<li><strong>违背柯克霍夫原则（Security by Obscurity）</strong>：把安全性寄托于“算法保密（半字节翻转与线性异或）”和“对方忘了锁 0 扇区”。一旦像本文这样通过两份 Dump 差分还原出数学公式、并锁死 0 块写权限，整套防线便被彻底穿透。</li>
+<li><strong>M1 卡的“存储卡原罪”</strong>：只要卡片的验证逻辑是“读卡器把密码发过去、把扇区数据读出来”，它本质上就只是一张带密码的软盘——只要能读出，就一定能被完整镜像克隆。</li>
+</ol>
+<p><strong>什么才能让复制卡真正“彻底完结”？</strong><br>答案不在于更复杂的位运算混淆，而在于向 <strong>CPU 卡（如 MIFARE DESFire EV3 &#x2F; 国密 SM1·SM4 CPU 卡）</strong> 的代差升级。当卡片内部拥有真正的密码学协处理器、密钥永不离开晶圆，且每次刷卡均通过真随机数进行动态<strong>挑战-应答（Challenge-Response）</strong>认证时，“导出全卡 Dump”这一概念本身将不复存在——那才是门禁与梯控克隆攻防战真正的终点。</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer"><div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">---------文章结束啦~有什么想评论的吗？---------</div>
+    
+</div>
+
+<!--
+<br><a target="_blank" rel="noopener" href="https://notbyai.fyi"><img src=data:image/png;base64,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></a><br>
+-->
+          <div class="followme">
+  <span>欢迎关注我的其它发布渠道</span>
+
+  <div class="social-list">
+
+      <div class="social-item">
+        <a target="_blank" class="social-link" href="/atom.xml">
+          <span class="icon">
+            <i class="fa fa-rss"></i>
+          </span>
+
+          <span class="label">RSS</span>
+        </a>
+      </div>
+  </div>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/AI-gen/" rel="tag"><i class="fa fa-tag"></i> AI-gen</a>
+          </div>
+
+        
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/posts/41617.html" rel="prev" title="日中见斗">
+                  <i class="fa fa-chevron-left"></i> 日中见斗
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="waline"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 2022 – 
+  <span itemprop="copyrightYear">2026</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">晴雀</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">445k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">6:44</span>
+  </span>
+</div>
+<span id="momk"></span>
+<script src="/js/site-runtime.js" defer></script>
+<br>
+<img src="/img/meng.png" alt="" width="23" height="23" loading="lazy" decoding="async" />
+<a class="icp-link" href="https://icp.gov.moe/?keyword=20236688" target="_blank" rel="noopener">萌ICP备20236688号</a>
+
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pangu/4.0.7/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script>
+
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hexo-generator-searchdb/1.4.0/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+
+
+
+  <script class="next-config" data-name="fancybox" type="application/json">{"jquery":{"url":"https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js","integrity":"sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="},"script":{"url":"https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js","integrity":"sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8="},"style":{"url":"https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css","integrity":"sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA="}}</script>
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script>
+
+
+
+<script class="next-config" data-name="waline" type="application/json">{"lang":"zh-cn","enable":true,"serverURL":"https://waline.nbplus.eu.org","cssUrl":"https://unpkg.com/@waline/client@2.15.8/dist/waline.css","commentCount":true,"pageview":false,"defer":true,"dark":"body.darkmode--activated","locale":{"placeholder":"Hi~欢迎留言呀！自由发言，开阔脑洞吧。请注意礼貌发言哦~不登录，不填昵称邮箱也没关系哒"},"avatar":"mm","meta":["nick","mail"],"pageSize":20,"visitor":true,"requiredFields":["nick"],"libUrl":"https://unpkg.com/@waline/client@2.15.8/dist/waline.js","login":"enable","emoji":["https://unpkg.com/@waline/emojis@1.0.1/weibo","https://unpkg.com/@waline/emojis@1.0.1/alus","https://unpkg.com/@waline/emojis@1.0.1/bilibili","https://unpkg.com/@waline/emojis@1.0.1/tieba","https://unpkg.com/@waline/emojis@1.0.1/tw-emoji"],"el":"#waline","comment":true,"path":"/posts/29816.html"}</script>
+<script src="/js/waline-loader.js" defer></script>
+<div class="top-scroll-bar" aria-hidden="true"></div>
+
+<script>
+window.AI_GEN_POSTS = ["/posts/64721.html",
+    "/posts/47267.html",
+    "/posts/undefined.html",
+    "/posts/38442.html",
+    "/posts/50998.html",
+    "/posts/64465.html",
+    "/posts/1879.html",
+    "/posts/47820.html",
+    "/posts/54342.html",
+    "/posts/22404.html",
+    "/posts/62029.html",
+    "/posts/41617.html",
+    "/posts/29816.html",
+    ];
+window.SITE_ROOT = "/";
+</script>
+<script src="/js/ai-gen-filter.js"></script>
+
+
+
+
+<script>
+window.ATTACHMENT_CONFIG = {
+  root: "/",
+  viewerScriptUrl: "/js/attachment.js",
+  viewerCssUrl: "/css/attachment-viewer.css",
+  markedUrl: "/lib/attachment/marked.js",
+  purifyUrl: "/lib/attachment/purify.min.js"
+};
+</script>
+<script src="/js/attachment-loader.js" defer></script>
+
+
+<script src="/js/pwa.js" data-root="/" defer></script>
+
+<!-- hexo injector body_end start -->
+  <script src="/js/custom.js"></script>
+<!-- hexo injector body_end end --></body>
+</html>

@@ -6,7 +6,7 @@
   <link href="https://blog.verynb.net/atom.xml" rel="self"/>
   
   <link href="https://blog.verynb.net/"/>
-  <updated>2026-10-01T10:14:48.881Z</updated>
+  <updated>2026-10-17T11:32:31.392Z</updated>
   <id>https://blog.verynb.net/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>电梯卡</title>
+    <link href="https://blog.verynb.net/posts/29816.html"/>
+    <id>https://blog.verynb.net/posts/29816.html</id>
+    <published>2026-10-17T11:27:18.000Z</published>
+    <updated>2026-10-17T11:32:31.392Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;上海复读不能去公办学校，于是去了最有名（一共就没几家）的机构之一，师资硬件吊打原来的高中，可惜马桶坑位不够。不过教室头顶就是我的宿舍，但是平日楼梯被锁住，只能靠电梯上去。&lt;/p&gt;
+&lt;p&gt;那么需要做的就很明了了，搞一张电梯卡或者复制一张电梯卡，便是如下的经过。最近gemini 4 argon刚刚发布，正好小试牛刀。可以忽略所谓的安全研究课，破限的手段而已。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="AI-gen" scheme="https://blog.verynb.net/tags/AI-gen/"/>
+    
+  </entry>
   
   <entry>
     <title>日中见斗</title>
@@ -390,23 +408,6 @@
     
     
     <category term="AI-gen" scheme="https://blog.verynb.net/tags/AI-gen/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>switch大气层虚拟系统急救指南</title>
-    <link href="https://blog.verynb.net/posts/18424.html"/>
-    <id>https://blog.verynb.net/posts/18424.html</id>
-    <published>2025-05-11T10:36:35.000Z</published>
-    <updated>2026-08-09T07:12:24.352Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;上一次更新博客是在2024-9-22，已经半年没更新了。&lt;/p&gt;
-&lt;p&gt;十一月份我骑公路车把手摔断了，后来忙于学业，久而久之就断更了。以前我刚建立博客的时候几乎一天一更，后来发现热情消退了连一月一更都很难坚持。希望我能继续坚持下去吧。&lt;/p&gt;
-&lt;p&gt;写这篇文章的契机主要是最近折腾switch结果把大气层虚拟系统给搞炸了，于是记录一下这次的救机过程，方便自己以后再查阅吧。&lt;/p&gt;</summary>
-    
-    
-    
     
   </entry>
   
